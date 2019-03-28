@@ -1,2 +1,5 @@
-# rwd-r-assignments
+# R practice assignments
+
 Collection of assignments for practicing R data manipulation and charting.
+
+- [Class survey results](survey-results/rubric.md)
