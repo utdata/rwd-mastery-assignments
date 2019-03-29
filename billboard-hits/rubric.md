@@ -24,7 +24,10 @@ This dataset contains every weekly Hot 100 singles chart from Billboard.com. Eac
 I recommend downloading the csv file into your project so you can work later without being connected to the internet. You have to create the `data-raw` folder first.
 
 ```{r download}
+# download
 download.file("https://raw.githubusercontent.com/utdata/rwd-r-assignments/master/billboard-hits/billboard.csv", "data-raw/billboard.csv")
+# import
+billboard <- read_csv("data-raw/billboard.csv")
 ```
 
 ### Download directly into a dataframe
