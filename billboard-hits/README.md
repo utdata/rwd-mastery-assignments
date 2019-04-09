@@ -42,7 +42,7 @@ billboard <- read_csv(url("https://raw.githubusercontent.com/utdata/rwd-r-assign
 
 ## Rubric
 
-1. Who are the Top 10 artists based on the number of songs on the charts?
+1. Who are the 10 artists that have spent the most weeks on the Top 100 chart.
     - Build a table (a data frame printed to the screen) to show the performer and the number of weeks they've had a song on the chart. Arrange by most at the top. Only display the top 10 rows.
 2. Who had the most No. 1 hits?
     - Build a data frame that filters to only No. 1 hits, then counts the distinct performer/song combinations. Count how many times the performer is on that list and arrange by those that have most. Show only the top 10 performers.
@@ -59,7 +59,7 @@ This one will take some work and experimentation. For your chosen artist **make 
 - You'll want to use `fct_reorder()` to order the `song` value by the `week_id`.
 - You might want to use `scale_y_reverse()` so 100 is at the bottom and 1 is at the top, since that is the "high" value.
 - You might want to use `expand_limits(y = 0)` if your artist doesn't have any hits hear the "top" of the charts.
-- Not required for the credit, but this is a good candidate to use the `library(plotly)` and the `ggplotly()` function to make your graphic interactive so you can explore the values for each point.
+- Not required for the credit, but this is a good candidate to use the `library(plotly)` and the `ggplotly()` function to make your graphic interactive so you can explore the values for each point. You can [review how to do that here](https://utdata.github.io/rwd-class/graphics.html#plotly-for-more-interactive-graphics).
 
 ## Notes for the instructor
 
