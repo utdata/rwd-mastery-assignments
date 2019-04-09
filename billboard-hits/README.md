@@ -29,15 +29,7 @@ I recommend downloading the csv file into your project so you can work later wit
 # download
 download.file("https://raw.githubusercontent.com/utdata/rwd-r-assignments/master/billboard-hits/billboard.csv", "data-raw/billboard.csv")
 # import
-billboard <- read_csv("data-raw/billboard.csv")
-```
-
-### Download directly into a dataframe
-
-Or, You can download directly into a data frame with `read_csv()`.
-
-```r
-billboard <- read_csv(url("https://raw.githubusercontent.com/utdata/rwd-r-assignments/master/billboard-hits/billboard.csv"))
+billboard <- read_csv("data-raw/billboard.csv") %>% clean_names()
 ```
 
 ## Rubric
