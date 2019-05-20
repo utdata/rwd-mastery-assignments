@@ -24,5 +24,5 @@
 
 - Demolitions from Construction Permits. Find by zip. Basically rework my story.
 - Restaurant scores?
-- One week of dockless bide data?
+- One week of dockless bike/schooter data?
 

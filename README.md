@@ -1,6 +1,6 @@
-# R practice assignments
+# Mastery assignments
 
-Collection of assignments for practicing R data manipulation and charting. It is a companion to the book [Reporting with Data in R](https://utdata.github.io/rwd-r-reporting-with-data/), by Christian McDonald.
+Collection of assignments to prove mastery of various skills in Reporting with Data, a class by Christian McDonald, assistant professor of practice at the University of Texas at Austin School of Journalism in the Moody College of Communication.
 
 - [Class survey results](survey-results)
 - [Billboard Hits](billboard-hits)
@@ -8,3 +8,8 @@ Collection of assignments for practicing R data manipulation and charting. It is
 - [EMS Opioid](ems-opioid)
 - [Football compare](football-compare)
 - [Gifted students](gifted-students)
+
+## Notes about R
+
+Some of these assignments are a companion to the book [Reporting with Data in R](https://utdata.github.io/rwd-r-reporting-with-data/). Some of those assignments might need updates as I adjust this repo for assignments in other tools.
+
