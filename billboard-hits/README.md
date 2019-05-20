@@ -4,7 +4,7 @@ Weekly Hot 100 singles chart between 8/2/1958 and 12/28/2018 pulled from [data.w
 
 ## Data dictionary
 
-This dataset contains every weekly Hot 100 singles chart from Billboard.com. Each row of data represents a song and the corresponding position on that week's chart. Included in each row are the following elements:
+This dataset contains every weekly Hot 100 singles chart from Billboard.com. **Each row of data represents a song and the corresponding position on that week's chart.** Included in each row are the following elements:
 
 - url: Billboard Chart URL
 - WeekID: Date of chart release
@@ -17,7 +17,7 @@ This dataset contains every weekly Hot 100 singles chart from Billboard.com. Eac
 - Peak Position: Top position on chart as of this date
 - Weeks on Chart: Weeks on chart as of this date
 
-## Rubrics
+## Assignment Rubrics
 
 - [Rubric for Workbench](rubric-wb.md)
 - [Rubric for R](rubric-r.md)
