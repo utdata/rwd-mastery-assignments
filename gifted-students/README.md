@@ -9,24 +9,28 @@ The data comes from the Texas Education Agency. You need two things: The statewi
 ## Enrollment by Program data
 
 To download this file, go to Texas Academic Performance Reports, or [TAPR](https://tea.texas.gov/perfreport/tapr/index.html) and follow these links:
-  - **2017–18 TAPR** or the most recent available.
-  - **Data Download**
-  - **TAPR Data in Excel (Rates Only)**
-  - **District Download**, then Continue
-  - Choose **Student information**, then Continue
-  - Change the Format to **Comma delimited**
-  - Select **Student: Enrollment by Program**
-  - Click Download
 
-Once downloaded, inspect the file. You'll see there are no district names in the data, only a district ID. We will need at companion file to give us the names.
+- **2017–18 TAPR** or the most recent year available.
+- **Data Download**
+- **TAPR Data in Excel (Rates Only)**
+- **District Download**, then Continue
+  - We may also come back to this and get **Campus Download**.
+- Choose **Student information**, then Continue
+- Change the Format to **Comma delimited**
+- Select **Student: Enrollment by Program**
+- Click Download. You should get a file called `DSTUD.dat`.
 
-You'll also want to reference the [data dictionary](https://rptsvr1.tea.texas.gov/perfreport/tapr/2018/xplore/dstud.html) so you know what each column is.
+Repeat the steps above but for the **Campus Download**. The file should be `CSTUD.dat`.
+
+You'll also want to reference the [district](https://rptsvr1.tea.texas.gov/perfreport/tapr/2018/xplore/dstud.html) and [campus](https://rptsvr1.tea.texas.gov/perfreport/tapr/2018/xplore/cstud.html) data dictionary so you know what each column is.
+
+If you use a code editor to inspect either file you'll see there are no district or school names in the data, only IDs. We will need a companion file to give us the names.
 
 ## District and campus directory
 
 - The **Directory** that lists all school campus information can be found on [AskTED](http://tea4avholly.tea.state.tx.us/tea.askted.web/Forms/Home.aspx) at the link titled "Download School and District File". (There is also a copy in this repo.) It has the district ID that matches your program data as well as the district name and other information about districts and campuses.
 
-## Rubrics
+## Assignment rubrics
 
 - [Rubric for Workbench](rubric-wb.md)
 - [Rubric for R](rubric-r.md)

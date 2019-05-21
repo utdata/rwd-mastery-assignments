@@ -4,6 +4,8 @@ Be sure to review the [README](README.md) for important information that precede
 
 ## Rubric for R
 
+> This could use a check and edit before using.
+
 The goal is to build a list of districts in descending order of their percentage of gifted and talented students. Which districts have the highest percentage of GT kids?
 
 The logical steps to do this are as follows. While I'm not telling you _how_ to do these things, do pay attention as there are many hints thrown in.
