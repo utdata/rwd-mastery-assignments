@@ -8,6 +8,7 @@ Collection of assignments to prove mastery of various skills in Reporting with D
 - [EMS Opioid](ems-opioid)
 - [Football compare](football-compare)
 - [Gifted students](gifted-students)
+- [Campaign finance](campaign-finance)
 
 ## Notes about R
 

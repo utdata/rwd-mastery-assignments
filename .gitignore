@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/r,macos,windows,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=r,macos,windows,visualstudiocode
+# Created by https://www.gitignore.io/api/r,macos,windows,microsoftoffice,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=r,macos,windows,microsoftoffice,visualstudiocode
 
 ### macOS ###
 # General
@@ -29,6 +29,27 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+### MicrosoftOffice ###
+*.tmp
+
+# Word temporary
+~$*.doc*
+
+# Word Auto Backup File
+Backup of *.doc*
+
+# Excel temporary
+~$*.xls*
+
+# Excel Backup File
+*.xlk
+
+# PowerPoint temporary
+~$*.ppt*
+
+# Visio autosave temporary files
+*.~vsd*
 
 ### R ###
 # History files
@@ -108,4 +129,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/r,macos,windows,visualstudiocode
+# End of https://www.gitignore.io/api/r,macos,windows,microsoftoffice,visualstudiocode
