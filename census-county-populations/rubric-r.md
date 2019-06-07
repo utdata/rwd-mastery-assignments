@@ -1,16 +1,18 @@
-# Census gather practice
+# Using Gather with Census Population Estimates
 
-This lesson actually refactors lessons you've already completed from the Reporting with Data in R book. Before completing this, make sure you've done:
+> This lesson wasn't used in Spring 2019.
 
-- [Practice assignment: Import census](https://utdata.github.io/rwd-class/import.html#practice-assignment-import-census)
-- [Practice assignment: Clean census names](https://utdata.github.io/rwd-class/columns.html#practice-assignment-clean-census-names)
-- [Practice assignment: Transforms on census](https://utdata.github.io/rwd-class/transform.html#practice-assignment-transforms-on-census)
+This lesson refactors some work you've already completed from the Reporting with Data in R book. Before completing this, make sure you've done:
+
+- [Practice assignment: Import census](https://utdata.github.io/rwd-r-reporting-with-data/import.html#practice-assignment-import-census)
+- [Practice assignment: Clean census names](https://utdata.github.io/rwd-r-reporting-with-data/columns.html#practice-assignment-clean-census-names)
+- [Practice assignment: Transforms on census](https://utdata.github.io/rwd-r-reporting-with-data/transform.html#practice-assignment-transforms-on-census)
 
 ## What is refactoring
 
 Refactoring is when you rewrite code to make it more efficient, usually because you've learned a better way to do something or you've found that you can reuse your code for more than one purpose.
 
-In this case, in our [census transforms](https://utdata.github.io/rwd-class/transform.html#practice-assignment-transforms-on-census) lesson, we had to repeat a bunch of code chunks to find similar data: The county with the highest population of a given race.
+In this case, in our [census transforms](https://utdata.github.io/rwd-r-reporting-with-data/transform.html#practice-assignment-transforms-on-census) lesson, we had to repeat a bunch of code chunks to find similar data: The county with the highest population of a given race.
 
 ## The new challenge
 
@@ -25,4 +27,3 @@ Some hints:
 - Use `gather()` to create a key column for race and a value column for the percentages.
 - Use `group_by()` to group by the race, so the following function will apply to that.
 - Use `filter()` to find the highest (or max) value in your percentage column. Since you've grouped by race, it will find it fore each race. Hint: Use [`max()`](https://www.rdocumentation.org/packages/rapportools/versions/1.0/topics/max) inside your filter.
-
