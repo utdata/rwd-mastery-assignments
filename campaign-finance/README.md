@@ -1,5 +1,5 @@
 # Campaign Finance assignment
 
-Right now, this is only set up for Google Sheets to show the use of pivot tables.
+Comparing campaign contributions by race.
 
 - [Google Sheets rubric](rubric-gs.md)

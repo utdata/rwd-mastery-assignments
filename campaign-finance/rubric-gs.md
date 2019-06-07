@@ -1,9 +1,10 @@
 # Rubric for Google Sheets assignment
 
-> The idea here is to take what I used to do in Excel and write it for Google Sheets.
-> I also need to find an example to demo in class, possibly with different data.
+> I will need to find an example to demo pivot tables in class, hopefully with different data.
 
 This [data set](tec-totals-cleaned.xlsx) contains the data concerning the total election campaign funds raised by Texas Legislature members from 2009 to 2014 as provided by the Texas Ethics Commission. The data set was annotated by a reporter with the race/ethnicity of each candidate. The totals for candidates running for statewide office were removed as their totals would skew simple statistics.
+
+The field `Candidate` is a cleaned version of the `Name` field. It updates election committee names to the candidate's name.
 
 The goal of the story is to answer this question:
 
