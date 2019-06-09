@@ -1,6 +1,7 @@
 # Travis EMS Encounters Involving Naloxone
 
 > Needs some fleshing out.
+> Possible Tableau lesson
 
 ## Goals for this lesson
 

@@ -26,7 +26,8 @@ Collection of assignments to prove mastery of various skills in Reporting with D
 
 ### Tableau
 
-> TK
+- EMS opioid TK
+- School ratings TK
 
 ## Week 4
 
@@ -38,14 +39,16 @@ Collection of assignments to prove mastery of various skills in Reporting with D
 
 ## List of collections
 
-- [Billboard Hits](billboard-hits)
-- [Campaign finance](campaign-finance)
-- [Class survey results](survey-results)
-- [Census county populations](census-county-populations)
-- [EMS Opioid](ems-opioid)
-- [Football compare](football-compare)
-- [Gifted students](gifted-students)
-- [Texas school ratings](school-ratings)
+GS = Google Sheets; T = Tableau; TK = To come; R = RStudio; WB = Workbench; 
+
+- [Billboard Hits](billboard-hits) (R, WB)
+- [Campaign finance](campaign-finance) (GS)
+- [Class survey results](survey-results) (R, GS TK?)
+- [Census county populations](census-county-populations) (R, GS)
+- [EMS Opioid](ems-opioid) (T TK?)
+- [Football compare](football-compare) (R)
+- [Gifted students](gifted-students) (R, WB)
+- [Texas school ratings](school-ratings) (TK)
 
 ## Notes about R
 
