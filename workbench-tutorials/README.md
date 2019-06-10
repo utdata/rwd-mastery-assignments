@@ -6,6 +6,8 @@ You might need to make multiple submissions to submit all the results. That is f
 
 There are two types of lessons in Workbench, the [Tutorials](https://app.workbenchdata.com/lessons) and the [Introduction to Data Journalism](https://app.workbenchdata.com/courses/intro-to-data-journalism). We'll work from both.
 
+Create a text file or Google doc to save all your results from each tutorial. Label them as you go along so I know which is which. On the embed codes, just paste the whole thing ... I'll pull the URL from it (and I'll explain what that is in class).
+
 ## Tutorials
 
 From the [Tutorials](https://app.workbenchdata.com/lessons) section, do the first two lessons:
@@ -20,4 +22,5 @@ You are welcome to go through the other Tutorials if you wish, but they are not 
 In the [Introduction to Data Journalism](https://app.workbenchdata.com/courses/intro-to-data-journalism) lessons, you'll work through all of them
 
 - **First story (5 mins).** At the end of this module, choose the </> button and set it to Public. Copy the embed code and save it to turn in with this assignment.
-
+- **Finding the largest CO2 producers (5 mins)**. At the end of this module, copy the CSV file and save it to turn in.
+- **Column and line charts (5 mins)**. Make sure you choose at least 5 countries (or all of them!). Choose the </> button and set it to Public. Copy the embed code and save it to turn in with this assignment.
