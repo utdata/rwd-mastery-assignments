@@ -25,4 +25,4 @@ This section will cover downloading and understanding the data. Below you'll fin
 
 ## Lessons
 
-- [For Google Sheets](rubric.gs)
+- [For Google Sheets](rubric-gs.md)
