@@ -2,9 +2,11 @@
 
 > See the [main README](README.md) to see how to download the data.
 
-## Our goals
+## Our scenario
 
-We want to find a number of things from this data:
+Today you are the education reporter for an Austin-area media outlet. The Texas Education Agency has released school ratings for all schools and districts in the state. Your editor would like a story posted ASAP with some specific details before you continue to report out the story. (I call these short stories a [Data Drop](https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.k2b1zvdn1534).)
+
+You editor would like the following details in this first version:
 
 1. What percentage of charter schools received a "Needs Improvement" rating, compared to traditional public schools?
 2. What are those percentages in the Austin MSA?
@@ -18,7 +20,7 @@ The Austin/Round Rock MSA: Bastrop, Caldwell, Hays, Travis and Williamson counti
 
 - As you always should, create a folder on your computer for all the material you'll use in this project.
 - Start a [Data Diary](https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.5i6qymvlqkwj) and record the links and steps you use to download your data. (You can do this in Google Docs, or as a text file on your computer. I use a [code editor](https://drive.google.com/open?id=1vxqW2B0JkRov-V2sRtBSuOHIOdP71WH-5qBFDQvuUY8) and store it on my computer, but do what is comfortable for you.)
-- You'll use this Data Diary to keep other note to yourself about this project. You'll turn it in with your assignment.
+- You'll use this Data Diary to keep other notes to yourself about this project. You'll turn it in with your assignment.
 
 ## Import the data into Google Sheets
 
@@ -29,7 +31,7 @@ The Austin/Round Rock MSA: Bastrop, Caldwell, Hays, Travis and Williamson counti
 
 ![Sheets import](img/sheets-import.png)
 
-> The part about converting text to numbers can be important. TEA data includes IDs that start with `0`, which you will lose if you don't do this.
+> The part about converting text to numbers can be important. TEA data includes IDs that start with `0`, which you will lose if you don't do this. While not as important for this story, it is a prime example of this type of situation.
 
 ## Comparing charter vs traditional public schools
 
@@ -42,11 +44,11 @@ Look through the [Campus Accountability Summary Reference](https://rptsvr1.tea.t
 
 You should now have a table that shows the number of schools that got each rating.
 
-However, we need to filter out the non-traditional schools that received an Alternate rating, like juvenile detention centers and the like. Look through the data dictionary to find the column that notes if a school was "Rated under AEA Procedures".
+However, you need to filter out the non-traditional schools that received an Alternate rating, like juvenile detention centers and the like. Look through the data dictionary to find the column that notes if a school was "Rated under AEA Procedures".
 
 - Use Filters to NOT include schools "Rated under AEA Procedures".
 
-You'll see that there are still schools that did not receive a rating for whatever reason. We want to remove those as well and retain only "Met Standard" and "Improvement Required".
+You'll see that there are still schools that did not receive a rating for whatever reason. For this story, you want to remove those as well and retain only "Met Standard" and "Improvement Required". We are only comparing stories that are rated under the regular state standards.
 
 - Use Filters to remove the other values.
 
@@ -57,10 +59,9 @@ Lastly, we want to split this table to show charter schools vs other schools. Lo
 Now you have a breakdown of the charter schools vs traditional public schools.
 
 - In the cells below the table, create formulas that give you the percentage of the total schools that failed for charters vs non-charters.
+- Name the sheet something the signifies what you've found.
 
 You now have your answer to the first question. Think about how you might write a sentence around that fact.
-
-- Name the sheet something the signifies what you've found.
 
 ## Filtering for the Austin MSA
 
@@ -83,9 +84,20 @@ You now have the answers for Questions 3 & 4.
 
 ## Austin ISD schools that failed
 
-Now we want to look at just AISD schools so we can look at them a little closer.
+You can now sort that list by District to see the Austin schools and their data.
 
-> TK. Maybe how long schools have failed?
+The last question you need answered for your stories is the number of consecutive years that AISD schools have failed standard. The column `C_YRS_IR` is not listed in the data dictionary, unfortunately.
+
+> Review the Austin ISD schools for `C_YRS_IR` and note how long each of the schools has not met improvements.
+
+## Write a data drop
+
+Now that you've explored the data, it's time to write a short story based on the details. Since you are an Austin-area reporter, you can/should lead with information about AISD, but also include the information about charter schools, even that would naturally require more reporting to fill out the story.
+
+For the canvas assignment, you'll want to turn in:
+- Your Google Sheet of the data and pivot tables
+- Your Data Diary
+- Your Data Drop story.
 
 ## Large files and working offline
 

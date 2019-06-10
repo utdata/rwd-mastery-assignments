@@ -6,6 +6,7 @@ Each year the Texas Education Agency rates public schools based on test scores a
 
 This section will cover downloading and understanding the data. Below you'll find a link to the specified tool to use to find the answers.
 
+
 ## Downloading data
 
 - Start at the [2018 Accountability Ratings site](https://tea.texas.gov/2018accountability.aspx).
@@ -17,7 +18,7 @@ This section will cover downloading and understanding the data. Below you'll fin
 
 ![Download options](img/2018-download-options.png)
 
-- While you are on this screen, open in a new tab the link [ Campus Accountability Summary Reference](https://rptsvr1.tea.texas.gov/perfreport/account/2018/download/camprate.html). You'll want that.
+- While you are on this screen, open in a new tab the link [Campus Accountability Summary Reference](https://rptsvr1.tea.texas.gov/perfreport/account/2018/download/camprate.html). You'll want that.
 - **Rename the downloaded file** to `CAMPRATE.csv` (vs the `.dat` extension).
 
 > Note that it is possible to used the Excel download format, but the size of the file is much larger: 9.1 MB vs 1.8 MB. Let's stick with the csv.
