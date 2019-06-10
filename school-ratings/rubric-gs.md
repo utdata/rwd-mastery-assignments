@@ -88,17 +88,18 @@ You can now sort that list by District to see the Austin schools and their data.
 
 The last question you need answered for your stories is the number of consecutive years that AISD schools have failed standard. The column `C_YRS_IR` is not listed in the data dictionary, unfortunately.
 
-> Review the Austin ISD schools for `C_YRS_IR` and note how long each of the schools has not met improvements.
+- Review the Austin ISD schools for `C_YRS_IR` and note how may years each of the schools has not met standards.
 
 ## Write a data drop
 
-Now that you've explored the data, it's time to write a short story based on the details. Since you are an Austin-area reporter, you can/should lead with information about AISD, but also include the information about charter schools, even that would naturally require more reporting to fill out the story.
+Now that you've explored the data, it's time to write a short story based on the details. Since you are an Austin-area reporter, you can/should lead with information about AISD, but also include the information about charter schools, even though that would naturally require more reporting to fill out the story.
 
 For the canvas assignment, you'll want to turn in:
+
 - Your Google Sheet of the data and pivot tables
 - Your Data Diary
 - Your Data Drop story.
 
-## Large files and working offline
+## Large files and working in Google Sheets
 
 There are a couple of disadvantages to working with Google Sheets vs Microsoft Excel. We are working with a file that 1.8 MB with 8,700 rows by 35 columns. That's a large file but not huge by any standard. Excel could handle this without breaking a sweat, but Google Sheets starts to struggle a little. For instance, you can't edit this file with Offline editing as it is too large.
