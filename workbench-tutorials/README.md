@@ -28,8 +28,8 @@ In the [Introduction to Data Journalism](https://app.workbenchdata.com/courses/i
 - **Grouping rows (pivot tables)**: When you make the chart at the end, make sure you give it a title. Submit the embed code for this one.
 - **Cleaning and analyzing campaign finance data**: When you make the chart at the end, make sure to give it a title. For this one, save the chart as PNG and upload the graphic to your Google Doc.
 - **Introduction to data types**: At the end of this lesson, Copy the Live CSV link into your Google Doc.
-- **Advanced Grouping**: I had trouble with this tutorial. Give it a go, but the end result was not what I expected.
-- **Long vs Wide format**: Once your chart is done in this one, give it a headline and add the embed code to the Google Doc.
+- **Grouping by dates**: For the resulting line chart, give it a headline and add the embed code to your Google Doc.
+- **Long vs Wide format**: Once your chart is done, give it a headline and add the embed code to the Google Doc.
 - **Calculating per capita crime rates in the U.S.**: Include the live CSV link for this tutorial.
 - **Comparing numbers**: Include the live CSV link for this tutorial.
 - **Joining tables to adjust teacher salaries for inflation**: Include the live CSV link for this tutorial.
