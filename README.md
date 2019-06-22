@@ -20,7 +20,8 @@ Collection of assignments to prove mastery of various skills in Reporting with D
 ### Workbench
 
 - [Billboard Top 100](billboard-hits/rubric-wb.md)
-- [Gifted students](gifted-students/rubric-wb.md)
+- [Gifted students](ed-gifted-students/rubric-wb.md)
+- Census TK
 
 ## Week 3
 
@@ -47,8 +48,8 @@ GS = Google Sheets; T = Tableau; TK = To come; R = RStudio; WB = Workbench;
 - [Census county populations](census-county-populations) (R, GS)
 - [EMS Opioid](ems-opioid) (T TK?)
 - [Football compare](football-compare) (R)
-- [Gifted students](gifted-students) (R, WB)
-- [Texas school ratings](school-ratings) (TK)
+- [Gifted students](ed-gifted-students) (R, WB)
+- [Texas school ratings](ed-school-ratings) (GS)
 
 ## Notes about R
 

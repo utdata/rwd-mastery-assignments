@@ -98,7 +98,7 @@ For the canvas assignment, you'll want to turn in:
 
 - Your Google Sheet of the data and pivot tables
 - Your Data Diary
-- Your Data Drop story.
+- Your Data Drop story
 
 ## Large files and working in Google Sheets
 
