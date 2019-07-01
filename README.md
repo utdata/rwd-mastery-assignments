@@ -21,14 +21,14 @@ Collection of assignments to prove mastery of various skills in Reporting with D
 
 - [Billboard Top 100](billboard-hits/rubric-wb.md)
 - [Gifted students](ed-gifted-students/rubric-wb.md)
-- Census TK
 
 ## Week 3
 
 ### Tableau
 
-- EMS opioid TK
-- School ratings TK
+- [Tableau tutorial](tableau-tutorials/)
+- [Gun deaths](https://drive.google.com/open?id=1sQBl9TpbBDtasvw8dOql1qQtS-iurZAivPgnOrREmrs)
+- [ACC animal intakes](austin-animal-intakes/)
 
 ## Week 4
 
@@ -42,6 +42,7 @@ Collection of assignments to prove mastery of various skills in Reporting with D
 
 GS = Google Sheets; T = Tableau; TK = To come; R = RStudio; WB = Workbench; 
 
+- [Austin Animal Intakes](austin-animal-intakes) (T)
 - [Billboard Hits](billboard-hits) (R, WB)
 - [Campaign finance](campaign-finance) (GS)
 - [Class survey results](survey-results) (R, GS TK?)
