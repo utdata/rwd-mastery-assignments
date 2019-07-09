@@ -22,9 +22,9 @@ Use Tableau sheets/charts to find answers to the following questions, and explor
 
 - Over the past three FULL years, what is the trend of the number of animals entering the facility? (Filter out the partial year.)
 - Are there seasonal trends to intakes? (Again, deal with the partial year.)
-- Do seasonal trends differ by animal type?
+- How do seasonal trends differ by animal type?
 - How do current year trends compare to the same time period in previous years?
-- Find at least three more ways to look at the data and find facts you can use from that look.
+- Find at least three more ways to look at the data and find facts you can use from that look. Include what you've found in your data diary and data drop.
 
 ### Write a data drop
 
