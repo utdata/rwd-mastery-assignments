@@ -6,7 +6,7 @@ The goal here is to find which counties in Texas have the highest population of 
 
 ## Download the data
 
-See the [main README.md](../README.md) for more information on where the data came from.
+See the [main README.md](README.md) for more information on where the data came from.
 
 - Download [the data](ACSDT5Y2017.B03002.csv?raw=true), then import it into a new Google Sheets file.
 - As you import, choose NOT to convert to numbers. The `id` column should start with on or more `0`'s. If it doesn't, it's wrong.

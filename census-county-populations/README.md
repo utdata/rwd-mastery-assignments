@@ -15,3 +15,8 @@ The [R assignment](rubric-r.md) uses QTP3 data from the 2010 SF1 file that inclu
 > Revised count: 774,773\
 > Revision date: 11-19-2013\
 > For more information, see [2010 Census Count Question Resolution](https://www.census.gov/prod/cen2010/notes/errata.pdf).
+
+## Assignments
+
+- [For Google Sheets](rubric-gs.md)
+- [For R](rubric-r.md)
