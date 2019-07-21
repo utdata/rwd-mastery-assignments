@@ -13,7 +13,7 @@ Collection of assignments to prove mastery of various skills in Reporting with D
 ### Google Sheets
 
 - Import, sorting, filtering: [Census county populations](census-county-populations/rubric-gs.md)
-- Pivot tables: [Campaign contributions by race](campaign-finance/rubric-gs.md)
+- Pivot tables: [School ratings](ed-school-ratings/rubric-gs.md)
 
 ## Week 2
 
