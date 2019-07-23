@@ -32,6 +32,9 @@ As usual, each goal should be its own tab in Workbench. **Explain the goal/purpo
 
 A [Data Drop]((https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.k2b1zvdn1534)) is a short story that outlines your findings in readable sentences. It needs to read like a new story, but in this case won't have any sources beyond the data.
 
-In this case (and this case only for this class) you can add some personal flavor in the story. Write this in Google Docs and include at least one chart chart from the Workbench. (You can upload the PNG into the Doc.)
+In this case (and this is the only case for this class) you can add some personal flavor in the story. Write this in Google Docs and include at least one chart from the Workbench. (You can upload the PNG into the Doc.)
 
-Once complete, **Share** your Workbench project with my email and submit the private link along with and your Google Doc to the Canvas assignment.
+## Turn it in
+
+- Once complete, **Share** your Workbench project with my email and submit the private link as a comment in the assignment.
+- Share your Google Doc to my email as AN EDITOR and submit the link to the Canvas assignment.
