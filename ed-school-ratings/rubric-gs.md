@@ -67,9 +67,9 @@ You now have your answer to the first question. Think about how you might write 
 
 Now that you've created a pivot table that filters all the right things, you don't need to do all that work again to answer the other questions. You can duplicate this sheet and then continue to work on it.
 
-- Duplicate the last pivot table sheet and name the new one something about Austin MSA.
+- Click the drop-down on the sheet name and use **Duplicate** to make a copy of your last pivot table sheet and name the new one "Austin MSA".
 - Look through the data dictionary to find the column that denotes the County of each school.
-- Use the County column in Filters to find just schools in our coverage area.
+- Use the County column in Filters to find just schools in our coverage area, which is the five counties in the Austin/Round Rock MSA: Bastrop, Caldwell, Hays, Travis and Williamson.
 
 Your failure percentages should update with the pivot table. You now have the answers for Question 2.
 
@@ -84,11 +84,11 @@ You now have the answers for Questions 3 & 4.
 
 ## Austin ISD schools that failed
 
-You can now sort that list by District to see the Austin schools and their data.
+You can now sort your Non-Charters list by District to see the Austin schools and their data.
 
-The last question you need answered for your stories is the number of consecutive years that AISD schools have failed standard. The column `C_YRS_IR` is not listed in the data dictionary, unfortunately.
+The last question you need answered for your Data Drop is the number of consecutive years that AISD schools have failed standard. Unfortunately, the column `C_YRS_IR` is not listed in the data dictionary, but luckily you  have a benevolent dictator of a professor to tell you it is indeed `C_YRS_IR`.
 
-- Review the Austin ISD schools for `C_YRS_IR` and note how may years each of the schools has not met standards.
+- Review `C_YRS_IR` column for Austin ISD schools and note how many years each of the schools has not met standards. (A `1` means this is their first year. Anything greater means more than one year.) You don't need to make a new sheet or pivot table for anything ... you are just noting which schools failed more than one year in a row so you can include that as a sentence in your data drop.
 
 ## Write a data drop
 
@@ -103,3 +103,7 @@ For the canvas assignment, you'll want to turn in:
 ## Large files and working in Google Sheets
 
 There are a couple of disadvantages to working with Google Sheets vs Microsoft Excel. We are working with a file that 1.8 MB with 8,700 rows by 35 columns. That's a large file but not huge by any standard. Excel could handle this without breaking a sweat, but Google Sheets starts to struggle a little. For instance, you can't edit this file with Offline editing as it is too large.
+
+## Answers
+
+A [link just for me](https://docs.google.com/spreadsheets/d/1ZEn3VjPhpVagBvH78LXOQShMiMNv7RWGv2BIUhpTvs0/edit#gid=1676717534).
