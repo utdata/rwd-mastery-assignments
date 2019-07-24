@@ -37,4 +37,9 @@ def process(table):
 - When working on the Directory data to get list of the Districts Names, you'll want to select just the ID and name columns, then use **Deduplicate** to get a joinable list that lists each district just once.
 - When you are working on the Directory data for School names, you don't need Deduplicate, but you still probably want to select only the ID and School names before you join.
 
-Be sure to check the Canvas assignment for any further instructions.
+## Turning in your work
+
+With this assignment I expect two things:
+
+- A very short "story" that outlines the answers to the questions posed above. i.e., sentences that explain your findings, written as a short news story/data drop.
+- Share your Workbench project (or projects) with my email and submit the private link as a comment in the assignment.
