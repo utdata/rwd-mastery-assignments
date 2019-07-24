@@ -15,7 +15,7 @@ The goal is to find the answer to the following questions:
 Once past the hassle of downloading the data, there are still some challenges to getting the answers above. Here are some things to consider or know:
 
 - On the downloaded files, you have to change the filename extension from `.dat` to `.csv` before they will import into Workbench.
-- Since the Student and District data have just IDs instead of names of schools or districts, you'll have to join them with the Directory data. To do that you have to take special care with those ID columns, which are supposed to start with zeros. In the District file, the `CAMPUS` column is supposed to be text with the IDs starting with one or more zeros, like `001902`. There is no Workbench function to fix that (as of yet), but since it is built on Python's Pandas package, we can use some use Python code to fix this. Create a new Python block and add the following for the District data:
+- Since the Student and District data have just IDs instead of names of schools or districts, you'll have to join them with the Directory data. To do that you have to take special care with those ID columns, which are supposed to start with zeros. In the District file, the `DISTRICT` column is supposed to be text with the IDs starting with one or more zeros, like `001902`. There is no Workbench function to fix that (as of yet), but since it is built on Python's Pandas package, we can use some use Python code to fix this. Create a new Python block and add the following for the District data:
 
 ```python
 def process(table):
