@@ -44,9 +44,9 @@ Look through the [Campus Accountability Summary Reference](https://rptsvr1.tea.t
 
 You should now have a table that shows the number of schools that got each rating.
 
-However, you need to filter out the non-traditional schools that received an Alternate rating, like juvenile detention centers and the like. Look through the data dictionary to find the column that notes if a school was "Rated under AEA Procedures".
+However, you need to filter out the non-traditional schools that received an Alternate rating, like juvenile detention centers and the like. Look through the data dictionary to find the column that notes if a school was "Rated under AEA Procedures". If the field says `Y`, then that school was rated under AEA standards.
 
-- Use Filters to NOT include schools "Rated under AEA Procedures".
+- Use Filters to exclude schools "Rated under AEA Procedures".
 
 You'll see that there are still schools that did not receive a rating for whatever reason. For this story, you want to remove those as well and retain only "Met Standard" and "Improvement Required". We are only comparing stories that are rated under the regular state standards.
 
