@@ -1,6 +1,6 @@
 # Billboard Top 100 hits
 
-Weekly Hot 100 singles chart between 8/2/1958 and 12/28/2018 pulled from [data.world](https://data.world/kcmillersean/billboard-hot-100-1958-2017). See link for more information.
+Weekly Hot 100 singles chart between 8/2/1958 and 6/22/2019 pulled from [data.world](https://data.world/kcmillersean/billboard-hot-100-1958-2017). See link for more information.
 
 ## Data dictionary
 
