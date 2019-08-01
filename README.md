@@ -28,7 +28,7 @@ Collection of assignments to prove mastery of various skills in Reporting with D
 
 - [Tableau tutorial](tableau-tutorials/)
 - [Gun deaths](https://drive.google.com/open?id=1sQBl9TpbBDtasvw8dOql1qQtS-iurZAivPgnOrREmrs)
-- [ACC animal intakes](austin-animal-intakes/)
+- [ACC animal intakes](austin-animal-center/)
 
 ## Week 4
 
