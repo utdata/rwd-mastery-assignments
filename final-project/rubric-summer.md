@@ -47,7 +47,13 @@ This one is a little more complicated to filter and download.
   - You'll see a list of violations. Choose **504: Sell/Serve/Dispense/Deliver AB to Minor**. (You can include others if you really want to study them.) Click **Submit Entry** and then **Return to Prior page**.
 - For **Licence Type**, click on the **Add/Edit** link.
   - Click on **Retailers** and you'll see a list appear to the right.
-  - Choose these permits: (List TK).
+  - Choose these permits:
+    - Mixed Beverage Permits (MB)
+    - Brewpub License (BP)
+    - Beer Retailer’s On-Premise License (BE)
+    - Wine & Beer Retailer’s On-Premise Permit (BG)
+    - Mixed Beverage Permit with Food & Beverage Certificate (RM)
+    - Private Club Permit (N)
   - Click **Submit Entry** and then **Return to Prior page**
 - On **License Status** keep the two default options (Active Current, Active Suspended) and also add Inactive.
 - On **Violation Start Date** choose Jan. 1, 2014 to present date.
