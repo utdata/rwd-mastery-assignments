@@ -45,15 +45,23 @@ This one is a little more complicated to filter and download.
   - Add **City**, choose **Other**. Type in _AUSTIN_ and click **Submit Entry**. Then choose **Return to Prior page**.
 - For **Violatons**, click on the **Add/Edit** link.
   - You'll see a list of violations. Choose **504: Sell/Serve/Dispense/Deliver AB to Minor**. (You can include others if you really want to study them.) Click **Submit Entry** and then **Return to Prior page**.
+
+> POSSIBLE FUTURE EDIT OF VIOLATIONS LIST
+> - 504: Sell/Serve/Dispense/Deliver AB To Minor
+> - 503: Permitting Minor To Possess/Consume
+> - 561: Sell/Deliver AB to Intoxicated Person
+> - 562: Intoxicated Licensee/Permittee
+> - 563: Sale To An Obviously Intoxicated Person
+
 - For **Licence Type**, click on the **Add/Edit** link.
   - Click on **Retailers** and you'll see a list appear to the right.
   - Choose these permits:
-    - Mixed Beverage Permits (MB)
-    - Brewpub License (BP)
     - Beer Retailer’s On-Premise License (BE)
     - Wine & Beer Retailer’s On-Premise Permit (BG)
-    - Mixed Beverage Permit with Food & Beverage Certificate (RM)
+    - Brewpub License (BP)
+    - Mixed Beverage Permits (MB)
     - Private Club Permit (N)
+    - Mixed Beverage Permit with Food & Beverage Certificate (RM)
   - Click **Submit Entry** and then **Return to Prior page**
 - On **License Status** keep the two default options (Active Current, Active Suspended) and also add Inactive.
 - On **Violation Start Date** choose Jan. 1, 2014 to present date.
