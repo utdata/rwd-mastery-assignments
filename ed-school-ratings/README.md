@@ -6,8 +6,9 @@ Each year the Texas Education Agency rates public schools based on test scores a
 
 This section will cover downloading and understanding the data. Below you'll find a link to the specified tool to use to find the answers.
 
-
 ## Downloading data
+
+> 2019 ratings have been released since this writing. We could continue with 2018, or adjust for 2019.
 
 - Start at the [2018 Accountability Ratings site](https://tea.texas.gov/2018accountability.aspx).
 - Look for (and use) the [Data Download](https://rptsvr1.tea.texas.gov/perfreport/account/2018/download.html) link.
