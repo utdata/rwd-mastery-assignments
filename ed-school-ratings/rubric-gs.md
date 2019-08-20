@@ -94,11 +94,15 @@ The last question you need answered for your Data Drop is the number of consecut
 
 Now that you've explored the data, it's time to write a short story based on the details. Since you are an Austin-area reporter, you can/should lead with information about AISD, but also include the information about charter schools, even though that would naturally require more reporting to fill out the story.
 
-For the canvas assignment, you'll want to turn in:
+## Your deliverables for the assignment
 
-- Your Google Sheet of the data and pivot tables
-- Your Data Diary
-- Your Data Drop story
+> The Data Drop portion of this assignment may have a different due date than the Sheets work. Check Canvas for the latest info.
+
+For this assignment your deliverables are:
+
+- Your Google Sheet of the data and pivot tables. Share it with me as an editor.
+- Your Data Diary. Google Docs if fine. Share it with me.
+- Your Data Drop story. Google Docs is required. Share with with me as an editor.
 
 ## Large files and working in Google Sheets
 
