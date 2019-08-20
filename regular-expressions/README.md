@@ -4,7 +4,7 @@ Your goal here is to clean up Declared Dangerous Dogs data.
 
 For cleaning the data, I want you to:
 
-Download my copy of the data set "[Declared Dangerous dogs](data/declared_dangerous_dogs.csv?raw=true)". This came from the City of Austin's data portal, but my copy is a little easier to work with.
+Download my copy of the data set "[Declared Dangerous dogs](data/declared__dangerous_dogs.csv?raw=true)". This came from the City of Austin's data portal, but my copy is a little easier to work with.
 
 Your goal is to have a data set with the following columns:
 
