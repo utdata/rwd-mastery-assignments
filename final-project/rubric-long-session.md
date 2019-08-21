@@ -1,21 +1,21 @@
-# Final Project (Long semester)
+# Final Project (Long Semester)
 
-This class aims to teach you how to data to find and tell stories. It crescendos in the final month of class when you use the skills you learned during the semester to develop your own data-driven story.
+This class aims to teach you how to use data to find and tell stories. It crescendos in the final month of class when you use the skills you learned during the semester to develop your own data-driven story.
 
 Our aim is to be as transparent as possible, so you will use Workbench to clean and shape your data that will used for your findings, charts and visualizations. You'll include a data diary to note your work not outlined in your Workbench workflows.
 
 The finished project will include the following:
 
-## Story Pitch and raw data (50 points)
+## Story Pitch and raw data (100 points)
 
 (Due four weeks out)
 
-A story pitch that:
+A story pitch with the following components:
 
-- Describes your data source and the story you hope to get out it.
-- Your editing partner along with one sentence about their project.
-- The raw data (links to the source or saved to Google Drive.)
-- Three possible sources, with contact information.
+- A description of your data and the story you hope to get from.
+- The actual raw data (links to the source site or saved to Google Drive or something I can get to.)
+- Three possible sources, along with their contact information.
+- List your editing partner along with one sentence about their proposed project.
 
 As journalist we want to always include a diverse range of people in our reporting. As such, I want you to consider the following as you report this story: How can I serve diverse communities and include diverse sources in my reporting and storytelling? You’ll be asked to include a statement answering this question when you turn in your final project.
 
@@ -35,11 +35,16 @@ You are expected to produce two publishable charts (which can be in the same das
 
 (During the last week)
 
-While you should be checking in with your editing partner each week, there is one day in class the last week where you will edit each other's story and charts. This means **you must have a rough draft of your story for your partner before class begins**. (You should already have chart drafts from the above assignment, but have your partner look over those as well.) You'll turn in a summary of how you helped your partner after this session.
+While you should be checking in with your editing partner each week, there is one day in class the last week where you will edit each other's story and charts. This means **you must have a rough draft of your story for your partner before class begins**. (You should already have chart drafts from the above assignment, but have your partner look over those as well.) You'll turn in a summary of how you helped your partner after this session. So, you are graded on:
 
-## The story (500 points)
+- In-class editing session attendance.
+- Your submitted summary of the ways you've been able to help your partner. Include their name and a description of their story.
+
+## Final Project due (600 points)
 
 (Final due date. Published as native Google Doc and shared with me as an editor.)
+
+### The story (500 points)
 
 An 800-word news story that is born from or heavily supported by your chosen data. Longer is fine. Don’t pad a story just to make it 800 words. Instead find more facts to include, do more reporting and add more voices. I’ll count off for anything I consider word-count padding, more than I would for a story that is short of 800 words. The story itself is worth 300 points, and the required items below add up to 200 additional points:
 
@@ -48,6 +53,6 @@ An 800-word news story that is born from or heavily supported by your chosen dat
 - A diversity statement that explains how you attempted to meet those goals, and/or how you could do better. (25 points)
 - Two tweet-length promotions to your story, one based on a character or text in the story, and one geared toward one of the graphics in your story. A good journalist is adept at promoting their own work. Write something I would WANT to click on. Use an image and hashtags and all the stuff you learned in your social media class. (You do not have to actually publish the tweet. You can write it in the story Google Doc or take a screen shot of the preview and include it.) (50 points)
 
-## Finished charts (100 points)
+### Finished charts (100 points)
 
 Include the two finished charts that support your story. Include screenshots in your story with a link to online interactive versions if there are any. If you have a Tableau workbook, either publish it on Tableau Public or export as a Packaged Workbook and share in Drive or Canvas.
