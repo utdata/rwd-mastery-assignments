@@ -110,6 +110,6 @@ For this assignment your deliverables are:
 
 There are a couple of disadvantages to working with Google Sheets vs Microsoft Excel. We are working with a file that 1.8 MB with 8,700 rows by 35 columns. That's a large file but not huge by any standard. Excel could handle this without breaking a sweat, but Google Sheets starts to struggle a little. For instance, you can't edit this file with Offline editing as it is too large.
 
-## Answers
+## Ignore this
 
-A [link just for me](https://docs.google.com/spreadsheets/d/1ZEn3VjPhpVagBvH78LXOQShMiMNv7RWGv2BIUhpTvs0/edit#gid=1676717534).
+A [link just for me](https://drive.google.com/open?id=16nDq-RtPhubwzbANOMVzMdNYGE_GIFGbzKfA9vupLbE).
