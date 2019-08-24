@@ -1,5 +1,6 @@
 # School ratings for Google Sheets
 
+> NEEDS UPDATE for 2019 data
 > See the [main README](README.md) to see how to download the data.
 
 ## Our scenario
@@ -8,19 +9,18 @@ Today you are the education reporter for an Austin-area media outlet. The Texas 
 
 You editor would like the following details in this first version:
 
-1. What percentage of charter schools received a "Needs Improvement" rating, compared to traditional public schools?
+1. What percentage of charter schools received an "F" rating, compared to traditional public schools?
 2. What are those percentages in the Austin MSA?
-3. Which charter schools in the Austin MSA received a "Needs Improvement" rating?
-4. Which traditional public schools in the Austin MSA received a "Needs Improvement" rating?
-5. Which schools in Austin ISD received a "Needs Improvement" rating?
+3. Which charter schools in the Austin MSA received a "F" rating?
+4. Which traditional public schools in the Austin MSA received a "F" rating?
+5. Which schools in Austin ISD received a "F" rating?
 
 The Austin/Round Rock MSA: Bastrop, Caldwell, Hays, Travis and Williamson counties.
 
 ## Create a project folder
 
 - As you always should, create a folder on your computer for all the material you'll use in this project.
-- Start a [Data Diary](https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.5i6qymvlqkwj) and record the links and steps you use to download your data. (You can do this in Google Docs, or as a text file on your computer. I use a [code editor](https://drive.google.com/open?id=1vxqW2B0JkRov-V2sRtBSuOHIOdP71WH-5qBFDQvuUY8) and store it on my computer, but do what is comfortable for you.)
-- You'll use this Data Diary to keep other notes to yourself about this project. You'll turn it in with your assignment.
+- Start a [Data Diary](https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.5i6qymvlqkwj) and record the links and settings you use to download your data. (You can do this in Google Docs.) You'll use this Data Diary to keep other notes to yourself about this project ... anything you might want to remember in the future about what you are thinking now. You don't have to record your every move, but when you are making a choice (like filtering data before you download it), you'll want to have a record for later. You'll turn it in with your assignment.
 
 ## Import the data into Google Sheets
 
@@ -33,35 +33,45 @@ The Austin/Round Rock MSA: Bastrop, Caldwell, Hays, Travis and Williamson counti
 
 > The part about converting text to numbers can be important. TEA data includes IDs that start with `0`, which you will lose if you don't do this. While not as important for this story, it is a prime example of this type of situation.
 
-## Comparing charter vs traditional public schools
+## Using Pivots to find our answers
+
+### Create the first pivot table: Ratings
 
 You will use a pivot table to get this answer. Note that you'll be filtering out some schools that are rated on "alternative" standards.
 
-Look through the [Campus Accountability Summary Reference](https://rptsvr1.tea.texas.gov/perfreport/account/2018/download/camprate.html) data dictionary and find the column that shows the "Overall Rating".
+Look through the [Campus Accountability Summary Reference](https://rptsvr1.tea.texas.gov/perfreport/account/2019/download/camprate.html) data dictionary and find the column that shows the "Overall Rating".
 
 - Start a new pivot table: Data > Pivot table.
 - Set up the pivot table to count the rows based on "Overall Rating".
 
+> Be patient with Sheets while using this data. It's a pretty big data set and each action you do in a pivot table takes a couple of seconds to happen.
+
 You should now have a table that shows the number of schools that got each rating.
 
-However, you need to filter out the non-traditional schools that received an Alternate rating, like juvenile detention centers and the like. Look through the data dictionary to find the column that notes if a school was "Rated under AEA Procedures". If the field says `Y`, then that school was rated under AEA standards.
+### Filter out alternative ratings
+
+We want to filter out the non-traditional schools that were judged on an alternative standard, like juvenile detention centers and the like. Look through the data dictionary to find the column that notes if a school was "Rated under AEA Procedures". If the field says `Y`, then that school was rated under alternative standards.
 
 - Use Filters to exclude schools "Rated under AEA Procedures".
 
-You'll see that there are still schools that did not receive a rating for whatever reason. For this story, you want to remove those as well and retain only "Met Standard" and "Improvement Required". We are only comparing stories that are rated under the regular state standards.
+### Filter out non-letter-grades
 
-- Use Filters to remove the other values.
+You'll see that there are still schools that were "Not Rated" for whatever reason. For this story we want to remove those from our overall percentages.
+
+- Use Filters to remove the "Not Rated" value from the ratings list.
+
+### Add charter school columns
 
 Lastly, we want to split this table to show charter schools vs other schools. Look through the data dictionary to find the column that denotes if a school is a "Charter School".
 
 - Use Columns to split the count by "Charter School".
 
-Now you have a breakdown of the charter schools vs traditional public schools.
+Now you have a breakdown of grades for charter schools vs traditional public schools (non-charters).
 
-- In the cells below the table, create formulas that give you the percentage of the total schools that failed for charters vs non-charters.
-- Name the sheet something the signifies what you've found.
+- In the open cells below the table, label and create a formula to give you the percentage of non-charter schools that got an "F", and then copy that to create the same for charter schools.
+- Name the sheet "fails charter/non-charter".
 
-You now have your answer to the first question. Think about how you might write a sentence around that fact.
+You now have your answer to the first question. Think about how you might write a sentence about that fact.
 
 ## Filtering for the Austin MSA
 
@@ -81,14 +91,6 @@ This is probably the easiest thing to find now that you have this pivot table.
 - Double-click on the value of the failed schools for Charter schools. Name the new sheet appropriately.
 
 You now have the answers for Questions 3 & 4.
-
-## Austin ISD schools that failed
-
-You can now sort your Non-Charters list by District to see the Austin schools and their data.
-
-The last question you need answered for your Data Drop is the number of consecutive years that AISD schools have failed standard. Unfortunately, the column `C_YRS_IR` is not listed in the data dictionary, but luckily you  have a benevolent dictator of a professor to tell you it is indeed `C_YRS_IR`.
-
-- Review `C_YRS_IR` column for Austin ISD schools and note how many years each of the schools has not met standards. (A `1` means this is their first year. Anything greater means more than one year.) You don't need to make a new sheet or pivot table for anything ... you are just noting which schools failed more than one year in a row so you can include that as a sentence in your data drop.
 
 ## Write a data drop
 
