@@ -16,6 +16,8 @@ We will be using the **Filter by condition** step with **Text contains regex** f
 
 Start with [this workflow](https://app.workbenchdata.com/workflows/30154) and then duplicate it. Add your name to the title.
 
+The data is a month of alcohol sales from March 2019 in Austin. You'll filter this data two different ways to isolate records from different "entertainment districts" in the city.
+
 For each quest **start a new tab** from the "Locations columns" tab.
 
 - Find establishments on The Drag. These are addresses from 1900 to 2899 GUADALUPE ST. You should end up with 12 rows.
