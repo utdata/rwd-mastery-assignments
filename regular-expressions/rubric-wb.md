@@ -31,3 +31,7 @@ For each quest **start a new tab** from the "Locations columns" tab.
 - You can use a "numeric range" to limit which digits you are looking for. The [first three paragraphs of this tutorial](https://www.regular-expressions.info/numericranges.html) explain that concept.
 - If you are done looking for specific/ranges of numbers in your pattern, then consider what the next "character" should be in your pattern if you don't want another digit.
 - Since we are using the "Text contains regex" condition, you don't have to build a pattern to match the entire field. You can just build the filter until get the matches you need, then stop.
+
+## Turning in the assignment
+
+Share your Workbench workflow with me as a collaborator and turn in the URL in the Canvas assignment.
