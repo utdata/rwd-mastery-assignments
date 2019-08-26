@@ -1,6 +1,26 @@
 # Notes
 
-## List of collections (outdated)
+## Data suggestions
+
+- rwd-r-animal-outcomes (Documents/data) is the beginning of something comparing Austin animal shelter data
+- ems-opioid (Documents/data) has Travis EMS data of cases Naloxone given. Could build what the [cdc has](https://www.cdc.gov/drugoverdose/data/statedeaths.html).
+- [Amusement Park injuries](https://www.tdi.texas.gov/commercial/lcamqtrinjury.html)
+- big-steak (Documents/data) winners from the Big Texan steak challenge. It's a mess. Only winners.
+- census-family-poverty (Documents/data) from data.census.gov
+- ed-children-at-risk (Documents/data) Data about 2019 rankings.
+- ed-moy-testing (Documents/data) Middle of year STAAR tests 2019.
+- elections (Documents/data) Travis county results from 11/1/2018.
+- marriage-licenses (Documents/data) example of state data on marriage licenses, which have age
+- Vaccinations exemptions?
+- Weather data? How hot is hot?
+
+## Socrata
+
+- Demolitions from Construction Permits. Find by zip. Basically rework my story.
+- Restaurant scores?
+- Dockless bike/scooter data?
+
+## List of assignment collections (outdated)
 
 GS = Google Sheets; T = Tableau; TK = To come; R = RStudio; WB = Workbench; 
 
@@ -13,27 +33,3 @@ GS = Google Sheets; T = Tableau; TK = To come; R = RStudio; WB = Workbench;
 - [Football compare](football-compare) (R)
 - [Gifted students](ed-gifted-students) (R, WB)
 - [Texas school ratings](ed-school-ratings) (GS)
-
-## Notes about R
-
-Some of these assignments are a companion to the book [Reporting with Data in R](https://utdata.github.io/rwd-r-reporting-with-data/). Some of those assignments might need updates as I adjust this repo for assignments in other tools.
-
-## Other possible assignments
-
-### Started or considered
-
-- rwd-r-animal-outcomes is the beginning of something comparing Austin animal shelter data
-- opioids-centex-master in StatesmanRepo has Travis EMS data we could work. Could build what the [cdc has](https://www.cdc.gov/drugoverdose/data/statedeaths.html), but it already exists onlien. 
-
-
-### Other ideas
-
-- A _quick_ campaign finance look. I started to collect stuff on Empower Texas (in projects), but I also pulled over a couple of other projects in StatesmanProjects
-- Vaccinations?
-- Weather data? How hot is hot?
-
-## Socrata
-
-- Demolitions from Construction Permits. Find by zip. Basically rework my story.
-- Restaurant scores?
-- One week of dockless bike/scooter data?
