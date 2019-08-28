@@ -4,7 +4,7 @@ See the [README](README.md) for more on downloading the data properly.
 
 ## Your quest
 
-Use Tableau to explore three+ years of animal intake data to find insights that might lead to a story. You'll make a bunch of charts (including one worth publishing), write a [data drop](https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.k2b1zvdn1534) and keep a [data diary](https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.5i6qymvlqkwj) to document your process.
+Use Tableau to explore five+ years of animal intake data to find insights that might lead to a story. You'll make a bunch of charts (including one worth publishing), write a [data drop](https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.k2b1zvdn1534) and keep a [data diary](https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.5i6qymvlqkwj) to document your process.
 
 ## Assignment details
 
@@ -20,9 +20,9 @@ Use a data diary to keep track of thoughts and record important steps as you wor
 
 Use Tableau sheets/charts to find answers to the following questions, and explore others on your own:
 
-- Over the past three FULL years, what is the trend of the number of animals entering the facility? (Filter out the partial year.)
+- Over the past five FULL years, what is the trend of the number of animals entering the facility? (Filter out the partial year.)
 - Are there seasonal trends to intakes? (Again, deal with the partial year.)
-- How do seasonal trends differ by animal type?
+- How do those seasonal trends differ by animal type?
 - How do current year trends compare to the same time period in previous years?
 - Find at least two more ways to look at the data and find facts you can use from that look. Include what you've found in your data diary and data drop.
 
