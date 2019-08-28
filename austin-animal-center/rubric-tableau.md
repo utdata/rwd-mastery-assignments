@@ -32,13 +32,15 @@ Use the facts you've learned to write a short [data drop](https://docs.google.co
 
 ### Create a publishable chart
 
-Choose one of the charts you've built in your exploration and "finish" it out by providing headlines, sourcing and all those things outlined in the [Good charts lecture](https://drive.google.com/open?id=1EMEIdUqeK94swrm0VvwPPBqzk5zSZqJmKnkckS2KFiw). Keep all your other charts in the workbook, but clean up just this one. Include the name of the sheet when you turn it in. Pay attention to the turn-in notes outlined below.
+Choose one of the charts you've built in your exploration and "finish" it out by providing headlines, sourcing and all those things outlined in the [Good charts lecture](https://drive.google.com/open?id=1EMEIdUqeK94swrm0VvwPPBqzk5zSZqJmKnkckS2KFiw). (You may find that putting your chart on a dashboard will give you more flexibility to deal with text, legends and the like.)
+
+Keep all your other charts in the workbook, but clean up just the one. Include the name of the sheet or dashboard when you turn it in.
 
 ## Stuff to turn in
 
-The items you'll turn in are:
+Turn in the following:
 
-- Your Tableau project, which you need to **export as a Packaged Workbook**. You'll find this under File > Export Packaged Workbook. The resulting file should have a .tbwx extension. Turn this into Canvas.
-- In a comment on the assignment, tell me which sheet has your "finished" chart.
-- Turn in your data drop about what you learned.
-- Turn in your data diary that documents your process.
+- Your Tableau project, which you need to **export as a Packaged Workbook**. You'll find this under File > Export Packaged Workbook. The resulting file should have a .tbwx extension. Turn this into Canvas. (50 pts)
+- Your finished chart: In a comment on the assignment, tell me which sheet has your "finished" chart. (100 pts)
+- Turn in your data diary that documents your process. (50 pts)
+- Turn in your data drop about what you learned. (100 pts)
