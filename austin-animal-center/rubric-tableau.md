@@ -24,7 +24,7 @@ Use Tableau sheets/charts to find answers to the following questions, and explor
 - Are there seasonal trends to intakes? (Again, deal with the partial year.)
 - How do seasonal trends differ by animal type?
 - How do current year trends compare to the same time period in previous years?
-- Find at least three more ways to look at the data and find facts you can use from that look. Include what you've found in your data diary and data drop.
+- Find at least two more ways to look at the data and find facts you can use from that look. Include what you've found in your data diary and data drop.
 
 ### Write a data drop
 
