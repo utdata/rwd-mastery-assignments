@@ -9,6 +9,8 @@ As part of this class you are required to submit a public information request. Y
 - Salary data is off limits, as it is the example.
 - I discourage you from filing against UT-Austin as they charge for everything. If you have a _GREAT_ idea, let's talk about it.
 
+> NOTE FOR FALL 2019: If you are unable to come up with a suitable request, then you can pursue an alternative challenge of getting property tax records as [outlined here](property-records.md).
+
 ## Part 1: Start with the draft
 
 This assignment is the draft of your Public Information Request for data that you will work on through the next month. Be sure to review [what makes a good data PIR](https://docs.google.com/document/d/1rU4VIPyFjVFWn01mhCyG-4fGHIIAaDzobJN1Yc_dA5I/edit#heading=h.1t2idypeepwn). The idea is for me to give you some feedback before you submit this the following week.
