@@ -1,0 +1,74 @@
+Type,Fatal Crash Number,Number of Fatalities,Case Status,Case Number,Location,Area,Date,Month,Day,Hour,Time,Related,charge,Killed driver pass,Speeding,Ran Red Light or Stop Sign,DL Status incident,Suspected Impairment,Restraint type,Type of road,Failure to stop and render aid,X coord,Y coord
+MOTOR VEHICLE,1,2,Closed,18-0041689,5600 Block N IH 35 NB,ID,01/04/2018,Jan,Thu,23,23:25,mv/18 Wheel,Pending,driver and passenger,n,n,suspended,driver   ,unknown,IH35,n,-97.70766,30.315355
+MOTOR VEHICLE,2,1,Closed,18-0160882,1500 W Slaughter Ln,FR,01/16/2018,Jan,Tue,17,17:14,MV/ROR,Pending,passenger,n,n,ok,none,seatbelt worn,High Use Road,n,-97.817994,30.173921
+Motorcycle,3,1,Closed,18-0241249,500 blk E Howard Ln,ED,01/24/2018,Jan,Wed,18,18:31,MV/MC,DOO,driver  ,n,no,no DL,Driver,no helmet,local,n,-97.654502,30.414118
+MOTOR VEHICLE,4,1,Closed,18-0280382,3600 s mopac expy SB,DA,01/28/2018,Jan,Sun,5,05:00,MV/ROR,DOO,Driver,n,no,ok,Driver,seatbelt worn,Other Highway,n,-97.807409,30.245719
+Pedestrian,5,1,open,18-0301394,1650 E Anderson LN EB,ID,01/30/2018,Jan,Tue,22,22:49,MV/Ped,Pending,n/a,n,no,ok,none,unknown,Other Highway,unk,-97.696643,30.337206
+Motorcycle,6,1,open,18-0400212,Red River St / Luther Ln,BA,02/09/2018,Feb,Fri,3,03:07,MV/MC,Intox. Manslaughter FTSRA,moped driver,n,no,ok,Driver,no helmet,local street,Y,-97.725208,30.293554
+Bicycle,7,1,open,18-0290542,4805 Teri Rd,FR,01/29/2018,Jan,Mon,12,12:18,MV/BI,Pending,n/a,unk,unk,unk,bicyclist,no helmet,local street,Y,-97.741091,30.195555
+Pedestrian,8,1,open,18-0371243,7300 E Riverside Dr,HE,02/06/2018,Feb,Tue,19,19:07,MV/Ped,Pending,n/a,n,n,ok,none,n/a,High Use Road,n,-97.693544,30.220213
+Pedestrian,9,1,Closed,18-0481490,Southpark Meadows Dr / W Slaughter Ln,FR,02/17/2018,Feb,Sat,20,20:40,MV/PED,DOO,n/a,n,n,ok,Ped,n/a,High Use Road,n,-97.795827,30.16928
+MOTOR VEHICLE,10,1,open,18-0541731,6500 Decker Ln,CH,02/23/2018,Feb,Fri,22,22:32,MV/MV,FTSRA,driver,unk,n,ok,none,no seatbelts,High Use Road,Y,-97.629246,30.289229
+Pedestrian,11,1,open,18-0590287,800 E Slaughter Ln,FR,02/28/2018,Feb,Wed,6,06:36,MV/Ped,Pending,n/a,n,Y,ok,none,n/a,High Use Road,n,-97.776712,30.160235
+MOTOR VEHICLE,12,1,Closed,18-0721247,W Howard Ln / Mc Callen Pass,ED,03/13/2018,Mar,Tue,16,16:31,MV/MV,Pending,driver,y,n,ok,driver,seatbelt worn,High Use Road,n,-97.660947,30.419407
+Pedestrian,13,1,open,18-0741868,20 Block IH 35 NB,GE,03/15/2018,Mar,Thu,20,20:45,MV/Ped,DOO,n/a,unk,n,unk,none,n/a,IH35,n,-97.736178,30.252381
+MOTOR VEHICLE,14,1,open,18-0840342,10300 S Mopac Expy NB,DA,03/23/2018,Mar,Sun,4,04:31,mv/fo,DOO,driver,y,n,ok,driver,no seatbelts,Other Highway,n,-97.873301,30.190415
+Motor Vehicle,15,1,Closed,18-0700966,1100 N Capital of Texas Hwy NB,BA,03/11/2018,Mar,Sun,14,14:38,MV/FO,DOO,driver,n,n,exp DL,none,unknown,Other Highway,n,-97.826068,30.315459
+MOTOR VEHICLE,16,1,Closed,18-0990064,6600 S Congress Ave,FR,04/09/2018,Apr,Mon,1,01:09,MV/FO,DOO,driver,y,n,no DL,NONE,,High Use Road,n,-97.778818,30.193076
+Pedestrian,17,1,Closed,18-1010078,8900 Block S IH 35 NB,FR,04/11/2018,Apr,Wed,1,01:15,MV/Ped,DOO,n/a,n,n,suspended,PED  ,n/a,I35,n,-97.784918,30.168472
+Motorcycle,18,1,open,18-1021241,8220 W SH 71,DA,04/12/2018,Apr,Thu,17,17:39,MV/MC,Pending,driver,,n,no DL,driver,no helmet,Other Highway,n,-97.888308,30.247001
+MOTOR VEHICLE,19,1,open,18-1060143,N IH 35 SVRD SB / E Cesar Chavez,GE,04/16/2018,Apr,Mon,2,02:24,MV/MV,Intox. Manslaughter ,passenger,,n,no dl,Driver,,local street,n,-97.736767,30.26123
+Pedestrian,20,1,Closed,18-1110273,8110 S IH 35 SVRD SB,FR,04/21/2018,Apr,Sat,5,05:37,MV/Ped,DOO,n/a,,n,ok,ped,n/a,I35,n,-97.780688,30.175964
+MOTOR VEHICLE,21,1,Closed,18-1210147,700 W Stassney Ln,DA,05/01/2018,May,Tue,2,02:50,MV/FO,DOO,driver,y,n,exp DL,driver,no seatbelts,High Use Road,n,-97.781513,30.208448
+Pedestrian,22,1,open,18-1270120,7800 N IH 35 SVRD SB,ED,05/07/2018,May,Mon,2,02:10,MV/Ped,FTSRA,n/a,unk,n,unk,PED,n/a,I35,Y,-97.698495,30.342328
+Pedestrian,23,1,open,18-1410188,5800 N IH 35 NB,ID,05/21/2018,May,Mon,4,04:23,18 Wheeler/ped,DOO,n/a,n,n,ok,Ped ,n/a,I35,N,-97.707128,30.31843
+MOTOR VEHICLE,24,1,Closed,18-1460542,7600 FM 969 RD,CH,05/26/2018,May,Sat,9,09:42,MV/MV,Pending,driver,n,n,no DL,Driver,unknown,High Use Road,n,-97.647999,30.280828
+Pedestrian,25,1,Closed,18-1581683,airport / springdale,ch,06/07/2018,June,Thu,21,21:19,MV/Ped,DOO,n/a,n,n,ok,none,n/a,High Use Road,n,-97.695509,30.26561
+MOTOR VEHICLE,26,1,Closed,18-1611120, Harris Branch Pkwy / E US 290 HWY SVRD WB,CH,06/10/2018,June,Sun,16,16:48,mv/18 Wheel,DOO,Driver,n,unk,no DL,Driver ,seatbelt worn,Other Highway,n,-97.607618,30.335029
+Motorcycle,27,1,Closed,18-1610266,7300 Decker Ln,CH,06/10/2018,June,Sun,3,03:03,MV/MC,DOO,Driver,n,n,suspended,none,no helmet,High Use Road,n,-97.623247,30.298567
+Motorcycle,28,1,Closed,18-1591949,7700 Decker,CH,06/08/2018,June,Fri,22,22:41,MV/MC,DOO,passenger,n,n,ok,none,no helmet,High Use Road,n,-97.620607,30.302631
+Motorcycle,29,1,Closed,18-1642041,Springdale / Webberville,CH,06/13/2018,June,Wed,23,23:26,MC/FO,DOO,driver,y,n,ok,driver,no helmet,High Use Road,n,-97.688539,30.276482
+MOTOR VEHICLE,30,1,Closed,18-1840847,3400 E SH 71 WB,HE,07/03/2018,July,Tue,11,11:59,18 wheeler/ROR,DOO,driver,unk,n,exp DL,Driver,unknown,Other Highway,n,-97.636618,30.201436
+Motor Vehicle,31,1,Closed,18-1901077,1389 W Cesar Chavez,BA,07/09/2018,July,Mon,15,15:43,Mv/Mv,DOO,driver,unk,n,ok,none,unknown,High Use Road,n,-97.761409,30.269339
+Pedestrian,32,1,open,18-1941661,800 Rutland DR,ED,07/13/2018,July,Fri,21,21:05,MV/ped,DWLI,n/a,n,n,DL invalid,none (pending),n/a,local street,n,-97.695997,30.36487
+Pedestrian,33,1,open,18-2040297,5700 W Parmer Lane,AD,07/23/2018,July,Mon,6,06:29,MV/Ped,FTSRA,n/a,unk,n,unk,unk,n/a,High Use Road,Y,-97.738552,30.439205
+Motorcycle,34,1,Closed,18-2041737,7612 Bluff Springs,FR,07/23/2018,July,Mon,22,22:20,MV/MC,DWLI,driver,n,n,DL suspended,driver,no helmet,local street,n,-97.769418,30.174329
+MOTOR VEHICLE,35,1,Closed,18-1960333,3500 Block N IH 35 NB,BA,07/15/2018,July,Sun,7,07:14,MV/18 Wheeler,DOO,driver,n,n,DL suspended,none,no seatbelts,I35,n,-97.719588,30.294971
+Pedestrian,36,1,open,18-2070435,1000 Block E Anderson Ln EB SVRD,ID,07/26/2018,July,Thu,8,08:40,MV/PED,Pending,n/a,n,n,ok,none,n/a,High Use Road,n,-97.693189,30.336078
+Pedestrian,37,1,Closed,18-2080287,500 blk of N IH 35 SB,GE,07/27/2018,July,Fri,21,21:17,18 Wheeler/ped,DOO,n/a,n,n,ok,none,n/a,I35,n,-97.735372,30.26398
+Pedestrian,38,1,Closed,18-2101672,Manchaca RD / Fort View RD,DA,07/29/2018,July,Sun,22,22:36,MV/PED,DOO,n/a,n,n,ok,none (pending),n/a,High Use Road,n,-97.833266,30.153267
+Pedestrian,39,1,open,18-2130392,600 W Ben White Blvd Svrd EB,DA,08/01/2018,Aug,Wed,7,07:58,MV/Ped,Manslaughter,n/a,n,n,DL suspended,Driver,n/a,Other Highway,y,-97.76918,30.226975
+Motorcycle,40,1,Closed,18-2191531,7400 Vintage Hills Dr,ID,08/07/2018,Aug,Tues,18,18:52,mc/fo,DOO,driver,n,n,DL suspended,driver,no helmet,local street,n,-97.666009,30.319215
+MOTOR VEHICLE,41,1,Closed,18-2290031,12100 N IH 35 SVRD NB,ED,08/17/2018,Aug,Fri,0,00:27,MV/ROR,DOO,driver,y,n,ok,driver,unknown,I35,n,-97.671294,30.394254
+Motor Vehicle,43,1,open,18-2330240,500 s Pleasant Valley Rd,HE,08/21/2018,Aug,Tue,6,06:35,MV/MV,DOO,driver,n,n,ok,driver,no seatbelts,local street,n,-97.714946,30.246111
+MOTOR VEHICLE,44,1,open,18-2341687,N IH 35 SVRD NB / E US 290 HWY SVRD EB,ID,08/22/2018,Aug,Wed,20,20:50,MV/MV,"Intox Manslaughter, FTSRA, Intox Assault x 2",passenger,n,y,ok,Driver,unknown,Other Highway,y,-97.70577,30.324017
+MOTOR VEHICLE,45,1,open,18-2370139,1500 E SH 71 EB,HE,08/25/2018,Aug,Sat,1,01:24,MV/ROR,manslaughter,passenger,y,n,no DL,Driver (pending),unknown,Other Highway,n,-97.678288,30.222321
+Pedestrian,46,1,Closed,18-2271613,6900 Block Guadalupe St,ID,08/16/2018,Aug,Thu,21,21:17,MV/PED,DOO,n/a,n,n,ok,Ped (pending),unknown,local street,n,-97.716408,30.334759
+MOTOR VEHICLE,47,1,open,18-2330203,10700 N IH 35 NB,ED,08/21/2018,Aug,Tue,6,06:00,MV/ROR,DOO,Driver,n,n,DL suspended,Driver (pending),,I35,n,-97.679711,30.371187
+Pedestrian,48,1,Closed,18-2450389,12200 Dessau Rd,ED,09/02/2018,Sep,Sun,7,07:44,MV/Ped,FTSRA,n/a,unk,n,unk,unk,n/a,High Use Road,y,-97.648821,30.386275
+Pedestrian,49,1,Closed,18-2451655,4200 Block S Lamar Blvd SB,DA,09/02/2018,Sep,Sun,22,22:12,mv/ped,DOO,n/a,n,n,ok,Ped,n/a,High Use Road,n,-97.794904,30.234999
+Pedestrian,50,1,open,18-2300199,720 N IH 35 SVRD SB #700,GE,08/18/2018,Aug,Sat,2,02:33,MV/Ped,FTSRA,n/a,n,n,no DL,Driver,n/a,I35,y,-97.734654,30.26685
+Pedestrian,51,1,Closed,18-2541731,1800 E 71 WB,HE,09/11/2018,Sep,Tue,22,22:29,Mv/ped,DOO,n/a,n,n,ok,none (pending),n/a,Other Highway,n,-97.67175,30.220067
+MOTOR VEHICLE,52,1,open,18-2650690,E US 290 EB to N 130 NB Ramp / E US 290 HWY EB,CH,09/22/2018,Sep,Sat,10,10:28,MV/MV,Class C,passenger,n,y,no DL,none (pending),no seatbelts,Other Highway,n,-97.6005,30.336722
+Pedestrian,53,1,Closed,18-2631843,1000 E St Johns Ave,ID,09/20/2018,Sep,Thu,23,23:36,MV/Ped,DOO,n/a,n,n,ok,Ped,n/a,local street,n,-97.699319,30.33063
+MOTOR VEHICLE,54,1,Closed,18-2760038,2500 N IH 35 SB,BA,10/03/2018,Oct,Wed,0,00:24,MV/18-Wheeler,DOO,driver,y,n,ok,none,,I35,n,-97.725174,30.286215
+Pedestrian,55,1,open,18-2830122,Elkhart St / E Cesar Chavez St,CH,10/10/2018,Oct,Wed,2,02:05,MV/Ped,pending,n/a,unk,n,unk,none (pending),n/a,local street,y,-97.722648,30.256432
+Pedestrian,56,1,Closed,18-2850362,7200 N IH 35 NB,ID,10/12/2018,Oct,Fri,6,06:32,MV/Ped,DOO,n/a,n,n,ok,ped,n/a,I35,n,-97.706183,30.325331
+Motor Vehicle,57,1,open,18-2851504,12700 Research Blvd SVRD SB,AD,10/12/2018,Oct,Fri,17,17:52,MV/MV,Class C,driver,n,n,ok,none (pending),ok,Other Highway,n,-97.764931,30.431523
+MOTOR VEHICLE,58,1,open,18-2891458,4000 E SH 71 SVRD WB,HE,10/16/2018,Oct,Tue,19,19:52,MV/MV,DWLI,driver,n,y,DL suspended,none,ok,Other Highway,n,-97.786208,30.166851
+MOTOR VEHICLE,59,1,Closed,18-2900992,1200 FM 1327 RD,FR,10/17/2018,Oct,Wed,15,15:07,MV/18-Wheeler,DOO,driver,n,n,ok,Driver,ok,Other Highway,n,-97.801692,30.11288
+Pedestrian,60,1,open,18-2920183,2400 S Lamar BLVD,DA,10/19/2018,Oct,Fri,2,02:20,MV/Ped,DWI,n/a,n,n,ok,Driver,n/a,local street,n,-97.777183,30.246924
+Pedestrian,61,1,Closed,18-3030060,8200 N IH 35 NB,ED,10/30/2018,Oct,Tue,3,03:50,18 Wheeler/ped,DOO,n/a,n,n,ok,Ped,n/a,I35,n,-97.696678,30.344394
+MOTOR VEHICLE,62,1,Closed,18-3011849,1200 Block W Oltorf St,DA,10/29/2018,Oct,Sun,22,22:46,MV/FO,DOO,driver,n,n,,driver,ok,local street,n,-97.767831,30.245127
+Pedestrian,63,1,Closed,18-3060392,Machaca Rd / Berkett Dr,DA,11/02/2018,Nov,Fri,11,11:52,MV/PED,DOO,n/a,n,n,ok,none,n/a,High Use Road,n,-97.803619,30.210518
+Pedestrian,64,1,Closed,18-3070057,11400 N Mopac Expy SB,AD,11/03/2018,Nov,Sat,0,00:33,MV/Ped,DOO,n/a,n,n,ok,Ped,n/a,Other Highway,n,-97.728448,30.402582
+Pedestrian,65,1,open,18-3080613,1100 N IH35 NB,CH,11/04/2018,Nov,Sun,1,01:40,MV/Ped,FTSRA,n/a,n,n,unk,Ped,n/a,I35,y,-97.732256,30.271853
+MOTOR VEHICLE,66,1,open,18-3131903,FM 969 Rd / Regency Dr,CH,11/09/2018,Nov,Fri,21,21:43,MV/MV,DWI,passenger,y,n,ok,driver ,ok,High Use Road,n,-97.661974,30.28507
+Bicycle,67,1,open,18-3131550,1602 E Parmer Ln,ED,11/09/2018,Nov,Fri,18,18:23,MV/Bi,DOO,n/a,n,n,expired,none (pending),ok,High Use Road,n,-97.650619,30.388337
+MOTOR VEHICLE,68,1,open,18-3260732,14500 N 183A HWY NB,AD,11/22/2018,Nov,Thu,15,15:17,MV/FO,DOO,Driver,n,n,ok,none (pending),ok,Other Highway,n,-97.804553,30.484374
+Pedestrian,69,1,open,18-3310794,7509 N IH 35 SVRD NB,ID,11/27/2018,Nov,Tue,13,13:46,18 wheeler/ped,DOO,n/a,n,n,ok,ped,n/a,I35,n,-97.70157,30.335968
+MOTOR VEHICLE,70,1,open,18-3331578,Research Blvd SVRD SB / MC Cann Dr,,11/29/2018,Nov,Thu,19,19:48,MV/FO,DOO,driver,y,n,ok,driver (pending),ok,Other Highway,n,-97.728905,30.37397
+Pedestrian,71,1,open,18-3350146,900 Springdale Rd,CH,12/01/2018,Dec,Sat,1,01:28,MV/PED,Pending,n/a,unk,n,unk,Ped (pending),n/a,local street,y,-97.698705,30.260667
+MOTOR VEHICLE,72,1,open,18-3381590,Payton Gin Rd / Research Blvd Svrd NB,ID,12/04/2018,Dec,Tue,20,20:39,MV/MV,Pending,driver,y,n,ok,Driver (Pending),ok,Other Highway,n,-97.717789,30.365314
+Motorcycle,73,1,open,18-3551763,10200 N MOPAC Expwy SB,AD,12/21/2018,Dec,Fri,20,20:21,MV/MC,Pending,n/a,n,n,ok,Driver (Pending),no helmet,Other Highway,n,-97.734239,30.390881
+MOTOR VEHICLE,74,1,open,18-3640187,S US 183 HWY SB / E BEN White EB to 183 SB Ramp,HE,12/30/2018,Dec,Sun,2,02:24,MV/ROR,Pending,passenger,n,n,ok,Driver,no seatbelts,Other Highway,n,-97.678343,30.222337
