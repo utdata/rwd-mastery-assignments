@@ -15,6 +15,7 @@ Look to Canvas for links to specific assignments.
 
 - Learning data structures with Census populations: [Sheets](census-county-populations/rubric-gs.md) | [R](census-county-populations/rubric-r.md)
 - Grouping and Pivots with School Ratings: [Sheets](ed-school-ratings/rubric-gs.md)
+- [Workbench tutorials](workbench-tutorials/)
 - Exploring the Billboard Top 100: [Workbench](billboard-hits/rubric-wb.md) | [R](billboard-hits/rubric-r.md)
 - Exploring Gifted Students data: [Workbench](ed-gifted-students/rubric-wb.md) | [R](ed-gifted-students/rubric-r.md)
 
