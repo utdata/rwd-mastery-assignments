@@ -36,6 +36,7 @@ def process(table):
 - You might want to rename the columns to something that makes sense based on the data dictionaries.
 - When working on the Directory data to get list of the Districts Names, you'll want to select just the ID and name columns, then use **Deduplicate** to get a joinable list that lists each district just once.
 - When you are working on the Directory data for School names, you don't need Deduplicate, but you still probably want to select only the ID and School names before you join.
+- When you join, us a "Join type" of **Inner**.
 
 ## Turning in your work
 
