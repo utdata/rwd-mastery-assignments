@@ -44,7 +44,7 @@ def process(table):
 
 ### Fix the IDs in the directory data
 
-For the Directory data, the `District Number` and `School Number`fields come in with a `'` at the beginning of the ID, which keeps it as text. However, you have to remove that before they will join properly. We'll do that by splitting the filed into a new column that doesn't include the apostrophe.
+For the Directory data, the `District Number` and `School Number`fields come in with a `'` at the beginning of the ID, which help it import as text. However, you have to remove that `'` to match the district ID in your gifted data. We'll do that by splitting the field into a new column that doesn't include the apostrophe.
 
 - On the District Number column, use **Split Column** on a delimiter of `'`.
   - (An alternative way would be to Split using "x from from the right" for the right number of characters.)
@@ -69,7 +69,7 @@ There are quite a few schools with 100% GT students because they cater to them. 
 
 ## Working with District data
 
-For the district data, if we join directly to the Directory data we'll get multiple matches for each district, as many as there are schools in that district. To solve this, we first have to create a "District Directory" that one row for each district.
+For the district data, if we join directly to the Directory data we'll get multiple matches for each district, as many as there are schools in that district. To solve this, we first have to create a "District Directory" where there is one row for each district.
 
 - Start a new tab from the Directory data and call it "Dist Directory" or something like that.
 - Use **Select columns** get keep just the District ID and District Name columns.
@@ -100,4 +100,4 @@ With this assignment I expect two things:
 - A very short "story" that outlines the answers to the questions posed above. i.e., sentences that explain your findings, written as a short news story/data drop. Three sentences as the most.
 - Share your Workbench project with my email and submit the private link as a comment in the assignment.
 
-[^1]: There are some campus numbers in the gifted data that have no match in the directory data. By using Inner join, we can exclude those schools. If we were doing this for publication, we would want to understand which schools those are and track them down. There are 89 such schools in the 2018 data.
+[^1]: There are some campus numbers in the gifted data that have no match in the directory data. By using Inner join, we can exclude those schools. If we were doing this for publication, we would want to understand which schools don't match and track them down. There are 89 such schools in the 2018 data.
