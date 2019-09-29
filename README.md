@@ -25,6 +25,10 @@ Look to Canvas for links to specific assignments.
 - [Dangerous Dogs assignment](regular-expressions/rubric-regex101.md)
 - [Using Regex in Workbench](regular-expressions/rubric-wb.md)
 
+## Census
+
+- [Median Family Income](census-median-income/)
+
 ## Tableau
 
 - [Animal intakes exploration](austin-animal-center/rubric-tableau.md)
