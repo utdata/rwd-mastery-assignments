@@ -6,11 +6,12 @@ Be sure to review the [README](README.md) for important information on how to do
 
 The goal is to find the answer to the following questions:
 
-- Which campuses in the state have the highest percentage of GT students? Filter to those with at least 100 students designated.
-  - More importantly, find and rank AISD schools by the highest percentage of GT students.
-- Which districts statewide have the highest percentage of students designated as Gifted and Talented (GT students)? Might you look further at any schools in local districts?
+- Which campuses in the state have the highest percentage of Gifted and Talented (GT) students? Filter to those with at least 100 students designated.
+  - Which AISD schools have the highest percentage of GT students.
+- Which districts statewide have the highest percentage of students designated as GT students?
+  - Since there is a local district near the top, look further into their schools.
 
-To do this, you'll have to "join" directory data to your gifted schools data to get the names of schools and districts.
+To find these answers, you'll have to "join" directory data to your gifted schools data to get the names of schools and districts.
 
 ## Import and clean the data sets
 
