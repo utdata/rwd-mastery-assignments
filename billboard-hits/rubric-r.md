@@ -21,12 +21,12 @@ After you have downloaded the file, comment out the `download.file` line so you 
 
 ## Rubric
 
-1. Who are the 10 artists that have spent the most weeks on the Top 100 chart.
-    - Build a table (a data frame printed to the screen) to show the performer and the number of weeks they've had a song on the chart. Arrange by most at the top. Only display the top 10 rows.
+1. Who are the 10 artists that have had the most appearances on the Top 100 chart.
+    - Build a table (a data frame printed to the screen) to show the Performer and the number of times they've had a song on the chart. Arrange by most at the top. Only display the top 10 rows.
 2. Who had the most No. 1 hits?
     - Build a data frame that filters to only No. 1 hits, then counts the distinct performer/song combinations. Count how many times the performer is on that list and arrange by those that have most. Show only the top 10 performers.
-    - Do the same as above, but first filter for the years you were in high school. [This might help](https://utdata.github.io/r-journalism-examples/dates.html#filter-by-date).
-3. Who had the most hits in the Top 10? This is similar to above, but any song in the Top 10 as opposed to No. 1. Build a data frame to show the top of that list.
+    - Do the same as above, but first filter for the most recent five years. [This might help](https://utdata.github.io/r-journalism-examples/dates.html#filter-by-date).
+3. Who had the most hits in the Top 10? This is similar to above, but include song in the Top 10 as opposed to No. 1. Build a data frame to show the top of that list.
 4. Pick an artist you like that has five or more hits:
     - Make a table that shows the songs, the number of weeks on the chart, and the peak position that song had. Arrange it by most number of weeks on the chart.
     - Make a bar chart of just the songs and number of weeks on the chart, arranged with highest on top. Make sure it has a title and clean axis names. You might need to `fct_reorder()` your data to get the bars in the right order.
