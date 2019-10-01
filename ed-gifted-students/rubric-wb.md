@@ -58,7 +58,7 @@ The easiest way to start with joins is to begin with the Campus data:
 
 - Start a new tab from the CSTUD cleaned data.
 - Use **Select columns** to keep just the ID and the gifted count and percentage columns.
-- Use **Join Tab** to join with the Directory data. This is where you have to make sure that the District ID is named the same in cleaned both data sets. For **Join Type**, choose an "Inner" join. This just keeps matching records.[^1]
+- Use **Join Tab** to join with the Directory data. This is where you have to make sure that the Campus ID is named the same in cleaned both data sets. For **Join Type**, choose an "Inner" join. This just keeps matching records.[^1]
 - Choose to include the school name and district name into you data.
 
 Now you can continue on your quest to find the schools with the highest GT percentage:
