@@ -9,6 +9,7 @@ The aim here is to clean up some Declared Dangerous Dogs data. The data comes fr
 For cleaning the data, I want you to:
 
 - Make a copy of this Google Sheet [Declared Dangerous dogs](https://docs.google.com/spreadsheets/d/1KKKAic3qtSUtiRHSFGOQN6G6q5D5MM0B4RCi3Wr8lAg/edit#gid=1210839306).
+
 You'll see the data has the following columns:
 
 - First Name
