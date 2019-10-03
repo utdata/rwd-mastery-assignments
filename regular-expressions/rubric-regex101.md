@@ -8,10 +8,7 @@ The aim here is to clean up some Declared Dangerous Dogs data. The data comes fr
 
 For cleaning the data, I want you to:
 
-- Download my copy of the data set [Declared Dangerous dogs](data/declared__dangerous_dogs.csv?raw=true). (Do a Save As if the text shows in a browser. DO NOT copy/paste into Sheets.)
-- Import the downloaded CSV into Sheets. (Again, DO NOT copy/paste.)
-- You might delete the blank rows at the bottom.
-
+- Make a copy of this Google Sheet [Declared Dangerous dogs](https://docs.google.com/spreadsheets/d/1KKKAic3qtSUtiRHSFGOQN6G6q5D5MM0B4RCi3Wr8lAg/edit#gid=1210839306).
 You'll see the data has the following columns:
 
 - First Name
