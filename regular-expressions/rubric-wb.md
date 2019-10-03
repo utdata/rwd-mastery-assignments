@@ -1,6 +1,6 @@
 # Regular Expressions in Workbench
 
-> Work in progress.
+> Extra credit assignment.
 
 There are a couple of ways to use Regular Expressions in Workbench:
 
