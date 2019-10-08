@@ -165,8 +165,8 @@ I would still include these values in a chart or map, but I would note somewhere
 
 ## Turn in your work
 
-* Share your workbook with my email.
-* Copy the link and submit it to the Canvas assignment.
+- Share your Workbench workflow with my email.
+- Copy the link and submit it to the Canvas assignment.
 
 ## For Instructor reference
 
