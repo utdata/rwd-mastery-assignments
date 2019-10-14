@@ -4,7 +4,7 @@ See the [README](README.md) for more on downloading the data properly.
 
 ## Your quest
 
-Use Tableau to explore five+ years of animal intake data to find insights that might lead to a story. You'll make a bunch of charts (including one worth publishing), write a [data drop](https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.k2b1zvdn1534) and keep a [data diary](https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.5i6qymvlqkwj) to document your process.
+Use Tableau to explore five+ years of animal intake data to find insights that might lead to a story. You'll make a bunch of charts (including one worth publishing), write a [data drop](https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.k2b1zvdn1534).
 
 Note that this assignment is not outlined step-by-step. You might have to experiment to get these answers.
 
@@ -49,6 +49,5 @@ Keep all your other charts in the workbook, but clean up just the one. Include t
 Turn in the following:
 
 - Your Tableau project, which you need to **export as a Packaged Workbook**. You'll find this under File > Export Packaged Workbook. The resulting file should have a .tbwx extension. Turn this into Canvas. (50 pts)
-- Your finished chart: In a comment on the assignment, tell me which sheet has your "finished" chart. (100 pts)
-- Turn in your data diary that documents your process. (50 pts)
+- Your finished chart: In a comment on the assignment, tell me which sheet has your "finished" chart. (50 pts)
 - Turn in your data drop about what you learned. (100 pts)
