@@ -34,24 +34,25 @@ This one is a little more complicated to filter and download.
 - For **Location**, click on the **Add/Edit** link.
   - Add **City**, choose **Other**. Type in _AUSTIN_ and click **Submit Entry**. Then choose **Return to Prior page**.
 - For **Violatons**, click on the **Add/Edit** link.
-  - You'll see a list of violations. Choose **504: Sell/Serve/Dispense/Deliver AB to Minor**. Click **Submit Entry** and then **Return to Prior page**. Repeat this process until you have all the violations listed below.
-    - 504: Sell/Serve/Dispense/Deliver AB To Minor
+  - You'll see a list of violations. Choose **504: Sell/Serve/Dispense/Deliver AB to Minor**. Click **Submit Entry**. Repeat this process until you have all the violations listed below.
     - 503: Permitting Minor To Possess/Consume
+    - 504: Sell/Serve/Dispense/Deliver AB To Minor
     - 561: Sell/Deliver AB to Intoxicated Person
     - 562: Intoxicated Licensee/Permittee
     - 563: Sale To An Obviously Intoxicated Person
+  - Once you have them all, then **Return to Prior page**
 - For **Licence Type**, click on the **Add/Edit** link.
   - Click on **Retailers** and you'll see a list appear to the right.
   - Choose these permits:
-    - Beer Retailer’s On-Premise License (BE)
-    - Wine & Beer Retailer’s On-Premise Permit (BG)
-    - Brewpub License (BP)
-    - Mixed Beverage Permits (MB)
-    - Private Club Permit (N)
-    - Mixed Beverage Permit with Food & Beverage Certificate (RM)
+    - BE - Beer Retailer's On Premise License
+    - BG - Wine&Beer Retailer's On Premise Permit
+    - BP - Brewpub License
+    - MB - Mixed Beverage Permit
+    - N - Private Club Registration Permit
+    - RM - Mixed Beverage Restaurant Permit with FB
   - Click **Submit Entry** and then **Return to Prior page**
-- On **License Status** keep the two default options (Active Current, Active Suspended) and also add Inactive.
-- On **Violation Start Date** choose Jan. 1, 2014 to present date.
+- On **License Status** add "Inactive" to the two default options (Active Current, Active Suspended).
+- On **Violation Start Date** choose 01/01/2014 to present date.
 - On **Output type** choose _Comma-delimited file_.
 - Lastly, choose **Submit Query** and it will download the file.
 
