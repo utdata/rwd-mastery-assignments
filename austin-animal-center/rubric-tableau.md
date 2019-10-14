@@ -4,19 +4,11 @@ See the [README](README.md) for more on downloading the data properly.
 
 ## Your quest
 
-Use Tableau to explore five+ years of animal intake data to find insights that might lead to a story. You'll make a bunch of charts (including one worth publishing), write a [data drop](https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.k2b1zvdn1534).
+Use Tableau to explore five+ years of animal intake data to find insights that might lead to a story. You'll make a bunch of charts (including one worth publishing), and write a [data drop](https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.k2b1zvdn1534).
 
 Note that this assignment is not outlined step-by-step. You might have to experiment to get these answers.
 
 ## Assignment details
-
-### Keep a Data Diary
-
-Use a data diary to keep track of thoughts and record important steps as you work through the project. In addition to the [usual notes](https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.5i6qymvlqkwj), also include this:
-
-- Are there columns in the data that are not in the right format?
-  - What could you learn from those columns?
-  - What steps might you take to fix them?
 
 ### Questions to explore
 
