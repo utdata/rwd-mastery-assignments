@@ -24,7 +24,7 @@ Use Tableau sheets/charts to find answers to the following questions, and explor
   - Same as above, but make it a line chart with animal type on color.
 - How do current year trends compare to the same time period in previous years?
   - Filter out the months you don't have in the most recent year. I.e., if you have just Jan-Sept of 2019, then filter out Oct-Dec.
-- Find at least two more ways to look at the data and find facts you can use from that look. Include what you've found in your data diary and data drop.
+- Find at least two more ways to look at the data and find facts you can use from that look. Include what you've found in your data drop.
 
 ### Write a data drop
 
