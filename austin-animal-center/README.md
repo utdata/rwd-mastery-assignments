@@ -9,7 +9,7 @@ Rubrics for different tools are outlined below, but they all work from the same 
 - Go to the [Primer page](https://data.austintexas.gov/Health-and-Community-Services/Austin-Animal-Center-Intakes/wter-evkm) for the ACC Intake data on Austin's data portal.
 - Review the description and the columns in the dataset to make sure you understand what is there.
 - Click on the View Data link to view the entire data set.
-- Use the Filter to get the most recent five FULL years of data, plus the remainder to the end of the most recent full month. So, if it is September 2019, you would want from January 1, 2014 through Aug. 31, 2019.
+- Use the Filter to get the most recent five FULL years of data, plus the most recent full month of the current year. So, if it is Oct. 18, 2019, you would want from January 1, 2014 through Sept. 30, 2019.
 - Download as a CSV file.
 
 Use the resulting CSV file for the lesson below base on the tool you were assigned:
