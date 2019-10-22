@@ -26,15 +26,15 @@ Use Tableau sheets/charts to find answers to the following questions, and explor
   - Filter out the months you don't have in the most recent year. I.e., if you have just Jan-Sept of 2019, then filter out Oct-Dec.
 - Find at least two more ways to look at the data and find facts you can use from that look. Include what you've found in your data drop.
 
-### Write a data drop
-
-Use the facts you've learned to write a short [data drop](https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.k2b1zvdn1534). In this case, the formulation of the sentences are more important than the flow of the story, but do write a news lede based on what you think is the most important/interesting fact you've found.
-
 ### Create a publishable chart
 
 Choose one of the charts you've built in your exploration and "finish" it out by providing headlines, sourcing and all those things outlined in the [Good charts lecture](https://drive.google.com/open?id=1EMEIdUqeK94swrm0VvwPPBqzk5zSZqJmKnkckS2KFiw). (You may find that putting your chart on a dashboard will give you more flexibility to deal with text, legends and the like.)
 
 Keep all your other charts in the workbook, but clean up just the one. Include the name of the sheet or dashboard when you turn it in.
+
+### Write a data drop
+
+Use the facts you've learned to write a short [data drop](https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.k2b1zvdn1534). In this case, the formulation of the sentences are more important than the flow of the story, but do write a news lede based on what you think is the most important/interesting fact you've found.
 
 ## Stuff to turn in
 
