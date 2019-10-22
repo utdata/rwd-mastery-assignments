@@ -21,11 +21,11 @@ Use Tableau sheets/charts to find answers to the following questions, and explor
   - Again a bar chart, but this time by month (like all the months together).
   - Again, filter out the most recent year.
   - (You might also make this chart by months of each year to make sure one year doesn't skew results.)
-- How do those seasonal trends differ by animal type?
+- How do those monthly trends differ by animal type?
   - Same as above, but make it a line chart with animal type on color.
-- How do current year trends compare to the same time period in previous years?
+- How does the months in the current year compare to the same time period in previous years?
   - Filter out the months you don't have in the most recent year. I.e., if you have just Jan-Sept of 2019, then filter out Oct-Dec.
-- Find at least two more ways to look at the data and find facts you can use from that look. Include what you've found in your data drop.
+- Find at least two more ways to look at the data and find facts you can use from that look. ~~Include what you've found in your data drop.~~
 
 ### Create a publishable chart
 
