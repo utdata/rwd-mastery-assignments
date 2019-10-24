@@ -39,22 +39,38 @@ There are a number of cleaning steps you should accomplish in Workbench.
 
 ### Cleaning
 
-- Upload and the Excel spreadsheet that you downloaded from Cometdocs.
+- Start a new Workbench workflow and start by uploading the Excel spreadsheet that you downloaded from Cometdocs.
 - We don't have a really header. You'll see the correct header row, which starts with "County" on the first column, is down at row 7 or 8. You can select that row and then use the **1 row selected** dropdown to set that as the new header row.
-- Use **Filter by value** function to delete all the rows that are not a value for a county. (You could also probably use **Filter by condition**, but I haven't tried to work it out.)
+- Use **Filter by value** function to delete all the rows that are not a value for a county.
 
 ### Reshaping
 
 If we want to compare exemptions over time (by their school year), then we must have a column called "School year" instead of a column for _each_ school year. You might recall this concept from the [reshape](http://help.workbenchdata.com/en/articles/1634563-reshape) from our Workbench tutorials.
 
-- We'll need to reshape this data from wide to long so you have County, School Year and Exemption Percentage.
+- Use the **Reshape** function to change the data _Wide to long_ using `County` as the Row variable.
+- Rename the new columns as "School year" and "Exemption rate".
 
-### Adding a real data column
+### Adding a real date column
 
-You might also create a new column that includes a real date based on the school year date to use for line charts in Tableau.
+You might also create a new column that includes a real date based on the school year date to use for line charts in Tableau. The idea is to create a new _real_ data of Aug. 1 for each year by taking the text "08/01" and combining it with the right-most four characters from the School Year.
+
+- Use the **Formula** function as an Excel function. The formula is `="08/01/"&RIGHT(B1,4)`. Call the column "Year".
+- Now convert that "Year" column to a date format.
+
+### Deal with NR
+
+Some of our Exemption rates are a value of "NR**". We can't import data like that into Tablau or it won't consider it a number. We need to replace all those values with a blank value. (I'll do some sorting in class to show you these values.)
+
+- Use the function **Search and Replace** on `Exemption rate` and search for "NR**" but leave the "Replace with" value blank.
+
+### Export the file
+
+- Click the **Export** button and click the download button under CSV.
 
 ## Assignments
 
 - [rubric-tableau](rubric-tableau.md)
 
-(There is a complete Workbench workflow [Vaccination exemption by county, 2011-2019](https://app.workbenchdata.com/workflows/36382), but you really should do your own. The cleaned data is also at `data/exemptions_county.csv`.)
+### Of note
+
+(There is a complete Workbench workflow [Vaccination exemption by county, 2011-2019](https://app.workbenchdata.com/workflows/36382), but you really should do the steps above on your own. The cleaned data is also at `data/exemptions_county.csv`.)
