@@ -11,9 +11,9 @@ Visit the the Texas Department of State Health Services' [Conscientious Exemptio
 This is just one of several datasets that can be explored concerning statewide vaccination rates.
 
 - What can we learn from this file?
-- Take a look at the columns and rows and formulate questions and pre-conceive charts or interactives. What could you build with this?
-- What shape (wide vs long) does this data have to be to get what you need?
+- Take a look at the columns and rows and formulate questions. What might you want to learn or explore?
 - What charts might we make? How might they work together in a dashboard?
+- What shape (wide vs long) does this data have to be to get what you need?
 
 ## Convert the data from PDF
 
