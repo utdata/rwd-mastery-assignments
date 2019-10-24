@@ -19,14 +19,15 @@ This is just one of several datasets that can be explored concerning statewide v
 
 Before we can do anything with this data, we have to get it out of the PDF. There are many ways to do this, but [Cometdocs](https://www.cometdocs.com) is one of my favorites, and it is free for a number of uses per month. (You can get unlimited use through a $25 [IRE membership](https://www.ire.org/membership/terms-and-rates).)
 
-- Upload the PDF to Cometdocs.
-  - You might need to use the "go to Webapp" button before uploading.
-- Once uploaded, drag the file to the "Convert" section
+- Create a free account with Cometdocs.
+- Upload the PDF.
+  - You might need to click the "go to Webapp" button before uploading.
+- Once uploaded, Click on the "Convert" tab and then drag the file into that section.
   - Choose the "to Excel" conversion.
-  - Enter your email and click **Convert**.
-- Download it once it is converted. It should take less than a minute.
+  - Click **Convert**.
+- Watch the XLS button, and once the progress bar stops, click on the Download button and follow the steps.
 
-(A copy of the processed data is in`/data/Exemptions by County 2010-2018.xlsx`, but you should do it yourself).
+(A copy of the processed data is in [data/Exemptions by County 2010-2018.xlsx](data/Exemptions by County 2010-2018.xlsx), but you should do it yourself).
 
 If you open the converted file in Excel or Sheets, you'll see it is NOT a clean data file, but at least it is in columns and rows. A clean data file would have a single header row, then have just one row for each data point, without page numbers or notes.
 
