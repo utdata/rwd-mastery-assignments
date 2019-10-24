@@ -31,12 +31,13 @@ Look to Canvas for links to specific assignments.
 
 ## Tableau
 
-- [Animal intakes exploration](austin-animal-center/rubric-tableau.md)
-- A couple more TK
+- [Travis County Gun deaths](https://docs.google.com/document/d/1sQBl9TpbBDtasvw8dOql1qQtS-iurZAivPgnOrREmrs/edit#heading=h.cq1m8rq7txl5)
+- [Animal intakes exploration](austin-animal-center/README.md)
+- [Vaccination exemptions](vaccination-exemptions/README.md)
 
 ## Mixed Beverage Project
 
-- TK
+- [Mixed Beverage/TABC Violations](alcohol-sales-tabc/README.md)
 
 ## Final Project
 
