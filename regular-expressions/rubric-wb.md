@@ -30,10 +30,14 @@ For each quest **start a new tab** from the "Locations columns" tab.
 - As you filter the addresses, you might first make a filter that contains the street name so you can reduce the number of places you are looking at. Then you can build another filter (or an "and" condition) that targets the digits at the beginning of the address field.
 - Using a token to "start at the beginning of the line" will help. (Otherwise your pattern might also match something in the middle of the line, too).
 - Remember you are matching each character in order, so consider the rule you need for the first character and then run the step to check it before moving onto the next character.
-- You can use a "numeric range" to limit which digits you are looking for. The [first three paragraphs of this tutorial](https://www.regular-expressions.info/numericranges.html) explain that concept.
-- If you are done looking for specific/ranges of numbers in your pattern, then consider what the next "character" should be in your pattern if you don't want another digit.
+- You can use a "numeric range" to limit which digits you are looking for at each position. [This tutorial](https://www.regular-expressions.info/numericranges.html) explains that concept.
+- If you are done looking for specific/ranges of numbers in your pattern, then consider what the next "character" should be in your pattern if you don't want another digit. For instance if you are looking for a three-digit number, then that is followed by a space in the address and not another digit.
 - Since we are using the "Text contains regex" condition, you don't have to build a pattern to match the entire field. You can just build the filter until get the matches you need, then stop.
 
 ## Turning in the assignment
 
 Share your Workbench workflow with me as a collaborator and turn in the URL in the Canvas assignment.
+
+## For the instructor
+
+[My answers](https://app.workbenchdata.com/workflows/30155/).
