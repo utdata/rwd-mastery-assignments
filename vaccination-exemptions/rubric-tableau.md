@@ -15,3 +15,7 @@ Filters will be important and explained next.
 - You don't want the yearly percentages to be added together on the map or bar charts, so create/use a filter by School Year that allows only a single year to be chosen at a time, and remove the "All" option. Have it apply to both the map and bar chart at the same time.
 - Create a [Dashboard filter action](https://help.tableau.com/current/pro/desktop/en-us/actions_filter.htm) that filters the line chart based on a select of either the map or the bar chart.
 - Create a Dashboard highlight action to highlight the map county based on selecting one from the bar chart.
+
+### How to turn in
+
+- Once you are done and saved, go under File to **Export packaged workbook** and submit the resulting `.twbx` file to the canvas assignment.
