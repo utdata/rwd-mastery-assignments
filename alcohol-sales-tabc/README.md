@@ -8,25 +8,28 @@ Directions on what to do with the data vary based on the assignments. Links to t
 
 ### Mixed Beverage Gross Receipts
 
-- You'll be drawing from at least five years of data from the [Mixed Beverage Gross Receipts](https://data.texas.gov/Government-and-Taxes/Mixed-Beverage-Gross-Receipts/naix-2893). Before downloading, filter the data in the following ways:
-  - Review the **Columns in this Dataset** so you get an idea of the fields available.
-  - Click the **View Data** button at the top to get to the data.
-  - Filter the **Obligation End Date** from Jan. 1 2014 to present.
-  - Filter by **Location City** for Austin.
-  - Export as a CSV.
+You'll be drawing from at least five years of data from the [Mixed Beverage Gross Receipts](https://data.texas.gov/Government-and-Taxes/Mixed-Beverage-Gross-Receipts/naix-2893). Before downloading, filter the data in the following ways:
+
+- Review the **Columns in this Dataset** so you get an idea of the fields available.
+- Click the **View Data** button at the top to get to the data.
+- Filter the **Obligation End Date** from Jan. 1 2014 to present.
+- Filter by **Location City** for Austin.
+- Export as a CSV.
 
 You should end up with just shy of 70k records. Any further filtering can be done in your analysis tool (likely Workbench or Tableau).
 
 ### Important notes about this data
 
-Each row of the data is the amount of total money brought in _each month_ by the establishment, based on the Obligation End Date, which is always the last day of the reporting month. (Ignore the Responsibility dates.)
+Each row of the data is the amount of total money brought in **_each month_** by the establishment, based on the Obligation End Date, which is always the last day of the reporting month. (Ignore the Responsibility dates.)
 
-There are four values of money: Total Receipts, Wine Receipts, Beer Receipts, Liquor Receipts and Cover Charge Receipts. The beer, wine liquor and cover charge values _should_ add up to the Total Receipts, though I've found that is not always true. I would stay away from any analysis on Cover Charges as there must be some special rules that would need investigation to understand.
+There are four values of money: Total Receipts, Wine Receipts, Beer Receipts, Liquor Receipts and Cover Charge Receipts. The beer, wine, liquor and cover charge values _should_ add up to the Total Receipts, though I've found that is not always true. I would stay away from any analysis on Cover Charges as there must be some special rules that would need investigation to understand.
 
 
 ### TABC enforcement actions
 
 This one is a little more complicated to filter and download.
+
+The site we'll use includes data violations of rules/laws handled by the Texas Alcoholic Beverage Commission. We will concentrate on some of the most-common types of violations that are dealt with in the sale of alcohol in restaurants and bars: Sales to minors, and sales to intoxicated people.
 
 - Start at the [TABC site](https://www.tabc.state.tx.us/enforcement/index.asp)
 - Click the **Public Inquiry** menu in the red bar.
