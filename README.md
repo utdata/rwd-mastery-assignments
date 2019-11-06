@@ -42,5 +42,8 @@ Look to Canvas for links to specific assignments.
 ## Final Project
 
 - [Rubric for long semester](final-project/rubric-long-session.md)
-- [Rubric for summer semester](final-project/rubric-summer.md)
+- [Rubric for summer semester](alcohol-sales-tabc/rubric-summer.md)
+
+## Extra credit
+
 - [Your next data project](final-project/rubric-next-project.md)
