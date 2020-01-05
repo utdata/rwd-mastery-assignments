@@ -102,3 +102,7 @@ With this assignment I expect two things:
 - Share your Workbench project with my email and submit the private link as a comment in the assignment.
 
 [^1]: There are some campus numbers in the gifted data that have no match in the directory data. By using Inner join, we can exclude those schools. If we were doing this for publication, we would want to understand which schools don't match and track them down. There are 89 such schools in the 2018 data.
+
+## Ignore this
+
+A [link just for me](https://app.workbenchdata.com/workflows/16608/).

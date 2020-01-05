@@ -70,7 +70,3 @@ Some of our Exemption rates are a value of "NR**". We can't import data like tha
 ## Assignments
 
 - [rubric-tableau](rubric-tableau.md)
-
-### Of note
-
-(There is a complete Workbench workflow [Vaccination exemption by county, 2011-2019](https://app.workbenchdata.com/workflows/36382), but you really should do the steps above on your own. The cleaned data is also at `data/exemptions_county.csv`.)

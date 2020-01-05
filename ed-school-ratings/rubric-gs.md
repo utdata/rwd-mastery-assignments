@@ -9,18 +9,17 @@ Today you are the education reporter for an Austin-area media outlet. The Texas 
 
 You editor would like the following details in this first version:
 
-1. What percentage of charter schools received an "F" rating, compared to traditional public schools?
-2. What are those percentages in the Austin MSA?
-3. Which charter schools in the Austin MSA received a "F" rating?
-4. Which traditional public schools in the Austin MSA received a "F" rating?
-5. Which schools in Austin ISD received a "F" rating?
+1. Statewide, what percentage of charter schools received an "F" rating, compared to traditional public schools?
+2. Which traditional public schools in the Austin/Round Rock MSA received a "F" rating?
+3. Which schools in Austin ISD received a "F" rating?
 
 The Austin/Round Rock MSA: Bastrop, Caldwell, Hays, Travis and Williamson counties.
+
+> Of note: We would look further into which local charter schools failed to meet standards, but some schools from other cities like Dallas and San Antonio are listed as Austin because their parent organization is based in Austin (or at least I presume that is why.)
 
 ## Create a project folder
 
 - As you always should, create a folder on your computer for all the material you'll use in this project.
-- Start a [Data Diary](https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.5i6qymvlqkwj) and record the links and settings you use to download your data. (You can do this in Google Docs.) You'll use this Data Diary to keep other notes to yourself about this project ... anything you might want to remember in the future about what you are thinking now. You don't have to record your every move, but when you are making a choice (like filtering data before you download it), you'll want to have a record for later. You'll turn it in with your assignment.
 
 ## Import the data into Google Sheets
 
@@ -81,29 +80,24 @@ Now that you've created a pivot table that filters all the right things, you don
 - Look through the data dictionary to find the column that denotes the County of each school.
 - Use the County column in Filters to find just schools in our coverage area, which is the five counties in the Austin/Round Rock MSA: Bastrop, Caldwell, Hays, Travis and Williamson.
 
-Your failure percentages should update with the pivot table. You now have the answers for Question 2.
-
-## List the Austin MSA schools that failed
+## List traditional public schools in Austin MSA schools that failed
 
 This is probably the easiest thing to find now that you have this pivot table.
 
 - Double-click on the value of the failed schools for Non-charters. This opens a new sheet that lists the data that made up that number. Name the sheet appropriately.
-- Double-click on the value of the failed schools for Charter schools. Name the new sheet appropriately.
+- Sort this sheet by DISTNAME so you can easily find schools by district.
 
-You now have the answers for Questions 3 & 4.
+You now have the answers for Questions 2 & 3.
 
 ## Write a data drop
 
-Now that you've explored the data, it's time to write a short story based on the details. Since you are an Austin-area reporter, you can/should lead with information about AISD, but also include the information about charter schools, even though that would naturally require more reporting to fill out the story.
+Now that you've explored the data, it's time to write a short story based on the details. Since you are an Austin-area reporter, you should lead with information about AISD, but also mention in your story how other local districts fared. Close your story with a paragraph about how charter schools fared vs traditional public schools statewide. (It's true this value would require more reporting to fill out the story, but just write the data-centric sentence for now.)
 
 ## Your deliverables for the assignment
-
-> The Data Drop portion of this assignment may have a different due date than the Sheets work. Check Canvas for the latest info.
 
 For this assignment your deliverables are:
 
 - Your Google Sheet of the data and pivot tables. Share it with me as an editor.
-- Your Data Diary. Google Docs if fine. Share it with me.
 - Your Data Drop story. Google Docs is required. Share with with me as an editor.
 
 ## Large files and working in Google Sheets
