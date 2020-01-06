@@ -31,6 +31,9 @@ Cleaned data means one header row for each data file, correct data types and cle
 
 Each "fact" you use in your story that is derived from your data should come from a Workbench (shared with me) or Tableau workbook (as a packaged workbook). You will turn in all your analysis to me as a draft so I can provide feedback, and then again with the final project.
 
+- Each fact should be formatted as a sentence like this: The Beatles have more No. 1 hits in the Billboard Hot 100 than any other artist in history with 19. Mariah Carey is second with 15 hits.
+- Each fact should then have a link to the Workbench sheet that finds it or a description and link to the chart that reveals the fact.
+
 ## Chart drafts (50 points)
 
 (One week out)
