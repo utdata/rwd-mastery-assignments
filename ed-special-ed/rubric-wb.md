@@ -158,7 +158,7 @@ This will tell us the gain or drop of actual students from year to year.
 
 ![Diff step](img/sped-cnt-diff.png)
 
-> There is currently a bug in Workbench which makes the result of this table a TEXT field, which is should not be. It will sort incorrectly as such, so we _may_ have to convert it to a number.
+> There is currently a bug in Workbench which makes the result of this formula a TEXT column instead of a Number. It will sort incorrectly as such, so we _may_ have to convert it to a number.
 
 - Add a step **Convert to numbers**.
 - Add the new "SpEd Count Diff" column.
