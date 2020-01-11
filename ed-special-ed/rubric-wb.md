@@ -156,7 +156,7 @@ This will tell us the gain or drop of actual students from year to year.
 - For the **Output column** (which is the new name), use "SpEd Count Diff".
 - **Add a note** to the step (click on the lines with a + sign) to document what you are doing in the step.
 
-![Diff step](img/sped-cnt-diff.png =200x100)
+![Diff step](img/sped-cnt-diff.png)
 
 > There is currently a bug in Workbench which makes the result of this table a TEXT field, which is should not be. It will sort incorrectly as such, so we _may_ have to convert it to a number.
 
