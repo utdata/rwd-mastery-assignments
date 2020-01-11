@@ -6,9 +6,9 @@ The steps are:
 
 - **Get your agency.** Look at the PIR Assignment spreadsheet linked from the Canvas assignment and find your name. To the left you'll see the agency name and type you are assigned. If the type is "city" then it is a local police department. If it is "county" it is a county sheriff's department. There are also university and local school district police agencies in the list.
 - **Find your agency PIR process.** You will have to do research to find out to whom you should make the request and how to contact them.
-- **Submit the request.** At this point you will turn in an assignment outlining the process of how and to whom you submitted the request. **There is a Canvas assignment with a due date.**. Use the template provided below as a guide.
-- **Keep a log.** You will need to follow up your request with phone calls, emails and such to make sure the request is understood by the agency. Keep a communication log of these efforts with date, type of action and any result.
-- **Report on your progress.** After a number of weeks, you will submit a report about the process and results of your search. Your communication log will be part this assignment. **There is a Canvas assignment with a due date**.
+- **Part 1 due date: Submit the request.** At this point you should have turned in the request to the agency. Use the template provided below as a guide. **For the Canvas assignment**, write a paragraph explaining the process that was required to submit your request, along with the contact information of the PIO or media office you will be dealing with.
+- **Keep a log.** You will need to follow up your request with phone calls, emails and such to make sure the request is understood by the agency. Keep a communication log of these efforts with date, type of action and any result. Keep all emails and other records, as you will submit those as well. Keep special attention to the 10-working-day rule that the agency has to get back to you.
+- **Part 2 due date: Report on your progress.** Submit to the Canvas assignment a short summary about the process and results of your search. Include your communication log and copies of any correspondence.
 - **Upload the raw data.** If your request is successful, I will provide steps to upload the raw data so it can be used for future classes. DON'T DO ANY PROCESSING ON THE DATA. Make a copy if you want to fiddle with it.
 - (Maybe) Clean the data. There may be a later assignment to standardize the data so we can compare all the responding agencies.
 
