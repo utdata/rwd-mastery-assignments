@@ -33,7 +33,7 @@ Once past the hassle of downloading the data, there are still some challenges to
 
 Since the Student and District data have just IDs instead of names of schools or districts, you'll have to join them with the Directory data. To do that you have to take special care with those ID columns, which are supposed to start with zeros. In the CSTUD files, the `CAMPUS` column is supposed to be text with the IDs starting with one or more zeros, like `001902001`. There is no Workbench function to fix that (as of yet), but since Workbench uses Python's [pandas](https://pandas.pydata.org/) package, we can use some use Python code to fix this.
 
-- On the CSTUD data, create a new Python block and add the following:
+- On the CSTUD data, create a new Python block and replace the code with the following:
 
 ```python
 def process(table):
@@ -43,17 +43,25 @@ def process(table):
 
 This does two things: First, it changes the numbers to a string of text, then it looks at the number of characters in that string and fills with zeros at the beginning until there are nine characters.
 
+Welcome to Python!
+
+![sped-python](img/sped-python.png)
+
 ### Rename the program columns in CSTUDs
 
 Use the **Rename columns** function and the data dictionaries links to saved to give each program column a short but recognizable name instead of their funky codes like `CPETGIFC`. Include a year designation so you can tell them apart when you join the columns together.
 
 Remember to do this in data for both CSTUD years.
 
+![sped-rename](img/sped-rename.png)
+
 ### Select just the columns we need
 
 In each CSTUD tab, use the **Select columns** function to choose just the CAMPUS, SpEd15 Count and SpEd15 Prc columns (or whatever you named those columns for Special Education.)
 
 Again, remember to do this with both CSTUD years.
+
+![sped-select.png](img/sped-select.png)
 
 ### Fix the IDs in the Directory data
 
@@ -63,7 +71,14 @@ For the Directory data, the `School Number` fields come in with a `'` at the beg
 - Add the `School Number` column.
 - Add an apostrophe `'` to the **Search for** field.
 - Leave the **Replace with** column blank.
-- Use the **Rename** function to change `School Number` column name to `CAMPUS`, as the title needs to match the other files exactly.
+
+![sped-dir-fix](img/sped-dir-fix.png)
+
+### Rename School number
+
+- Create a step with the **Rename** function to change `School number` column name to `CAMPUS`, as the column name needs to match the ID in the CSTUD tabs.
+
+![sped-dir-rename](img/sped-dir-rename.png)
 
 ### Filter the Directory data for regular schools
 
@@ -81,11 +96,13 @@ Next, we'll filter out Charter schools.
 
 > Again, do a quick **Group** to count the "District Type" column to see the names, then delete the step.
 
-- Add a new **Filter by condition** step to the Directory tab.
-- Under the IF field, choose the **District Type** column.
+- Click on the **AND** link under the IF statement you just made.
+- In the new box choose **District Type** for the **Column**.
 - Under **Select condition**, choose **Text does not contain**.
 - In the **Value** field, type in `CHARTER`.
 - Play the function and you'll notice the number of records changes.
+
+![sped-dir-filter](img/sped-dir-filter.png)
 
 Now our Directory only contains regular public schools. When we join to our CSTUD data, we will do so in a manner that filters out non-matching columns so we will only have schools that are in this list.
 
@@ -102,6 +119,8 @@ The easiest way to do the joins is to begin with the Campus data. We'll start wi
 - For the **Add columns** field, include both the Special Ed columns.
 - For **Join type**, choose **Right**.
 
+![sped-join-years](img/sped-join-years.png)
+
 > We need to stop here and talk about join types.
 
 We are using a "Right" join because we want to keep all the records for 2019, our latest year. There may be some cases (337, in fact) where a school opened after 2015. If we used a "Left" or "Inner" join, we would no longer have any of the new schools, which we might want to look at later.
@@ -113,8 +132,10 @@ To join our the Directory data to get the "School Name" and "District Name", we 
 - Start a new step and choose the **Join tab** function.
 - For the **Select tab to join** field, choose your Directory tab.
 - For the **Join on** field, choose the `CAMPUS` column.
-- For the **Add columns** field, include both the "School Name", "District Name" AND "Grade Range" columns.
+- For the **Add columns** field, include both the "School Name" and "District Name" columns.
 - For **Join type**, choose **Inner**. This just keeps matching records.[^1]
+
+![sped-join-dir](img/sped-join-dir.png)
 
 Now you can continue on the quest to find the schools with the most change in Special Education students.
 
@@ -172,7 +193,7 @@ Now you have a column that shows the gain or loss of students from 2015 to 2019.
 
 ### Percent change in students
 
-Now we'll create a column to show the percent change in students, again using the _count_ from each year. 
+Now we'll create a column to show the percent change in students, again using the _count_ from each year.
 
 - Create a new step using **Formula**.
 - For the formula type use **Excel**.
@@ -181,35 +202,98 @@ Now we'll create a column to show the percent change in students, again using th
 - For the **Output column** (which is the new name), use "SpEd Count PrcCng".
 - **Add a note** to the step (click on the lines with a + sign) to document what you are doing in the step.
 
-This formula looks complicated because we are really doing two things. In this case, we are using the percent change formula of `((New-Old)/Old) * 100)`. That gives us number with a bunch of decimal places, so we are putting it inside the ROUND formula: `ROUND(value,places)`. In our case the "value" is our percent-change formula, and the "places" is "1" to give us tenths.
+![Percent change of count](img/sped-cnt-prcchg.png)
 
-> Tell me: Which is better ... to show you the complete formula first, or to do the percent change, then adapt it for rounding?
+This formula looks complicated because we are really doing two things. In this case, we are using the percent change formula of `((New-Old)/Old) * 100)`. That gives us number with a bunch of decimal places, so we are putting it inside the ROUND formula: `ROUND(value,places)`. In our case the "value" is our percent-change formula, and the "places" is "1" to give us tenths. So, we are nesting our percent change formula inside the rounding formula.
+
+> Tell me: Which is better ... to show you the complete formula first, or to do the percent change, then adapt the formula for rounding?
+> Because of a Workbench bug, this new column might also end up as text instead of a number. We'll wait to change it because we can convert the next one at the same time as well.
 
 ### Percent Point Difference
 
-> This is where I stopped
+The last formula we'll build here is the "Percent point difference" of the share of Special Education students. This is a simple difference between the two percents for each year.
+
+- Create a new step using **Formula**.
+- For the formula type use **Excel**.
+- Check the box for **Apply to all rows**.
+- For your **Formula**, start with the newer "SpEd Prc" column for 2019 and then subtract the older one from 2015. We again should nest it inside a ROUND formula: `=ROUND(E1-C1,1)`.
+- For **Output column** name it "Sped Prc Pnt Diff".
+- **Add a note** to explain what the step/formula is for.
+
+![sped-prcpnt-diff](img/sped-prcpnt-diff.png)
+
+### Fix the datatype, if necessary
+
+If the Workbench bug is still present, the last two columns you created will be a datatype of "Text". We need to change both of them to Number.
+
+- Add a step **Convert to numbers**.
+- Add your last two new columns: "SpEd Count PrcCng" and "Sped Prc Pnt Diff".
+- Leave the format as "United States".
+- Leave the value "Any number"
+- Change the **Display as** to "Decimal: 1,500.0012".
+
+We now have comparison columns we can use to look further into the data for a story.
 
 ## Create Austin ISD
 
-### Sort for diff
+We've been doing all this work on all the schools in the state, but we really want to look at Austin ISD. We'll create a new column to filter down to just the Austin schools and then sort to show the schools with the most new Special Education students at the top.
 
-### Sort for PrcCng
+- Create a **new tab** and call is "AISD Diff".
+- Use **Start from tab** and choose your "SPED" tab.
+- Add a new function called **Filter by condition**.
+- For **Select column** add the "District name" column.
+- For **Select condition** choose "Text contains".
+- For **Value** type in "AUSTIN".
 
-### Sort for PrcPnt Diff
+You now have a table of just the Austin schools and there should be something like 115 of them. Now let's sort it by the most new students.
+
+- Create a **new step** with the function **Sort**.
+- For **By** select the "SpEd Count Diff" column.
+- Click on the **Descending** button if not already chosen.
+- You can leave the **Keep top** value blank.
+
+Now you have a list of schools with the most new Special Education students from 2015 to 2019.
+
+## On your own
+
+Create two new tabs, with each filtering to Austin but sorting for different values, one sorting by "SpEd Count PrcCng" and the other for "Sped Prc Pnt Diff".
+
+> Pro tip: You can duplicate your "AISD Diff" tab and just change the sort value. I would normally discourage duplicating a tab and instead use **Start from tab** but in this case I think it is more clear to do the filtering and sorting in each new tab.
+
+### What you have now
+
+So now you have three AISD tabs with the same columns, but they are sorted in different orders. Each tab ranks the schools by different things.
+
+If you want to know the school that gained the most Special Education students, you can look at the schools at the top of your "AISD diff" tab. If you want to know who lost the most, look at the bottom of that one (or re-sort by Ascending).
+
+If you want to know which school gained the highest share of Special Education students within their school, you have the tab that sorts data by "Sped Prc Pnt Diff".
+
+How might you find similar schools in the whole state so you can compare how Austin ISD ranks against them? Be careful not to change the values in your SPED column, as all the AISD columns use that.
 
 ## Turning in your work
 
-With this assignment I expect two things:
+For the writing part of the assignment below you might have to re-sort some of these columns, but you shouldn't have to create any more. Be careful not to make changes (beyond sorting) to a tab that is the source of another tab ... those changes carry forward and can lead to confusion and unexpected results. If you want to explore a new fact, you should start a new tab and pull data into it before any filtering, selecting or grouping.
 
-> finish this
+### Writing assignment
 
-- Make your Workbench public
-- Write sentences
+Using Google Docs, write three "data nut graphs" -- a sentence (or paragraph) in a story that succinctly describes a data fact -- as if each were just a part of a complete news story. You don't need a lede. You aren't writing a whole story ... just three sentences or paragraphs, each describing of these facts.
+
+  - Which AUSTIN ISD school served the highest percentage of Special Education students?
+  - Which AUSTIN ISD school had the greatest increase in Special Education students?
+  - How does AISD compare to the state in those areas?
+
+Lastly write a paragraph that explains the source of your data and the criteria used in your analysis. Again, write this as if it were to be inserted in a larger news story.
+
+### Questions for sources
+
+If you were writing a news story about Special Education and you had the data above, what are the three things you want to know next? For each question, who would you ask? (Just titles or classes of people, not actual contacts.)
+
+### Workbench assignment
+
+- Make your Workbench workflow public. (Click on the share button, then check the "public" box.) Copy and include the link in your story or submit the link with the assignment.
 
 [^1]: There are about 1,350 campuses in the CSTUD data that do not have a matching CAMPUS value in the Directory data. By using Inner join, we can exclude those schools. I spot checked about 10 of those non-matches and they were all special or charter schools. If we were doing this for publication, we would want to look more into that. There is a file `data/Campus_Data_Download_Drop_2016.xlsx` that I found somewhere (I don't remember where) that has some of these missing CAMPUS ID values which can be used to research the "missing" schools.
 
 ## Ignore this
-
-> updated
 
 A [link just for me](https://app.workbenchdata.com/workflows/46812/).
