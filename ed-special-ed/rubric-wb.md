@@ -220,7 +220,9 @@ The last formula we'll build here is the "Percent point difference" of the share
 - For **Output column** name it "Sped Prc Pnt Diff".
 - **Add a note** to explain what the step/formula is for.
 
-![sped-prcpnt-diff](img/sped-prcpnt-diff.png)
+<img src="img/sped-prcpnt-diff.png" width=200>
+
+> `![sped-prcpnt-diff](img/sped-prcpnt-diff.png)` is the other.
 
 ### Fix the datatype, if necessary
 
@@ -278,9 +280,9 @@ For the writing part of the assignment below you might have to re-sort some of t
 
 Using Google Docs, write three "data nut graphs" -- a sentence (or paragraph) in a story that succinctly describes a data fact -- as if each were just a part of a complete news story. You don't need a lede. You aren't writing a whole story ... just three sentences or paragraphs, each describing of these facts.
 
-  - Which AUSTIN ISD school served the highest percentage of Special Education students?
-  - Which AUSTIN ISD school had the greatest increase in Special Education students?
-  - How does AISD compare to the state in those areas?
+- Which AUSTIN ISD school served the highest percentage of Special Education students?
+- Which AUSTIN ISD school had the greatest increase in Special Education students?
+- How does AISD compare to the state in those areas?
 
 Lastly write a paragraph that explains the source of your data and the criteria used in your analysis. Again, write this as if it were to be inserted in a larger news story.
 
