@@ -45,7 +45,7 @@ This does two things: First, it changes the numbers to a string of text, then it
 
 Welcome to Python!
 
-![sped-python](img/sped-python.png)
+<img src="img/sped-python.png" width="300">
 
 ### Rename the program columns in CSTUDs
 
@@ -53,7 +53,7 @@ Use the **Rename columns** function and the data dictionaries links to saved to 
 
 Remember to do this in data for both CSTUD years.
 
-![sped-rename](img/sped-rename.png)
+<img src="img/sped-rename.png" width="300">
 
 ### Select just the columns we need
 
@@ -61,7 +61,7 @@ In each CSTUD tab, use the **Select columns** function to choose just the CAMPUS
 
 Again, remember to do this with both CSTUD years.
 
-![sped-select.png](img/sped-select.png)
+<img src="img/sped-select.png" width="300">
 
 ### Fix the IDs in the Directory data
 
@@ -72,13 +72,13 @@ For the Directory data, the `School Number` fields come in with a `'` at the beg
 - Add an apostrophe `'` to the **Search for** field.
 - Leave the **Replace with** column blank.
 
-![sped-dir-fix](img/sped-dir-fix.png)
+<img src="img/sped-dir-fix.png" width="300">
 
 ### Rename School number
 
 - Create a step with the **Rename** function to change `School number` column name to `CAMPUS`, as the column name needs to match the ID in the CSTUD tabs.
 
-![sped-dir-rename](img/sped-dir-rename.png)
+<img src="img/sped-dir-rename.png" width="300">
 
 ### Filter the Directory data for regular schools
 
@@ -102,7 +102,7 @@ Next, we'll filter out Charter schools.
 - In the **Value** field, type in `CHARTER`.
 - Play the function and you'll notice the number of records changes.
 
-![sped-dir-filter](img/sped-dir-filter.png)
+<img src="img/sped-dir-filter.png" width="300">
 
 Now our Directory only contains regular public schools. When we join to our CSTUD data, we will do so in a manner that filters out non-matching columns so we will only have schools that are in this list.
 
@@ -119,7 +119,7 @@ The easiest way to do the joins is to begin with the Campus data. We'll start wi
 - For the **Add columns** field, include both the Special Ed columns.
 - For **Join type**, choose **Right**.
 
-![sped-join-years](img/sped-join-years.png)
+<img src="img/sped-join-years.png" width="300">
 
 > We need to stop here and talk about join types.
 
@@ -135,7 +135,7 @@ To join our the Directory data to get the "School Name" and "District Name", we 
 - For the **Add columns** field, include both the "School Name" and "District Name" columns.
 - For **Join type**, choose **Inner**. This just keeps matching records.[^1]
 
-![sped-join-dir](img/sped-join-dir.png)
+<img src="img/sped-join-dir.png" width="300">
 
 Now you can continue on the quest to find the schools with the most change in Special Education students.
 
@@ -177,7 +177,7 @@ This will tell us the gain or drop of actual students from year to year.
 - For the **Output column** (which is the new name), use "SpEd Count Diff".
 - **Add a note** to the step (click on the lines with a + sign) to document what you are doing in the step.
 
-![Diff step](img/sped-cnt-diff.png)
+<img src="img/sped-cnt-diff.png" width="300">
 
 > There is currently a bug in Workbench which makes the result of this formula a TEXT column instead of a Number. It will sort incorrectly as such, so we _may_ have to convert it to a number.
 
@@ -187,7 +187,7 @@ This will tell us the gain or drop of actual students from year to year.
 - Leave the value "Any number"
 - Change the **Display as** to "Integer: 1,500".
 
-![Diff to number](img/diff-to-number.png)
+<img src="img/diff-to-number.png" width="300">
 
 Now you have a column that shows the gain or loss of students from 2015 to 2019.
 
@@ -202,7 +202,7 @@ Now we'll create a column to show the percent change in students, again using th
 - For the **Output column** (which is the new name), use "SpEd Count PrcCng".
 - **Add a note** to the step (click on the lines with a + sign) to document what you are doing in the step.
 
-![Percent change of count](img/sped-cnt-prcchg.png)
+<img src="img/sped-cnt-prcchg.png" width="300">
 
 This formula looks complicated because we are really doing two things. In this case, we are using the percent change formula of `((New-Old)/Old) * 100)`. That gives us number with a bunch of decimal places, so we are putting it inside the ROUND formula: `ROUND(value,places)`. In our case the "value" is our percent-change formula, and the "places" is "1" to give us tenths. So, we are nesting our percent change formula inside the rounding formula.
 
@@ -220,9 +220,7 @@ The last formula we'll build here is the "Percent point difference" of the share
 - For **Output column** name it "Sped Prc Pnt Diff".
 - **Add a note** to explain what the step/formula is for.
 
-<img src="img/sped-prcpnt-diff.png" width=200>
-
-> `![sped-prcpnt-diff](img/sped-prcpnt-diff.png)` is the other.
+<img src="img/sped-prcpnt-diff.png" width="300">
 
 ### Fix the datatype, if necessary
 
