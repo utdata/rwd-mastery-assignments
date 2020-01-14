@@ -1,8 +1,8 @@
 # Special Education student change
 
-The goal of this assignment is to use TEA data to find out which schools in Austin ISD (and the state in general) have the most growth in Special Education students in the past five years.
+The goal of this assignment is to use TEA data to find out which schools in Austin ISD have the most growth in Special Education students in the past five years.
 
-In 2016, the Houston Chronicle published a multi-part series called [Denied](https://www.houstonchronicle.com/denied/1/) that outlined how a TEA policy started in 2004 to audit schools with more than 8.5% Special Education students had a chilling effect on those services. From their story:
+In 2016, the Houston Chronicle published a multi-part series called [Denied](https://www.houstonchronicle.com/denied/1/) that outlined how a TEA policy started in 2004 would force an audit of schools with more than 8.5% of their students their Special Education students. From their story:
 
 > Over a decade ago, the officials arbitrarily decided what percentage of students should get special education services — 8.5 percent — and since then they have forced school districts to comply by strictly auditing those serving too many kids.
 
@@ -43,7 +43,7 @@ If you inspect either file you'll see there are no school or district names in t
 
 ## Campus info from Accountability ratings
 
-The TAPR campus information data does not include any fileds to indicate if a school is disciplinary school, part of the juvenile justice department or otherwise an alternative schools. To get data with the campus and district names that do have these values, we have go to TEA's [Accountability ratings](https://rptsvr1.tea.texas.gov/perfreport/account/2019/download.html) and download the Campus-level Accountability Summary for "Campus Flag Characteristics" along with the campus and district names.
+The TAPR campus information data does not include any fileds to indicate if a school is disciplinary school, part of the juvenile justice department or otherwise an alternative school. To get data with the campus and district names that do have these values, we have go to TEA's [Accountability ratings](https://rptsvr1.tea.texas.gov/perfreport/account/2019/download.html) and download the Campus-level Accountability Summary for "Campus Flag Characteristics" along with the campus and district names.
 
 - Go to the TEA's [Accountability ratings](https://tea.texas.gov/Student_Testing_and_Accountability/Accountability/State_Accountability/Performance_Reporting/2019_Accountability_Rating_System) site.
 - Go down to **Data download** and click on the link.

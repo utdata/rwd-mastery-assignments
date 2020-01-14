@@ -8,21 +8,21 @@ The goal is to find the answer to the following questions:
 
 - Which Austin ISD campus serves the highest percentage of Special Education students in 2019?
 - Which AISD campuses had the greatest percentage point change in Special Education students from 2015 to 2019?
-- How many AISD schools are above and below the previous special education "audit threshold" of 8.5%?
+- How many AISD schools are at or above the previous special education "audit threshold" of 8.5%?
 
-We will filter our list to focus on "Regular Instructional" schools, and not alternative, disciplinary or schools part of the justice system.
+We will filter our list to focus on "Regular Instructional" schools and not alternative, disciplinary or schools part of the justice system.
 
 ## Overview of our task
 
 - To get these answers, we need to build a data set that has one row for each school, but includes the CAMPUS id and Special Ed columns from both CSTUD files, along with the School Name and District Name for each school. We do this using a "join" on the CAMPUS id, which is in all three files. This allows us to extend the width of our table to include matching columns from each of the files.
 - Before we do the join function, we will filter our list of campuses to include only "Regular Instructional" schools.
-- Then we will have to create some new columns that does math to show the change in values from the older year, 2015, and the newer year, 2016, and how they compare to the old "audit threshold" reported on by the Chronicle.
+- Then we will have to create some new columns that does math to show the change in values from the older year, 2015, and the newer year, 2019, and how they compare to the old "audit threshold" reported on by the Chronicle.
 
 > It might make sense to draw this out on a whiteboard.
 
 ## Import and clean the data sets
 
-Once past the hassle of downloading the data, there are still some challenges to getting the answers above. Follow these steps for each:
+Once past the hassle of downloading the data, there are still some challenges to getting the answers above. Follow these steps for each of the three datasets you downloaded:
 
 - Make sure you've changed the filename extension of your downloaded files from `.dat` to `.csv` or they will not import into Workbench.
 - Import each data file into its **own** Workbench tab.
@@ -31,9 +31,9 @@ Once past the hassle of downloading the data, there are still some challenges to
 
 ### Fix the CAMPUS IDs
 
-All three data fies have a CAMPUS column this `CAMPUS` column that is supposed to be text with the IDs starting with one or more zeros, like `001902001`. There is no Workbench function to fix that (as of yet), but since Workbench uses Python's [pandas](https://pandas.pydata.org/) package, we can use some use Python code to fix this.
+All three data files have a `CAMPUS` column that is supposed to be text with the IDs starting with one or more zeros, like `001902001`. There is no Workbench function to fix that (as of yet), but since Workbench uses Python's [pandas](https://pandas.pydata.org/) package, we can use some use Python code to fix this.
 
-- After importing the data, create a new Python block and replace the code with the following:
+- After importing the data, create a new **Python** step and replace the code with the following:
 
 ```python
 def process(table):
@@ -57,7 +57,7 @@ Remember to do the Python step for all three imported files.
 
 ### Rename the program columns in CSTUDs
 
-Use the **Rename columns** function and the data dictionaries ([2015](https://rptsvr1.tea.texas.gov/perfreport/tapr/2015/xplore/cstud.html) | [2019](https://rptsvr1.tea.texas.gov/perfreport/tapr/2019/xplore/cstud.html)) to give each program column a short but recognizable name instead of their funky codes like `CPETSPEC`. Include a year designation so you can tell them apart when you join the columns together, like `SpEd15 Cnt` for the count and `SpEd15 Prc` for the percent.
+Use the **Rename columns** function and the data dictionaries ([2015](https://rptsvr1.tea.texas.gov/perfreport/tapr/2015/xplore/cstud.html) | [2019](https://rptsvr1.tea.texas.gov/perfreport/tapr/2019/xplore/cstud.html)) to give each program column a short but recognizable name instead of their funky codes like `CPETSPEC`. Include a year designation so you can tell them apart when you join the columns together, like `SpEd15 Count` for the count and `SpEd15 Prc` for the percent.
 
 Remember to do this in both CSTUD files.
 
@@ -71,7 +71,7 @@ Again, remember to do this with both CSTUD years.
 
 <img src="img/sped-select.png" width="300">
 
-## Filter up CRATE data
+## Filter the CRATE data
 
 For this list of schools, we want to use some of the columns to filter out charter, alternative, disciplinary and justice department schools. We use the [Campus Accountability Summary Reference](https://rptsvr1.tea.texas.gov/perfreport/account/2019/download/camprate.html) to figure out which columns to filter on.
 
@@ -135,7 +135,7 @@ Now you can continue on the quest to find the schools with the most change in Sp
 
 ## How to describe the change
 
-Now that we have all our data in the same tab, we can us some formulas to compare the different years.
+Now that we have all our data in the same tab, we can use some formulas to compare the different years.
 
 We have two values for each year to work with: The "Count" of Special Ed students, which is the actual number of students in the program; and the "Percentage" of students in Special Education out of the total in that school.
 
@@ -143,15 +143,27 @@ We want to describe the change from one year to the next. You might review the N
 
 ### Describing the count changes
 
-- We can show the **simple difference** (or actual change) in the *count* of students from one year to the next: `New Count - Old Count = Simple Difference`. Example: `10 - 4 = 6`, or "The school served six more Special Education students in 2019 (10 students) compared to 2015 (4 students)".
-- We can show the **percent change** in the *count* of students from one year to the next: `((New Count - Old Count) / Old Count) * 100 = Percent change`. Example: `((10 - 4) \ 4) * 100 = 150%`. "The number of Special Education students served increased 150% from 4 in 2015 to 10 in 2019."
+- We can show the **simple difference** (or actual change) in the *count* of students from one year to the next. We'll assume there were `4` students in 2015 and `10` in 2019:
+  - `New Count - Old Count = Simple Difference`.
+  - Example: `10 - 4 = 6`.
+  - "The school served six more Special Education students in 2019 (10 students) compared to 2015 (four students)".
+- We can show the **percent change** in the *count* of students from one year to the next:
+  - `((New Count - Old Count) / Old Count) * 100 = Percent change`.
+  - Example: `((10 - 4) \ 4) * 100 = 150%`.
+  - "The number of Special Education students served increased 150% from four in 2015 to 10 in 2019."
 
 ### Describing percentage differences
 
 We also have the *percentage* of Special Education students in the school, which could be important. This is the share of students that are in the program compared to the total students in the school.
 
-- We can find the **percentage point difference** from one year to the next using simple change again, but we have the describe the change as the difference in percentage points: `New Percentage - Old Percentage = Percentage Point Difference`. Example: `15.5% - 11% = 4.5 percentage points` (NOT 4.5%). "The percentage of students in Special Education grew by 4.5 percentage points, from 11% in 2015 to 15.5% in 2019."
-- We can find the **percent change of share** from one year to the next, but we have to again be very specific about what we are talking about ... the growth (or decrease) of the _share_ of students in Special Education. `((New Percentage - Old Percentage) / Old Percentage * 100) = Change in share of students`. Example: `((15.5 - 11) / 11) * 100 = 40.9`. "The share of students in Special Education grew 40% from 11% of students in 2015 to 15.5% of students in 2019." This describes the growth in the share of students in the program, not the number of Special Education students overall.
+- We can find the **percentage point difference** from one year to the next using simple change again, but we have the describe the change as the difference in percentage points:
+  - `New Percentage - Old Percentage = Percentage Point Difference`.
+  - Example: `15.5% - 11% = 4.5 percentage points` (NOT 4.5%).
+  - "The percentage of students in Special Education grew by 4.5 percentage points, from 11% in 2015 to 15.5% in 2019."
+- We can find the **percent change of share** from one year to the next, but we have to again be very specific about what we are talking about ... the growth (or decrease) of the _share_ of students in Special Education.
+  - `((New Percentage - Old Percentage) / Old Percentage * 100) = Change in share of students`.
+  - Example: `((15.5 - 11) / 11) * 100 = 40.9`.
+  - "The share of students in Special Education grew 40% from 11% of students in 2015 to 15.5% of students in 2019." This describes the growth in the share of students in the program, not the number of Special Education students overall.
 
 Describing a percentage point difference to readers can be difficult, but perhaps less confusing than describing the percent change of a percent.
 
@@ -159,7 +171,7 @@ Great, so which do we use? That depends on what you want to describe, of course.
 
 ## Create our calculations
 
-We'll make new columns to help us describe several of those outlined above.
+We'll make new columns to help us describe several of those changes outlined above.
 
 ### Difference in count
 
@@ -178,12 +190,13 @@ This will tell us the gain or drop of actual students from year to year.
 - Add a step **Convert to numbers**.
 - Add the new "SpEd Count Diff" column.
 - Leave the format as "United States".
-- Leave the value "Any number"
+- Leave the value "Any number".
 - Change the **Display as** to "Integer: 1,500".
+- **Add a note** to explain the step.
 
 <img src="img/diff-to-number.png" width="300">
 
-Now you have a column that shows the gain or loss of students from 2015 to 2019.
+Look to the far right of your table and you should now have a column that shows the gain or loss of students from 2015 to 2019. Check it against the count values in your table to make sure it is right.
 
 ### Percent change in students
 
@@ -198,9 +211,9 @@ Now we'll create a column to show the percent change in students, again using th
 
 <img src="img/sped-cnt-prcchg.png" width="300">
 
-This formula looks complicated because we are really doing two things. In this case, we are using the percent change formula of `((New-Old)/Old) * 100)`. That gives us number with a bunch of decimal places, so we are putting it inside the ROUND formula: `ROUND(value,places)`. In our case the "value" is our percent-change formula, and the "places" is "1" to give us tenths. So, we are nesting our percent change formula inside the rounding formula.
+This formula looks complicated because we are really doing two things. In this case, we are using the percent change formula of `((New-Old)/Old) * 100)`. That gives us a number with a bunch of decimal places, so we are putting it inside the ROUND formula: `ROUND(value,places)`. In our case the "value" is our percent-change formula, and the "places" is "1" to give us tenths. So, we are nesting our percent change formula inside the rounding formula.
 
-> Tell me: Which is better ... to show you the complete formula first, or to do the percent change, then adapt the formula for rounding?
+> Give me feedback: Which is better ... to show you the complete formula first, or to do the percent change, then adapt the formula for rounding?
 
 Because of a Workbench bug, this new column might also end up as text instead of a number. We'll wait to change it because we can convert the next one at the same time as well.
 
@@ -211,7 +224,7 @@ Now we'll build the "Percent point difference" of the share of Special Education
 - Create a new step using **Formula**.
 - For the formula type use **Excel**.
 - Check the box for **Apply to all rows**.
-- For your **Formula**, start with the newer "SpEd Prc" column for 2019 and then subtract the older one from 2015. We again should nest it inside a ROUND formula: `=ROUND(E1-C1,1)`.
+- For your **Formula**, start with the newer `SpEd Prc` column for 2019 and then subtract the older one from 2015. We again should nest it inside a ROUND formula: `=ROUND(E1-C1,1)`.
 - For **Output column** name it "Sped Prc Pnt Diff".
 - **Add a note** to explain what the step/formula is for.
 
@@ -222,38 +235,38 @@ Now we'll build the "Percent point difference" of the share of Special Education
 If the Workbench bug is still present, the last two columns you created will be a datatype of "Text". We need to change both of them to Number.
 
 - Add a step **Convert to numbers**.
-- Add your last two new columns: "SpEd Count PrcCng" and "Sped Prc Pnt Diff".
+- Add your last two new columns: `SpEd Count PrcCng` and `SpEd Prc Pnt Diff`.
 - Leave the format as "United States".
-- Leave the value "Any number"
+- Leave the value "Any number".
 - Change the **Display as** to "Decimal: 1,500.0012".
 
-We now have comparison columns we can use to look further into the data for a story.
+We now have a value to describe how the percentage has changed from year to year.
 
 ### Create audit threshold columns
 
 Our story is a follow-up to the Chronicle's reporting in the Denied series, which found that the TEA would audit schools that had a special education rate of 8.5% or higher. Let's figure out which schools fell into that category in each year.
 
-The formula we are using is Excel's [IF](https://support.office.com/en-us/article/if-function-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2) formula. It works like this: `=IF(test, true, false)`. In the "test" field, we'll compare the percentage to 8.5%. If it is true, we will insert the text "Y" and if it is false, we'll say "N".
+The formula we are using is [Excel's IF](https://support.office.com/en-us/article/if-function-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2) formula. It works like this: `=IF(test, true, false)`. In the "test" field, we'll compare the percentage to 8.5%. If it is true, we will insert the text "Y" and if it is false, we'll say "N".
 
 - On the SPED data, start a new step using **Formula** for **Excel**.
 - Look closely to see which of your column letter is the "SpEd15 Prc" column, which is the one we want. Mine is the `C` column.
-- For the Formula, use `=IF(C1>=8.5,"Y","N")`. Use your columns instead of C if it is different.
+- For the Formula, use `=IF(C1>=8.5,"Y","N")`. Use your column instead of `C` if it is different.
 - For the Output column, name it "SpEd15 Thrshld".
 
 <img src="img/sped-15-threshold.png" width="300">
 
 **On your own**: Repeat these steps for your 2019 data.
 
-We'll use these new fields later.
+Now we have a column that tells us if the school is at or above the audit threshold. We'll use these new fields later.
 
 ## Create Austin ISD comparisons
 
-We've been doing all this work on all the schools in the state, but we really want to look at Austin ISD. We'll create a new column to filter down to just the Austin schools and then sort to show the schools with the most new Special Education students at the top.
+We've been doing all this work on all the schools in the state, but we really want to look at Austin ISD. We'll create a new tab to filter down to just the Austin schools and then sort to show the schools with the most new Special Education students at the top.
 
 - Create a **new tab** and call it "AISD Diff".
 - Use **Start from tab** and choose your "SPED" tab.
 - Add a new function called **Filter by condition**.
-- For **Select column** add the "District name" column.
+- For **Select column** add the `DISTNAME` column.
 - For **Select condition** choose "Text contains".
 - For **Value** type in "AUSTIN ISD".
 
@@ -301,7 +314,7 @@ The last question we need to answer is how many schools were above or below the 
 
 What you've done here is the same as a pivot table in Google Sheets. The operation is counting the number of rows (or schools in our case) for each value combination.
 
-<img src="img/sped-thresh-result.png" width="400">
+<img src="img/sped-thresh-result.png" width="500">
 
 So there are 16 schools that were below the threshold both in 2015 and 2019, but 31 schools climbed above that threshold in 2019.
 
@@ -315,15 +328,13 @@ If you want to know which school gained the highest share of Special Education s
 
 You can describe how many schools climbed above the TEA's 2004 threshold, and how many were over it in 2015 before the law changed.
 
-> Food for thought: How might you find similar schools in the whole state so you can compare how Austin ISD ranks against them? Be careful not to change the values in your SPED column, as all the AISD columns use that.
-
 ## Turning in your work
 
-For the writing part of the assignment below you might have to re-sort some of these columns, but you shouldn't have to create any more. Be careful not to make changes (beyond sorting) to a tab that is the source of another tab ... those changes carry forward and can lead to confusion and unexpected results. If for some reason you want to explore a new fact, you should start a new tab and pull data into it before any filtering, selecting or grouping.
+For the writing part of the assignment below you should already have everything you need. If you want to explore the data more, be careful not to make changes (beyond sorting) to a tab that is the source of another tab ... those changes carry forward and can lead to confusion and unexpected results. If for some reason you want to explore a new fact, you should start a new tab and pull data into it before any filtering, selecting or grouping.
 
 ### Writing assignment
 
-Using Google Docs, write three "data nut graphs" -- a sentence (or paragraph) in a story that succinctly describes a data fact -- as if each were just a part of a complete news story. You don't need a lede. You aren't writing a whole story ... just three sentences or paragraphs, each describing of these facts.
+Using Google Docs, write three "data nut graphs" -- a sentence (or paragraph) in a story that succinctly describes a data fact -- as if each were just a part of a complete news story. You don't need a lede. You aren't writing a whole story ... just three sentences or paragraphs, each describing of these facts. **Be sure to share the doc to me as an editor.**
 
 - Which AUSTIN ISD school served the highest percentage of Special Education students?
 - Which AUSTIN ISD school had the greatest increase in Special Education students?
@@ -333,11 +344,15 @@ Lastly write a paragraph that explains the source of your data and the criteria 
 
 ### Questions for sources
 
-If you were writing a news story about Special Education and you had the data above, what are the **three** things you want to know next? For each question, who would you ask? (Just titles or classes of people, not actual contacts.)
+If you were writing a news story about Special Education and you had the data above, what are the **three things you want to know next**? For each question, who would you ask? (Just titles or classes of people, not actual contacts.)
 
 ### Workbench assignment
 
-- Make your Workbench workflow public. (Click on the share button, then check the "public" box.) Copy and include the link in your story or submit the link with the assignment.
+Make your Workbench workflow public. (Click on the share button, then check the "public" box.) Copy and include the link in your story or submit the link with the assignment.
+
+## Extending this assignment
+
+Food for thought: How might you find similar schools in the whole state so you can compare how Austin ISD ranks against them? This is not required for the assignment, but if you try it be careful not to change the values in your SPED column, as all the AISD columns use that.
 
 ## Ignore this
 
