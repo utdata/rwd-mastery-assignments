@@ -4,22 +4,28 @@ Collection of assignments to prove mastery of various skills in Reporting with D
 
 Look to Canvas for links to specific assignments.
 
-## Assignments outline (based on Fall 2019)
+## Assignments outline (based on Spring 2020)
 
 ## Public information requests
 
-- [PIR assignment](pir/README.md)
-- [PIR property tax alternative](pir/property-records.md)
+- [PIR draft](pir/pir/pir-draft.md)
+- [PIR drug offenses](pir/pir-drug-offenses.md)
 
-## Data tools and assignments
+## Google sheets
 
 - Learning data structures with Census populations: [Sheets](census-county-populations/rubric-gs.md) | [R](census-county-populations/rubric-r.md)
 - Grouping and Pivots with School Ratings: [Sheets](ed-school-ratings/rubric-gs.md)
 - [Workbench tutorials](workbench-tutorials/)
+
+## Workbench
+
 - Exploring the Billboard Top 100: [Workbench](billboard-hits/rubric-wb.md) | [R](billboard-hits/rubric-r.md)
+- Special Education students: [Workbench](ed-special-ed/rubric-wb.md)
 - Exploring Gifted Students data: [Workbench](ed-gifted-students/rubric-wb.md) | [R](ed-gifted-students/rubric-r.md)
 
 ## Regular Expressions
+
+> Not included in Spring 2020
 
 - [Data cleaning with Regular Expressions](https://docs.google.com/document/d/1DvAM4lnGJLefo9skD8GgM-_9S1BEhpjJfV86yhJavI0/edit#heading=h.crhjhbmzwwfl)
 - [Dangerous Dogs assignment](regular-expressions/rubric-regex101.md)
@@ -47,3 +53,4 @@ Look to Canvas for links to specific assignments.
 ## Extra credit
 
 - [Your next data project](final-project/rubric-next-project.md)
+- [ArcGIS mapping](https://learn.arcgis.com/en/projects/get-started-with-arcgis-online/)
