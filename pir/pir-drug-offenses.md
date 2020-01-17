@@ -21,11 +21,12 @@ Specifically, I'm seeking a spreadsheet, database or delimited text file(s) — 
 The fields I'm seeking for each arrest are:
 
 - Incident number or other record ID
+- Name of suspect
 - Date of arrest
 - Charge given
 - Race/Ethnicity of suspect if known
 - Gender if known
-- Location of arrest
+- Address of arrest
 - City of arrest
 - Zip Code of arrest
 - Latitude if known
@@ -33,7 +34,7 @@ The fields I'm seeking for each arrest are:
 
 In addition, please include any lookup tables and record layouts that may be needed to interpret the data. For example, if charges are listed with codes linked to a separate table, I'm happy to join the records myself, rather than require your staff to do so.
 
-If certain fields are unavailable, please sent what you have and let me know what was excluded.
+If certain fields are unavailable, please send what you have and let me know what was excluded.
 
 I want to stress that I'm not seeking any records that are prohibited from release either by statute or previous rulings by the Texas Attorney General or the courts. Please let me know if you feel any records in the fields I've requested are confidential, and I'll consider amending my request.
 
