@@ -6,8 +6,8 @@ Be sure to see the [README](README.md) for the source information and data dicti
 
 To pull in the Billboard data into Workbench use the **Add from URL** option and use this link:
 
-```
-https://github.com/utdata/rwd-mastery-assignments/blob/master/billboard-hits/billboard.csv?raw=true
+```txt
+https://github.com/utdata/rwd-mastery-assignments/blob/master/billboard-hits/hot-100.csv?raw=true
 ```
 
 It will take several seconds to load.
@@ -19,14 +19,14 @@ As usual, each goal should be its own tab in Workbench. **Explain the goal/purpo
 1. Review the data, clean up dates and save as a tab.
 2. Who are the 10 artists with the most appearances on the Hot 100 chart?
     - Start a new sheet from the cleaned data. (Do this for each new quest.)
-    - **Group** all the records by Performer, **count**ing the rows, which is each time they've had a song on the chart. Keep the top 10 performers.
-    - Build a column chart from the data that shows the top performers and the number of times they've had a song on the chart. Make sure the chart has a title and good axis names.
+    - **Group** all the records by artist, **count**ing the rows, which is each time they've had a song on the chart. Keep the top 10 artists.
+    - Build a column chart from the data that shows the top artists and the number of times they've had a song on the chart. Make sure the chart has a title and good axis names.
 3. Who had the most No. 1 hit songs? Here's the logic (and some hints):
     - First you need to filter for only the No. 1 songs.
-    - Next you need to make that a unique list that only shows each song/performer combination once. Here are two different ways you could do this. I stress, use only ONE of these methods:
-        - You could **group** by both Performer and Song. This will give you a row for each Performer/Song combination along with the numbers of times it was No. 1. The key there is you have a unique list of performer/song.
-        - Or, you could use **Select columns** to keep just Performer and Song, and then use **Deduplicate** to make the list unique, showing each Performer/Song combination only once.
-    - Now you can group by Performer to count how my times they show up on the unique list of No. 1 songs.
+    - Next you need to make that a unique list that only shows each artist/title combination once. Here are two different ways you could do this. I stress, use only ONE of these methods:
+        - You could **group** by both `artist` and `title`. This will give you a row for each artist/title combination along with the numbers of times it was No. 1. The key there is you have a unique list of artist/title.
+        - Or, you could use **Select columns** to keep just `artist` and `title`, and then use **Deduplicate** to make the list unique, showing each artist/title combination only once.
+    - Now you can group by `artist` to count how my times they show up on the unique list of No. 1 songs.
 4. Who had the most No. 1 hits in the most recent five years?
     - Very similar to Goal 3 but with a data filter applied upstream in the workflow. You can copy the tab you made before and then add a filter upstream to get just the most recent hits. Include only those with more than one No. 1 hit.
 5. Who had the most top 10 hits overall?
@@ -44,3 +44,7 @@ In this case (and this is the only case for this class) you can add some persona
 
 - Once complete, **Share** your Workbench project with my email and submit the private link as a comment in the assignment.
 - **Share** your Google Doc to my email as AN EDITOR and submit the link to the Canvas assignment.
+
+## Ignore this
+
+> Add a link to my private workbench workflow.

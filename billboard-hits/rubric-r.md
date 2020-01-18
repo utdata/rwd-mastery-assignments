@@ -1,5 +1,7 @@
 # Billboard rubric for R
 
+> This will need to be updated for new data schema.
+
 Be sure to see the [README](README.md) for the source information and data dictionary.
 
 ## Downloading the data
