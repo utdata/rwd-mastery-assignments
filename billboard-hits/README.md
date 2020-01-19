@@ -1,6 +1,6 @@
 # Billboard Hot 100
 
-In this repo has a copy of Billboard's Weekly [Hot 100](https://www.billboard.com/charts/hot-100) singles chart between 8/2/1958 and 6/22/2019 as compiled by SEAN MILLER and posted on [data.world](https://data.world/kcmillersean/billboard-hot-100-1958-2017). See link for more information.
+In this repo has a copy of Billboard's Weekly [Hot 100](https://www.billboard.com/charts/hot-100) singles chart between 8/2/1958 and 12/28/2019 as compiled by SEAN MILLER and posted on [data.world](https://data.world/kcmillersean/billboard-hot-100-1958-2017). See link for more information.
 
 ## Data dictionary
 
@@ -21,4 +21,3 @@ This dataset contains every weekly Hot 100 singles chart from Billboard.com. **E
 
 - [Rubric for Workbench](rubric-wb.md)
 - [Rubric for R](rubric-r.md)
-
