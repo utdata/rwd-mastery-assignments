@@ -2,7 +2,7 @@
 
 The goal of this assignment is to use TEA data to find out which schools in Austin ISD have the most growth in Special Education students in the past five years.
 
-In 2016, the Houston Chronicle published a multi-part series called [Denied](https://www.houstonchronicle.com/denied/1/) that outlined how a TEA policy started in 2004 would force an audit of schools with more than 8.5% of their students their Special Education students. From their story:
+In 2016, the Houston Chronicle published a multi-part series called [Denied](https://www.houstonchronicle.com/denied/1/) that outlined how a TEA policy started in 2004 would force an audit of schools with more than 8.5% of their students in Special Education. From their story:
 
 > Over a decade ago, the officials arbitrarily decided what percentage of students should get special education services — 8.5 percent — and since then they have forced school districts to comply by strictly auditing those serving too many kids.
 
@@ -33,9 +33,7 @@ To download this file, go to Texas Academic Performance Reports, or [TAPR](https
 
 > It's important that you change the file extension to `.csv` as Workbench doesn't understand `.dat`. If you can't see the file extensions, then adjust your computer. [Mac](https://support.apple.com/guide/mac-help/show-or-hide-filename-extensions-on-mac-mchlp2304/mac) | [Windows](https://www.thewindowsclub.com/show-file-extensions-in-windows).
 
-While at the the download link page there is a link called "Student Information Reference". Click on that link and save the URL as you will need it later to understand the columns for each download.
-
-> I've saved the links: [2015](https://rptsvr1.tea.texas.gov/perfreport/tapr/2015/xplore/cstud.html) | [2019](https://rptsvr1.tea.texas.gov/perfreport/tapr/2019/xplore/cstud.html).
+While at the the download link page there is a link called "Student Information Reference". Click on that link and save the URL as you will need it later to understand the columns for each download. (The links are : [2015](https://rptsvr1.tea.texas.gov/perfreport/tapr/2015/xplore/cstud.html) | [2019](https://rptsvr1.tea.texas.gov/perfreport/tapr/2019/xplore/cstud.html).)
 
 Repeat the steps above but for  **2018-2019 TAPR**. Rename the file `CSTUD_19.csv` and save the Student Information Reference link.
 
