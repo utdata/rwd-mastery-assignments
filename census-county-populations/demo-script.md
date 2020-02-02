@@ -16,5 +16,6 @@ Show the following in class.
 - Convert to %.
 - Create column for Female. Show $ anchor issues and rework Males.
 - Repeat for Male LE, Female LE.
+- Sort for highest percent Female FF.
 
 [Finished demo](https://docs.google.com/spreadsheets/d/1F43uAfrFKh2OuQX_v-6GK-xyxDtLSJ8aKCzmAG4fBdY/edit#gid=189345694)
