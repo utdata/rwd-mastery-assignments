@@ -19,6 +19,6 @@ See the [main README.md](README.md) for more information on where the data came 
 - After you've added all the columns, sort by each percentage and find the county with the highest population for that race. Write those answers out on another sheet with the Race, County Name and Percentage. HINT: Cmd-option-V will paste values only.
 - Share the sheet with me or make it viewable by all and submit the URL in canvas.
 
-## My answers
+## Ignore this
 
-[Answers here](https://docs.google.com/spreadsheets/d/1unx5IuH-fNcZZcHEPD_5w74XFixtmSPXmOPuEGOdrwM/edit#gid=245873501) They are private :-).
+[A link for me](https://docs.google.com/spreadsheets/d/1unx5IuH-fNcZZcHEPD_5w74XFixtmSPXmOPuEGOdrwM/edit#gid=245873501).
