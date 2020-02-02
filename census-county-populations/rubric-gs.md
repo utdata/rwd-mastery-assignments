@@ -1,6 +1,6 @@
 # Rubric for Google Sheets assignment
 
-The goal here is to find which counties in Texas have the highest population of a specific race. To do this, you'll need to create columns that find the percentage of the total for each race, then or sort by those columns to find the answers and write them out on a new sheet.
+The goal here is to find which counties in Texas have the highest population of a specific race. To do this, you'll need to create columns that find the percentage of the total for each race, then sort by those columns to find the answers and write them out on a new sheet.
 
 > Note that the margin of error columns have been removed from this dataset for clarity and ease. This is not normal practice, and we'll talk about it in class.
 
@@ -9,7 +9,7 @@ The goal here is to find which counties in Texas have the highest population of 
 See the [main README.md](README.md) for more information on where the data came from.
 
 - Download [the data](ACSDT5Y2017.B03002.csv?raw=true), then import it into a new Google Sheets file.
-- As you import, choose NOT to convert to numbers. The `id` column should start with on or more `0`'s. If it doesn't, it's wrong.
+- As you import, choose NOT to convert to numbers. The `id` column should start with one or more `0`'s. If it doesn't, it's wrong.
 
 ## Create percentage columns
 

@@ -1,7 +1,7 @@
 # School ratings for Google Sheets
 
-> NEEDS UPDATE for 2019 data
 > See the [main README](README.md) to see how to download the data.
+> This assignment provides experiences with pivot tables.
 
 ## Our scenario
 
@@ -38,14 +38,16 @@ The Austin/Round Rock MSA: Bastrop, Caldwell, Hays, Travis and Williamson counti
 
 You will use a pivot table to get this answer. Note that you'll be filtering out some schools that are rated on "alternative" standards.
 
-Look through the [Campus Accountability Summary Reference](https://rptsvr1.tea.texas.gov/perfreport/account/2019/download/camprate.html) data dictionary and find the column that shows the "Overall Rating".
+Look through the [Campus Accountability Summary Reference](https://rptsvr1.tea.texas.gov/perfreport/account/2019/download/camprate.html) data dictionary and find the column name that represents this year's "Overall Rating".
 
 - Start a new pivot table: Data > Pivot table.
-- Set up the pivot table to count the rows based on "Overall Rating".
+- Set up the pivot table to "count" the rows based on the "Overall Rating" value.
 
 > Be patient with Sheets while using this data. It's a pretty big data set and each action you do in a pivot table takes a couple of seconds to happen.
 
 You should now have a table that shows the number of schools that got each rating.
+
+![First pivot](img/pivot01-01.png)
 
 ### Filter out alternative ratings
 
@@ -57,7 +59,7 @@ We want to filter out the non-traditional schools that were judged on an alterna
 
 You'll see that there are still schools that were "Not Rated" for whatever reason. For this story we want to remove those from our overall percentages.
 
-- Use Filters to remove the "Not Rated" value from the ratings list.
+- Use Filters to remove all the non-letter grades from the ratings list.
 
 ### Add charter school columns
 
@@ -67,8 +69,10 @@ Lastly, we want to split this table to show charter schools vs other schools. Lo
 
 Now you have a breakdown of grades for charter schools vs traditional public schools (non-charters).
 
+![Charter school](img/pivot01-02-charter.png)
+
 - In the open cells below the table, label and create a formula to give you the percentage of non-charter schools that got an "F", and then copy that to create the same for charter schools.
-- Name the sheet "fails charter/non-charter".
+- Name the sheet "Fails charter".
 
 You now have your answer to the first question. Think about how you might write a sentence about that fact.
 
@@ -84,26 +88,28 @@ Now that you've created a pivot table that filters all the right things, you don
 
 This is probably the easiest thing to find now that you have this pivot table.
 
-- Double-click on the value of the failed schools for Non-charters. This opens a new sheet that lists the data that made up that number. Name the sheet appropriately.
+- Double-click on the value of the failed schools for Non-charters. This opens a new sheet that lists the data that made up that number.
+- Name the sheet Austin MSA Fails.
 - Sort this sheet by DISTNAME so you can easily find schools by district.
 
-You now have the answers for Questions 2 & 3.
-
-## Write a data drop
-
-Now that you've explored the data, it's time to write a short story based on the details. Since you are an Austin-area reporter, you should lead with information about AISD, but also mention in your story how other local districts fared. Close your story with a paragraph about how charter schools fared vs traditional public schools statewide. (It's true this value would require more reporting to fill out the story, but just write the data-centric sentence for now.)
+You now have the answers for Questions 2 & 3. Also note the `C_YRS_IR` column in the data. Look up what the value is in the data dictionary and include it in your story outlined below.
 
 ## Your deliverables for the assignment
 
-For this assignment your deliverables are:
+There are two parts to this assignment. The first is just the data:
 
-- Your Google Sheet of the data and pivot tables. Share it with me as an editor.
-- Your Data Drop story. Google Docs is required. Share with with me as an editor.
+- Share your Google Sheet with me **as an editor** AND submit the link in Canvas for the assignment _GS02.1 pivot tables: School Ratings_.
+
+## Write a data drop
+
+The second part of the assignment (after we've talked about writing with numbers) you will write a short story (three to five paragraphs) based on the details you've found. Since you acting as an Austin-area reporter, you should lead with information about AISD, but also mention in your story how other local districts fared. Close your story with a paragraph about how charter schools fared vs traditional public schools statewide. (It's true that writing about the difference for real would require more reporting to provide context, but just write the data-centric sentence for now that describes the fact.)
+
+- Using Google Docs is required. Share your story with with me **as an editor** and submit the link in Canvas to the assignment _GS01.2 Data Drop: School Ratings_.
 
 ## Large files and working in Google Sheets
 
-There are a couple of disadvantages to working with Google Sheets vs Microsoft Excel. We are working with a file that 1.8 MB with 8,700 rows by 35 columns. That's a large file but not huge by any standard. Excel could handle this without breaking a sweat, but Google Sheets starts to struggle a little. For instance, you can't edit this file with Offline editing as it is too large.
+There are a couple of disadvantages to working with Google Sheets vs Microsoft Excel. We are working with a file that 1.3 MB with 8,800 rows by 24 columns. That's a large file but not huge by any standard. Excel could handle this without breaking a sweat, but Google Sheets starts to struggle a little. For instance, you can't edit this file with Offline editing as it is too large.
 
 ## Ignore this
 
-A [link just for me](https://drive.google.com/open?id=16nDq-RtPhubwzbANOMVzMdNYGE_GIFGbzKfA9vupLbE).
+A [link just for me](https://docs.google.com/spreadsheets/d/1x6ZHnNHmqPkGhOtHMvVOR1Ns1Vt4OCHU_hrgOzfwSnY/edit#gid=456844573).

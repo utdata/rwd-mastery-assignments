@@ -1,6 +1,6 @@
 # Rubric for Google Sheets assignment
 
-> I will need to find an example to demo pivot tables in class, hopefully with different data.
+> This assignment provides experiences with pivot tables.
 
 This [data set](tec-totals-cleaned.xlsx) contains the data concerning the total election campaign funds raised by Texas Legislature members from 2009 to 2014 as provided by the Texas Ethics Commission. The data set was annotated by a reporter with the race/ethnicity of each candidate. The totals for candidates running for statewide office were removed as their totals would skew simple statistics.
 
