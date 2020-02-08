@@ -23,8 +23,8 @@ Create a new pivot table on a new sheet for each answer. In some cases you are a
 3. What was the average amount raised each election cycle by Democrats and Republicans?
     - Pivot by Party and average the Amount.
     - Make a bar chart of the results.
-4. What was the average amount raised overall by race?
-    - Pivot by Race/Ethnicity and average the Amount.
+4. What was the total amount raised overall by race?
+    - Pivot by Race/Ethnicity and SUM the Amount.
     - Add an additional Value to show the "percentage of the grand total".
     - Make a pie chart from the percentage results.
 5. What is their percentage of candidates by race?
