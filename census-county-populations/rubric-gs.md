@@ -1,6 +1,6 @@
 # Rubric for Google Sheets assignment
 
-The goal here is to find which counties in Texas have the highest population of a specific race. To do this, you'll need to create columns that find the percentage of the total for each race, then sort by those columns to find the answers and write them out on a new sheet.
+The goal here is to find which counties in Texas have the highest proportion of a specific race. To do this, you'll need to create columns that find the percentage of the total for each race, then sort by those columns to find the answers and write them out on a new sheet.
 
 > Note that the margin of error columns have been removed from this dataset for clarity and ease. This is not normal practice, and we'll talk about it in class.
 
