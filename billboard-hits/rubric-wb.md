@@ -14,7 +14,7 @@ It will take several seconds to load.
 
 ## Your quests
 
-As usual, each goal should be its own tab in Workbench. **Explain the goal/purpose of EACH STEP using the annotations within the tool.**
+Each goal listed below should have its own tab in Workbench. **Explain the goal/purpose of EACH STEP using the annotations within the tool.**
 
 1. Review the data, clean up dates and save as a tab.
 2. Who are the 10 artists with the most appearances on the Hot 100 chart?
