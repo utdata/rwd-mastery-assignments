@@ -55,9 +55,9 @@ Remember to do the Python step for all three imported files.
 
 ## Cleaning up CSTUD files
 
-### Rename the program columns in CSTUDs
+### Rename the SPED columns in CSTUDs
 
-Use the **Rename columns** function and the data dictionaries ([2015](https://rptsvr1.tea.texas.gov/perfreport/tapr/2015/xplore/cstud.html) | [2019](https://rptsvr1.tea.texas.gov/perfreport/tapr/2019/xplore/cstud.html)) to give each program column a short but recognizable name instead of their funky codes like `CPETSPEC`. Include a year designation so you can tell them apart when you join the columns together, like `SpEd15 Count` for the count and `SpEd15 Prc` for the percent.
+Use the **Rename columns** function and the data dictionaries ([2015](https://rptsvr1.tea.texas.gov/perfreport/tapr/2015/xplore/cstud.html) | [2019](https://rptsvr1.tea.texas.gov/perfreport/tapr/2019/xplore/cstud.html)) to give the two Special Education program columns a short but recognizable name instead of their funky codes like `CPETSPEC`. Include a year designation so you can tell them apart when you join the columns together, like `SpEd15 Count` for the count and `SpEd15 Prc` for the percent.
 
 Remember to do this in both CSTUD files.
 
