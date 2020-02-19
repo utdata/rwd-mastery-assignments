@@ -98,7 +98,7 @@ The result should be 7,750 rows, and the step should look like this:
 
 <img src="img/sped-rate-filter.png" width="300">
 
-Now our CRATE data only contains regular public schools. When we join to our CSTUD data, we will do so in a manner that filters out non-matching columns so we will only have schools that are in this list.
+Now our CRATE data only contains regular public schools. When we join to our CSTUD data, we will do so in a manner that filters out non-matching rows so we will only have schools that are in this list.
 
 ## Joining all the files together
 
@@ -316,7 +316,7 @@ What you've done here is the same as a pivot table in Google Sheets. The operati
 
 <img src="img/sped-thresh-result.png" width="500">
 
-So there are 16 schools that were below the threshold both in 2015 and 2019, but 31 schools climbed above that threshold in 2019.
+So there are 14 schools that were below the threshold both in 2015 and 2019, but 31 schools climbed above that threshold in 2019.
 
 ## What you have now
 
