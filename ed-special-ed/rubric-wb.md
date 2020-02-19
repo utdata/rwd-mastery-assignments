@@ -94,7 +94,7 @@ Go ahead and play the step and you'll see the number of records drop from 8,838 
 - Play the step.
 - Lastly, add a note at the top of the step.
 
-The result should be 7,750 rows, and the step should look like this:
+The result should be 7,570 rows, and the step should look like this:
 
 <img src="img/sped-rate-filter.png" width="300">
 
