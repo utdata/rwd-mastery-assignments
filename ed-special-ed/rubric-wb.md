@@ -337,8 +337,9 @@ For the writing part of the assignment below you should already have everything 
 Using Google Docs, write three "data nut graphs" -- a sentence (or paragraph) in a story that succinctly describes a data fact -- as if each were just a part of a complete news story. You don't need a lede. You aren't writing a whole story ... just three sentences or paragraphs, each describing of these facts. **Be sure to share the doc to me as an editor.**
 
 - Which AUSTIN ISD school served the highest percentage of Special Education students in 2018-19?
-- Which AUSTIN ISD school had the greatest increase in Special Education students from 2014-15 to 2018-19?
-- Describe how AUSTIN ISD schools changed compared to the 2004 audit threshold. (You can assume that threshold has already been explained earlier in the story.)
+- Which AUSTIN ISD school had the greatest percentage point change in Special Education students from 2014-15 to 2018-19?
+  - (Another answer I will accept if described correctly is: Which AISD school had the greatest increase in special education students from 2015 to 2019?)
+- Describe how the number of AUSTIN ISD schools that met the 2014 "8.5%" threshold changed between 2014 and 2019. (You can assume that threshold has already been explained earlier in the story.)
 
 Lastly write a paragraph that explains the **source** of your data and the **criteria** (like filtering) used in your analysis. Again, write this as if it were to be inserted in a larger news story.
 
