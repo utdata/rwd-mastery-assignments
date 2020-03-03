@@ -16,23 +16,25 @@ It will take several seconds to load.
 
 Each goal listed below should have its own tab in Workbench. **Explain the goal/purpose of EACH STEP using the annotations within the tool.**
 
-1. Review the data, clean up dates and save as a tab.
+1. Review the data, clean up dates and save as a tab called "Import".
 2. Who are the 10 artists with the most appearances on the Hot 100 chart?
-    - Start a new sheet from the cleaned data. (Do this for each new quest.)
+    - Start a new sheet using "Start from Tab" from your "Import" tab. (Do this for each new quest.)
     - **Group** all the records by Performer, **count**ing the rows, which is each time they've had a song on the chart. Keep the top 10 performers.
     - Build a column chart from the data that shows the top performers and the number of times they've had a song on the chart. Make sure the chart has a title and good axis names.
-3. Who had the most No. 1 hit songs? Here's the logic (and some hints):
+3. Which Performer had the most Songs to reach No. 1? Here's the logic (and some hints):
     - First you need to filter for only the No. 1 songs.
-    - Next you need to make that a unique list that only shows each song/performer combination once. Here are two different ways you could do this. I stress, use only ONE of these methods:
+    - Next you need to make that a unique list that only shows each Performer/Song combination once. Here are two different ways you could do this. I stress, use only ONE of these methods:
         - You could **group** by both Performer and Song. This will give you a row for each Performer/Song combination along with the numbers of times it was No. 1. The key there is you have a unique list of performer/song.
         - Or, you could use **Select columns** to keep just Performer and Song, and then use **Deduplicate** to make the list unique, showing each Performer/Song combination only once.
-    - Now you can group by Performer to count how my times they show up on the unique list of No. 1 songs.
-4. Who had the most No. 1 hits in the most recent five years?
+    - Now you can **Group** by Performer to count how my times they show up on the unique list of No. 1 songs.
+4. Which Performer had the most songs to reach No. 1 in the most recent five years?
     - Very similar to Goal 3 but with a data filter applied upstream in the workflow. You can copy the tab you made before and then add a filter upstream to get just the most recent hits. Include only those with more than one No. 1 hit.
 5. Who had the most top 10 hits overall?
     - Also similar to Goal 3 but you are looking for the artists who had the most songs in the top 10. Again, you can duplicate that tab and modify an existing filter to get the answer.
-6. What song has been on the charts the most number of weeks at any position?
-7. What song was No. 1 for the most number of weeks?
+6. What Performer/Song combination has been on the charts the most number of weeks at any position?
+7. What Performer/Song combination was No. 1 for the most number of weeks?
+
+Don't overthink those last two ... they are basically "Group and count", though the second filters data first.
 
 ## Write a data drop
 
