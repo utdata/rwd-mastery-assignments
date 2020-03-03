@@ -13,7 +13,9 @@ For this assignment you'll be submitting a public information request for mariju
 
 ### Part 2: Report on your progress
 
- Submit to the Canvas assignment a short summary about the process and results of your search. Include your communication log and copies of any correspondence. *Include in your summary any cost estimates from the agency.*
+This is due later in the semester. Check Canvas for the due date.
+
+Submit to the Canvas assignment a short summary about the process and results of your search. Include your communication log and copies of any correspondence. *Include in your summary any cost estimates from the agency.*
 
 If your request is successful and you get the data, see below on how to upload it. DON'T DO ANY PROCESSING ON THE DATA. Make a copy if you want to fiddle with it.
 
