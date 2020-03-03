@@ -2,15 +2,47 @@
 
 For this assignment you'll be submitting a public information request for marijuana-related arrests by various Texas law enforcement agencies. You will be assigned an agency and have to find out where to send the request. You will keep a log of your efforts to fulfill the request and hopefully in the end you'll get the data for use in a future project.
 
-The steps are:
+## Project steps
+
+### Making the request
 
 - **Get your agency.** Look at the PIR Assignment spreadsheet linked from the Canvas assignment and find your name. To the left you'll see the agency name and type you are assigned. If the type is "city" then it is a local police department. If it is "county" it is a county sheriff's department. There are also university and local school district police agencies in the list.
 - **Find your agency PIR process.** You will have to do research to find out to whom you should make the request and how to contact them.
 - **Part 1 due date: Submit the request.** At this point you should have turned in the request to the agency. Use the template provided below as a guide. **For the Canvas assignment**, write a paragraph explaining the process that was required to submit your request, along with the contact information of the PIO or media office you will be dealing with.
 - **Keep a log.** You will need to follow up your request with phone calls, emails and such to make sure the request is understood by the agency. Keep a communication log of these efforts with date, type of action and any result. Keep all emails and other records, as you will submit those as well. Keep special attention to the 10-working-day rule that the agency has to get back to you.
-- **Part 2 due date: Report on your progress.** Submit to the Canvas assignment a short summary about the process and results of your search. Include your communication log and copies of any correspondence.
-- **Upload the raw data.** If your request is successful, I will provide steps to upload the raw data so it can be used for future classes. DON'T DO ANY PROCESSING ON THE DATA. Make a copy if you want to fiddle with it.
-- (Maybe) Clean the data. There may be a later assignment to standardize the data so we can compare all the responding agencies.
+
+### Part 2: Report on your progress
+
+ Submit to the Canvas assignment a short summary about the process and results of your search. Include your communication log and copies of any correspondence. *Include in your summary any cost estimates from the agency.*
+
+If your request is successful and you get the data, see below on how to upload it. DON'T DO ANY PROCESSING ON THE DATA. Make a copy if you want to fiddle with it.
+
+## Following up on requests
+
+### If the agency asks for money
+
+If your agency is asking for money to complete the request, follow up with an email asking the following (or something like it):
+
+> Thank you so much for providing the cost estimate for my request. While I realize not every agency is the same, many police departments in Texas have provided this information free of charge. Is there anything particular about this request that makes it costly? i.e., is there a way I could amend the request that would save agency time and cost?
+
+Be sure to include this information in your final report.
+
+### If you receive the data
+
+If you get data from your agency, please do the following:
+
+- Create a folder with the name of your agency as it appeared in the assignment spreadsheet.
+- Put your data inside the folder.
+- Create a text file or .doc and save it inside the same folder.
+- In the text file/doc, include the following information:
+  - Your name
+  - Your email (in case I have questions later)
+  - The name of the agency you got the record from
+  - The date you received the data
+  - The contact information of the person who sent it to you
+  - List any columns that were omitted from the data. (Actually open the file and look at the columns and compare them to the list of fields requested below.)
+- Compress the folder into a zip file: [Windows](https://support.microsoft.com/en-us/help/14200/windows-compress-uncompress-zip-files) | [Mac](https://support.apple.com/guide/mac-help/compress-uncompress-files-folders-mac-mchlp2528/mac)
+- Go to [this link](https://utexas.app.box.com/upload-widget/view/pzqdvci3ho8k78zxv6vxsll01a36sfmj/90157345456) and upload the zipped file.
 
 ## The PIR template
 
