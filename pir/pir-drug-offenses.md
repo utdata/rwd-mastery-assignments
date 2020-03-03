@@ -4,7 +4,7 @@ For this assignment you'll be submitting a public information request for mariju
 
 ## Project steps
 
-### Making the request
+### Part 1: Making the request
 
 - **Get your agency.** Look at the PIR Assignment spreadsheet linked from the Canvas assignment and find your name. To the left you'll see the agency name and type you are assigned. If the type is "city" then it is a local police department. If it is "county" it is a county sheriff's department. There are also university and local school district police agencies in the list.
 - **Find your agency PIR process.** You will have to do research to find out to whom you should make the request and how to contact them.
