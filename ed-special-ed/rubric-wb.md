@@ -1,5 +1,7 @@
 # special education data for Workbench assignment
 
+> This needs to be updated to include new data file for campus information, which is aleady in the data folder.
+
 Be sure to review the [README](README.md) for important information on how to download the data.
 
 ## Rubric for Workbench

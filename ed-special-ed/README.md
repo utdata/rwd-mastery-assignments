@@ -1,5 +1,7 @@
 # Special Education student change
 
+> This should be updated to use new school information data, which is already in the data folder.
+
 The goal of this assignment is to use TEA data to find out which schools in Austin ISD have the most growth in Special Education students in the past five years.
 
 In 2016, the Houston Chronicle published a multi-part series called [Denied](https://www.houstonchronicle.com/denied/1/) that outlined how a TEA policy started in 2004 would force an audit of schools with more than 8.5% of their students in Special Education. From their story:
