@@ -154,12 +154,18 @@ A rule of thumb with the ACS is to not base a story or important value on a numb
 
 So, how many other MOE's in this data set are above 10%? We can check this by using some of the same skills we've already learned.
 
+### Create MOEMargin column for older year
+
 - At the bottom of the Combined tab, start a new **Formulas** step.
 - Divide your MOE value for your newest year by the Estimate for your newest year.
 - Convert the result to a percentage.
+- Similar to the Up/Down column you created earlier, create a new column that compares your new MOEMargin to "at or above 10%" and then describes if the margin is "Above" or "Below".
+
+### Create MOEMargin column for newer year
+
 - Do the same steps for the older year.
 
-Look over those values (maybe sort them) to see how many fall above 10%. Be careful basing any story on those values.
+Look over those values (maybe sort them or group them) to see how many are at or above 10%. Be careful basing any story on those values.
 
 I would still include these values in a chart or map, but I would note somewhere prominent that some of the values have a large margin of error due to sampling.
 
