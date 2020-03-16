@@ -13,16 +13,16 @@ You'll be drawing from at least five years of data from the [Mixed Beverage Gros
 - Review the **Columns in this Dataset** so you get an idea of the fields available.
 - Click the **View Data** button at the top to get to the data.
 - Filter the **Obligation End Date** from Jan. 1 2014 to present.
-- Filter by **Location City** for Austin.
+- Filter by **Location City** for AUSTIN. (Use capital letters ... it is case sensitive.)
 - Export as a CSV.
 
-You should end up with just shy of 70k records. Any further filtering can be done in your analysis tool (likely Workbench or Tableau).
+You should end up with a little over 70k records. Any further filtering can be done in your analysis tool (likely Workbench or Tableau).
 
 ### Important notes about this data
 
 Each row of the data is the amount of total money brought in **_each month_** by the establishment, based on the Obligation End Date, which is always the last day of the reporting month. (Ignore the Responsibility dates.)
 
-There are four values of money: Total Receipts, Wine Receipts, Beer Receipts, Liquor Receipts and Cover Charge Receipts. The beer, wine, liquor and cover charge values _should_ add up to the Total Receipts, though I've found that is not always true. I would stay away from any analysis on Cover Charges as there must be some special rules that would need investigation to understand.
+There are four values of money: Total Receipts, Wine Receipts, Beer Receipts, Liquor Receipts and Cover Charge Receipts. The beer, wine, liquor and cover charge values _should_ add up to the Total Receipts, though I've found that is not always true. I would **stay away from any analysis on Cover Charges** as there must be some special rules that would need investigation to understand.
 
 
 ### TABC enforcement actions
@@ -36,7 +36,7 @@ The site we'll use includes data violations of rules/laws handled by the Texas A
 - Click on **Create a list of licenses or permits with administrative violations**.
 - For **Location**, click on the **Add/Edit** link.
   - Add **City**, choose **Other**. Type in _AUSTIN_ and click **Submit Entry**. Then choose **Return to Prior page**.
-- For **Violatons**, click on the **Add/Edit** link.
+- For **Violations**, click on the **Add/Edit** link.
   - You'll see a list of violations. Choose **504: Sell/Serve/Dispense/Deliver AB to Minor**. Click **Submit Entry**. Repeat this process until you have all the violations listed below.
     - 503: Permitting Minor To Possess/Consume
     - 504: Sell/Serve/Dispense/Deliver AB To Minor
@@ -67,5 +67,6 @@ For this project, I think I would stay away from directly joining the TABC data 
 
 ## Assignments
 
+- [Spring 2020 prokect](rubric-spring20.md)
 - [Long semester project](rubric-long-semester.md)
 - [Summer final project](rubric-summer.md)

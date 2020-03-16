@@ -1,5 +1,7 @@
 # Final Project (Long Semester)
 
+> We'll have an alternative assignment in Spring 2020
+
 This class aims to teach you how to use data to find and tell stories. It crescendos in the final month of class when you use the skills you learned during the semester to develop your own data-driven story.
 
 Our aim is to be as transparent as possible, so you will use Workbench to clean and shape your data that will used for your findings, charts and visualizations. You'll include a data diary to note your work not outlined in your Workbench workflows.
