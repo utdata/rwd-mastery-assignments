@@ -96,24 +96,31 @@ With this view we're going to look at this data a little differently. We only ha
 
 ### Explore on your own
 
-> THIS IS WHERE I STOPPED.
+I would like you to further explore some of the data on your own, creating new sheets for each view. If you have trouble thinking of how to explore them, remember you can choose the fields and then use the Show Me list for types of charts you can make with that data.
 
-- Explore other columns to find at least two more ways to look at the data.
+- Explore `Intake Condition`. Which conditions are most prevalent?
+- Look at `Intake Type` to see how the `Number of Records` has changed over time.
+- Look at `Intake Type`, `Animal Type` and `Number of Records` together. Swap the order like indicated below to see what happens.
 
-> Explain problems with these data fields and possible ways to make them useful: Name, Address, breed.
+![type-intake](img/type-intake.png)
 
+### Problematic data
+
+- Explore the fields `Name`, `Address` and `Breed` (all independently in new sheets).
+- When you turn in your assignment, include a comment or text that explains the problems of looking at these fields.
 
 ### Create a publishable chart
 
-Choose one of the charts you've built in your exploration and "finish" it out by providing headlines, sourcing and all those things outlined in the [Good charts lecture](https://drive.google.com/open?id=1EMEIdUqeK94swrm0VvwPPBqzk5zSZqJmKnkckS2KFiw).
+Choose **one** of the eight charts you've built in your exploration and "finish" it out by providing headlines, sourcing and all those things outlined in the [Good charts lecture](https://drive.google.com/open?id=1EMEIdUqeK94swrm0VvwPPBqzk5zSZqJmKnkckS2KFiw).
 
-You may find that putting your chart on a dashboard will give you more flexibility to deal with text, legends and the like.
+Even though you are building a single chart, I recommend putting it on a **dashboard** so you have more flexibility to deal with text, legends and the like.
 
-Keep all your other charts in the workbook, but clean up just the one. Include the name of the sheet or dashboard when you turn it in.
+Keep all your other charts in the workbook, but clean up just the one for publishing. Include the name of the sheet or dashboard when you turn it in.
 
 ## Stuff to turn in
 
 Turn in the following:
 
-- Your Tableau project, which you need to **export as a Packaged Workbook**. You'll find this under File > Export Packaged Workbook. The resulting file should have a .tbwx extension. Turn this into Canvas. (50 pts)
-- Your finished chart: In a comment on the assignment, tell me which sheet has your "finished" chart. (50 pts)
+- Your Tableau project, which you need to **export as a Packaged Workbook**. You'll find this under File > Export Packaged Workbook. The resulting file should have a **.tbwx** extension. Upload this into the Canvas assignment. This should have the five charts outlined individually above, plus the three "explore on your own" charts. (50 pts)
+- Your "publishable" chart: In a comment on the assignment, tell me which sheet or dashboard is your "finished" chart. (100 pts)
+- Your explanation on the problematic columns. You can add this as a comment on the assignment. (50 pts)
