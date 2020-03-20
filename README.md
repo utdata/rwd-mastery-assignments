@@ -23,14 +23,6 @@ Look to Canvas for links to specific assignments.
 - Special Education students: [Workbench](ed-special-ed/rubric-wb.md)
 - Exploring Gifted Students data: [Workbench](ed-gifted-students/rubric-wb.md) | [R](ed-gifted-students/rubric-r.md)
 
-## Regular Expressions
-
-> Not included in Spring 2020
-
-- [Data cleaning with Regular Expressions](https://docs.google.com/document/d/1DvAM4lnGJLefo9skD8GgM-_9S1BEhpjJfV86yhJavI0/edit#heading=h.crhjhbmzwwfl)
-- [Dangerous Dogs assignment](regular-expressions/rubric-regex101.md)
-- [Using Regex in Workbench](regular-expressions/rubric-wb.md)
-
 ## Census
 
 - [Median Family Income](census-median-income/)
@@ -41,16 +33,20 @@ Look to Canvas for links to specific assignments.
 - [Animal intakes exploration](austin-animal-center/README.md)
 - [Vaccination exemptions](vaccination-exemptions/README.md)
 
-## Mixed Beverage Project
+## Final project
 
 - [Mixed Beverage/TABC Violations](alcohol-sales-tabc/README.md)
-
-## Final Project
-
-- [Rubric for long semester](final-project/rubric-long-session.md)
-- [Rubric for summer semester](alcohol-sales-tabc/rubric-summer.md)
+- [Your next data project](final-project/rubric-next-project.md)
 
 ## Extra credit
 
-- [Your next data project](final-project/rubric-next-project.md)
 - [ArcGIS mapping](https://learn.arcgis.com/en/projects/get-started-with-arcgis-online/)
+
+## Regular Expressions
+
+> Not included in Spring 2020
+
+- [Data cleaning with Regular Expressions](https://docs.google.com/document/d/1DvAM4lnGJLefo9skD8GgM-_9S1BEhpjJfV86yhJavI0/edit#heading=h.crhjhbmzwwfl)
+- [Dangerous Dogs assignment](regular-expressions/rubric-regex101.md)
+- [Using Regex in Workbench](regular-expressions/rubric-wb.md)
+

@@ -2,71 +2,68 @@
 
 Texas law allows for an exemption from immunizations for reasons of conscience, including a religious belief. A student's parent or guardian submits an official DSHS affidavit form to the child's school.
 
-This is a soup-to-nuts study at how the use of exemptions have changed over time by county, from PDF to online data visualization. This is one of those cases where the easy part is creating the visualization. Most of the work comes in preparing and understanding the data.
+This is a soup-to-nuts study at how the use of exemptions have changed over time by county, from Excel data through Workbench to Tableau to create an online interactive visualization. This is one of those cases where the easy part is creating the visualization. Most of the work comes in preparing and understanding the data.
 
-## Explore the data
+## Download and explore the data
 
-Visit the the Texas Department of State Health Services' [Conscientious Exemptions Data - Vaccination Coverage Levels](https://www.dshs.texas.gov/immunize/coverage/Conscientious-Exemptions-Data.shtm) web page and look for the file [Printable Version of 2010-2018 Conscientious Exemptions Data for Texas (PDF)](https://www.dshs.texas.gov/uploadedFiles/Content/Prevention_and_Preparedness/immunize/coverage/schools/Exemptions%20by%20County%202010-2018.pdf). Download and open it. (There is a copy in `data/Exemptions by County 2010-2018.pdf`.)
+Visit the the Texas Department of State Health Services' [Conscientious Exemptions Data - Vaccination Coverage Levels](https://www.dshs.texas.gov/immunize/coverage/Conscientious-Exemptions-Data.shtm) web page and look for the file [2010-2020 Conscientious Exemptions by County (XLS)](https://www.dshs.texas.gov/immunize/coverage/docs/2010-2020-Conscientious-Exemptions-by-County.xls).
 
-This is just one of several datasets that can be explored concerning statewide vaccination rates.
+This is just one of several data sets that can be explored concerning statewide vaccination rates. Download and open it. Ask yourself the following:
 
 - What can we learn from this file?
 - Take a look at the columns and rows and formulate questions. What might you want to learn or explore?
 - What charts might we make? How might they work together in a dashboard?
 - What shape (wide vs long) does this data have to be to get what you need?
 
-## Convert the data from PDF
+## Import into Workbench
 
-Before we can do anything with this data, we have to get it out of the PDF. There are many ways to do this, but [Cometdocs](https://www.cometdocs.com) is one of my favorites, and it is free for a number of uses per month. (You can get unlimited use through a $25 [IRE membership](https://www.ire.org/membership/terms-and-rates).)
+There are a number of cleaning steps we need to do and Workbench is the perfect tool for this.
 
-- Create a free account with Cometdocs.
-- Upload the PDF.
-  - You might need to click the "go to Webapp" button before uploading.
-- Once uploaded, Click on the "Convert" tab and then drag the file into that section.
-  - Choose the "to Excel" conversion.
-  - Click **Convert**.
-- Watch the XLS button, and once the progress bar stops, click on the Download button and follow the steps.
+- Start a new Workbench workflow and start by uploading the Excel file.
+- This first thing you'll notice is we have a bunch of errors because don't have a header row. Those are instead on row 3. You can select that row and then use the **1 row selected** dropdown to select **Move rows to table header**.
+- Scroll all the way down to the bottom to row 256, which is a note about the data that we need to remove. Select that row then use the **1 row selected** dropdown to delete the row.
+- You might also that now all the values are text instead of number and they include the % sign. We also have some "NR**" values. We'll take care of both of those after we reshape the data.
 
-(I have a copy of the [processed data](https://github.com/utdata/rwd-mastery-assignments/blob/master/vaccination-exemptions/data/Exemptions%20by%20County%202010-2018.xlsx), but you should do it yourself if at all possible.)
+![data-to-clean](img/data-to-clean.png)
 
-If you open the converted file in Excel or Sheets, you'll see it is NOT a clean data file, but at least it is in columns and rows. A clean data file would have a single header row, then have just one row for each data point, without page numbers or notes.
+## Reshaping
 
-You could clean this up by hand, but then that would be subject to error and would not be repeatable. We'll use Workbench instead. (We'll want to do some other stuff anyway.)
+If we want to compare exemptions over time (by their school year), then we must have one column called "School year" instead of a column for _each_ school year, and one column that has all the "Exemption rate" values. You might recall this concept from the [reshape](http://help.workbenchdata.com/en/articles/1634563-reshape) from our Workbench tutorials.
 
-## Clean and reshape using Workbench
-
-There are a number of cleaning steps you should accomplish in Workbench.
-
-### Cleaning
-
-- Start a new Workbench workflow and start by uploading the Excel spreadsheet that you downloaded from Cometdocs.
-- We don't have a really header. You'll see the correct header row, which starts with "County" on the first column, is down at row 7 or 8. You can select that row and then use the **1 row selected** dropdown to set that as the new header row.
-- Use **Filter by value** function to delete all the rows that are not a value for a county.
-
-### Reshaping
-
-If we want to compare exemptions over time (by their school year), then we must have a column called "School year" instead of a column for _each_ school year. You might recall this concept from the [reshape](http://help.workbenchdata.com/en/articles/1634563-reshape) from our Workbench tutorials.
-
+- Start a new tab and call it Reshape. (We are doing this in case we someday wanted the current data shape. We probably won't need it but we are just being cautious and smart.)
 - Use the **Reshape** function to change the data _Wide to long_ using `County` as the Row variable.
 - Rename the new columns as "School year" and "Exemption rate".
 
-### Adding a real date column
+## Cleaning the data
+
+Some of our Exemption rates are a value of "NR**". We can't import data like that into Tableau or it won't consider it a number. We need to replace all those values with a blank value. (I'll do some sorting in class to show you these values.)
+
+### Dealing with NRs
+
+- Use the function **Search and Replace** on the `Exemption rate` column and search for "NR**" but leave the "Replace with" value blank.
+
+### Fix the Exemption rate values
+
+Before we convert our `Exemption rate` to a number, we need to remove the parenthesis or all the values will become Null.
+
+- Use the **Search and Replace** function again on `Exemption rate` to search for "%" and replace it with nothing.
+- Convert the `Exemption rate` column to a number. You can find the function on the dropdown for that column.
+
+## Adding a real date column
+
+> I'm not sure if we need this.
 
 You might also create a new column that includes a real date based on the school year date to use for line charts in Tableau. The idea is to create a new _real_ data of Aug. 1 for each year by taking the text "08/01" and combining it with the right-most four characters from the School Year.
 
 - Use the **Formula** function as an Excel function. The formula is `="08/01/"&RIGHT(B1,4)`. Call the column "Year".
 - Now convert that "Year" column to a date format.
 
-### Deal with NR
-
-Some of our Exemption rates are a value of "NR**". We can't import data like that into Tablau or it won't consider it a number. We need to replace all those values with a blank value. (I'll do some sorting in class to show you these values.)
-
-- Use the function **Search and Replace** on `Exemption rate` and search for "NR**" but leave the "Replace with" value blank.
-
-### Export the file
+## Export the file
 
 - Click the **Export** button and click the download button under CSV.
 
 ## Assignments
+
+Share this Workbench workflow with me or make it public. You'll need the link when you turn in the assignment.
 
 - [rubric-tableau](rubric-tableau.md)
