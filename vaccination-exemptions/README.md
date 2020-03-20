@@ -51,19 +51,20 @@ Before we convert our `Exemption rate` to a number, we need to remove the parent
 
 ## Adding a real date column
 
-> I'm not sure if we need this.
+You next need to create a new column that includes a _real_ date based on the `School Year` date so we can build a line chart in Tableau. (Tableau won't let you make a line chart based on a non-date category like "2018-2019".)
 
-You might also create a new column that includes a real date based on the school year date to use for line charts in Tableau. The idea is to create a new _real_ data of Aug. 1 for each year by taking the text "08/01" and combining it with the right-most four characters from the School Year.
+We are choosing to make a "Year" column, but picking June 1, which is typically around the end of the school year. We concatenate the text "06/01/" with the last four characters of our `School Year` column to get our valid date format.
 
-- Use the **Formula** function as an Excel function. The formula is `="08/01/"&RIGHT(B1,4)`. Call the column "Year".
+- Use the **Formula** function as an Excel function. The formula is `="06/01/"&RIGHT(B1,4)`. Call the column "Year".
 - Now convert that "Year" column to a date format.
 
 ## Export the file
 
 - Click the **Export** button and click the download button under CSV.
+- You should **rename the downloaded file** to something like "exemptions.csv" or something that describes the file. Leaving it as something like "Workflow 62289 - convert-date-290688.csv" won't help you later when you are looking for the file.
 
 ## Assignments
 
-Share this Workbench workflow with me or make it public. You'll need the link when you turn in the assignment.
+Share this Workbench workflow with me or make it public. You'll also need the link when you turn in the assignment.
 
 - [rubric-tableau](rubric-tableau.md)

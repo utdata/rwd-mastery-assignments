@@ -1,5 +1,12 @@
 # Notes for the professor
 
+## Spring 2020
+
+- This is the [complete Workbench workflow for 2010-2020](https://app.workbenchdata.com/workflows/62289).
+- Dat ais in `data/exemptions-cleaned-2020.csv`
+
+## Fall 2019
+
 - There is a complete Workbench workflow [Vaccination exemption by county, 2011-2019](https://app.workbenchdata.com/workflows/36382).
 - The cleaned data is also at `data/exemptions_county.csv`.)
 
