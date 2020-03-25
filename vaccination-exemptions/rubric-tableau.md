@@ -12,7 +12,18 @@ Interactive filters will be an important part of this dashboard.
 
 ## Map by county
 
-> Add directions on building this here.
+We'll make a map of Texas counties showing the exemption rate. We'll use a filter to show just one `School year` at a time.
+
+- Create a new sheet and name it "Map".
+- Select the `County`, `Exemption rate` fields.
+- Use the **Show Me** tab to find the choropleth map. It's on the second row in the middle. Close the Show Me tab when you are done.
+- Click on the dropdown for the `School year` field and choose **Show Filter**.
+- Go to the filter at the right and use the dropdown there to choose the **Single value (dropdown)** option.
+- Note there is **1 null** indicator at the bottom right of the map. If you click on the indicator and the choose **Edit Locations** and you'll see this is the value for the state, which we can safely exclude. Cancel out of that window and click on the null indicator again and choose **Filter data** to remove Texas.
+
+[Click here to see a screencast of the steps to make a map](img/county-map.mp4).
+
+Later on we'll remove the "All" option from that filter because we don't want to ever add the Exemption rates together on the map.
 
 ## Ranking counties by rate
 
