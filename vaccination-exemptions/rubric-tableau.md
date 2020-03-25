@@ -21,7 +21,10 @@ We'll make a map of Texas counties showing the exemption rate. We'll use a filte
 - Go to the filter at the right and use the dropdown there to choose the **Single value (dropdown)** option.
 - Note there is **1 null** indicator at the bottom right of the map. If you click on the indicator and the choose **Edit Locations** and you'll see this is the value for the state, which we can safely exclude. Cancel out of that window and click on the null indicator again and choose **Filter data** to remove Texas.
 
-[Click here to see a screencast of the steps to make a map](img/county-map.mp4).
+<video width="320" height="240" controls>
+  <source src="img/counth-map.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 Later on we'll remove the "All" option from that filter because we don't want to ever add the Exemption rates together on the map.
 
