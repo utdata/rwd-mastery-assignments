@@ -26,7 +26,7 @@ The materials you have to work with are the following:
 ### Supporting elements
 
 - **Two promotional tweets**, one geared toward the story and one geared toward a chart. You don't have to actually tweet the results, just put them in a Google Doc. _Include an image_ that might help draw attention to your tweet. This can be in your story file. (25 points)
-- A **diversity statement** about how you did or could better add diversity of voice to your story. Can also be included with your story file. (25 points)
+- A **diversity statement** about how you did or could better add diversity of voice to your story. Can also be included with your story file. (25 points each)
 
 ### Editing partners
 

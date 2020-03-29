@@ -1,5 +1,7 @@
 # Vaccination exemptions by county
 
+> Perhaps later I can add screen grabs of each step.
+
 Texas law allows for an exemption from immunizations for reasons of conscience, including a religious belief. A student's parent or guardian submits an official DSHS affidavit form to the child's school.
 
 This is a soup-to-nuts study at how the use of exemptions have changed over time by county, from Excel data through Workbench to Tableau to create an online interactive visualization. This is one of those cases where the easy part is creating the visualization. Most of the work comes in preparing and understanding the data.
@@ -26,6 +28,18 @@ There are a number of cleaning steps we need to do and Workbench is the perfect 
 
 ![data-to-clean](img/data-to-clean.png)
 
+## Remove Loving County
+
+If you look at the row for Loving County, you'll notice that every answer is "NR**". Let's delete that row since it is of no use to us. It would cause some confusion later in Tableau.
+
+- Create a **Filter** step.
+- Choose **Filter by condition**.
+- For the column, choose `County`.
+- For the operation, choose **Text is exactly**.
+- For the value, type in: Loving
+- Select the **Delete** button so the row will be removed.
+- Play the step.
+
 ## Reshaping
 
 If we want to compare exemptions over time (by their school year), then we must have one column called "School year" instead of a column for _each_ school year, and one column that has all the "Exemption rate" values. You might recall this concept from the [reshape](http://help.workbenchdata.com/en/articles/1634563-reshape) from our Workbench tutorials.
@@ -38,9 +52,14 @@ If we want to compare exemptions over time (by their school year), then we must 
 
 Some of our Exemption rates are a value of "NR**". We can't import data like that into Tableau or it won't consider it a number. We need to replace all those values with a blank value. (I'll do some sorting in class to show you these values.)
 
-### Dealing with NRs
+### Remove values with NR or NA
 
-- Use the function **Search and Replace** on the `Exemption rate` column and search for "NR**" but leave the "Replace with" value blank.
+We want to remove the rows that have "NR**" or "#N/A" so they don't show up in our visualizations later in Tableau.
+
+- Use the function **Filter by Condition** on the `Exemption rate` column.
+- For the operation, choose **Text contains**.
+- For the value field insert: N
+- Choose to **Delete** the rows and **play** the step.
 
 ### Fix the Exemption rate values
 
@@ -51,9 +70,9 @@ Before we convert our `Exemption rate` to a number, we need to remove the parent
 
 ## Adding a real date column
 
-You next need to create a new column that includes a _real_ date based on the `School Year` date so we can build a line chart in Tableau. (Tableau won't let you make a line chart based on a non-date category like "2018-2019".)
+You next need to create a new column that includes a _real_ date based on the `School Year` date so we can build a line chart in Tableau. (Tableau won't let you make a line chart based on a non-date dimension like "2018-2019".)
 
-We are choosing to make a "Year" column, but picking June 1, which is typically around the end of the school year. We concatenate the text "06/01/" with the last four characters of our `School Year` column to get our valid date format.
+We are choosing to make a "Year" column, but we have to pick an actual date to represent this. We'll use June 1, which is typically around the end of the school year. We concatenate the text "06/01/" with the last four characters of our `School Year` column to get our valid date format.
 
 - Use the **Formula** function as an Excel function. The formula is `="06/01/"&RIGHT(B1,4)`. Call the column "Year".
 - Now convert that "Year" column to a date format.
@@ -61,10 +80,14 @@ We are choosing to make a "Year" column, but picking June 1, which is typically 
 ## Export the file
 
 - Click the **Export** button and click the download button under CSV.
-- You should **rename the downloaded file** to something like "exemptions.csv" or something that describes the file. Leaving it as something like "Workflow 62289 - convert-date-290688.csv" won't help you later when you are looking for the file.
+- You should **rename the downloaded file** to something like "exemptions.csv" or something that describes the file. Leaving it as as the Workbench name like "Workflow 62289 - convert-date-290688.csv" won't help you later when you are looking for the file.
 
 ## Assignments
 
 Share this Workbench workflow with me or make it public. You'll also need the link when you turn in the assignment.
 
 - [rubric-tableau](rubric-tableau.md)
+
+## For instructor use only
+
+- [Ignore this](https://app.workbenchdata.com/workflows/62289/)

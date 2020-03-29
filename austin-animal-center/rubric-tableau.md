@@ -117,7 +117,7 @@ I would like you to further explore some of the data on your own, creating new s
 ### Problematic data
 
 - Explore the fields `Name`, `Address` and `Breed` (all independently in new sheets).
-- When you turn in your assignment, include a comment or text that explains the problems of looking at these fields and what you might be able to use them if you had time.
+- When you turn in your assignment, include a comment or text that explains the problems of looking at these fields and explain how you might be able to adjust the data and explore them if you had time.
 
 ### Create a publishable chart
 
