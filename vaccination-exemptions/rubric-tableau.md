@@ -2,7 +2,7 @@
 
 This assignment uses the vaccinations exemptions data that you [cleaned in the previous lesson](README.md) to build an interactive dashboard in Tableau that allows readers to explore this data over time by county.
 
-You'll build three charts:
+You'll build a Tableau dashboard with three charts:
 
 - A map of Texas counties that show the exemption rates by year.
 - A bar chart that ranks counties by their rate.
@@ -86,9 +86,7 @@ Our next view is to build a chart that shows a county's rate by year. Even thoug
 
 Again, the values are off because all counties are being summed together. We'll fix that with a dashboard filter.
 
-![make-line-chart](img/make-line-chart.gif)
-
-> [View screen cast to make the line chart above](https://drive.google.com/open?id=1k9Zx7wFVyxmMApW-WDPpwAvPdhHHA-lu)
+> [Watch a screen cast to make this line chart](https://drive.google.com/open?id=1k9Zx7wFVyxmMApW-WDPpwAvPdhHHA-lu)
 
 ## Create dashboard
 
@@ -111,7 +109,7 @@ We also want to remove the "All" option from the filter so users can't add the r
 - Go to the School Year **filter dropdown**.
 - Go to **Customize**, then _uncheck_ **Show "All" value**.
 
-> [Screen cast showing how to modify filters](https://drive.google.com/open?id=1qeHaflGD3muhsT97GL2G1T1AnxUTKDXi)
+> [Watch a screen cast showing how to modify filters](https://drive.google.com/open?id=1qeHaflGD3muhsT97GL2G1T1AnxUTKDXi)
 
 ## Dashboard actions
 
@@ -158,7 +156,7 @@ Next, we'll gain some space on our dashboard by moving our legends and filters o
 
 ## Headlines and description
 
-Next we'll add a text box for a headline and description for our dashboard. You'll want to include enough information in both so your reader full understands what this thing you have built is. You might look back the Texas Department of State Health Services' [Conscientious Exemptions Data - Vaccination Coverage Levels](https://www.dshs.texas.gov/immunize/coverage/Conscientious-Exemptions-Data.shtm) web page for background information. This is also a place that you can add your byline and the source of the data, both important. Use the font controls to make it look nice.
+Next we'll add a text box for a headline and description for our dashboard. You'll want to include enough information in both so your reader fully understands what this thing is that you have built. You might look back the at Texas Department of State Health Services' [Conscientious Exemptions Data - Vaccination Coverage Levels](https://www.dshs.texas.gov/immunize/coverage/Conscientious-Exemptions-Data.shtm) web page for background information. This is also a place that you can add your byline and the source of the data, both important. Use the font controls to make it look nice.
 
 - Under **Objects** at the bottom left of Tableau, grab the **Text** icon and drag it to the top of the page.
 - When you let go, you'll get a box where you can enter information and adjust the fonts, etc.
