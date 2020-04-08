@@ -6,23 +6,24 @@ This is a soup-to-nuts study at how the use of exemptions have changed over time
 
 ## Download and explore the data
 
-Visit the the Texas Department of State Health Services' [Conscientious Exemptions Data - Vaccination Coverage Levels](https://www.dshs.texas.gov/immunize/coverage/Conscientious-Exemptions-Data.shtm) web page and look for the file [2010-2020 Conscientious Exemptions by County (XLS)](https://www.dshs.texas.gov/immunize/coverage/docs/2010-2020-Conscientious-Exemptions-by-County.xls).
+Visit the the Texas Department of State Health Services' [Conscientious Exemptions Data - Vaccination Coverage Levels](https://www.dshs.texas.gov/immunize/coverage/Conscientious-Exemptions-Data.shtm) web page and look for the file [2010-2020 Conscientious Exemptions by County (XLS)](https://www.dshs.texas.gov/immunize/coverage/docs/2010-2020-Conscientious-Exemptions-by-County.xls). This file on conscientious exemptions by county is just one of several data sets that can be explored concerning statewide vaccination rates. Take a minute to read over the agency's introduction and perhaps check out other parts of the Vaccination Coverage section of the site.
 
-This is just one of several data sets that can be explored concerning statewide vaccination rates. Download and open it. Ask yourself the following:
+Now that you've downloaded the file, open and scan through it and Ask yourself the followings.
 
-- What can we learn from this file?
-- Take a look at the columns and rows and formulate questions. What might you want to learn or explore?
+- What is on each sheet and what makes them different?
+- What are the potential problems with the first sheet?
+- What might we learn from this data? Take a look at the columns and rows and formulate questions.
 - What charts might we make? How might they work together in a dashboard?
 - What shape (wide vs long) does this data have to be to get what you need?
 
 ## Import into Workbench
 
-There are a number of cleaning steps we need to do and Workbench is the perfect tool for this.
+ **Note there are three sheets in this file. We'll be working with the first sheet of Kindergarten rates.** There are a number of cleaning steps we need to do and Workbench is the perfect tool for this.
 
 - Start a new Workbench workflow and start by uploading the Excel file.
-- This first thing you'll notice is we have a bunch of errors because don't have a header row. The header is really on row 3. You can select that row and then use the **1 row selected** dropdown to select **Move rows to table header**.
+- The first thing you'll notice is we have a bunch of errors because don't have a header row. The header is really on row 3. You can select that row and then use the **1 row selected** dropdown to select **Move rows to table header**.
 - Scroll all the way down to the bottom to row 256, which is a note about the data that we need to remove. Select that row then use the **1 row selected** dropdown to delete the row.
-- You might also note that now all the values are text instead of number and they include the % sign. We also have some "NR**" and "#N/R" values. We'll take care of both of those after we reshape the data.
+- You might also note that now all the values are text instead of a number and they include the % sign. We also have some "NR**" and "#N/R" values. We'll take care of both of those after we reshape the data.
 
 ![data-to-clean](img/data-to-clean.png)
 
