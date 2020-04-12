@@ -11,9 +11,9 @@ You'll produce an **600-word news story** drawn from supplied data sets and two 
 
 The materials you have to work with are the following:
 
-- Two recorded interviews, both recorded in the summer of 2019:
-  - [Andy Kahn](https://drive.google.com/open?id=1XlalZgZ0sw0E95uYOFI0EdEEy2UdWxfG) is a bartender at the Mockingbird Saloon (then called The Local Pub and Patio). He has also served as manager at the Hole in the Wall. He talks about the business of running a bar in a college town and keeping on the right side of TABC rules.
-  - [Chris Porter](https://drive.google.com/open?id=1OO1OqmvROUINN0O7I6fYmG7a0-3Iw_GN) is the public information officer for the Texas Alcoholic Beverage Commission. He talks about the TABC's role in enforcing rules around selling alcohol. If you have follow-up questions for him you could reach out at <chris.porter@tabc.texas.gov>.
+- Two [recorded interviews](https://drive.google.com/open?id=1JfH1BKvyjrN9AT_4TFIt7rTRD2sOPCgV), both recorded in the summer of 2019:
+  - **Andy Kahn** is a bartender at the Mockingbird Saloon (then called The Local Pub and Patio). He has also served as manager at the Hole in the Wall. He talks about the business of running a bar in a college town and keeping on the right side of TABC rules.
+  - **Chris Porter** is the public information officer for the Texas Alcoholic Beverage Commission. He talks about the TABC's role in enforcing rules around selling alcohol. If you have follow-up questions for him you could reach out at <chris.porter@tabc.texas.gov>.
 - You have two data sets to draw from: Monthly alcohol sales and TABC enforcement actions. You'll need to [download these data sets](README.md) and explore them using tools you've learned in class. You **DO NOT** have to use both sets in the story.
 
 **Include a compelling, news-focused headline for your story.** (Points off if you skip or mail it in.)

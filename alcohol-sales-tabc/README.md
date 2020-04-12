@@ -22,8 +22,7 @@ You should end up with a little over 70k records. Any further filtering can be d
 
 Each row of the data is the amount of total money brought in **_each month_** by the establishment, based on the Obligation End Date, which is always the last day of the reporting month. (Ignore the Responsibility dates.)
 
-There are four values of money: Total Receipts, Wine Receipts, Beer Receipts, Liquor Receipts and Cover Charge Receipts. The beer, wine, liquor and cover charge values _should_ add up to the Total Receipts, though I've found that is not always true. I would **stay away from any analysis on Cover Charges** as there must be some special rules that would need investigation to understand.
-
+There are four values of money: Total Receipts, Wine Receipts, Beer Receipts, Liquor Receipts and Cover Charge Receipts. The beer, wine, liquor and cover charge values _should_ add up to the Total Receipts, though I've found that is not always true. I would **stay away from any analysis on Cover Charges** as there must be some special rules that would need investigation to understand. The amounts are sales amounts (i.e., total amount of money bought in for that month for that category) and not profits or number of drinks sold.
 
 ### TABC enforcement actions
 
@@ -37,7 +36,7 @@ The site we'll use includes data violations of rules/laws handled by the Texas A
 - For **Location**, click on the **Add/Edit** link.
   - Add **City**, choose **Other**. Type in _AUSTIN_ and click **Submit Entry**. Then choose **Return to Prior page**.
 - For **Violations**, click on the **Add/Edit** link.
-  - You'll see a list of violations. Choose **504: Sell/Serve/Dispense/Deliver AB to Minor**. Click **Submit Entry**. Repeat this process until you have all the violations listed below.
+  - You'll see a list of violations. Choose **503: Permitting Minor To Possess/Consume**. Click **Submit Entry**. Repeat this process until you have all the violations listed below.
     - 503: Permitting Minor To Possess/Consume
     - 504: Sell/Serve/Dispense/Deliver AB To Minor
     - 561: Sell/Deliver AB to Intoxicated Person
@@ -61,12 +60,12 @@ The site we'll use includes data violations of rules/laws handled by the Texas A
 
 Note at the bottom there is a link to the [Record layout](https://www.tabc.texas.gov/public_Inquiry/admin_violations_record_layout.asp) of the data, which you'll need to understand all the fields.
 
-For this project, I think I would stay away from directly joining the TABC data to the alcohol sales data ^^. But, you can look through it to find examples of any of the bars or restaurants you are otherwise studying.
+For this project, I suggest you stay away from directly joining the TABC data to the alcohol sales data ^^. But, you can look through it to find examples of the same establishment from both sets of records, if you like.
 
 ^^ (You _could_ join them, but you would need to be super careful that you aren't duplicating rows in either set. i.e., both data sets would have to be reshaped to have only one row per establishment before joining. Talk to me if this is important to you.)
 
 ## Assignments
 
-- [Spring 2020 prokect](rubric-spring20.md)
+- [Spring 2020 project](rubric-spring20.md)
 - [Long semester project](rubric-long-semester.md)
 - [Summer final project](rubric-summer.md)
