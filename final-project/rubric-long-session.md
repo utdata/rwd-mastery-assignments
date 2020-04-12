@@ -1,6 +1,6 @@
 # Final Project (Long Semester)
 
-> We'll have an alternative assignment in Spring 2020
+> We'll have an [alternative assignment in Spring 2020](../alcohol-sales-tabc/rubric-spring20.md).
 
 This class aims to teach you how to use data to find and tell stories. It crescendos in the final month of class when you use the skills you learned during the semester to develop your own data-driven story.
 

@@ -7,7 +7,7 @@ The final project for Reporting with Data is adjusting this semester in light of
 
 ### The story
 
-You'll produce an **600-word news story** drawn from supplied data sets and two pre-recorded source interviews. If you wish, you may include additional on-the-record sources you interview but it is not required. Use Google Docs and share it with me as an editor. (300 points)
+You'll produce an **600-word news story** drawn from supplied data sets and two pre-recorded source interviews. If you wish, you may include additional on-the-record sources you interview but it is not required. Use Google Docs and share it with me as an editor. Don't pad your story with fluff. Instead, find another fact or quote to support your story. I'll count off way more for padding than for being short. Stay focused on the story and don't editorialize or pontificate. This should be a news story, not a personalized blog post. (300 points)
 
 The materials you have to work with are the following:
 
@@ -44,7 +44,6 @@ To turn in your work:
 
 - Save and/or upload all your work into one Google Drive folder and make me an EDITOR of that folder so I can see and edit everything inside.
 - Write your story in Google Docs. You can include the supplementary material in the same file, but it does not count toward the word count.
-- Don't pad your story with fluff. Instead, find another fact or quote to support your story. I'll count off way more for padding than for being short.
 - If you are turning in Tableau work, either publish it to Tableau Public or Export the Packaged Workbook and upload the .twbx file to Drive.
 - Make sure any Workbench workflow is public or shared with me and a link is included in your story.
 
@@ -62,7 +61,7 @@ You might consider the following workflow to stay on task:
 
 ### Week starting April 27
 
-- Chris Porter of the TABC will be available for some follow-up questions during a joint-class Zoom meeting starting at noon on April 27th.
+- Chris Porter of the TABC will be available for some follow-up questions during a joint-class Zoom meeting starting at noon on April 27th. By this time, you should've listened to his previous interview and reviewed the data so you are ready to ask questions.
 - Take stock of your work and come up with an angle for a story. Write an outline and/or rough draft. Start with your data facts, then fill in with quotes and supporting material.
 - Consider what chart will best illustrate your story. Prepare the data and make a rough draft of the chart.
 - Set a meeting with your editor and go over both your story and chart. This should be done by the end of day on May 4th, when you provide a summary in an assignment due that day.
@@ -76,6 +75,6 @@ You might consider the following workflow to stay on task:
 
 While there are filtering and data shaping tools in Tableau, I can see value in using Workbench to clean and shape your data before pulling it into Tableau.
 
-For instance, if you want to use Workbench or Tableau to compare beer, wine and liquor receipts by establishment, you'll have to reshape/pivot the data to create new columns `Receipt Type` and `Amount` from each of the distinct amount columns. You can do the pivot Tableau, but you'll still probably want to use Workbench to select just the columns you need before pivoting in Tableau. Or just do it all in Workbench with some [pandas magic](https://github.com/utdata/rwd-workbench#reshaping-with-melt). I will demonstrate this in "class" on April 22.
+For instance, if you want to use Workbench or Tableau to compare beer, wine and liquor receipts by establishment, you'll have to reshape/pivot the data to create new columns `Receipt Type` and `Amount` from each of the distinct amount columns. (This is similar to how you pivoted the years of data in the vaccinations exemption assignmet.) You can do the pivot in Tableau, but you'll still probably want to use Workbench to select just the columns you need before pivoting in Tableau. Or just do it all in Workbench with some [pandas magic](https://github.com/utdata/rwd-workbench#reshaping-with-melt). I will demonstrate this in "class" on April 22 (or sooner).
 
 On the other hand, [other charting tools](https://docs.google.com/document/d/1ql3NcPihfTsWb5qFxWIxthybpSvFh_cAcPuMi1McM_0/edit) like Datawrapper and Flourish tend to like wide data instead of long data. You can use Workbench to select columns and then group/summarize the data, then export as a csv to make your chart.
