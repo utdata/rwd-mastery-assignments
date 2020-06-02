@@ -13,7 +13,7 @@ This section will cover downloading and understanding the data. Below you'll fin
   - For _Format_, choose **Comma-Delimited**.
   - You'll need to make a series of selections before downloading.
 
-![Ratings download selections](img/gs-ratings-dwnld.png)
+<img src="img/gs-ratings-dwnld.png">
 
 - Once you've made the selections, go back up and use the **Download** button.
 - Hit the **Continue** button.

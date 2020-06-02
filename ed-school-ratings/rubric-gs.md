@@ -43,7 +43,7 @@ Look through the [Campus Accountability Summary Reference](https://rptsvr1.tea.t
 
 You should now have a table that shows the number of schools that got each rating.
 
-![First pivot](img/pivot01-01.png)
+<img src="img/pivot01-01.png" width="300">
 
 ### Filter out non-letter-grades
 
