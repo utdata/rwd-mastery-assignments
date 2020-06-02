@@ -58,9 +58,3 @@ Right-click on this link: [TEA-Campus-Locations-with-Geo-2019](TEA-Campus-Locati
 ## Ignore this
 
 - Links for the prof: [Workbench](https://app.workbenchdata.com/workflows/46812/) | [R](https://github.com/utdata/rwd-r-tea-sped-answers).
-
-<video width="320" height="240" controls>
-  <source src="img/video-test.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
