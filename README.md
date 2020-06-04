@@ -26,12 +26,6 @@ Look to Canvas for links to specific assignments.
 
 - [Median Family Income](census-median-income/)
 
-## Tableau
-
-- [Travis County Gun deaths](https://docs.google.com/document/d/1sQBl9TpbBDtasvw8dOql1qQtS-iurZAivPgnOrREmrs/edit#heading=h.cq1m8rq7txl5)
-- [Animal intakes exploration](austin-animal-center/README.md)
-- [Vaccination exemptions](vaccination-exemptions/README.md)
-
 ## Final project
 
 - [Mixed Beverage/TABC Violations](alcohol-sales-tabc/README.md)
@@ -43,9 +37,16 @@ Look to Canvas for links to specific assignments.
 
 ## Regular Expressions
 
-> Not included in Spring 2020
+> Not included in Summer 2020
 
 - [Data cleaning with Regular Expressions](https://docs.google.com/document/d/1DvAM4lnGJLefo9skD8GgM-_9S1BEhpjJfV86yhJavI0/edit#heading=h.crhjhbmzwwfl)
 - [Dangerous Dogs assignment](regular-expressions/rubric-regex101.md)
 - [Using Regex in Workbench](regular-expressions/rubric-wb.md)
 
+## Tableau
+
+> Not included in Summer 2020
+
+- [Travis County Gun deaths](https://docs.google.com/document/d/1sQBl9TpbBDtasvw8dOql1qQtS-iurZAivPgnOrREmrs/edit#heading=h.cq1m8rq7txl5)
+- [Animal intakes exploration](austin-animal-center/README.md)
+- [Vaccination exemptions](vaccination-exemptions/README.md)

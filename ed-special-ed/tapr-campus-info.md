@@ -1,5 +1,7 @@
 # Campus information from TAPR
 
+> This isn't used anymore since I have the 2019 Locations file.
+
 The TAPR system does have CAMPUS ID information, but it does not indicate schools that are disciplinary, part of the justice system or alternative schools. As such we used the Accountability ratings data.
 
 But, just to have as a reference since I have it, this is how you **would** download it if we had used it.
