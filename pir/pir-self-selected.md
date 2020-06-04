@@ -1,13 +1,15 @@
 # Public information requests for data
 
-This assignment is geared to coming up with your own PIR for new data from an agency subject to Texas Public Information laws. You are not graded on whether you actually get the data or not, but on the quality of the attempt.
+For this assignment you come up with your own Public Information Request for new data from an agency subject to Texas Public Information laws. **Please read the requirements below carefully.**
+
+I recommend you think first about what you want to learn about, and then consider the agency that might collect a record on that subject. Another way to go about it is to target a state agency and then look through their [records retention schedule](https://www.tsl.texas.gov/slrm/state/schedules) that lists data collected by each agency, but I find that mind-numbing.
 
 ## Requirements of the assignment
 
 - The request must be made to an entity subject to Texas Public Information laws. A state or city agency. NOT a federal agency or private entity.
 - The data must not be available already in the format you are requesting. It could be that some information is available online but you want more fields, or as data instead of PDFs, etc. But let's talk about that if that is the case.
 - Salary data is off limits, as it is the example.
-- I discourage you from filing against UT-Austin as they charge for everything. If you have a _GREAT_ idea, let's talk about it.
+- I you file against UT-Austin they will charge for it, likely more than $100. If you have a _GREAT_ idea, let's talk about it.
 
 ## Part 1: Start with the draft
 

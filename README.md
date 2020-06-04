@@ -8,8 +8,7 @@ Look to Canvas for links to specific assignments.
 
 ## Public information requests
 
-- [PIR draft](pir/pir-draft.md)
-- [PIR drug offenses](pir/pir-drug-offenses.md)
+- [PIR assignments](pir/README.md)
 
 ## Google sheets
 
