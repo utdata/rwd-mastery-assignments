@@ -104,7 +104,7 @@ You now have the answers for Questions 2 & 3. Also note the `C_YRS_IR` column in
 
 ## Your deliverables for the assignment
 
-There are two parts to this assignment.
+There are two parts to this assignment. **They have different due dates!**.
 
 ### The data
 
