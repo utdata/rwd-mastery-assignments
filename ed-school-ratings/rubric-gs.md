@@ -24,7 +24,7 @@ The Austin/Round Rock MSA: Bastrop, Caldwell, Hays, Travis and Williamson counti
 - Under File, use Import and upload your data file.
 - At the import screen, choose the following:
 
-![Sheets import](img/sheets-import.png)
+![Sheets import](img/sheets-import-600.png)
 
 > The part about converting text to numbers can be important. TEA data includes IDs that start with `0`, which you will lose if you don't do this. While not as important for this story, it is a prime example of this type of situation.
 

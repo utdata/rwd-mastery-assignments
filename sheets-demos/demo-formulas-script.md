@@ -1,8 +1,8 @@
-# Steps for sheets demo
+# Demo steps for formulas in Sheets
 
 Show the following in class.
 
-- Import [the data](demo-data.csv?raw=true). Go over options.
+- Import [the data](demo-formulas-data.csv?raw=true). Go over options.
 - Select from within/without data
 - Transpose into new sheet
 - Delete top row
