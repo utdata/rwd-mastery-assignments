@@ -15,7 +15,7 @@ You editor would like the following details in this first version:
 
 The Austin/Round Rock MSA: Bastrop, Caldwell, Hays, Travis and Williamson counties.
 
-> Of note: We would look further into which local charter schools failed to meet standards, but some schools from other cities like Dallas and San Antonio are listed as Austin because their parent organization is based in Austin (or at least I presume that is why.)
+> Of note: If actually doing this story, we would look further into which local charter schools failed to meet standards, but some schools from other cities like Dallas and San Antonio are listed as Austin because their parent organization is based in Austin (or at least I presume that is why.)
 
 ## Import the data into Google Sheets
 
@@ -36,10 +36,13 @@ You will use a pivot table to get this answer. Note that you'll be filtering out
 
 Look through the [Campus Accountability Summary Reference](https://rptsvr1.tea.texas.gov/perfreport/account/2019/download/camprate.html) data dictionary and find the column name that represents this year's "Overall Rating".
 
+> Be patient with Sheets while using this data. It's a pretty big data set and each action you do in a pivot table takes a couple of seconds to happen.
+
 - Start a new pivot table: Data > Pivot table.
 - Set up the pivot table to "count" the rows based on the "Overall Rating" value.
 
-> Be patient with Sheets while using this data. It's a pretty big data set and each action you do in a pivot table takes a couple of seconds to happen.
+![pivot-ratings-rows](img/pivot-ratings-rows.png)
+![pivot-ratings-values](img/pivot-ratings-values.png)
 
 You should now have a table that shows the number of schools that got each rating.
 
@@ -51,17 +54,21 @@ You'll see that there are still schools that were "Not Rated" or otherwise don't
 
 - Use Filters to remove all the non-letter grades from the ratings list. You'll use the same ratings column in your filter to achieve this.
 
+![pivot-filter-ratings](img/pivot-filter-ratings.png)
+
 ### Filter out alternative ratings
 
 We want to filter out the non-traditional schools that were judged on an alternative standard, like juvenile detention centers and the like. Look through the data dictionary to find the column that notes if a school was "Rated under AEA Procedures". If the field says `Y`, then that school was rated under alternative standards.
 
-- Use Filters to exclude schools "Rated under AEA Procedures".
+- Use the **Add** button under Filters to exclude schools "Rated under AEA Procedures". (In this case I'm not giving you the exact answer. I want you to go look up what column you need from the [Campus Accountability Summary Reference](https://rptsvr1.tea.texas.gov/perfreport/account/2019/download/camprate.html).
 
 ### Add charter school columns
 
 Lastly, we want to split this table to show charter schools vs other schools. Look through the data dictionary to find the column that denotes if a school is a "Charter School".
 
 - Use Columns to split the count by "Charter School".
+
+![pivot-columns-charter](img/pivot-columns-charter.png)
 
 Now you have a breakdown of grades for charter schools vs traditional public schools (non-charters).
 
@@ -70,6 +77,8 @@ Now you have a breakdown of grades for charter schools vs traditional public sch
 - In the open cells below the table, create a formula to give you the percentage of non-charter schools that got an "F", and then copy that to create the same for charter schools.
 - Label those formulas in another cell so your future self will remember it.
 - Name the sheet "Fails charter".
+
+![pivot-fail-answers.png](img/pivot-fail-percents.png)
 
 You now have your answer to the first question. Think about how you might write a sentence about that fact.
 
@@ -95,11 +104,15 @@ You now have the answers for Questions 2 & 3. Also note the `C_YRS_IR` column in
 
 ## Your deliverables for the assignment
 
-There are two parts to this assignment. The first is just the data:
+There are two parts to this assignment.
+
+### The data
+
+The first is just the data:
 
 - Share your Google Sheet with me **as an editor** AND submit the link in Canvas for the assignment _GS02.1 pivot tables: School Ratings_.
 
-## Write a data drop
+### Write a data drop
 
 The second part of the assignment (after we've talked about writing with numbers) you will write a short story (three to five paragraphs) based on the details you've found. Since you're acting as an Austin-area reporter, you should lead with information about AISD, but also mention in your story how other local districts fared. Close your story with a paragraph about how charter schools fared vs traditional public schools statewide. (It's true that writing about this difference "for real" would require more reporting to provide context, but just write the data-centric sentence for now that describes the fact.)
 
