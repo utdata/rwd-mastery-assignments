@@ -12,7 +12,7 @@ The goal here is to find which counties in Texas have the highest proportion of 
 
 > You might review the [Google Sheets tutorial](https://multimedia.journalism.berkeley.edu/tutorials/spreadsheets/) by Berkeley for concepts on importing, creating formulas, etc.
 
-> In addition, [this screencast]() shows the first few steps for reference.
+> In addition, [this screencast](https://drive.google.com/open?id=1wJEJH71tPgLu0r7Uvz7iwElXhlALnuGX) shows the first few steps for reference.
 
 ## Download the data
 
@@ -29,7 +29,10 @@ See the [main README.md](README.md) for more information on where the data came 
 
 ## Record the answers
 
-- After you've added all the columns, sort by each percentage and find the county with the highest population for that race. Write those answers out on another sheet with the Race, County Name and Percentage. HINT: Cmd-option-V will paste values only.
+- After you've added all the columns, sort by each percentage and find the county with the highest population for that race. After sorting a race, write those answers out on another sheet with the Race, County Name and Percentage. HINT: Cmd-option-V will paste values only.
+
+![census-results](img/results.png)
+
 - Share the sheet with me or make it viewable by all and submit the URL in canvas.
 
 ## Ignore this
