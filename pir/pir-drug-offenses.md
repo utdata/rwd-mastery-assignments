@@ -6,14 +6,14 @@ For this assignment you'll be submitting a public information request for mariju
 
 ### Part 1: Making the request
 
-- **Get your agency.** Look at the PIR Assignment spreadsheet linked from the Canvas assignment and find your name. To the left you'll see the agency name and type you are assigned. If the type is "city" then it is a local police department. If it is "county" it is a county sheriff's department. There are also university and local school district police agencies in the list.
+- **Get your agency.** Look at the PIR Assignment spreadsheet linked from the Canvas assignment and find your name. To the left you'll see the agency name and type you are assigned. If the type is "city" then it is a local police department. If it is "county" it is a county sheriff's department. There are also university agencies in the list. There _may_ be notes from a previous attempt to take into account.
 - **Find your agency PIR process.** You will have to do research to find out to whom you should make the request and how to contact them.
-- **Part 1 due date: Submit the request.** At this point you should have turned in the request to the agency. Use the template provided below as a guide. **For the Canvas assignment**, write a paragraph explaining the process that was required to submit your request, along with the contact information of the PIO or media office you will be dealing with.
-- **Keep a log.** You will need to follow up your request with phone calls, emails and such to make sure the request is understood by the agency. Keep a communication log of these efforts with date, type of action and any result. Keep all emails and other records, as you will submit those as well. Keep special attention to the 10-working-day rule that the agency has to get back to you.
+- **Part 1: Submit the request. See Canvas assignment for due date.** Use the template provided below as a guide for your request. **For the Canvas assignment**, write a paragraph explaining the process that was required to submit your request, along with the contact information of the PIO or media office you will be dealing with.
+- **Keep a log.** You will need to follow up your request with phone calls, emails and such to make sure the request is understood by the agency. Keep a communication log of these efforts with date, type of action and any result. **Stay on top of this and ask for help if they respond and you are not sure what to do next.** Keep all emails and other records, as you will submit those in the final report. Keep special attention to the 10-working-day rule that the agency has to get back to you.
 
 ### Part 2: Report on your progress
 
-This is due later in the semester. Check Canvas for the due date.
+This is due later in the semester. **Check Canvas for the due date.**
 
 Submit to the Canvas assignment a short summary about the process and results of your search. Include your communication log and copies of any correspondence. *Include in your summary any cost estimates from the agency.*
 
@@ -27,7 +27,11 @@ If your agency is asking for money to complete the request, follow up with an em
 
 > Thank you so much for providing the cost estimate for my request. While I realize not every agency is the same, many police departments in Texas have provided this information free of charge. Is there anything particular about this request that makes it costly? i.e., is there a way I could amend the request that would save agency time and cost?
 
-Be sure to include this information in your final report.
+And let me know when you do this. Don't delay ... we have limited time to fulfill these requests.
+
+If the agency insists on a cost, get with me as we may be able to pay for the request.
+
+Be sure to include all this information in your final report.
 
 ### If you receive the data
 
@@ -55,7 +59,7 @@ Specifically, I'm seeking a spreadsheet, database or delimited text file(s) — 
 The fields I'm seeking for each arrest are:
 
 - Incident number or other record ID
-- Name of suspect
+- Name of suspect if available
 - Date of arrest
 - Charge given
 - Race/Ethnicity of suspect if known
@@ -73,5 +77,7 @@ If certain fields are unavailable, please send what you have and let me know wha
 I want to stress that I'm not seeking any records that are prohibited from release either by statute or previous rulings by the Texas Attorney General or the courts. Please let me know if you feel any records in the fields I've requested are confidential, and I'll consider amending my request.
 
 Also, please let me know if clarifying the request might speed the release of the data, reduce any programming time and, most importantly, avoid a referral to the Attorney General.
+
+To save money and time I can provide a link to have this data transferred electronically. Please let me know if you need that link.
 
 I seek this information in the public interest as a journalist, and not for a commercial purpose. Therefore, I'm requesting that you waive any fees, as allowed under the Act. If processing fees are required, please provide a breakdown of those costs before proceeding with the request.
