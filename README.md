@@ -6,8 +6,6 @@ Look to Canvas for links to specific assignments.
 
 > THIS IS BEING RECONFIGURED FOR SUMMER 2020
 
-## Assignments outline
-
 ## Public information requests
 
 - [PIR assignments](pir/README.md)

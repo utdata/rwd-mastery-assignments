@@ -1,4 +1,4 @@
-# DLA LESO for Workbench
+# Military surplus transfers for Workbench
 
 Be sure to review the [README](README.md) to learn about the data and download it.
 
@@ -43,9 +43,9 @@ This is a two-part assignment.
 - Give your Workflow a name. Don't leave it Untitled.
 - Share your workflow. Click on the **Share** button and set it like this:
 
-![share-workflow](img/share-workbench.png)
+![share-workflow](img/sharing-workbench.png)
 
-### Write a short story
+### Write a data drop
 
 With this part of the assignment we are practicing writing sentences about the data and not a complete story. You don't need to explain the Ferguson angle with these few sentences. Just concentrate on how you would write the facts and attribution.
 
@@ -54,7 +54,7 @@ With this part of the assignment we are practicing writing sentences about the d
 - Write a four paragraph data drop from the data. Be sure to include attribution about where the data came from. (There are links in the README.)
 - You can pick the angle from any of the questions outlined above, but each paragraph should be a description of what you found in the data.
 
-Here is a two-graf example. (You can't use this one ;-).
+Here is a two-graf example. (You can't use this one ;-)).
 
 The Jefferson County Sheriff's Office is flying high thanks to gifts of nearly $2.5 million worth of surplus U.S. Department of Defense equipment.
 
