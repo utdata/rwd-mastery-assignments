@@ -4,7 +4,9 @@ Collection of assignments to prove mastery of various skills in Reporting with D
 
 Look to Canvas for links to specific assignments.
 
-## Assignments outline (based on Spring 2020)
+> THIS IS BEING RECONFIGURED FOR SUMMER 2020
+
+## Assignments outline
 
 ## Public information requests
 
@@ -21,6 +23,7 @@ Look to Canvas for links to specific assignments.
 - Exploring the Billboard Top 100: [Workbench](billboard-hits/rubric-wb.md) | [R](billboard-hits/rubric-r.md)
 - Special Education students: [Workbench](ed-special-ed/rubric-wb.md)
 - Exploring Gifted Students data: [Workbench](ed-gifted-students/rubric-wb.md) | [R](ed-gifted-students/rubric-r.md)
+- Military surplus equipment: [Workbench]()
 
 ## Census
 
