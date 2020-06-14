@@ -12,12 +12,13 @@ This dataset contains every weekly Hot 100 singles chart from Billboard.com. **E
 - Song: Song name
 - Performer: Performer name
 - SongID: Concatenation of song & performer
-- Instance: This is used to separate breaks on the chart for a given song. Example, an instance of 6 tells you that this is the sixth time this song has appeared on the chart, with skips in between.
+- Instance: This is used to separate breaks on the chart for a given song. As an axample, an instance of 6 tells you that this is the sixth time this song has appeared on the chart, with skips in between.
 - Previous Week Position: As of the current date
 - Peak Position: Top position on chart as of this date
 - Weeks on Chart: Weeks on chart as of this date
 
 ## Assignment Rubrics
 
+- [Rubric for Workbench (Detailed)](rubric-detailed-wb.md)
 - [Rubric for Workbench](rubric-wb.md)
 - [Rubric for R](rubric-r.md)
