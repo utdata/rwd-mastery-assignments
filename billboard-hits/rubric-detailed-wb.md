@@ -23,12 +23,12 @@ FOOD FOR THOUGHT: What are your guesses for the questions above? No peeking!
 
 ## Why Workbench
 
-Workbench fits into the category of data journalism tools that I consider "transparent and repeatable". Workbench is more in line with data science languages like R and Python and has several advantages over Excel:
+Workbench fits into the category of data journalism tools that I consider "transparent and repeatable". Workbench is more in line with data science languages like R and Python and has several advantages over Excel or Sheets:
 
 - Each step in the data workflow process is recorded.
 - You can document what you are thinking for each step for your future self or others interested in your work.
 - You can insert and correct steps anywhere in the process without starting over.
-- You can collaborate with colleagues. You can share your work or readers.
+- You can collaborate with colleagues. You can share your work with readers.
 - While Workbench can't do everything, it is built upon Python's [pandas](https://pandas.pydata.org/pandas-docs/stable/) data science library so you can use Python code for advanced functions not available in the interface.
 - It is (currently) free, web-based and easy to learn. It is a _young_ tool under active development and the owners are trying to turn it into a business, but they have committed to keeping the current toolset free for journalists. It was born out of a project at the Columbia School of Journalism.
 
@@ -54,7 +54,7 @@ OK, that process was cooler than it looked. This data is stored in Github, a pop
 
 ### Fix the dates
 
-After you import the data, look through all the columns, paying special attention to the "datatype" that listed under the column name. Are numbers listed at numbers or text? Are dates listed as such? Are there `null` values that should be present? You'll often have to correct such things.
+After you import the data, look through all the columns, paying special attention to the "datatype" listed under the column name. Are numbers listed at numbers or text? Are dates listed as such? Are there `null` values that should be present? You'll often have to correct such things.
 
 In our case the `WeekID` is not listed as a date and we'll need to fix that. There are some `null` values in the `Previous week position` but that is OK because it is the first week on the chart for some songs.
 
@@ -90,15 +90,15 @@ In Workbench, aggregation is part of the **Group** step. (Most data science lang
 
 ![Group and count](img/group-count.png)
 
-We could add more aggregations here by clicking on the **+ ADD** icon at the bottom of the Operations sub-step. In doing so, we could add new columns to our table with using different methods in the Operations dropdown. This table is much like a Pivot Table in Excel. You'll likely need to use multiple aggregations in later assignments.
+We could add more aggregations here by clicking on the **+ ADD** icon at the bottom of the Operations sub-step. In doing so, we could add new columns to our table with using different methods in the Operations dropdown. This table is much like a Pivot Table in Excel or Sheets. You'll likely need to use multiple aggregations in later assignments.
 
 ### Sorting data
 
 Now we have a list of performers and how many times they've been on the chart, but we want to know who has been there the most. For this we need to **Sort** the data. (This simple operation comes in many different names in data science languages: "Arrange" in R, "Order by" in Python and SQL.)
 
 - Add a new step and choose the **Sort** function.
-- Add the column we need, `Weeks in chart`, in the **By* menu.
-- Click on the **Descending** button. (Journalists always want the _most_ of everything.)
+- Add the column we need, `Weeks in chart`, in the **By** menu.
+- Click on the **Descending** button. (Journalists usually want the _most_ of everything.)
 - For the **Keep top** item, type in `10`. (We are going to keep only the top 10 records of our list so we can make a chart later.)
 - Don't forget to add your note to the step! (I want you to do this for each step, but I'm not going to remind you anymore.)
 
@@ -124,17 +124,17 @@ Congrats! You have made a chart of the most popular Performers in the history of
 So, Taylor Swift is the top queen of pop. (Don't worry, Madonna makes an appearance later). But who has had the most No. 1 songs on the charts? Any guesses?
 
 - Start a new tab and call it **No. 1**.
-- Use the **Start from tab** function and again use **Import**.
+- Use the **Start from tab** function and again start from the **Import** tab.
 
 ### Filtering data
 
-To get our answer, we need to consider only No. 1 songs from our table. We'll do this from another [Basic Function of Data Journalism]() (LINK TK), **filter**. We'll take the list of songs at any position and we'll choose only the songs that have "1" as their `Week Position`. (Or we could use `Peak Position` since you can't get any "higher" than No. 1.)
+To get our answer, we need to consider only No. 1 songs from our table. We'll do this using another [Basic Function of Data Journalism]() (LINK TK), a **filter**. We'll take the list of songs at any position and we'll choose only the songs that have "1" as their `Week Position`. (Or we could use `Peak Position` since you can't get any "higher" than No. 1.)
 
 There are two types of filters in Workbench: **Filter by condition** and **Filter by value**.
 
-Filter by condition allows you to define a rule that must be true to keep or delete rows, and the rule set depends on the kinds of data. You can filter before or after dates, greater than or less than numbers, and pick characters out of text.
+_Filter by condition_ allows you to define a rule that must be true to keep or delete rows, and the rules you can set depend on the datatype. You can filter before or after dates, greater than or less than numbers, and pick characters out of text, etc.
 
-Filter by value allows you to pick from the values in a column, typically handy when there are a limited number of selections. (There are way too many Performers in our data to use this here.) It can be very precise, though, where filter by condition can sometimes catch or exclude unwanted values if you aren't careful defining your rules.
+_Filter by value_ allows you to pick from the values in a column, typically handy when there are a limited number of selections. It can be very precise, though, where filter by condition can sometimes catch or exclude unwanted values if you aren't careful defining your rules.
 
 - Start a new step and choose **Filter by condition**.
   - In the **IF** field, select the `Week Position` column.
@@ -148,18 +148,20 @@ Now we have a list of songs when they were No. 1 on the charts.
 
 Note in the **Filter by condition** step that you can have more than one condition within each IF statement by clicking on the "AND|OR" within the IF box. You can also add a new IF statement by clicking on the  **AND|OR** button below the IF box. This allows you to control the order of operations of some pretty complex conditional statements.
 
-And, by having the choice to Keep or Delete rows, you can either find things you want to focus on, or find things you wan to exclude.
+And, by having the choice to Keep or Delete rows, you can either find things you want to focus on, or find things you want to exclude.
 
 ### Deduplicating data
 
-Right now we have all information about songs that are No. 1 for each week since Aug. 1958. Before we can count the number of times a Performer has had a No. 1 song, we need to adjust our data to show each No. 1 Song/Performer combination only once. (Right now it is listed for each week it is at No. 1.)
+Right now we have all information about songs that are No. 1 for each week since Aug. 1958. Before we can count the number of times a Performer has had a No. 1 song, we need to adjust our data to show each No. 1 Song/Performer combination only once. (Right now it is listed for each week the song is at No. 1.)
 
-There are a couple of ways to achieve and both take multiple steps. The method we will use for this time is a little easier to follow, IMHO.
+There are a couple of ways to achieve this and both take multiple steps. The method we will use is a little easier to follow, IMHO.
 
 - Start a new step and choose the **Select columns** function.
 - For **Select columns** dropdown, add `Song` and `Performer`.
 
 <img src="img/select-columns.png" width="300">
+
+You've used yet another "Basic function of data journalism" by "Selecting" columns.
 
 Look through the resulting list and you'll see that Song/Performer combinations are listed more than once. We need to deduplicate that list so they only appear once so we can count the Performer only once per Song.
 
@@ -170,6 +172,7 @@ Look through the resulting list and you'll see that Song/Performer combinations 
 
 <img src="img/deduplicate.png" width="300">
 
+
 Now each Song/Performer combination is only listed once. You might notice in the results that when a Performer collaborates with another artist, they are listed with their collaborators. 50 Cent has at least three No. 1 hits, but only one of them by himself. We're going to leave this like this and consider collaborators together. (If we wanted to count all contributions to No. 1 songs, we would have to go a different route.)
 
 ### Group and count
@@ -179,7 +182,7 @@ Now that we have our deduplicated list of Song/Performers, we simply have to Gro
 - Start a new step and choose the **Group** function.
   - For columns, select `Performer`.
   - Keep the **Count** aggregation.
-  - Name your new column "No. 1 hits"
+  - Name your new column "No. 1 hits".
 
 ### Sort the list
 
@@ -209,7 +212,7 @@ Now look at all the steps of this workflow and think where you can add a filter 
   - For Select condition, choose **Date is after**.
   - Type in 2014-12-31 in the **Value** field.
 
-The condition "Date is after" does not include the date we are using, so we actually have to pick the day BEFORE the date we want to start keeping data. If we wanted to also add bounds and an end date to consider, we could add an "AND" to our if statement and use "Date is before". Our data only goes through 2019 so we only need to set the lower bounds.
+The condition "Date is after" does not include the date we are using, so we actually have to pick the day BEFORE the date we want to start keeping data. If we wanted to also add bounds and an end date to consider, we could add an "AND" to our IF statement and use "Date is before". Our data only goes through 2019 so we only need to set the lower bounds.
 
 Now you can go to the last step in the workflow and see how the answers have changed compared to our previous tab.
 
@@ -217,7 +220,7 @@ Now you can go to the last step in the workflow and see how the answers have cha
 
 Now that you've seen that we can duplicate a workflow and make changes to it, consider this: If we wanted to find which Performers had the most Top 10 hits on the charts (as opposed to just No. 1 hits), how could we use our earlier tab for No. 1s?
 
-I'm going to let you do this on your own, but here is a pretty big hint: Duplicate the "No. 1" tab and then look through the steps and see how you could the workflow to look at songs in the Top 10 instead of just No. 1.
+I'm going to let you do this on your own, but here is a pretty big hint: Duplicate the "No. 1" tab and then look through the steps and see how you could adjust the workflow to look at songs in the Top 10 instead of just No. 1.
 
 Name the tab **Top 10 hits** so I can find your answer.
 
@@ -227,7 +230,7 @@ Next we want to learn which song has been on Hot 100 the most number of weeks at
 
 This is very similar to our first question but we are looking at `Song` and `Performer` together instead of just the Performer. We'll start with a new tab, though.
 
-You might try this on your own before following the steps below to see if you can figure it out own your own.
+> Try this on your own before following the steps below to see if you can figure it out own your own.
 
 - Start a new tab and call it **Longest**.
 - Use **Start from tab** and use the Import tab.
@@ -259,7 +262,7 @@ This is a two-part assignment, and you've just done the first part.
 - Click on the **Share** button at the top-right of Workbench and click the first checkbox that shares your workflow with the world.
 - Copy the URL and submit it to Canvas assignment with your Google Doc link for part II of the assignment.
 
-![Turn in](../military-surplus/img/sharing-workbench.png)
+<img src="../military-surplus/img/sharing-workbench.png" width="300">
 
 ### Write a data drop
 
@@ -270,3 +273,7 @@ Write this in Google Docs and share it to my email as AN EDITOR. Submit the link
 ## Soundtrack for this assignment
 
 This lesson was constructed with the vibes of [The Bright Light Social Hour](https://www.thebrightlightsocialhour.com/home). They've never had a song on the Hot 100 (at least not through 2019).
+
+## Ignore this
+
+- [For the instructor](https://app.workbenchdata.com/workflows/18627/).

@@ -18,7 +18,7 @@ Look to Canvas for links to specific assignments.
 ## Workbench
 
 - [Workbench tutorials](workbench-tutorials/)
-- Exploring the Billboard Top 100: [Workbench](billboard-hits/rubric-wb.md)
+- Exploring the Billboard Top 100: [Workbench](billboard-hits/rubric-detailed-wb.md)
 - Military surplus equipment: [Workbench](military-surplus/rubric-wb.md)
 - Special Education students: [Workbench](ed-special-ed/rubric-wb.md)
 
