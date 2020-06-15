@@ -6,6 +6,11 @@ There are two types of lessons in Workbench, the [Tutorials](https://app.workben
 
 Create a single Google Doc to collect all your results from each tutorial. Label them as you go along so I know which is which. Read the directions carefully as I ask for different things for various assignments. Be sure to share the Google Doc with me before submitting the URL to Canvas.
 
+I'm asking you to take screenshots and upload files for this assignment. Here is some guidance:
+- Take a screenshot: [Mac](https://support.apple.com/en-us/HT201361) | [Window](https://support.microsoft.com/en-us/help/4027213/windows-10-open-snipping-tool-and-take-a-screenshot).
+- Here is how to [upload an image to Google Docs](https://support.google.com/docs/answer/97447?co=GENIE.Platform%3DDesktop&hl=en).
+- Upload a file to [Google Drive](https://support.google.com/drive/answer/2424368?hl=en&co=GENIE.Platform=Desktop).
+
 ## Tutorials
 
 From the [Tutorials](https://app.workbenchdata.com/lessons) section, do the first two lessons:
