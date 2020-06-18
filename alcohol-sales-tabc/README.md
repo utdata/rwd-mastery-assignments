@@ -12,17 +12,21 @@ You'll be drawing from at least five years of data from the [Mixed Beverage Gros
 
 - Review the **Columns in this Dataset** so you get an idea of the fields available.
 - Click the **View Data** button at the top to get to the data.
-- Filter the **Obligation End Date** from Jan. 1 2014 to present.
-- Filter by **Location City** for AUSTIN. (Use capital letters ... it is case sensitive.)
+- Filter the **Obligation End Date** to AFTER Dec. 31 2013.
+- Filter the **Location County** to "227", which is the code for TRAVIS County.
 - Export as a CSV.
 
-You should end up with a little over 70k records. Any further filtering can be done in your analysis tool (likely Workbench or Tableau).
+You should end up with a little over 80k records. Any further filtering can be done in your analysis tool (like Workbench, Tableau or R).
 
 ### Important notes about this data
 
 Each row of the data is the amount of total money brought in **_each month_** by the establishment, based on the Obligation End Date, which is always the last day of the reporting month. (Ignore the Responsibility dates.)
 
-There are four values of money: Total Receipts, Wine Receipts, Beer Receipts, Liquor Receipts and Cover Charge Receipts. The beer, wine, liquor and cover charge values _should_ add up to the Total Receipts, though I've found that is not always true. I would **stay away from any analysis on Cover Charges** as there must be some special rules that would need investigation to understand. The amounts are sales amounts (i.e., total amount of money bought in for that month for that category) and not profits or number of drinks sold.
+There are four values of money: Total Receipts, Wine Receipts, Beer Receipts, Liquor Receipts and Cover Charge Receipts. The beer, wine, liquor and cover charge values _should_ add up to the Total Receipts, though I've found that is not always true. I would **stay away from any analysis on Cover Charges** as there must be some special rules of when they need to be reported that would need investigation to understand. The amounts are sales amounts (i.e., total amount of money bought in for that month for that category) and not profits or number of drinks sold.
+
+VERY IMPORTANT: Establishments have until the 20th day of the following month to upload their data, and then it takes some days to become live. Because of this, you might not have full records for the month you download OR THE MONTH BEFORE. Be aware of that and be careful to not compare recent months. **If you are downloading in early August, then you probably only have data through June!**.
+
+Sometimes names of taxpayers and locations are obscured. Hotel chains may have a company that serves all their hotels. A beverage company may hold license to sell in multiple locations. Each Taxpayer Name has only one Taxpayer Number, but that company could own many establishments in many locations.
 
 ### TABC enforcement actions
 
@@ -34,7 +38,8 @@ The site we'll use includes data violations of rules/laws handled by the Texas A
 - Click the **Public Inquiry** menu in the red bar.
 - Click on **Create a list of licenses or permits with administrative violations**.
 - For **Location**, click on the **Add/Edit** link.
-  - Add **City**, choose **Other**. Type in _AUSTIN_ and click **Submit Entry**. Then choose **Return to Prior page**.
+  - Under **County**, choose **TRAVIS**.
+  - Click **Submit Entry**. Then choose **Return to Prior page**.
 - For **Violations**, click on the **Add/Edit** link.
   - You'll see a list of violations. Choose **503: Permitting Minor To Possess/Consume**. Click **Submit Entry**. Repeat this process until you have all the violations listed below.
     - 503: Permitting Minor To Possess/Consume
@@ -56,6 +61,7 @@ The site we'll use includes data violations of rules/laws handled by the Texas A
 - On **License Status** add "Inactive" to the two default options (Active Current, Active Suspended).
 - On **Violation Start Date** choose 01/01/2014 to present date.
 - On **Output type** choose _Comma-delimited file_.
+- Type in the security measure code.
 - Lastly, choose **Submit Query** and it will download the file.
 
 Note at the bottom there is a link to the [Record layout](https://www.tabc.texas.gov/public_Inquiry/admin_violations_record_layout.asp) of the data, which you'll need to understand all the fields.
@@ -66,6 +72,5 @@ For this project, I suggest you stay away from directly joining the TABC data to
 
 ## Assignments
 
-- [Spring 2020 project](rubric-spring20.md)
-- [Long semester project](rubric-long-semester.md)
 - [Summer final project](rubric-summer.md)
+- [Long semester project](rubric-long-semester.md)
