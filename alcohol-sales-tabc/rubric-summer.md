@@ -52,7 +52,7 @@ You might start by using Workbench to answer a series of questions. It isn't req
 - How do TABC violations compare by ZIP code to alcohol sales by ZIP code?
 - If you are looking at specific locations and their violations, an additional data point for your story might be how much alcohol they sold that year, which you could get from the alcohol data.
 
-## Notes on shaping data
+### Notes on shaping data
 
 When you want to make a chart from data, one of the more important aspects is to get your data in the right "shape" to support your chart. Here is how I go about that process:
 
