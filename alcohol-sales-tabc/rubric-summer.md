@@ -4,12 +4,15 @@ The summer final project for Reporting with Data is a little different than duri
 
 ## Deliverables
 
-- You'll produce an 600-word news story with at least three human source including the two recorded sources listed below. (This means you'll have to find at least one source on your own.) You can include additional student sources in your reporting, but not from our class and they don't count toward the three sources. Properly credited published reports or studies are allowed as source material in your story, but they do not count toward your human source quota. This should be a news story, not a personalized blog post. **Include a headline for your story**. Use Google Docs and share with me as an editor. (300 points)
-- You'll turn in any analysis work you've done (Workbench and any other charting tools), regardless if it is used in the story. I want all your work. (200 points)
-- You'll produce at least one publishable chart to go with your story using the tool of your choice. This chart needs to have a proper headline, description, legend, annotations and such so that the chart **can be understood outside the context of the story**. Include a screenshot and/or link in your story. I suggest using Datawrapper for this, but you could also use Flourish or Tableau if you know how (or learn). (50 points)
-- You'll need to choose an editing partner from class to work with and you'll need to include a short report of how you helped them focus and edit their story and analysis. Use Google Docs and share with me. (50 points)
-- Two promotional tweets, one geared toward the story and one geared toward a chart. You don't have to actually tweet the results, just put them in a Google Doc. Include an image that might help draw attention to your tweet. This can be in your story file. (25 points)
-- A diversity statement about how you did or could better add diversity of voice to your story. Can also be included with your story file. (25 points)
+For Summer 2020, this is all due Friday, Aug. 14th at 11:59 p.m. except for the editing report due the day before.
+
+- **Story**: You'll produce an 600-word news story with at least three human sources including the two recorded sources listed below. (This means you'll have to find at least one source on your own.) You can include additional student sources in your reporting, but not from our class and they don't count toward the three sources. Properly credited published reports or studies are allowed as source material in your story, but they do not count toward your human source quota. This should be a news story, not a personalized blog post. Use Google Docs and share with me as an editor. (300 points)
+- **Headline**: A good, news-oriented headline for your story**: (25 points)
+- **Analysis**: You'll turn in any analysis work you've done (Workbench and any other charting tools), regardless if it is used in the story. I want all your work. (200 points)
+- **Chart** You'll produce at least one publishable chart to go with your story using the tool of your choice. This chart needs to have a proper headline, description, legend, annotations and such so that the chart **can be understood outside the context of the story**. Include a screenshot and/or link in your story. I suggest using Datawrapper for this, but you could also use Flourish or Tableau if you know how (or learn). (50 points)
+- **Editing partner**: You'll need to choose an editing partner from class to work with throughout the project and including a line-edit and review of their story and analysis. Use Google Docs and share with me. (50 points due Aug. 13 for Summer 2020.)
+- **Promotions**: Two promotional tweets, one geared toward the story and one geared toward a chart. You don't have to actually tweet the results, just put them in a Google Doc. Include an image that might help draw attention to your tweet. This can be in your story file. (25 points each)
+- **Diversity statement**: Explain you did or could better add diversity of voice to your story. Can also be included with your story file. (25 points)
 
 ## Materials to work from
 
@@ -25,9 +28,7 @@ First, take a look at this resource: [How to tackle a new data set](https://docs
 
 I suggest you use Workbench to clean, analyze and shape your data for Datawrapper. (You can chart in Workbench for yourself, but your published graphic needs to be in Datawrapper, Flourish or some other tool that allows descriptions, annotations and the like.)
 
-### Questions and story ideas
-
-You might start by using Workbench to answer a series of questions. It isn't required that you find any ot these ... they are just ideas for you to work from or help you brainstorm for your own idea.
+You might start by using Workbench to answer a series of questions. It isn't required that you find any of these ... they are just ideas for you to work from or help you brainstorm for your own idea.
 
 ### Alcohol sales data
 
@@ -70,9 +71,17 @@ When you want to make a chart from data, one of the more important aspects is to
 
  ^^ One limitation with Workbench is you can only keep one or two of your columns on a row when you reshape. I've used a Formula to combine two rows together (Like Location Name and Location Address) to get around this limitation. There is also some [pandas magic](https://github.com/utdata/rwd-workbench#reshaping-with-melt) if you are going from wide_to_long, but that is more for Tableau instead of Datawrapper, which likes wide data.
 
-## Turning in your project
+## Editing partners
 
-To turn in your work:
+- You'll need to choose an editing partner to edit each other's story and chart. PARTNERS CAN'T HAVE THE SAME STORY ANGLE OR SHARE ANALYSIS. The purpose of this pairing is to help each other with story edits and clarity for the chart. (You can do this over the phone while editing Google Docs or use conference software of your choice.) The edit must be completed with the summary report **by 11:59 p.m. Thursday, Aug. 13th**.
+
+To turn in your assignment, include the following in a Google Doc that is shared with me:
+
+- The name of your partner.
+- A brief synopsis of their story angle.
+- A description of the editing advice you offered them.
+
+## Turning in your project
 
 - Save and/or upload all your work into one Google Drive folder and make me an EDITOR of that folder so I can see and edit everything inside.
 - Write your story in Google Docs. You can include the supplementary material in the same file, but it does not count toward the word count.

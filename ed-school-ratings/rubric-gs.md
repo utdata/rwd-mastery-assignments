@@ -42,6 +42,7 @@ Look through the [Campus Accountability Summary Reference](https://rptsvr1.tea.t
 - Set up the pivot table to "count" the rows based on the "Overall Rating" value.
 
 ![pivot-ratings-rows](img/pivot-ratings-rows.png)
+
 ![pivot-ratings-values](img/pivot-ratings-values.png)
 
 You should now have a table that shows the number of schools that got each rating.
