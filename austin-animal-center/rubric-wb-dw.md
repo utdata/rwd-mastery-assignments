@@ -163,7 +163,7 @@ For this chart we want to build a line chart with the months across the X axis a
 
 Again, it makes sense to look at the [Datawrapper academy for line charts](https://academy.datawrapper.de/article/23-how-to-create-a-line-chart) to see how our data should be structured.
 
-You'll see there that the first column is the category of time, in our case the month and year. Additional columns are counts of data we want to chart, but we only have one thing to count, our number of intakes for each month.
+You'll see there that the first column is the category of time, in our case the month and year. Additional columns are counts of data we want to chart, but we only have one thing to count, our number of intakes for each month. We will only have two columns.
 
 This time we will use the **Group by Date** function to get this.
 
@@ -199,7 +199,7 @@ In my case Datawrapper chose the line chart and that is what we want in this cas
   - Click the checkbox.
   - You could change the fill color, but the default grey is a good choice.
 
-This make it easy for readers to discern the line and give an indication that there is value underneath it (that we are counting the number of animals.)
+This makes it easy for readers to discern the line and give an indication that there is value underneath it (that we are counting the number of animals.)
 
 ![Monthly trends](img/dw-monthly-example.png)
 
@@ -227,7 +227,7 @@ We could see from our last chart that there are definitely monthly spikes in ani
 
 Before we start preparing our data for the next chart, let's get a handle on what kinds of animals we are talking about here. Let's see how many rows we have for each animal type.
 
-> This might be a good one to try on your own before you read the steps below.
+> The goal here is to Group by Animal type and count the rows. This might be a good one to try on your own before you read the steps below.
 
 - Start a new tab and name it `Animal type`.
 - Start from tab **Import & Clean**.
@@ -238,6 +238,8 @@ Before we start preparing our data for the next chart, let's get a handle on wha
 
 Our results shows there are five types of animals, but some of them like "Bird" and "Livestock" have only a few records. If we made a line chart over time for animal types those fields would have hardly any values.
 
+<img src="img/wb-byanimal.png" width="300">
+
 When we prepare our chart data, we will **Refine** our data to merge the "Bird" and "Livestock" rows with "Other" so we only have three animal types.
 
 ## Animal types by month on intake
@@ -246,7 +248,7 @@ What we want to learn here is how many animals of each type does the shelter bri
 
 This way we can use several years of data to see if certain types of animals "typically" come in during certain months.
 
-If we were to visualize this in our head as a line chart, our X axis would have twelve categories, one for each month of the year. Our Y axis count the number of animals brought in each month, but there would be a new line for each animal type.
+If we were to visualize this in our head as a line chart, our X axis would have twelve categories, one for each month of the year. Our Y axis is the count of rows (or animals brought in each month), but there would be a new line for each animal type.
 
 Take a look again at the [Datawrapper academy for making a line chart](https://academy.datawrapper.de/article/23-how-to-create-a-line-chart) and look at the example there.
 
@@ -258,7 +260,7 @@ Their data looks like this:
 
 ![Apple data](img/dw-apple-data.png)
 
-Our data need to be structured in the same way, but for `Quarter` we need the month of the year, and we need a column for each "Animal type".
+Our data need to be structured in the same way, but for `Quarter` we need the month of the year, and we need a column for each "Animal type": Dog, Cat and Other.
 
 ### Preparing our data
 
@@ -266,7 +268,7 @@ This is more complicated workflow than the ones we've done so far because we not
 
 - Start a new tab and name it `AnimalTypeMonth`.
 - Start from the **Import & Clean** tab.
-- Filter your data to exclude the 2020 records. Just like in our first chart we don't want partial years of data or we'll have more records for some months than others.
+- **Filter** your data to exclude the 2020 records. Just like in our first chart we don't want partial years of data or we'll have more records for some months than others.
 
 ### Refine merging
 
@@ -274,7 +276,7 @@ Remember how I said we want to merge birds, livestock and other? We'll do that n
 
 - Start a new step with the **Refine** function
 - Choose the `Animal Type` column.
-- Click on the _Bird_, _Livestock_ and _Other_ boxes and click **Merge** at the bottom.
+- Click on the _Bird_, _Livestock_ and _Other_ boxes and click **Merge facets** at the bottom. (Facets are groups of a data point. It's a term from [OpenRefine](openrefine.org), which this function is inspred by.)
 
 <img src="img/wb-merge.gif" width="300">
 
@@ -282,13 +284,13 @@ What you've done here is change all the records that had Bird or Livestock and m
 
 ### Extract the month from a date
 
-If we did a **Group** or **Group by Date** on the `Date` field, it would count the records by each _individual_ month and we don't want that. We want to count all the "January" records regardless of year. to do this we need to create a new column that has just the _Month_ of the `Date` field. We'll use an Excel **Formula** for this.
+If we did a **Group** or **Group by Date** on the `Date` field, it would count the records by each _individual_ month and we don't want that. We want to count all the "January" records regardless of year. To do this we need to create a new column that has just the _Month_ of the `Date` field so we can group on that. We'll use an Excel **Formula** to create this.
 
 - Add a new step and choose **Formula**.
-- Leave the type **Excel**
+- Leave the type **Excel**.
 - For the formula type in `=MONTH(A1)`.
 - Make sure **Apply to all rows** is checked.
-- Name the new column `Month` and play the step
+- Name the new column `Month` and play the step.
 
 <img src="img/wb-typemonth-makemonth.png" width="300">
 
@@ -306,9 +308,9 @@ In this case we want to group by two values: `Month` and `Animal type`. We want 
 
 ![Group multi](img/wb-typemonth-groupmulti.png)
 
-So this counted all the rows where the `Month` and `Animal type` matched: There are 4,220 records with both "Dog" for `Animal type` and "1" for `Month` (at least when I pulled the data. Your number might not be the same but it should be similar). It counted each Month and animal type combination.
+So this counted all the rows where the `Month` and `Animal type` matched: There are 4,220 records with both "Dog" for `Animal type` and "1" for `Month` (at least when I pulled the data. Your number might not be the same but it should be similar). It counted each Month and Animal type combination.
 
-There should be 36 rows of data: 3 animal types x 12 months.
+There should be 36 rows of data: 3 Animal types x 12 Months.
 
 ### Refine to rename variables
 
@@ -331,7 +333,7 @@ Right now our data is "long", where each row is a single value and the columns d
 
 If you have multiple columns of the same type of thing, like multiple Years of data, or Apple device types, it is wide data.
 
-For reshaping from long-to-wide, the concept is this: We will pick a column where we want each value to be made into the rows. Then we pick another one where we will spread out the observations into new categories based on that category. It's easier to see than to explain.
+For reshaping from long-to-wide, the concept is this: We will pick a column where we want each value to be made into the rows (`Month` in our case). Then we pick another column (`Animal type`) we will spread out the observations into new columns based on that category. It's easier to see than to explain.
 
 - Start a new step and choose the **Reshape** function.
 - For the direction choose **Long to wide**.
@@ -344,7 +346,7 @@ Now our data looks something like this:
 
 ![Data done](img/wb-typemonth-datadone.png)
 
-Now this looks like our Datawrapper example data. It took a bit to get there, including some logic to pull out the month from a date field and some grouping and reshaping of the data. You'll likely need to apply those same concepts in other data projects that visualize dat no matter what tool or language you use.
+Now this looks like our Datawrapper example data. It took a bit to get there, including some logic to pull out the month from a date field and some grouping and reshaping of the data. You'll likely need to apply those same concepts in other data projects that visualize data no matter what tool or language you use.
 
 You might notice that months are in alphabetically order instead of month order. Datawrapper will fix that.
 
@@ -378,9 +380,9 @@ While I think it is clear here already that cats are our focus, I want to show y
 
 As you watch the gif below, know that when selecting the highlight points, it is really two separate clicks on the graphic, not a click-n-drag thing.
 
-After adding either the highlight or the text, you can adjust where they appear on the graphic by adjusting the data point coordinates. It's strange at first to adjust distance based on a date or value of cats, but after mucking with it for a bit you can figure it out.
-
 ![annotation](img/dw-typemonth-annote.gif)
+
+After adding either the highlight or the text, you can adjust where they appear on the graphic by adjusting the data point coordinates. It's strange at first to adjust distance based on a date or value of cats, but after mucking with it for a bit you can figure it out.
 
 You can play with those but they are not required for the assignment.
 
@@ -390,13 +392,13 @@ I'm again leaving it to you to properly title, describe and source your chart. G
 
 ## Food for thought and problematic data
 
-You might take a couple of minutes to look over the raw data again and think of other stories you might be able to tell and the visualizations that might support it.
+Take some time to look over the raw data again and think of other stories you might be able to tell and the visualizations that might support it.
 
 There are some fields in the data that look promising but are not ... at least not in their current state.
 
-- `Name` seems like it could be a fun category to play with. To do it right you would need to do some serious cleanup of the name field to remove (or understand) names starting with `*`. (You could try to tackle this in Workbench with **Refine**, but a better tool would be [OpenRefine](https://openrefine.org/), which that function is inspired from.) There are also many that have the weight instead of a name. You might need to do research/interviews at the AAC to figure out if these are names given by the shelter or what.
-- `Address` of where dogs were found would be very cool to look at, but these addresses are a mess. If they had a clean ZIP code, we could look by that. We could geocode the addresses to get a Latitude and Longitude, but it would cost money and some of these are pretty poorly formatted. Might be worth it if you know there is a story there.
-- `Breed` really looks fun but there are definitely challenges there. Who decides the breed? What's the difference between a "Pit Bull/German Shepherd" and a "German Shepherd/Pit Bull"? If you are counting German Shepherds, do you include the mixes?
+- `Name` seems like it could be a fun category to play with. To do it right you would need to do some serious cleanup of the name field to remove (or understand) names starting with `*`. (You could try to tackle this in Workbench with **Refine**, but a better tool would be [OpenRefine](https://openrefine.org/), which that function is inspired from.) You might need to do research/interviews at the AAC to figure out if these are names given by the shelter or what. There are also many rows that have the weight instead of a name.
+- `Address` of where animals were found would be very cool to look at, but these addresses are a mess. If they had a clean ZIP code, we could look by that. We could geocode the addresses to get a Latitude and Longitude, but it would cost money and some of these are pretty poorly formatted. Might be worth it if you know there is a story there.
+- `Breed` really looks fun but there are definitely challenges there. Who decides the breed? What's the difference between a "Pit Bull/German Shepherd" and a "German Shepherd/Pit Bull"? If you are counting German Shepherds, do you include the mixes? `Color` has similar challenges.
 
 ## Turn in your work
 
