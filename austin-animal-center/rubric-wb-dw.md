@@ -4,25 +4,25 @@ See the [README](README.md) for more on downloading the data properly.
 
 ## Your quest
 
-We'll use Workbench to explore five years of animal intake data to find insights and then visualize some of those using Datawrapper.
+We'll use Workbench to explore multiple years of animal intake data to find insights and then visualize some of those using Datawrapper.
 
 We'll tackle one question at a time, and then you'll have an opportunity to explore some on your own. Here are the questions we'll answer:
 
-- Are animal intakes increasing or descreasing over time (year)?
+- Are animal intakes increasing or decreasing over time (by year)?
 - Is there a seasonal monthly trend in overall animal intakes?
-- Do certain types of animals drive that seasonal intake?
+- Do certain types of animals drive seasonal trends?
 
 ## Connect and clean your data
 
 It is always best to create a folder on your computer to hold all your project assets so you know where to find them. Put your downloaded Socrata CSV file there.
 
-- Launch [Workbench](https://app.workbenchdata.com/) and start a new Workflow. Title it **YourName - AAC**.
-- Use the **Upload** option for data source upload your CSV and name the tab **Import & Clean**.
+- Launch [Workbench](https://app.workbenchdata.com/) and start a new Workflow. Title it **YourName - AAC**, but with your name, of course.
+- Use the **Upload** option for data source and upload your CSV and name the tab **Import & Clean**.
 - As always, review all the columns to make sure they are the correct datatype. You'll notice that the two date fields `DateTime` and `MonthYear` both are the same, and came in as text. Let's convert one of those into a real Date format.
   - Create a new step with **Convert to Date**
   - Add the `MonthYear` column.
   - On the _Input Format_, choose **Date (U.S.) MM/DD/YYY**.
-- Rename the MonthYear column as **Date**.
+- Rename the MonthYear column as `Date`.
 
 ## Animal intakes over time
 
@@ -31,21 +31,21 @@ Our goal here is to see the number of animals brought in each year over a full f
 
 ![Datawraper example](img/dw-byyear-example.png)
 
-This is a column chart with years along the bottom (the X axis) with the bars counting the number of animals brought in (the Y axis). Before diving in, it might help to peek at [Datawrapper column charts](https://academy.datawrapper.de/article/20-how-to-create-a-column-chart) to see what our data should look like. In doing so, you'll see our first column needs to be the category (Years in our case) and the second column the values (Count of animal intakes).
+This is a column chart with years along the bottom (the X axis) and with the bars counting the number of animals brought in (the Y axis). Before diving in, it might help to peek at [Datawrapper column charts](https://academy.datawrapper.de/article/20-how-to-create-a-column-chart) to see what our data should look like. In doing so, you'll see our first column needs to be the category (Years in our case) and the second column the values (Count of animal intakes).
 
 Since every row is an animal intake, we just need to count the number of rows for each year to find our numbers.
 
 ### Filter to the data we need
 
-The first thing we need to think about is the date range of our dataset. We downloaded five full years of data plus several months of the current year. If we include 2020, then our chart will look like a sharp decrease at the end because it only has a partial year of data. (We'll check the intake pace for 2020 later in a different chart later.)
+The first thing we need to think about is the date range of our dataset. We downloaded five full years of data plus several months of the current year. If we include 2020, then our chart will look like a sharp decrease at the end because it only has a partial year of data.
 
 - Start a new tab since we are starting a new quest/answer. Name it **IntakesByYear**.
 - Use **Start from tab** and choose the **Import** tab.
 - Add a new step with **Filter by condition**.
   - Choose `Date` for the column.
   - For the operation, choose **Date is after**
-  - Fill in "2019-12-31", the last date we want to keep. (This step takes some time. Be patient.)
-  - Choose the **Delete** option and play the step.
+  - Fill in "2019-12-31", the last date we want to keep.
+  - Choose the **Delete** option and play the step. (This step takes some time. Be patient.)
 
 <img src="img/wb-byyear-filter.png" width="300">
 
@@ -66,13 +66,13 @@ Note that Workbench groups these records by the first day of the year, not a par
 
 ### Pulling the year from a date
 
-Again, there are several ways to pull a year from a date: We could create a new column **Formula** using `=YEAR(A1)` or we could split the column. Either way, we have to change it to Text first. We'll use **Split column**, but it is a multi-step process to get what we want.
+There are several ways to pull a year from a date: We could create a new column **Formula** using `=YEAR(A1)` or we could split the column. Either way, we have to change it to Text first. We'll use **Split column**, but it is a multi-step process to get what we want.
 
-- Use the dropdown on the `Date` column and choose **Convert to text** to add that step.
-- Add another step and choose **Split columns**
+- Use the dropdown on the `Date` column and choose **Convert to text** to add that step. We can't split a date, so we have to convert it to text first.
+- Add another step and choose **Split columns**.
   - Choose the `Date` column.
-  - For _Split on_, choose **X characters from the left**.
-  - For _Number of characters_ type in `4` and play the step
+  - For _Split on_ choose **X characters from the left**.
+  - For _Number of characters_ type in `4` and play the step.
 
 ![Split column](img/wb-byyear-split.png)
 
@@ -91,11 +91,11 @@ OK, now we have our data in the shape we need for Datawrapper.
 
 - Click on the **Export** button at the top-right of the screen and then click on the download button.
 
-![Download](img/wb-byyear-download.png)
+<img src="img/wb-byyear-download.png" width="320">
 
-The file goes into the Downloads folder on your computer. I _highly recommend_ that you rename this file as something descriptive like "intakes-by-year.csv" AND move to a project folder as a single place to keep all your assets.
+The file goes into the Downloads folder on your computer. I _highly recommend_ that you rename this file as something descriptive like "intakes-by-year.csv" AND move it to your project folder.
 
-We are making several of these files and you'll want to be able to find them and tell them apart. I always create an organized folder for all my projects to keep all my assets like this. Organization is key to data projects (and sanity).
+We are making several of these files and you'll want to be able to find them and tell them apart. Keeping an organized folder like this is key to data projects (and your sanity).
 
 ## Intakes by year chart
 
@@ -111,6 +111,8 @@ Now onto Datawrapper to make our chart. Remember our goal is something like this
 
 The **Check and describe** step allows you to make some adjustments to your data. You can click on columns and change data types, transpose your data and even make edits.
 
+![Describe](img/dw-byyear-describe.png)
+
 In our case everything is good. You can **Proceed** to the next step.
 
 ### Visualize
@@ -124,13 +126,18 @@ Datawrapper will choose an appropriate chart based on your data, and in my case 
   - Most of these defaults are OK for this chart, but there are lots of options for you to play with here. Take a couple of minutes and play with them to see how they change the chart.
   - One setting good to change here is to on **Appearance**, set to **always** show the values so we have numbers at the top of the bars without having to hover.
 
+![Refine](img/dw-byyear-refine.png)
+
 Now let's move on to the **Annotate** step. This is where you add a title, description, source, etc. There are some other annotation options we'll use in later charts.
 
 Chart titles and descriptions can be some of the most difficult writing you can do, IMHO. You don't want to describe your steps or say the obvious, but you do need to give the reader all the relevant detail needed to understand the chart.
 
 - Add a title and description. Don't skimp on this step ... work on this to make it good.
-- Add a link to the original data published on Socrata. (If we skip this our 5-row original data will be available, but we want to give readers the original data if we can.)
+- Add a link to the original data published on Socrata. (If we skip this our 5-row original data will be available, but we want to give readers the original data if we can. You could also link to a public Workbench workflow.)
 - Add your byline.
+- You might also use **Highlight elements** and choose 2019 since it is (or can be) the focus of this chart.
+
+![Annotate](img/dw-byyear-annotate.png)
 
 Now you can check out the **Design** options and check how your chart will look on mobile and tablets with the icons at the bottom right.
 
@@ -138,7 +145,9 @@ Use **Proceed** to move onto the **Publish & Embed** step.
 
 Here you can create an embed to add your chart to a content management system, or download as a PNG image you can insert into a story.
 
-For this assignment, I want you to choose the **PNG** option. You'll see there are options there to size your graphic. Just use the defaults, save the image.
+For this part of the assignment, I want you to choose the **PNG** option. You'll see there are options there to size your graphic. Just use the defaults, save the image.
+
+![Download](img/dw-byyear-download.png)
 
 - Rename the downloaded image and put it in your project assets folder so you can upload it later to your Canvas assignment.
 

@@ -31,7 +31,9 @@ Here is some food for thought about what you might glean from the data ...
   - For the start date, use 01/01/2015 because it is inclusive
   - For the end date, use 08/01/2020 because it is NOT inclusive.
 
-![filter-acc-data](img/filter-acc-data.png)
+> Note this image is old. Use the updated dates above.
+
+<img src="img/filter-acc-data.png" width="320">
 
 - Go to the `Date Time` column and choose to sort by Ascending and then by Descending to make sure the actual dates capture are Jan. 1 2015 to July 31, 2020. Adjust your filter if not.
 - **Export** as a CSV file.
