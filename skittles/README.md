@@ -5,7 +5,7 @@ For this assignment students in class all contributed to a dataset that counted 
 - Are candy colors evenly distributed within a package of Skittles?
 - Does the candy color distribution change over a series of packages?
 
-If you participated in the data gathering exercise then you likely know the answer to the first question. They are often not even as some packages have more candies of certain colors. But what about a number of packages.
+If you participated in the data gathering exercise then you likely know the answer to the first question. They are often not even as some packages have more candies of certain colors. But what about a number of packages?
 
 We'll use Workbench to find out and Datawrapper to visualize. We'll be making a bar chart so you might look over the [Datawrapper Academy entry](https://academy.datawrapper.de/article/7-bar-chart) on that.
 
@@ -15,7 +15,7 @@ Since we collected this data using a Google Form that ends up as a Google Sheet,
 
 - Start a new Workbench workflow and title it **YourName - Skittles**.
 - Start a new tab and use **Import from URL** and name it `Import`.
-- Enter this URL. Make sure you copy the whole URL if it scrolls of the screen:
+- Enter this URL. Make sure you copy the whole URL if it scrolls off the screen:
 
 ``` text
 https://docs.google.com/spreadsheets/d/1JHS1yIbbVg7lUZzTMzJIlQGaZsEzWtNuM9_xKGHOknk/gviz/tq?tqx=out:csv
