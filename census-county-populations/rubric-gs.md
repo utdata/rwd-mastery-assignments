@@ -1,8 +1,8 @@
 # Rubric for Google Sheets assignment
 
-Knowing how to do math within data is an important concept in data journalism. While many of the "Excel" formulas used here in Sheets can also be applied in Workbench, the concept carries over to most data tools with differing syntax.
+Knowing how to do math within data is an important concept in data journalism. While many of the "Excel" formulas used here in Sheets can also be applied in Workbench, the concepts carry over to most data tools with differing syntax.
 
-The assignment is not hard and even a bit manufactured, but the purpose is to expose you both to "Excel" formulas (which work in Sheets) and the concept of creating values from other fields in a row of data.
+This assignment is not hard and even a bit manufactured, but the purpose is to expose you both to "Excel" formulas (which are mostly the same in Sheets) and the concept of creating values from other fields in a row of data.
 
 ## Goal of this assignment
 
@@ -12,7 +12,7 @@ The goal here is to find which counties in Texas have the highest proportion of 
 
 > You might review the [Google Sheets tutorial](https://multimedia.journalism.berkeley.edu/tutorials/spreadsheets/) by Berkeley for concepts on importing, creating formulas, etc.
 
-> In addition, [this screencast](https://drive.google.com/open?id=1wJEJH71tPgLu0r7Uvz7iwElXhlALnuGX) shows the first few steps for reference.
+> In addition, [this screencast](https://drive.google.com/open?id=1wJEJH71tPgLu0r7Uvz7iwElXhlALnuGX) shows the first few steps for reference, including how to import, create new columns and do the formulas.
 
 ## Download the data
 

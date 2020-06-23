@@ -1,7 +1,8 @@
 # School ratings for Google Sheets
 
 > See the [main README](README.md) to see how to download the data.
-> This assignment provides experiences with pivot tables.
+
+This assignment provides experiences with pivot tables. Consider reviewing this [Pivot Table Tutorial](https://support.google.com/docs/answer/1272900?co=GENIE.Platform%3DDesktop&hl=en) before proceeding. There are plenty of [other tutorials on YouTube](https://www.youtube.com/results?search_query=how+to+do+pivot+table+in+google+sheets&sp=EgIIBQ%253D%253D) if you want more.
 
 ## Our scenario
 
