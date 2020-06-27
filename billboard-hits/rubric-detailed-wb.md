@@ -4,7 +4,7 @@ Be sure to see the [README](README.md) to learn about and download the data for 
 
 ## What you will learn
 
-> This is a detailed assignment that walks you through each step, explaining concepts along the way. You may want to review the [Basic Functions of Data Journalism] (LINK TK) as you go along.
+> This is a detailed assignment that walks you through each step, explaining concepts along the way. You may want to review the [Basic Data Journalism Functions](https://github.com/utdata/rwd-mastery-assignments#basic-data-journalism-functions) as you go along.
 
 We'll be using Workbench to practice importing data from a URL, filter, select, group, aggregate and make some very simple charts. We'll also have have a short writing assignment.
 
@@ -79,10 +79,10 @@ To get this answer we need a simple aggregation. Since each row of data is an ap
 
 ### Group and aggregate
 
-In Workbench, aggregation is part of the **Group** step. (Most data science languages separate "group" and "aggregate" into separate steps. Workbench does the same, but it's under the hood of the graphical interface.)
+In Workbench, aggregation is part of the **Group** step. (Most data science languages separate [Group and Aggregate](https://drive.google.com/file/d/1IzL6qvWnJkimV4YeGino_EgUdX8_7pmY/view?usp=sharing) into separate steps. Workbench does the same, but it's under the hood of the graphical interface.)
 
 - Start a new step and choose the **Group** function.
-- For **Select column** type in `Performer`. (Note the type-assist. Once you've typed enough of a column name to select it, you can hit **Return** on your keyboard to select that field.)
+- For **Select column** type in `Performer`. (Note the type-assist. Once you've typed enough of a column name to select it, you can hit **Return** on your keyboard to select that field.) See [Select](https://drive.google.com/file/d/1_g0FIJTy_wGZPNYzmolCgLi9G65k9dp0/view?usp=sharing) for a refresher on the concept.
   - (A little explanation: When we Group by Performer, we are organizing the data to put all the rows with the same Performer together before we perform some kind of math on them: Counting, Summing or whatever. So we are organizing the data to have all the ABBA rows together, then all the rows for B.B. King, etc.)
 - For **Operations** keep the _Count_ selection, but go ahead and click on that menu to see the other possibilities. (This is the **Aggregation** step. Workbench combines aggregations with Group because you typically aggregate after grouping.)
 - Name the new column **Weeks on chart** because that is what we are doing: Counting the number of weeks this performer has been on the Hot 100.
@@ -94,7 +94,7 @@ We could add more aggregations here by clicking on the **+ ADD** icon at the bot
 
 ### Sorting data
 
-Now we have a list of performers and how many times they've been on the chart, but we want to know who has been there the most. For this we need to **Sort** the data. (This simple operation comes in many different names in data science languages: "Arrange" in R, "Order by" in Python and SQL.)
+Now we have a list of performers and how many times they've been on the chart, but we want to know who has been there the most. For this we need to [Sort](https://drive.google.com/file/d/1uLWMR7eLuELdM7A_rHSkAZwfniARpdny/view?usp=sharing) the data. (This simple operation comes in many different names in data science languages: "Arrange" in R, "Order by" in Python and SQL.)
 
 - Add a new step and choose the **Sort** function.
 - Add the column we need, `Weeks in chart`, in the **By** menu.
@@ -128,7 +128,7 @@ So, Taylor Swift is the top queen of pop. (Don't worry, Madonna makes an appeara
 
 ### Filtering data
 
-To get our answer, we need to consider only No. 1 songs from our table. We'll do this using another [Basic Function of Data Journalism]() (LINK TK), a **filter**. We'll take the list of songs at any position and we'll choose only the songs that have "1" as their `Week Position`. (Or we could use `Peak Position` since you can't get any "higher" than No. 1.)
+To get our answer, we need to consider only No. 1 songs from our table. We'll do this using another Basic Data Journalism Function [Filter](https://drive.google.com/file/d/1_g0FIJTy_wGZPNYzmolCgLi9G65k9dp0/view?usp=sharing). We'll take the list of songs at any position and we'll choose only the songs that have "1" as their `Week Position`. (Or we could use `Peak Position` since you can't get any "higher" than No. 1.)
 
 There are two types of filters in Workbench: **Filter by condition** and **Filter by value**.
 
@@ -171,7 +171,6 @@ Look through the resulting list and you'll see that Song/Performer combinations 
   - Play the step.
 
 <img src="img/deduplicate.png" width="300">
-
 
 Now each Song/Performer combination is only listed once. You might notice in the results that when a Performer collaborates with another artist, they are listed with their collaborators. 50 Cent has at least three No. 1 hits, but only one of them by himself. We're going to leave this like this and consider collaborators together. (If we wanted to count all contributions to No. 1 songs, we would have to go a different route.)
 
