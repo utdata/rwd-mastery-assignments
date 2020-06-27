@@ -15,6 +15,17 @@ Look to Canvas for links to specific assignments.
 - Learning data structures with Census populations: [Sheets](census-county-populations/rubric-gs.md)
 - Grouping and Pivots with School Ratings: [Sheets](ed-school-ratings/rubric-gs.md)
 
+## Basic Data Journalism Functions
+
+There are a certain set of data functions that are common concepts no matter what tool or data science language you use. The tool or language may call them different things, but the concepts are the same. These short videos explain those concepts.
+
+- [Select](https://drive.google.com/file/d/1_g0FIJTy_wGZPNYzmolCgLi9G65k9dp0/view?usp=sharing)
+- [Filter](https://drive.google.com/file/d/1_g0FIJTy_wGZPNYzmolCgLi9G65k9dp0/view?usp=sharing)
+- [Sort](https://drive.google.com/file/d/1uLWMR7eLuELdM7A_rHSkAZwfniARpdny/view?usp=sharing)
+- [Merge](https://drive.google.com/file/d/1qqDvARbcOPgDgF73MqlTCZFzYgxhN5kG/view?usp=sharing)
+- [Join](https://drive.google.com/file/d/1yc-MD7xs6xY4YKU9fk-uQ3baYGO5qA-W/view?usp=sharing)
+- [Group and Aggregate](https://drive.google.com/file/d/1IzL6qvWnJkimV4YeGino_EgUdX8_7pmY/view?usp=sharing)
+
 ## Workbench
 
 - [Workbench tutorials](workbench-tutorials/)
