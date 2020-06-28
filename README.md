@@ -17,7 +17,7 @@ Look to Canvas for links to specific assignments.
 
 ## Basic Data Journalism Functions
 
-There are a certain set of data functions that are common concepts no matter what tool or data science language you use. The tool or language may call them different things, but the concepts are the same. These short videos explain those concepts.
+There are a certain set of data functions that are common concepts no matter what tool or data science language you use. The tool or language may call them different things, but the concepts are the same. These short videos (none longer than 3.5 minutes) explain those concepts.
 
 - [Select](https://drive.google.com/file/d/1_g0FIJTy_wGZPNYzmolCgLi9G65k9dp0/view?usp=sharing)
 - [Filter](https://drive.google.com/file/d/1_g0FIJTy_wGZPNYzmolCgLi9G65k9dp0/view?usp=sharing)
