@@ -60,7 +60,7 @@ There are a certain set of data functions that are common concepts no matter wha
 - [Dangerous Dogs assignment](regular-expressions/rubric-regex101.md)
 - [Using Regex in Workbench](regular-expressions/rubric-wb.md)
 
-### Workbench
+### Workbench extras
 
 - Exploring Gifted Students data: [Workbench](ed-gifted-students/rubric-wb.md)
 
