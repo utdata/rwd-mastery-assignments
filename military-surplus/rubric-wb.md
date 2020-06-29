@@ -54,7 +54,7 @@ With this part of the assignment we are practicing writing sentences about the d
 - Write a four paragraph data drop from the data. Be sure to include attribution about where the data came from. (There are links in the README.)
 - You can pick the angle from any of the questions outlined above, but each paragraph should be a description of what you found in the data.
 
-Here is a two-graf example. (You can't use this one ;-)).
+Here is a partial example to give you an idea of what I'm looking for. (You can't use this one ;-)).
 
 The Jefferson County Sheriff's Office is flying high thanks to gifts of nearly $2.5 million worth of surplus U.S. Department of Defense equipment.
 
