@@ -58,7 +58,9 @@ Here is a two-graf example. (You can't use this one ;-)).
 
 The Jefferson County Sheriff's Office is flying high thanks to gifts of nearly $2.5 million worth of surplus U.S. Department of Defense equipment.
 
-Among the items transferred over the past seven years to the department was a $923,000 helicopter in October 2016 and related parts the following year, according to data from the Defense Logistics Agency data — the agency that handles the transfers. The sheriff's office has received the highest value of equipment among any law enforcement agency in Texas since August 2014. Law enforcement agencies do not pay for the property but must pay for shipping the items as well as potential storage costs, according to the DLA.
+Among the items transferred over the past seven years to the department was a $923,000 helicopter in October 2016 and related parts the following year, according to data from the Defense Logistics Agency data — the agency that handles the transfers.
+
+The sheriff's office has received the highest value of equipment among any law enforcement agency in Texas since August 2014.
 
 ## Ignore this
 
