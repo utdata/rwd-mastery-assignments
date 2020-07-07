@@ -4,11 +4,7 @@ Be sure to review the [README](README.md) for important information on the story
 
 ## Learning goals of this assignment
 
-With this assignment, you'll use many of the **Basic Data Journalism Functions** discussed earlier in the semester, including:
-
-- [Select](https://drive.google.com/file/d/1_g0FIJTy_wGZPNYzmolCgLi9G65k9dp0/view?usp=sharing) & [Filter](https://drive.google.com/file/d/1_g0FIJTy_wGZPNYzmolCgLi9G65k9dp0/view?usp=sharing)
-- [Join](https://drive.google.com/file/d/1yc-MD7xs6xY4YKU9fk-uQ3baYGO5qA-W/view?usp=sharing) files on a common record
-- [Group and Aggregate](https://drive.google.com/file/d/1IzL6qvWnJkimV4YeGino_EgUdX8_7pmY/view?usp=sharing)
+With this assignment, you'll use many of the [Basic Data Journalism Functions](https://vimeo.com/showcase/7320305) discussed earlier in the semester.
 
 ## Overview of our task
 

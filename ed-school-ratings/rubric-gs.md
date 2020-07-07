@@ -4,7 +4,7 @@
 
 This assignment provides experiences with pivot tables. Consider reviewing this [Pivot Table Tutorial](https://support.google.com/docs/answer/1272900?co=GENIE.Platform%3DDesktop&hl=en) before proceeding. There are plenty of [other tutorials on YouTube](https://www.youtube.com/results?search_query=how+to+do+pivot+table+in+google+sheets&sp=EgIIBQ%253D%253D) if you want more.
 
-Pivot tables are Sheets' version of [Group and Aggregate](https://drive.google.com/file/d/1IzL6qvWnJkimV4YeGino_EgUdX8_7pmY/view?usp=sharing), so you might review that BDJF video.
+Pivot tables are Sheets' version of [Group and Aggregate](https://vimeo.com/showcase/7320305/video/435910349), so you might review that BDJF video.
 
 ## Our scenario
 
