@@ -4,7 +4,7 @@ The Defense Logistics Agency transfers surplus military equipment to local law e
 
 ## Download the data
 
-- To to [this page](https://raw.githubusercontent.com/utdata/rwd-mastery-assignments/master/military-surplus/data/dla-1033-transfers.csv) and then do **File > Save Page As** to save the file to your computer.
+- Go to [this page](https://raw.githubusercontent.com/utdata/rwd-mastery-assignments/master/military-surplus/data/dla-1033-transfers.csv) and then do **File > Save Page As** to save the file to your computer.
 
 ## Assignments
 
