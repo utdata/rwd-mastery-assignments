@@ -19,8 +19,6 @@ We will filter our list to focus on "Regular Instructional" schools to exclude a
 - Before we do the join function, we will filter our list of campuses to include only "Regular Instructional" schools. This will remove alternative schools that are special purpose for behavioral issues, etc.
 - Then we will have to create some new columns that does math to show the change in values from the older year, 2015, and the newer year, 2019, and how they compare to the old "audit threshold" reported by the Chronicle.
 
-> Add a diagram or example of the joins?
-
 ## Import the three data sets
 
 Once past the hassle of downloading the data, there are still some challenges to getting the answers above. Follow these steps to prepare each of the datasets you downloaded:
