@@ -49,7 +49,7 @@ If you inspect either file you'll see there are no school or district names in t
 
 To get the campus names, the TEA has a [School and District File with Site Address](http://tea4avholly.tea.state.tx.us/tea.askted.web/Forms/Home.aspx) file available, but it does not include the latitude and longitude of the schools, something that is useful for mapping. (Though we may or may not to that in this assignment.) So I requested those locations via a **public information request** and have that file available below.
 
-Right-click on this link: [TEA-Campus-Locations-with-Geo-2019](TEA-Campus-Locations-with-Geo-2019.xls) and save the resulting `.xls` file to your computer in your project folder.
+Go to this page [TEA-Campus-Locations-with-Geo-2019](data/TEA-Campus-Locations-with-Geo-2019.xls) and then use the **Download** button to save the resulting `.xls` file to your computer in your project folder.
 
 ## Assignment rubrics
 
