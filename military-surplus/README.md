@@ -8,4 +8,4 @@ The Defense Logistics Agency transfers surplus military equipment to local law e
 
 ## Assignments
 
-- [Workbench](rubric-wb.md)
+- [Workbench rubric](rubric-wb.md)
