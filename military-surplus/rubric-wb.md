@@ -10,13 +10,15 @@ Your charge with this assignment is to see how several local police agencies hav
 
 All answers should be based on data _after_ **Dec. 31, 2014**. This gives you five full years of data plus the first quarter of 2020.
 
+In addition, only consider **Texas agencies** as you answer the following.
+
 - Which departments have received the most equipment by value in the state?
   - FOOD FOR THOUGHT: Is there anything that stands out? It makes sense that Houston, the fourth largest city in the nation, would have a lot because of the sheer size. Who else has benefited? Anyone local?
 - How many items and what is the total value of equipment transferred to each of the following local agencies (Think group and sum):
   - Austin Police Department
   - Travis County Sheriff's Office
   - University of Texas System
-- What are the items, total quantity and total value shipped to **each** agency. i.e., make a group that:
+- What are the items, total quantity and total value shipped to **each local agency** listed above. i.e., make a group that:
   - groups by the item name
   - sums the quantity
   - sums the values
@@ -26,7 +28,7 @@ All answers should be based on data _after_ **Dec. 31, 2014**. This gives you fi
 
 ## Some guidance as you tackle this
 
-- After you import the data, don't forget to filter it by the date. We only want records for 2015 forward.
+- After you import the data, don't forget to filter by state (Texas) and by the date (only from 2015 through 2020).
 - Have a single tab for importing and cleaning the data, then build new tabs from that using "Start from tab". Each tab typically has only one goal or "answer". (You don't need tabs for "FOOD FOR THOUGHT" items. Just think on those as story ideas.)
 - Similarly, it might make sense to create tabs for each local agency that filters for that agency (started from the cleaned data). Then you can build subsequent tabs from the agency tab to find your answers.
 - Keep your tab names short. You'll run out of room if you don't. (It's a bug.)
