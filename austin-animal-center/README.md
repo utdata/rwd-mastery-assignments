@@ -41,4 +41,4 @@ Here is some food for thought about what you might glean from the data ...
 Use the resulting CSV file for the lesson below based on the tool you were assigned:
 
 - [Workbench/Datawrapper rubric](rubric-wb-dw.md)
-- [Tableau rubric](rubric-tableau.md)
+- ~~[Tableau rubric](rubric-tableau.md)~~
