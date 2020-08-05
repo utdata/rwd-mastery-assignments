@@ -8,7 +8,7 @@ The summer final project for Reporting with Data is a little different than duri
 
 For Summer 2020, this is all due Friday, Aug. 14th at 11:59 p.m. except for the editing report due the day before.
 
-- **Story**: You'll produce an 600-word news story with at least three human sources including the two recorded sources listed below. (This means you'll have to find at least one source on your own.) You can include additional student sources in your reporting, but not from our class and they don't count toward the three sources. Properly credited published reports or studies are allowed as source material in your story, but they do not count toward your human source quota. This should be a news story, not a personalized blog post. Use Google Docs and share with me as an editor. (300 points)
+- **Story**: You'll produce an 600-word news story using the data and interviews provided. You can include additional sources you contact if you wish, but you also need to use the two sources provided. Properly credited published reports or studies are allowed as source material in your story, but the bulk of the story should be built around the provided sources. This should be a news story, not a personalized blog post. Use Google Docs and share with me as an editor. (300 points)
 - **Headline**: A good, news-oriented headline for your story**: (25 points)
 - **Analysis**: You'll turn in any analysis work you've done (Workbench and any other charting tools), regardless if it is used in the story. I want all your work. (200 points)
 - **Chart** You'll produce at least one publishable chart to go with your story using the tool of your choice. This chart needs to have a proper headline, description, legend, annotations and such so that the chart **can be understood outside the context of the story**. Include a screenshot and/or link in your story. I suggest using Datawrapper for this, but you could also use Flourish or Tableau if you know how (or learn). (100 points)
@@ -21,7 +21,6 @@ For Summer 2020, this is all due Friday, Aug. 14th at 11:59 p.m. except for the 
 - Three [recorded interviews](https://drive.google.com/open?id=1JfH1BKvyjrN9AT_4TFIt7rTRD2sOPCgV) from two people. There are transcripts of each recording _but be sure to listen to the audio for direct quotes_ as the transcripts are FAR FROM PERFECT.
   - **Andy Kahn** is a bartender at the Mockingbird Saloon (then called The Local Pub and Patio). He has also served as manager at the Hole in the Wall. He talks about the business of running a bar in a college town and keeping on the right side of TABC rules. This was recorded in summer 2019.
   - **Chris Porter** is the public information officer for the Texas Alcoholic Beverage Commission. He talks about the TABC's role in enforcing rules around selling alcohol. If you have follow-up questions for him you could reach out at <chris.porter@tabc.texas.gov>. There are two recordings from him ... one from summer 2019 and one from spring 2020.
-  - You need to find your own third source.
 - You have two data sets to draw from: Alcohol sales and TABC enforcement actions (more on those below). You'll need to [download these data sets](README.md) and explore them using tools you've learned in class. You **DO NOT** have to use both sets in the story. See below for some story ideas.
 
 ## How to tackle this project
