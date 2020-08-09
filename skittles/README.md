@@ -48,7 +48,8 @@ Now for the grouping to get our averages for each color. This might be the first
 
 - Start a new **Group** step.
   - For _Column_ choose `Color`
-  - For _Operations_ choose `Average`.
+  - For _Operations_ choose `Average (Mean)`.
+  - In the column dropdown, choose the `Total` column.
   - Name the field `Average count`.
 
 ## Make a Datawrapper bar chart
