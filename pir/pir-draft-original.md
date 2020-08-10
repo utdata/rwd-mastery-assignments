@@ -12,7 +12,7 @@ Be sure to review [what makes a good data PIR](https://docs.google.com/document/
 
 - The request must be made to an entity subject to Texas Public Information laws. A state or city agency. NOT a federal agency or private entity.
 - The data must not be available online already in the format you are requesting. Actually look for it, as you can bet I will.
-- Salary and other employee data is off limits, as it is the example.
+- Salary, other employee data and police records are off limits, as they are class examples.
 
 Be sure to include:
 
