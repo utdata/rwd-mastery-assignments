@@ -42,15 +42,15 @@ Our new columns have un-descriptive names, so let's rename them.
 
 - Start a **Rename** step.
 - Change `variable` to `Color`.
-- Change `value` to `Total`.
+- Change `value` to `Count of Candy`
 
-Now for the grouping to get our averages for each color. This might be the first time we've grouped on something other than **Count**.
+Now for the grouping to get our averages for each color. This might be the first time we've grouped and aggregated by something other than **Count**. In this case we want to average the value.
 
 - Start a new **Group** step.
   - For _Column_ choose `Color`
   - For _Operations_ choose `Average (Mean)`.
-  - In the column dropdown, choose the `Total` column.
-  - Name the field `Average count`.
+  - In the column dropdown, choose the `Count of Candy` column.
+  - Name the field `Average candies`.
 
 ## Make a Datawrapper bar chart
 
