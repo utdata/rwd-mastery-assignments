@@ -78,7 +78,7 @@ Now you have a breakdown of grades for charter schools vs traditional public sch
 
 ![Charter school](img/pivot01-02-charter.png)
 
-- In the open cells below the table, create a formula to give you the percentage of non-charter schools that got an "F", and then copy that to create the same for charter schools.
+- In the open cells below the table, create a formula to give you the percentage of non-charter schools that got an "F", and then copy that to create the same for charter schools and all schools.
 - Label those formulas in another cell so your future self will remember it.
 - Name the sheet "Fails charter".
 
