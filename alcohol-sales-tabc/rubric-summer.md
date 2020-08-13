@@ -9,9 +9,9 @@ The summer final project for Reporting with Data is a little different than duri
 For Summer 2020, this is all due Friday, Aug. 14th at 11:59 p.m. except for the editing report due the day before.
 
 - **Story**: You'll produce an 600-word news story using the data and interviews provided. You can include additional sources you contact if you wish, but you also need to use the two sources provided. Properly credited published reports or studies are allowed as source material in your story, but the bulk of the story should be built around the provided sources. This should be a news story, not a personalized blog post. Use Google Docs and share with me as an editor. (300 points)
-- **Headline**: A good, news-oriented headline for your story**: (25 points)
+- **Headline**: A good, news-oriented headline for your story. (25 points)
 - **Analysis**: You'll turn in any analysis work you've done (Workbench and any other charting tools), regardless if it is used in the story. I want all your work. (200 points)
-- **Chart** You'll produce at least one publishable chart to go with your story using the tool of your choice. This chart needs to have a proper headline, description, legend, annotations and such so that the chart **can be understood outside the context of the story**. Include a screenshot and/or link in your story. I suggest using Datawrapper for this, but you could also use Flourish or Tableau if you know how (or learn). (100 points)
+- **Chart**: You'll produce at least one publishable chart to go with your story using the tool of your choice. This chart needs to have a proper headline, description, legend, annotations and such so that the chart **can be understood outside the context of the story**. Include a screenshot and/or link in your story. I suggest using Datawrapper for this, but you could also use Flourish or Tableau if you know how (or learn). (100 points)
 - **Editing partner**: You'll need to choose an editing partner from class to work with throughout the project and including a line-edit and review of their story and analysis. Use Google Docs and share with me. (50 points due Aug. 13 for Summer 2020.)
 - **Promotions**: Two promotional tweets, one geared toward the story and one geared toward a chart. You don't have to actually tweet the results, just put them in a Google Doc. Include an image that might help draw attention to your tweet. This can be in your story file. (25 points each)
 - **Diversity statement**: Explain you did or could better add diversity of voice to your story. Can also be included with your story file. (25 points)
@@ -34,7 +34,7 @@ You might start by using Workbench to answer a series of questions. It isn't req
 ### Alcohol sales data
 
 - Which establishments have sold the most alcohol over the past five years? How does that look on a monthly basis? (Be sure to watch for multiple locations of the same name and name changes of the same location.)
-  - Perhaps take the same idea geographically. The Drag (Guadalupe between 19th and 30th). West Campus (78705). The Domain area (78758). Downtown (78701). SoCo (78704). East Austin (78702) and north of there (78722). You could look at Dirty Sixth (Sixth Street between Congress and )
+  - Perhaps take the same idea geographically. The Drag (Guadalupe between 19th and 30th). West Campus (78705). The Domain area (78758). Downtown (78701). SoCo (78704). East Austin (78702) and north of there (78722). You could look at Dirty Sixth (Sixth Street between Congress and I-35.)
   - You could compare sales between popular areas. Or sales over time in a certain area.
 - Is the number of restaurants or bars growing in certain areas? Like in east or south Austin?
 - How do sales break down by alcohol type? Who sold the most beer last year? Wine? Again, could break down by geography.
@@ -76,7 +76,7 @@ When you want to make a chart from data, one of the more important aspects is to
 
 - You'll need to choose an editing partner to edit each other's story and chart. PARTNERS CAN'T HAVE THE SAME STORY ANGLE OR SHARE ANALYSIS. The purpose of this pairing is to help each other with story edits and clarity for the chart. (You can do this over the phone while editing Google Docs or use conference software of your choice.) The edit must be completed with the summary report **by 11:59 p.m. Thursday, Aug. 13th**.
 
-To turn in your assignment, include the following in a Google Doc that is shared with me:
+To turn in your editing part of the assignment, include the following in a Google Doc that is shared with me:
 
 - The name of your partner.
 - A brief synopsis of their story angle.
