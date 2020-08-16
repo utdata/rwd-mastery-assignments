@@ -24,6 +24,7 @@ First, take a look at this resource: [How to tackle a new data set](https://docs
 I suggest you use Workbench to clean, analyze and shape your data for Datawrapper. (You can chart in Workbench for yourself, but your published graphic needs to be in Datawrapper, Flourish or some other tool that allows descriptions, annotations and the like.)
 
 You might start by using Workbench to answer a series of questions. It isn't required that you find any of these ... they are just ideas for you to work from or help you brainstorm for your own idea.
+
 ### Alcohol sales data
 
 - Which establishments have sold the most alcohol over the past five years? How does that look on a monthly basis? (Be sure to watch for multiple locations of the same name and name changes of the same location.)
