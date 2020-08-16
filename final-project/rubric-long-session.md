@@ -52,7 +52,7 @@ While you should be checking in with your editing partner each week, there is on
 
 - Your submitted summary of the ways you've been able to help your partner. Include their name and a description of their story.
 
-## Final Project due (600 points)
+## Final Project due (800 points)
 
 (Final due date. **Include all items in a Google Drive folder that I have editing access to.** The story should be in a Google Doc and all other items uploaded or linked from the story.)
 
@@ -69,6 +69,6 @@ An news story between 600-800 words that is born from or heavily supported by yo
 
 Include the two finished charts that support your story. Include screenshots in your story with a link to online interactive versions if there are any. If you have a Tableau workbook, either publish it on Tableau Public or export as a Packaged Workbook and share in Drive.
 
-### Analysis
+### Analysis (200 points)
 
-Turn in all your analysis work from Workbench, Datawrapper, Tableau or any other method that is not specifically shown in the finished charts below.
+Turn in all your analysis work from Workbench, Datawrapper, Tableau or any other method that is not specifically shown in the finished charts used with the story.
