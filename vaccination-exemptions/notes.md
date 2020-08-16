@@ -1,5 +1,15 @@
 # Notes for the professor
 
+## Improvements from Spring 2020
+
+- Name the first tab in the Workbench part
+- In video of tooltips or text remember to tellthem to turn off the editing.
+- Add highlight action between bar chart and map
+- Note at the end to turn in Workbench workflow, too.
+- show how to fix the axis on the line chart so counties are considered on same axis.
+- I didn't realized I used just Kindergarten rates. I need to make sure a) that is the right choice, and b) it is reflected in the assignment.
+- There is the latest year rates by district that could be included in the assignment, joined by county and listed when that county is selected on the dashboard. Just a thought.
+
 ## Spring 2020
 
 - This is the [complete Workbench workflow for 2010-2020](https://app.workbenchdata.com/workflows/62289).
