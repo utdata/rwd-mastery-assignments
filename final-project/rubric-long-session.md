@@ -50,7 +50,6 @@ You are expected to produce two publishable charts to support your story. For th
 
 While you should be checking in with your editing partner each week, there is one day in class the last week where you will edit each other's story and charts. This means **you must have a rough draft of your story for your partner before class begins**. (You should already have chart drafts from the above assignment, but have your partner look over those as well.) You'll turn in a summary of how you helped your partner after this session. So, you are graded on:
 
-- In-class editing session attendance.
 - Your submitted summary of the ways you've been able to help your partner. Include their name and a description of their story.
 
 ## Final Project due (600 points)
