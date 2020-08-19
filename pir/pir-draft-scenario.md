@@ -18,6 +18,6 @@ The hotels report quarterly and the main fields they are reporting include the t
 
 Write a public information request that would allow you to compare sales in the first quarter of 2020 to the last three full years.
 
-- Figure out where you would send such a request and include this information at the top of the draft. A hint: The Texas Comptroller is the keeper of the records.
+- Figure out where you would send such a request and **include this information at the top of the draft**. A hint: The Texas Comptroller is the keeper of the records.
 - Write the draft in a Google Doc and share it with the instructor AS AN EDITOR.
 - Submit the link to the document to the Canvas assignment.
