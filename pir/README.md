@@ -2,7 +2,7 @@
 
 A series of assignments for Reporting with Data. The assignments given will vary by semester.
 
-## Summer 2020
+## Fall 2020
 
 There are two assignments to complete here, but in one of them you will have a choice.
 
