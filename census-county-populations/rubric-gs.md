@@ -23,7 +23,7 @@ See the [main README.md](README.md) for more information on where the data came 
 
 ## Create percentage columns
 
-- Lock the header row and columns after the county name. I'll count off if you don't.
+- Freeze the header row and columns after the county name. I'll count off if you don't.
 - For each race, create a new column that shows the percentage (to hundredths) of that race for each county.
 - As you do so, use the `$` method to lock the `Total` column so you can copy the formula to additional columns. Points counted off if you don't.
 
