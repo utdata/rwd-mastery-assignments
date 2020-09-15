@@ -123,9 +123,7 @@ You could also use the drop-down menu on the column and choose **Rename** or add
 
 ## Some discussion about Joins
 
-You might [review the video about joins]() for a refresher on the terms and concepts.
-
-> NEEDS LINK ^^^
+You might [review the video about joins](https://vimeo.com/showcase/7320305/video/435910338) for a refresher on the terms and concepts.
 
 Our aim here is to create a single dataset with row for each school, but to include information from each of the three datasets in each row. We do this by **joining** on the `CAMPUS` ID (renamed from `School_Number` in the LOC data). However, as we do so, we'll end up losing some rows that don't have matches in the other files.
 
