@@ -2,9 +2,9 @@
 
 Collection of assignments to prove mastery of various skills in Reporting with Data, a class by Christian McDonald, assistant professor of practice at the University of Texas at Austin School of Journalism in the Moody College of Communication.
 
-Look to Canvas for links to specific assignments.
+> Current for Fall 2020
 
-> THIS IS BEING RECONFIGURED FOR SUMMER 2020
+Look to Canvas for links to specific assignments.
 
 ## Public information requests
 
@@ -24,7 +24,7 @@ There are a certain set of data functions that are common concepts no matter wha
 ## Workbench
 
 - [Workbench tutorials](workbench-tutorials/)
-- Exploring the Billboard Top 100: [Workbench](billboard-hits/rubric-detailed-wb.md)
+- Exploring the Billboard Hot 100: [Workbench](billboard-hits/rubric-detailed-wb.md)
 - Military surplus equipment: [Workbench](military-surplus/rubric-wb.md)
 - Special Education students: [Workbench](ed-special-ed/rubric-wb.md)
 
@@ -49,7 +49,7 @@ There are a certain set of data functions that are common concepts no matter wha
 
 ## Not in current semester
 
-> Following assignments not included in Summer 2020
+> Following assignments not included this semester
 
 ### Regular Expressions
 
@@ -68,7 +68,7 @@ There are a certain set of data functions that are common concepts no matter wha
 
 ### R
 
-> Would all need updating
+> All need updating
 
 - [Gifted students](ed-gifted-students/rubric-r.md)
 - [Billboard](billboard-hits/rubric-r.md)
