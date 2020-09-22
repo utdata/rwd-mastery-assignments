@@ -267,7 +267,13 @@ This is a two-part assignment, and you've just done the first part.
 
 A [Data Drop]((https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.k2b1zvdn1534)) is a short story that outlines your findings in readable sentences. In this case (and this is the only case for this class) you can add some personal flavor in the story. Do think about AP Style, limiting numbers in the story and all the things we've learn about in writing about data, including describing the source of the data.
 
-Write this in Google Docs and share it to my email as AN EDITOR. Submit the link to the Canvas assignment along with your Workbench URL.
+Some specifics:
+
+- You need at list four of the six data points (or alternatives you've found) in your story.
+- Five to six paragraphs is sufficient length if your data points are explained well. You can write more if you like, but make sure you have the data points.
+- Again, you can have a personal flavor to this, but don't forget the data. That's what I'm grading.
+
+Write this in Google Docs and **share it to my email as AN EDITOR**. Submit the link to the Canvas assignment along with your Workbench URL.
 
 ## Soundtrack for this assignment
 
