@@ -269,7 +269,7 @@ A [Data Drop]((https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0
 
 Some specifics:
 
-- You need at list four of the six data points (or alternatives you've found) in your story.
+- You need at least four of the six data points (or alternatives you've found) in your story.
 - Five to six paragraphs is sufficient length if your data points are explained well. You can write more if you like, but make sure you have the data points.
 - Again, you can have a personal flavor to this, but don't forget the data. That's what I'm grading.
 
