@@ -33,7 +33,7 @@ In addition, only consider **Texas agencies** as you answer the following.
 - Similarly, it might make sense to create tabs for each local agency that filters for that agency (started from the cleaned data). Then you can build subsequent tabs from the agency tab to find your answers.
 - Keep your tab names short. You'll run out of room if you don't. (It's a bug.)
 - The **Group** function and the **Sum** operations within it are your friend for this assignment.
-- Format your "value" columns as currency, because it is money. Once you use a Group function you will have for format those values as currency again.
+- Format your "value" columns as currency, because it is money. Once you use a Group function you will have to reformat those values as currency again.
 - Make sure you use annotations for your steps.
 
 ## Turning in the assignment
@@ -49,11 +49,11 @@ This is a two-part assignment.
 
 ### Write a data drop
 
-With this part of the assignment we are practicing writing sentences about the data and not a complete story. You don't need to explain the Ferguson angle with these few sentences. Just concentrate on how you would write the facts and attribution.
+With this part of the assignment we are practicing writing sentences about the data and not a complete story. You do NOT need to explain the Ferguson angle with these few sentences. Just concentrate on how you would write the facts and attribution.
 
 - Use Google Docs and be sure to share with me AS AN EDITOR.
 - Be sure to turn in the URL to your Doc in the Canvas assignment.
-- Write a four paragraph data drop from the data. Be sure to include attribution about where the data came from. (There are links in the README.)
+- Write a four paragraph data drop from the data. Be sure to include attribution about where the data came from. (Think of the original data source, not that it came from Buzzfeed. Links are in the README.)
 - You can pick the angle from any of the questions outlined above, but each paragraph should be a description of what you found in the data.
 
 Here is a partial example to give you an idea of what I'm looking for. (You can't use this one ;-)).
