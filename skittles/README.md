@@ -133,7 +133,7 @@ Now we need to export the data as a .csv file so we can use it next in Datawrapp
 
 Now you have the data you need to make a bar chart in Datawrapper. Since Datawrapper has their own tutorials, I'm not going to go through every step here. Just follow the tutorials below, but use your Skittles data.
 
-- [Create a bar chart](https://academy.datawrapper.de/article/7-bar-chart).
+- [Create a bar chart](https://academy.datawrapper.de/article/7-bar-chart)
 - [Customize a bar chart](https://academy.datawrapper.de/article/33-customizing-your-bar-chart)
 
 A couple of things to consider along the way:
