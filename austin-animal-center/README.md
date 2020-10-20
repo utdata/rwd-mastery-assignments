@@ -35,7 +35,7 @@ Here is some food for thought about what you might glean from the data ...
 
 <img src="img/filter-acc-data.png" width="320">
 
-- Go to the `Date Time` column and choose to sort by Ascending and then by Descending to make sure the actual dates capture are Jan. 1 2015 to July 31, 2020. Adjust your filter if not.
+- Go to the `Date Time` column and choose to sort by Ascending and then by Descending to make sure the actual dates capture are Jan. 1 2015 to the last day of the previous month. Adjust your filter if not.
 - **Export** as a CSV file.
 
 Use the resulting CSV file for the lesson below based on the tool you were assigned:
