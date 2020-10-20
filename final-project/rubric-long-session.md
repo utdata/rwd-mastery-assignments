@@ -58,7 +58,7 @@ While you should be checking in with your editing partner each week, there is on
 
 ### The story (500 points)
 
-An news story between 600-800 words that is born from or heavily supported by your chosen data. Don’t pad a story just to make the minimum. Instead find more facts to include, do more reporting and add more voices. I’ll count off more for word-count padding than for being short. The story itself is worth 300 points, and the required items below add up to 200 additional points. You can include all of these items in the same document as your story.
+An 800-word news story (give or take 100 words) that is born from or heavily supported by your chosen data. Don’t pad a story just to make the minimum. Instead find more facts to include, do more reporting and add more voices. I’ll count off more for word-count padding than for being short. The story itself is worth 300 points, and the required items below add up to 200 additional points. You can include all of these items in the same document as your story.
 
 - A headline that fits the story. (25 points)
 - Three human sources that you have personally interviewed. Only one student is allowed toward the three unless otherwise approved in advance by the instructor. Properly credited published reports or studies (or quotes from such) are allowed as source material in your story, but they do not count toward your human source quota. Email correspondence with a source is allowed, but I encourage (implore, even) that you instead speak to your sources in person or on the phone. NO ANONYMOUS SOURCES. **Include a list of names, titles and contact information (emails and/or phone numbers) so I can contact them if necessary.** (100 points)
