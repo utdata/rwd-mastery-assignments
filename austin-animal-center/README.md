@@ -28,8 +28,8 @@ Here is some food for thought about what you might glean from the data ...
 - From the [Primer page](https://data.austintexas.gov/Health-and-Community-Services/Austin-Animal-Center-Intakes/wter-evkm), click on the **View Data** link to view the entire data set.
 - Use the Filter to get the most recent five FULL years of data, plus the most recent full month of the current year. Socrata is not intuitive when it comes to filtering dates, so use this example:
   - Use the Filter for `Date Time` and choose **is between**.
-  - For the start date, use 01/01/2015 because it is inclusive
-  - For the end date, use 08/01/2020 because it is NOT inclusive.
+  - For the start date, use 01/01/2015 because it is inclusive.
+  - For the end date, use the first day of the current month (So 11/01/2020 if November) because it is NOT inclusive. i.e., we want all the data from the previous month, but not the current.
 
 > Note this image is old. Use the updated dates above.
 
