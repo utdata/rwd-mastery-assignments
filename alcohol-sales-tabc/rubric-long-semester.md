@@ -9,6 +9,7 @@ You'll need to [download these data sets](README.md) and explore them using tool
 - You'll produce an 500-word data drop based on the data. This should be written as a news story like most of our other data drops. 500 words is a goal, but don't pad your story. If it is shorter, just make sure it is a good story. You need three or so "facts" from the data to build a good case, and then support those with quotes. Then call it done. (100 points)
 - You'll turn in any analysis work you've done (Workbench, Datawrapper, other charting tools), regardless if it is used in the story. I want _ALL_ of your work. (100 points)
 - You'll produce at least one publishable chart to go with your story using the tool of your choice. This chart needs to have a proper headline, description, legend, annotations and such so that the chart **can be understood outside the context of the story**. Include a screenshot and/or link in your story. (100 points)
+- You will be assigned an editing partner from the class to work with. You will each do your own story (and must have different angles), but the idea is you have someone to regularly talk with about your analysis, edit your story and proof-read your charts. At the end of the first week you have an assignment where you tell me your editing partner and angle they are looking at, and then another later where you discuss how you helped each other.
 
 ## Materials to work from
 
@@ -23,7 +24,7 @@ First, take a look at this resource: [How to tackle a new data set](https://docs
 
 I suggest you use Workbench to clean, analyze and shape your data for Datawrapper. (You can chart in Workbench for yourself, but your published graphic needs to be in Datawrapper, Flourish or some other tool that allows descriptions, annotations and the like.)
 
-You might start by using Workbench to answer a series of questions. It isn't required that you find any of these ... they are just ideas for you to work from or help you brainstorm for your own idea.
+You might start by using Workbench to answer a series of questions. It is NOT REQUIRED that you find all of these specifically ... they are just ideas for you to work from or help you brainstorm for your own ideas.
 
 ### Alcohol sales data
 
