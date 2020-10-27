@@ -34,8 +34,7 @@ This one is a little more complicated to filter and download.
 
 The site we'll use includes data violations of rules/laws handled by the Texas Alcoholic Beverage Commission. We will concentrate on some of the most-common types of violations that are dealt with in the sale of alcohol in restaurants and bars: Sales to minors, and sales to intoxicated people.
 
-- Start at the [TABC site](https://www.tabc.state.tx.us/enforcement/index.asp)
-- Click the **Public Inquiry** menu in the red bar.
+- Start at the [TABC Public Inquiry page](https://apps.tabc.texas.gov/publicinquiry/)
 - Click on **Create a list of licenses or permits with administrative violations**.
 - For **Location**, click on the **Add/Edit** link.
   - Under **County**, choose **TRAVIS**.
@@ -64,7 +63,7 @@ The site we'll use includes data violations of rules/laws handled by the Texas A
 - Type in the security measure code.
 - Lastly, choose **Submit Query** and it will download the file.
 
-Note at the bottom there is a link to the [Record layout](https://www.tabc.texas.gov/public_Inquiry/admin_violations_record_layout.asp) of the data, which you'll need to understand all the fields.
+Note at the bottom there is a link to the [Record layout](https://www.tabc.texas.gov/static/4d47ecaf160f3ba76b8b4f3bd8ecb255/administrative-violations-record-layout.pdf) of the data, which you'll need to understand all the fields.
 
 For this project, I suggest you stay away from directly joining the TABC data to the alcohol sales data ^^. But, you can look through it to find examples of the same establishment from both sets of records, if you like.
 
