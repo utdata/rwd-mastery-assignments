@@ -366,9 +366,7 @@ You'll be asked to write sentences based on these values, too.
 
 ### Compare schools by audit threshold
 
-For this next step, you might review the [Group & Aggregate] lesson from earlier in the semester.
-
-> NEED TO ADD LINK ^^^
+For this next step, you might review the [Group & Aggregate](https://vimeo.com/showcase/7320305/video/435910349) lesson from earlier in the semester.
 
 The last question we need to answer is how many schools were above or below the 8.5% threshold in 2015 and 2019. We could create sorts and count the rows, but there is a better way, which is why we created those threshold columns earlier.
 
@@ -406,9 +404,9 @@ For the writing part of the assignment below you should already have everything 
 
 Here are the questions I want you to write about:
 
-- Which AUSTIN ISD school (or schools) had the greatest percentage point change in special education students from 2014-15 to 2018-19? What was the change in the number of students?
-- Which AISD school had the greatest increase in special education students from 2015 to 2019?
-- Describe how the number of AUSTIN ISD schools that met the "8.5% audit threshold" changed between 2015 and 2019. (You can assume that threshold has already been explained earlier in the story so you don't need that detail.)
+- Which AUSTIN ISD school (or schools) had the greatest **percentage point change** in special education students from 2014-15 to 2018-19? Describe the change in the **share** of students.
+- Which Austin school had the greatest increase in the number of special education students from 2015 to 2019?
+- Describe how the number of Austin schools that met the "8.5% audit threshold" changed between 2015 and 2019. (You can assume that threshold has already been explained earlier in the story so you don't need that detail.)
 - Write a paragraph that explains the **source** of your data and the **criteria** (like filtering) used in your analysis. Again, write this as if it were part of a story ... written for the reader in language they can understand.
 - Lastly ... If you were writing a news story about special education and you had the data above, what are the **three things you want to know next**? For each question, who would you ask? (Just titles or classes of people, not actual contact information.)
 
