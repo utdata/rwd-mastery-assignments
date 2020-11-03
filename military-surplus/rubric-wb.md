@@ -1,5 +1,7 @@
 # Military surplus transfers for Workbench
 
+> WARNING: MAJOR UPDATE NEEDED. We need to add a Total Value to each row that is Quantity * Acquisition Value.
+
 Be sure to review the [README](README.md) to learn about the data and download it.
 
 > This is a "mastery" assignment, which means you are applying skills learned in other assignments here without detailed direction.
