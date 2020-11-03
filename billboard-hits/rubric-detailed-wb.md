@@ -1,7 +1,5 @@
 # Billboard Hot 100 rubric for Workbench
 
-Be sure to see the [README](README.md) to learn about and download the data for this assignment.
-
 ## What you will learn
 
 > This is a detailed assignment that walks you through each step, explaining concepts along the way. You may want to review the [Basic Data Journalism Functions](https://vimeo.com/showcase/7320305) as you go along.
@@ -50,7 +48,22 @@ It will take several seconds to load as it is nearly 320,500 rows of data.
 
 OK, that process was cooler than it looked. This data is stored in Github, a popular code-sharing platform for developers. Most data journalists use Github to share their work, which means you can stand upon the shoulders of giants. If you find a CSV file on Github, you can add `?raw=true` to the end of the URL to import the data into Workbench (and other data science tools).
 
-- Name your tab **Import**. (Keep your tab names short. There is a bug in Workbench where you can't get to some tabs in the browser window if your names are too long.)
+- Name your tab **Import**. (I recommend you keep your tab names short. You can end up with a lot of them.)
+
+### About the data
+
+This dataset contains every weekly Hot 100 singles chart from Billboard.com. **Each row of data represents a song and the corresponding position on that week's chart.** Included in each row are the following elements:
+
+- url: Billboard Chart URL
+- WeekID: Date of chart release
+- Week Position: Current week on chart
+- Song: Song name
+- Performer: Performer name
+- SongID: Concatenation of song & performer
+- Instance: This is used to separate breaks on the chart for a given song. As an axample, an instance of 6 tells you that this is the sixth time this song has appeared on the chart, with skips in between.
+- Previous Week Position: As of the current date
+- Peak Position: Top position on chart as of this date
+- Weeks on Chart: Weeks on chart as of this date
 
 ### Fix the dates
 
