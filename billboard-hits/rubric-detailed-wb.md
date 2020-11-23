@@ -92,13 +92,13 @@ To get this answer we need a simple aggregation. Since each row of data is an ap
 
 ### Group and aggregate
 
-In Workbench, aggregation is part of the **Group** step. (Most data science languages separate [Group and Aggregate](https://vimeo.com/showcase/7320305/video/435910349) into separate steps. Workbench does the same, but it's under the hood of the graphical interface.)
+Most data science languages separate [Group and Aggregate](https://vimeo.com/showcase/7320305/video/435910349) into separate terms because you define values in each part separately. Workbench does the same, but they are in the same "Step" in the graphical interface. The function is called **Group** and the aggregation is called the **Operation** within the step.
 
 - Start a new step and choose the **Group** function.
 - For **Select column** type in `Performer`. (Note the type-assist. Once you've typed enough of a column name to select it, you can hit **Return** on your keyboard to select that field.) See [Select](https://vimeo.com/showcase/7320305/video/435910324) for a refresher on the concept.
   - (A little explanation: When we Group by Performer, we are organizing the data to put all the rows with the same Performer together before we perform some kind of math on them: Counting, Summing or whatever. So we are organizing the data to have all the ABBA rows together, then all the rows for B.B. King, etc.)
 - For **Operations** keep the _Count_ selection, but go ahead and click on that menu to see the other possibilities. (This is the **Aggregation** step. Workbench combines aggregations with Group because you typically aggregate after grouping.)
-- Name the new column **Weeks on chart** because that is what we are doing: Counting the number of weeks this performer has been on the Hot 100.
+- Name the new column **Appearances** because that is what we are doing: Counting the number of weeks this performer has appeared on the Hot 100 for each song.
 - **Add a note** to the step that explains what you are doing. If you roll your cursor over the step title you'll get icons, including the note button outlined below. Use notes like this to explain to your future self or readers what you are doing in the step. (Go ahead and add notes to your previous steps, too.)
 
 ![Group and count](img/group-count.png)
@@ -110,7 +110,7 @@ We could add more aggregations here by clicking on the **+ ADD** icon at the bot
 Now we have a list of performers and how many times they've been on the chart, but we want to know who has been there the most. For this we need to [Sort](https://vimeo.com/showcase/7320305/video/435910315) the data. (This simple operation comes in many different names in data science languages: "Arrange" in R, "Order by" in Python and SQL.)
 
 - Add a new step and choose the **Sort** function.
-- Add the column we need, `Weeks in chart`, in the **By** menu.
+- Add the column we need, `Appearances`, in the **By** menu.
 - Click on the **Descending** button. (Journalists usually want the _most_ of everything.)
 - For the **Keep top** item, type in `10`. (We are going to keep only the top 10 records of our list so we can make a chart later.)
 - Don't forget to add your note to the step! (I want you to do this for each step, but I'm not going to remind you anymore.)
@@ -125,7 +125,7 @@ We are going to use the **Column charts** function in Workbench. Column charts a
 
 - Add a new step and choose **Column chart**.
 - For the **X axis** use the `Performer` column.
-- For the **Y axis** use the `Weeks on chart` column.
+- For the **Y axis** use the `Appearances` column.
 - Give your chart a descriptive title. Note you can also rename the axis names.
 
 ![Column chart](img/column-chart.png)
@@ -196,6 +196,8 @@ Now that we have our deduplicated list of Song/Performers, we simply have to Gro
   - Keep the **Count** aggregation.
   - Name your new column "No. 1 hits".
 
+<img src="img/group-count-no1.png" width="300">
+
 ### Sort the list
 
 Now we have the number of No. 1 hits by each performer, but we need to **Sort** to find out who had the most.
@@ -204,6 +206,8 @@ Now we have the number of No. 1 hits by each performer, but we need to **Sort** 
 - For **By** choose your `No. 1 hits` column.
 - For **Keep** add in `10` rows.
 - Choose **Descending** and play the step.
+
+<img src="img/sort-no1-hits.png" width="300">
 
 How was your guess? Are you surprised? Which artists in the list have the best chance of overcoming the top Performer in this list? That might serve as an angle for your data drop.
 
@@ -225,6 +229,8 @@ Now look at all the steps of this workflow and think where you can add a filter 
   - Type in 2014-12-31 in the **Value** field.
 
 The condition "Date is after" does not include the date we are using, so we actually have to pick the day BEFORE the date we want to start keeping data. If we wanted to also add bounds and an end date to consider, we could add an "AND" to our IF statement and use "Date is before". Our data only goes through 2019 so we only need to set the lower bounds.
+
+![Filter by date](img/filter-by-date.gif)
 
 Now you can go to the last step in the workflow and see how the answers have changed compared to our previous tab.
 
