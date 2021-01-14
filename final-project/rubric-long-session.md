@@ -57,16 +57,16 @@ While you should be checking in with your editing partner each week, you should 
 
 (Final due date. **Include all items in a Google Drive folder that I have editing access to.** The story should be in a Google Doc and all other items uploaded or linked from the story.)
 
-### The story (500 points)
+### The story (400 points)
 
-An 800-word news story (give or take 100 words) that is born from or heavily supported by your chosen data. Don’t pad a story just to make the minimum. Instead find more facts to include, do more reporting and add more voices. I’ll count off more for word-count padding than for being short. The story itself is worth 300 points, and the required items below add up to 200 additional points. You can include all of these items in the same document as your story.
+An 800-word news story (give or take 100 words) that is born from or heavily supported by your chosen data. Don’t pad a story just to make the minimum. Instead find more facts to include, do more reporting and add more voices. I’ll count off more for word-count padding than for being short. The story itself is worth 200 points, and the required items below add up to 200 additional points. You can include all of these items in the same document as your story.
 
 - A headline that fits the story. (25 points)
 - Three human sources that you have personally interviewed. Only one student is allowed toward the three unless otherwise approved in advance by the instructor. Properly credited published reports or studies (or quotes from such) are allowed as source material in your story, but they do not count toward your human source quota. Email correspondence with a source is allowed, but I encourage (implore, even) that you instead speak to your sources ~~in person or~~ on the phone. NO ANONYMOUS SOURCES. **Include a list of names, titles and contact information (emails and/or phone numbers) so I can contact them if necessary.** (100 points)
 - A diversity statement that explains how you attempted to meet the goals you outlined above, and/or how you could do better. (25 points)
 - Two tweet-length promotions to your story, one based on a character or text in the story, and one geared toward one of the graphics in your story. A good journalist is adept at promoting their own work. Write something I would WANT to click on. Use an image and hashtags and all the stuff you learned in your social media class. (You do not have to actually publish the tweet. You can write it in the story Google Doc or take a screen shot of the preview and include it.) (50 points)
 
-### Finished charts (100 points)
+### Finished charts (200 points)
 
 Include the two finished charts that support your story. Include screenshots in your story with a link to online interactive versions if there are any. If you have a Tableau workbook, either publish it on Tableau Public or export as a Packaged Workbook and share in Drive.
 
