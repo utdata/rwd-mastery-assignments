@@ -1,6 +1,6 @@
 # PIR for marijuana offenses
 
-For this assignment you'll be submitting a public information request for marijuana-related arrests by various Texas law enforcement agencies. You will be assigned an agency and have to find out where to send the request. You will keep a log of your efforts to fulfill the request and hopefully in the end you'll get the data for use in a future project.
+For this assignment you'll be submitting a public information request for marijuana-related arrests to various Texas law enforcement agencies. You will be assigned an agency and have to find out where to send the request. You will keep a log of your efforts to fulfill the request and hopefully in the end you'll get the data for use in a future project.
 
 ## Project steps
 
@@ -29,7 +29,7 @@ If your agency is asking for money to complete the request, follow up with an em
 
 And let me know when you do this. Don't delay ... we have limited time to fulfill these requests.
 
-If the agency insists on a cost, get with me as we may be able to pay for the request.
+If the agency insists on a cost, get with me as I may be able to pay for the request.
 
 Be sure to include all this information in your final report.
 
@@ -52,7 +52,7 @@ If you get data from your agency, please do the following:
 
 ## The PIR template
 
-Under the Texas Public Information Act, I'd like to request an electronic export (data) of marijuana-related arrests from January 1, 2016 to the current date.
+Under the Texas Public Information Act, I'd like to request an electronic export (data) of marijuana-related arrests -- EXCLUDING MINORS -- from January 1, 2016 to the current date.
 
 Specifically, I'm seeking a spreadsheet, database or delimited text file(s) — not paper records or a PDF created from data. A text export (.txt or .csv) and electronic transfer is preferred, but I can receive the records in a variety of database formats and media (CD, DVD, ftp). I can provide an upload link for electronic transfer, if necessary.
 
@@ -70,11 +70,13 @@ The fields I'm seeking for each arrest are:
 - Latitude if known
 - Longitude if known
 
+Again, I am only requesting arrest records of adults, not minors.
+
 In addition, please include any lookup tables and record layouts that may be needed to interpret the data. For example, if charges are listed with codes linked to a separate table, I'm happy to join the records myself, rather than require your staff to do so.
 
-If certain fields are unavailable, please send what you have and let me know what was excluded.
+If certain fields are unavailable or you feel are prohibited from release by statute, please send what you allow and let me know what was excluded.
 
-I want to stress that I'm not seeking any records that are prohibited from release either by statute or previous rulings by the Texas Attorney General or the courts. Please let me know if you feel any records in the fields I've requested are confidential, and I'll consider amending my request.
+I want to stress that I'm not seeking any records that are prohibited from release either by statute or previous rulings by the Texas Attorney General or the courts. If you feel any fields in the records I've requested are confidential, and I'll consider amending my request.
 
 Also, please let me know if clarifying the request might speed the release of the data, reduce any programming time and, most importantly, avoid a referral to the Attorney General.
 
