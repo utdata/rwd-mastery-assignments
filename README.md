@@ -24,7 +24,7 @@ There are a certain set of data functions that are common concepts no matter wha
 ## Workbench
 
 - [Workbench tutorials](workbench-tutorials/)
-- Exploring the Billboard Hot 100: [Workbench](billboard-hits/rubric-detailed-wb.md)
+- Exploring the Billboard Hot 100: [Workbench](billboard-hits/rubric-wb-detailed.md)
 - Military surplus equipment: [Workbench](military-surplus/rubric-wb.md)
 - Special Education students: [Workbench](ed-special-ed/rubric-wb.md)
 
