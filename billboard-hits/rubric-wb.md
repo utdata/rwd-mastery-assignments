@@ -1,5 +1,7 @@
 # Billboard Hot 100 rubric for Workbench
 
+> THIS ASSIGNMENT IS DATED AND NEEDS REWRITING BEFORE USE AGAIN. SEE THE [DETAILED VERSION](rubric-wb-detailed.md) FOR A MORE CURRENT VERSION.
+
 Be sure to see the [README](README.md) for the source information and data dictionary.
 
 ## Connect to the data

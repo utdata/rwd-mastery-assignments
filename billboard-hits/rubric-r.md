@@ -1,5 +1,7 @@
 # Billboard rubric for R
 
+> THIS ASSIGNMENT IS DATED AND NEEDS REWRITING BEFORE USE AGAIN
+
 Be sure to see the [README](README.md) for the source information and data dictionary.
 
 ## Downloading the data
