@@ -1,8 +1,10 @@
 # Billboard Hot 100 rubric for Workbench
 
+> There is a companion screencast video of this lesson **Workbench Billboard** under the Panopto Video menu in Canvas.
+
 ## What you will learn
 
-> This is a detailed assignment that walks you through each step, explaining concepts along the way. You may want to review the [Basic Data Journalism Functions](https://vimeo.com/showcase/7320305) as you go along.
+This is a detailed assignment that walks you through each step, explaining concepts along the way, sprinkled with mastery quests to do on your own. You may want to review the [Basic Data Journalism Functions](https://vimeo.com/showcase/7320305) as you go along.
 
 We'll be using Workbench to practice importing data from a URL, filter, select, group, aggregate and make some very simple charts. We'll also have have a short writing assignment.
 
