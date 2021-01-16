@@ -74,6 +74,19 @@ In our case the `date` field is not listed as a date and we'll need to fix that.
 
 ![convert date](img/convert-date.gif)
 
+### Fix other numbers
+
+For the number columns that came in as text, we can fix them all at once.
+
+- Add a step for **Convert to number**.
+- In the column field add the three columns we want to convert: `previous`, `peak` and `weeks`.
+- For **Integer or decimal** we want to choose _Only integer_. In all cases for these three columns, these will be whole numbers. (_Any number_ would probably be fine, too.)
+- For **Thousands and decimal separators** we want the _United States_ version.
+- We want to **Convert errors to null**. This will make our "NA" columns blank, which is what we want in this case.
+- Display as _Integer, no commas_.
+
+<img src="img/convert-to-numb.png" width="300">
+
 ## Top 10 Artists
 
 Now to find the most popular artist in the history of the Hot 100. Who did you guess?
