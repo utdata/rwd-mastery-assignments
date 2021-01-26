@@ -4,7 +4,7 @@ For this assignment you'll be submitting a public information request for mariju
 
 ## Example of what we seek
 
-To help you visualize what we are looking for, I've included an [example here](example-marijuana-arrests-data.xlsx). If you get into a back-n-forth with the agency about what we are looking for, you can download and then send them that file.
+To help you visualize what we are looking for, I've included an [example here](example-marijuana-arrests-data.xlsx). If you get into a back-n-forth with the agency about what we are looking for, you can download and then send them that file.tt`
 
 ## Project steps
 
