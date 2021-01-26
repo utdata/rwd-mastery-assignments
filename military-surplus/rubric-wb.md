@@ -10,7 +10,7 @@ Your charge with this assignment is to see how several local police agencies hav
 
 ## The questions to answer
 
-All answers should be based on data _after_ **Dec. 31, 2014**. This gives you five full years of data plus the first quarter of 2020.
+All answers should be based on data _after_ **Dec. 31, 2015**. This gives you at least five full years of data=.
 
 In addition, only consider **Texas agencies** as you answer the following.
 
