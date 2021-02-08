@@ -122,7 +122,7 @@ The first is just the data:
 
 The second part of the assignment (after we've talked about writing with numbers) you will write a short story (three to five paragraphs) based on the details you've found. Since you're acting as an Austin-area reporter, you should lead with information about AISD, but also mention in your story how other local districts fared. Close your story with a paragraph about how charter schools fared vs traditional public schools statewide. (It's true that writing about this difference "for real" would require more reporting to provide context, but just write the data-centric sentence for now that describes the fact.)
 
-- Using Google Docs is required. Share your story with with me **as an editor** and submit the link in Canvas to the assignment _GS01.2 Data Drop: School Ratings_.
+- Using Google Docs is required. Share your story with with me **as an editor** and submit the link in Canvas to the assignment _GS02.2 Data Drop: School Ratings_.
 
 ## Large files and working in Google Sheets
 
