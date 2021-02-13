@@ -1,25 +1,24 @@
 # Open Refine: Cleaning
 
-This lesson assumes you have already [installed OpenRefine](installation.md).
+This lesson outlines the basics of text facets, filters and data cleaning in OpenRefine. It assumes you have already [installed OpenRefine](installation.md).
+
+## The story behind the lesson
+
+For this story we wanted to summarize candidate election campaign contributions by race, party and election cycle. Before doing so, we had to clean up the campaign fund names and normalize some other columns in the data.
 
 ## Start with some data
 
-> CHECK LINK BELOW
+- Go to this [TEC campaign finance data](data/tec-totals-preclean.xlsx) page and then click on **Download**. Put the file somewhere you can find it later.
 
-- Download this [TEC campaign finance data](data/tec-totals-preclean.xlsx) and put it somewhere you can find it later.
-- Open the file in Excel and review it.
+This is what the file looks like in Excel:
 
 ![Data peek](img/tec-data-peek.png)
 
 There are several things we'd like to do with this data:
 
-1. Create a new "Candidate" field to clean up PAC names and such.
-2. Create a new "Election Cycle" column, which run over two years.
+1. Create a new "Candidate" column based on the PAC-based "Name" column, but clean up the values to just the candidate's name.
+2. Create a new "Election Cycle" column so we can later summarize the amounts over these two-year cycles.
 3. Normalize the "Race-Ethnicity" and "Party" columns.
-
-### The story behind the data
-
-For this story we wanted to see summarize candidate election campaign contributions by race and party. Before doing that, we had to clean up the campaign fund names and normalize some other columns in the data.
 
 ## Start an OpenRefine project
 
@@ -43,9 +42,12 @@ There are several options you can adjust here. This workbook only has one sheet,
 
 ### Getting around
 
-Once in our project, there are a couple of controls:
-Change the number of rows you can see
-Page through the data using next, last, previous, first.
+Once in our project, there are a couple of controls along the top you should play with:
+
+- Change the number of rows you can see
+- Page through the data using next, last, previous, first.
+
+![Page data](img/tec-page.png)
 
 ## Create a new column
 
@@ -59,7 +61,7 @@ You'll next get a window where we can define what we want in this new column.
 
 ![New column setup](img/tec-newcol-setup.png)
 
-You can do a LOT more with this window than we do here, but take note of the "Expression" window here. Inside of that is just the word value, which means we are creating a new column based on the value of the cell on our source column. It is possible to make changes to the values (the content) as you create the new column using [GREL](https://docs.openrefine.org/manual/grelfunctions), a programming language specific to Refine.
+Take note of the "Expression" window here. You can do a LOT more with this than we are here, but inside we have the expression `value`, which means we want to use the "value" of our original column as the content for each row of our new columns. It is possible to make changes to the value (the content) as you create the new column using [GREL](https://docs.openrefine.org/manual/grelfunctions), a programming language specific to Refine.
 
 In our case here, just click OK to create the new column.
 

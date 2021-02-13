@@ -16,7 +16,7 @@ While there is an OpenRefine application you launch, the program itself launches
 These are detailed demos with illustrated step-ty-step instructions of commonly-used features of OpenRefine. If you are here to learn how to use OpenRefine, start with these.
 
 - [Using facets](demo-facets.md)
-- [Clustering](demo-facets.md)
+- [Clustering](demo-cluster.md)
 
 ## Case studies
 
