@@ -38,5 +38,5 @@ These are some example use cases using OpenRefine. They are not tutorials, but d
 
 OpenRefine is not the only tool like this. Some others you might find useful:
 
-- [Trifacta](https://www.trifacta.com/data-preparation/)
+- [Trifacta](https://www.trifacta.com/data-preparation/), including a [Cloud Dataprep by Trifacta](https://cloud.google.com/dataprep)
 - [Tableau prep](https://www.tableau.com/trial/tableau-prep)
