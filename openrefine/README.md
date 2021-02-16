@@ -33,3 +33,10 @@ These are some example use cases using OpenRefine. They are not tutorials, but d
   - [Expressions](https://docs.openrefine.org/manual/expressions)
   - [GREL functions](https://docs.openrefine.org/manual/grelfunctions)
   - [Foundations tutorial course](https://courses.tranzf.org/course/view.php?id=18)
+
+## Other tools
+
+OpenRefine is not the only tool like this. Some others you might find useful:
+
+- [Trifacta](https://www.trifacta.com/data-preparation/)
+- [Tableau prep](https://www.tableau.com/trial/tableau-prep)
