@@ -395,24 +395,26 @@ If you want to know which school gained the highest share of special education s
 
 You can describe how many schools climbed above the TEA's 2004 threshold, and how many were over it in 2015 before the law changed.
 
-## Writing assignment
-
-For the writing part of the assignment below you should already have everything you need. If you want to explore the data more, be careful not to make changes (beyond sorting) to a tab that is the source of another tab ... those changes carry forward and can lead to confusion and unexpected results. If for some reason you want to explore a new fact, you should start a new tab and pull data into it before any filtering, selecting or grouping.
-
-1. Using Google Docs, write three "data nut graphs" -- a sentence (or paragraph) in a story that succinctly describes a data fact -- as if each were just a part of a complete news story. You don't need a lede. You aren't writing a whole story ... just three sentences or paragraphs describing of these facts, and then another to describe the data set.
-2. Also note the reporter questions that follow. **Be sure to share the doc to me as an editor.**
-
-Here are the questions I want you to write about:
-
-- Which AUSTIN ISD school (or schools) had the greatest **percentage point change** in special education students from 2014-15 to 2018-19? Describe the change in the **share** of students.
-- Which Austin school had the greatest increase in the number of special education students from 2015 to 2019?
-- Describe how the number of Austin schools that met the "8.5% audit threshold" changed between 2015 and 2019. (You can assume that threshold has already been explained earlier in the story so you don't need that detail.)
-- Write a paragraph that explains the **source** of your data and the **criteria** (like filtering) used in your analysis. Again, write this as if it were part of a story ... written for the reader in language they can understand.
-- Lastly ... If you were writing a news story about special education and you had the data above, what are the **three things you want to know next**? For each question, who would you ask? (Just titles or classes of people, not actual contact information.)
-
 ## Turn in Workbench assignment
 
 Make your Workbench workflow public. (Click on the share button, then check the "public" box.) Copy and include the link in your story or submit the link with the assignment.
+
+## Writing assignment
+
+> THIS PART OF THE ASSIGNMENT IS DROPPED IN SPRING 2021 FOR SNOWPOCALYPSE.
+
+~~For the writing part of the assignment below you should already have everything you need. If you want to explore the data more, be careful not to make changes (beyond sorting) to a tab that is the source of another tab ... those changes carry forward and can lead to confusion and unexpected results. If for some reason you want to explore a new fact, you should start a new tab and pull data into it before any filtering, selecting or grouping.~~
+
+~~1. Using Google Docs, write three "data nut graphs" -- a sentence (or paragraph) in a story that succinctly describes a data fact -- as if each were just a part of a complete news story. You don't need a lede. You aren't writing a whole story ... just three sentences or paragraphs describing of these facts, and then another to describe the data set.
+2. Also note the reporter questions that follow. **Be sure to share the doc to me as an editor.**~~
+
+~~Here are the questions I want you to write about:~~
+
+~~- Which AUSTIN ISD school (or schools) had the greatest **percentage point change** in special education students from 2014-15 to 2018-19? Describe the change in the **share** of students.~~
+~~- Which Austin school had the greatest increase in the number of special education students from 2015 to 2019?~~
+~~- Describe how the number of Austin schools that met the "8.5% audit threshold" changed between 2015 and 2019. (You can assume that threshold has already been explained earlier in the story so you don't need that detail.)~~
+~~- Write a paragraph that explains the **source** of your data and the **criteria** (like filtering) used in your analysis. Again, write this as if it were part of a story ... written for the reader in language they can understand.~~
+~~- Lastly ... If you were writing a news story about special education and you had the data above, what are the **three things you want to know next**? For each question, who would you ask? (Just titles or classes of people, not actual contact information.)~~
 
 [^1]: While working through this data I created a list of the schools that had data for both 2015 and 2019, but didn't have school names. I did this by using and **inner join** between the 2015 and 2019 data, but a **left join** with the LOC file. I then filtered that data for rows that did not have a `School_Name`. I've gathered [those here](https://docs.google.com/spreadsheets/d/1r1cC5W9eFJ-ecMJAJkf2y1j5R0yb2fCFQHVhjOqGsX4/edit?usp=sharing) and looked up many of them through TEA's TAPR search. There are no Austin ISD schools based on the `CAMPUS` id, but any analysis of other districts must that this list under consideration.
 
