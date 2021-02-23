@@ -1,6 +1,8 @@
 # Final Project (Long Semester)
 
-> **IMPORTANT NOTE FOR FALL SEMESTER:** Thanksgiving week falls within this project period right about the time you might naturally be reaching out to sources. DON'T WAIT TO REACH OUT TO SOURCES. Make those contacts ASAP so you will know when you can reach them later, as they may not be available during the holiday.
+> **IMPORTANT NOTE FOR SPRING 2021:** This assignment is changing due to the mid-February winter weather event. Please see [this link for the new final project rubric](../alcohol-sales-tabc/rubric-spring21.md).
+
+> **IMPORTANT NOTE FOR FALL SEMESTERS:** Thanksgiving week falls within this project period right about the time you might naturally be reaching out to sources. DON'T WAIT TO REACH OUT TO SOURCES. Make those contacts ASAP so you will know when you can reach them later, as they may not be available during the holiday.
 
 This class aims to teach you how to use data to find and tell stories. It crescendos in the final month of class when you use the skills you learned during the semester to develop your own data-driven story.
 

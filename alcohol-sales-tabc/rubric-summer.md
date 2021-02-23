@@ -67,10 +67,8 @@ When you want to make a chart from data, one of the more important aspects is to
   - **Select columns** let's you select (or delete) columns so you have only what you need for the chart.
   - **Refine**: Allows you to rename values within a row. If I'm doing a chart by month, I will use **Formula** `=MONTH(date_col)` to create a new column with the number of the month, but then use **Refine** to change the names to something readable, like January.
   - **Group** and the aggregations that come with it are sometimes all you need to reshape your data.
-  - **Reshape** allows you to make extract values to make new columns for line charts. If you have your data where you have a column for "Year" with different values, you'll likely need to reshape it so you have a column for each year of data to do a line chart.^^
+  - **Reshape** allows you to make extract values to make new columns for line charts. If you have your data where you have a column for "Year" with different values, you'll likely need to reshape it so you have a column for each year of data to do a line chart.
   - **Transpose** allows you to flip the axis of your data so rows become columns and vise versa. You can also do this in Datawrapper.
-
- ^^ One limitation with Workbench is you can only keep one or two of your columns on a row when you reshape. I've used a Formula to combine two rows together (Like Location Name and Location Address) to get around this limitation. There is also some [pandas magic](https://github.com/utdata/rwd-workbench#reshaping-with-melt) if you are going from wide_to_long, but that is more for Tableau instead of Datawrapper, which likes wide data.
 
 ## Editing partners
 

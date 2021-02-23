@@ -39,8 +39,7 @@ There are a certain set of data functions that are common concepts no matter wha
 
 ## Final project
 
-- [Mixed Beverage/TABC Violations](alcohol-sales-tabc/README.md)
-- [Your next data project](final-project/rubric-next-project.md)
+- [Mixed Beverage/TABC Violations](alcohol-sales-tabc/rubric-spring21.md)
 
 ## Extra credit
 

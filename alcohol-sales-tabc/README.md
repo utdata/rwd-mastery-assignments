@@ -71,5 +71,6 @@ For this project, I suggest you stay away from directly joining the TABC data to
 
 ## Assignments
 
+- [Spring 2021 final project](rubric-spring21.md)
 - [Summer final project](rubric-summer.md)
 - [Long semester project](rubric-long-semester.md)
