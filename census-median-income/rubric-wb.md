@@ -72,8 +72,6 @@ For the second year of data, we need to do something a little bit different beca
 
 > Your numbers will be different!!!
 
-
-
 ## Join the data
 
 Before we can do math to compare the median incomes for both years, we have to have both sets of data in the same sheet. We'll do that with a join.
@@ -132,23 +130,23 @@ To see how many of the 54 largest counties in Texas gained or lost in their medi
 
 #### Create the up/down column
 
-First, we'll create the category column. We can do this with an `IF` formula. If our Diff18v19 column is greater than zero, the value when "Up". If not, it went "Down".
+First, we'll create the category column. We can do this with an `IF` formula. If our _Diff18v19_ column is greater than zero, the value when "Up". If not, it went "Down".
 
 The IF works like this:
 
 `=IF(test, value_if_true, value_if_false)`
 
 - Create a new step and choose **Formula**.
-- For the "test" we want to check if our Diff18v19 column is greater than zero.
+- For the "test" we want to check if our _Diff18v19_ column is greater than zero.
 - For the true value, we want to print the text `"Up"`.
 - For the false value we want to print the text `"Down"`.
 
-For me, the formula looks like this:
+For me, the formula looks like this (but make sure you use the column letter for your _Diff18v19_ column if it is not the same as mine):
 
 `=IF(G1>0, "Up", "Down")`
 
 - Name your column "UpOrDown".
-- **CHECK YOUR RESULTS:** It should be pretty easy to make sure you got your formula right by comparing the results to the Diff2018v2017 or PrcCng columns.
+- **CHECK YOUR RESULTS:** It should be pretty easy to make sure you got your formula right by comparing the results to the _Diff18v17_ or PrcCng columns.
 
 > WHAT IF THEY ARE EQUAL? In the 2018 and 2019 data, the median income didn't stay exactly the same for any county. But what if it did? You could use a nested IF statement that first tested if the values were the same. If that answer is false, you could then test again to see if the value is larger and print your values accordingly. [This article explains how](https://www.techonthenet.com/excel/formulas/if_nested.php).
 
@@ -160,7 +158,7 @@ To count how many counties when up or down, now we can group on our new column.
 - Rename the new tab "UpOrDownCount".
 - Use a Group step on the UpOrDown column and **Count** the rows.
 
-Now you know how many columns gained or lost in median household income: All but three of the states largest 54 counties saw some increase in the median household income from 2017-18.
+Now you know how many columns gained or lost in median household income: All but three of Texas' largest 54 counties saw some increase in the median household income from 2018-19.
 
 ## Checking margins of error
 
