@@ -25,13 +25,13 @@ There are a certain set of data functions that are common concepts no matter wha
 
 - [Workbench tutorials](workbench-tutorials/)
 - Exploring the Billboard Hot 100: [Workbench](billboard-hits/rubric-wb-detailed.md)
-- Military surplus equipment: [Workbench](military-surplus/rubric-wb.md)
 - Special Education students: [Workbench](ed-special-ed/rubric-wb.md)
+- Military surplus equipment: [Workbench](military-surplus/rubric-wb.md)
 
 ## Datawrapper
 
-- Austin Animal Center [Workbench/Datawrapper](austin-animal-center/README.md)
 - [Skittles!](skittles/README.md)
+- Austin Animal Center [Workbench/Datawrapper](austin-animal-center/README.md)
 
 ## Census
 
@@ -43,8 +43,13 @@ There are a certain set of data functions that are common concepts no matter wha
 
 ## Extra credit
 
-- [ArcGIS mapping](https://learn.arcgis.com/en/projects/get-started-with-arcgis-online/)
+- [Data cleaning with OpenRefine](openrefine/)
 - [Data cleaning with Regular Expressions](https://docs.google.com/document/d/1DvAM4lnGJLefo9skD8GgM-_9S1BEhpjJfV86yhJavI0/edit#heading=h.crhjhbmzwwfl)
+- [ArcGIS mapping](https://learn.arcgis.com/en/projects/get-started-with-arcgis-online/)
+- [Tableau tutorial](https://github.com/utdata/rwd-mastery-assignments/tree/master/tableau-tutorials)
+- [Tableau Travis Gun Deaths](https://docs.google.com/document/d/1sQBl9TpbBDtasvw8dOql1qQtS-iurZAivPgnOrREmrs/edit)
+
+---
 
 ## Not in current semester
 
@@ -60,6 +65,8 @@ There are a certain set of data functions that are common concepts no matter wha
 - Exploring Gifted Students data: [Workbench](ed-gifted-students/rubric-wb.md)
 
 ### Tableau
+
+> All need updating
 
 - [Travis County Gun deaths](https://docs.google.com/document/d/1sQBl9TpbBDtasvw8dOql1qQtS-iurZAivPgnOrREmrs/edit#heading=h.cq1m8rq7txl5)
 - [Animal intakes exploration](austin-animal-center/README.md)
