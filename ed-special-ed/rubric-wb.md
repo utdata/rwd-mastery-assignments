@@ -6,7 +6,7 @@ Be sure to review the [README](README.md) for important information on the story
 
 With this assignment, you'll use many of the [Basic Data Journalism Functions](https://vimeo.com/showcase/7320305) discussed earlier in the semester.
 
-## Overview of our task
+### Overview of our task
 
 The goal is to find the answer to the following questions:
 
@@ -19,16 +19,16 @@ We will filter our list to focus on "Regular Instructional" schools to exclude a
 - Before we do the join function, we will filter our list of campuses to include only "Regular Instructional" schools. This will remove alternative schools that are special purpose for behavioral issues, etc.
 - Then we will have to create some new columns that does math to show the change in values from the older year, 2015, and the newer year and how they compare to the old "audit threshold" reported by the Chronicle.
 
-## Import the three data sets
+## Import and prepare the CSTUD files
 
-Once past the hassle of downloading the data, there are still some challenges to getting the answers above. Follow these steps to prepare each of the datasets you downloaded:
+Once past the hassle of downloading the data, there are still some challenges to getting the answers above. Follow these steps to prepare each of the datasets you downloaded.
 
 - Before you upload the files into Workbench, make sure you've changed the filename extension of your CSTUD files from `.dat` to `.csv` or they will not import into Workbench.
 - Use a new Workbench tab for each file.
 - Use the **Upload** function to import the file.
-- Name them "CSTUD15", "CSTUD20" (or newest year), and "LOCS" (for the Directory file.)
+- Name them "CSTUD15", "CSTUD20" (or newest year)
 
-> HINT: Keep your Workbench tab names short. If they are too long, it can be hard to get to all your tabs. For consistency with these directions, name them `CSTUD15`, `CSTUD20` and `LOCS`.
+> HINT: Keep your Workbench tab names short. If they are too long, it can be hard to get to all your tabs. For consistency with these directions, name them `CSTUD15`, `CSTUD20`.
 
 ### Fix the CAMPUS IDs
 
@@ -54,8 +54,6 @@ Lastly, add a note to the step to describe what you just did. Roll your cursor o
 
 Do this for both the CSTUD tabs.
 
-## Cleaning up CSTUD files
-
 ### Select just the columns we need
 
 We only need the `CAMPUS` and special education numbers from our CSTUD data for this story. If we review our data dictionaries ([2015](https://rptsvr1.tea.texas.gov/perfreport/tapr/2015/xplore/cstud.html) | [2020](https://rptsvr1.tea.texas.gov/perfreport/tapr/2020/xplore/cstud.html)) we can see these special education columns are called `CPETSPEC` (the number of special education students) and `CPETSPEP` (the percentage of students in the school that are in special education).
@@ -74,13 +72,20 @@ Use the **Rename columns** function and the to give the two special education pr
 
 Remember to do both of these steps in both CSTUD files, but name the more recent year with that year, like "20".
 
-## LOCS cleaning steps
+## Import and prepare the Directory data
 
-We have several issues to deal with in the locations data:
+As you were working with the CSTUD data, you might have noticed there were no campus names! How do we know which school they refer to? This is why we downloaded the school and district directory file.
+
+### Import the file
+
+- Create a new tab and call it "LOCS"
+- Use the **Upload file** option to import the `Directory.csv` file you downloaded earlier.
+
+Once uploaded, we have several issues to deal with in the Directory data:
 
 - The LOCS file has a lot of data, some that we need and some that we don't. We'll select only the columns we need.
 - It also has a `School_Number` field that matches our `CAMPUS` column from our CSTUD files, but the column has a `'` at the beginning to force it to import as text. That is good, but we'll need to remove the `'`.
-- To make the match properly between our LOC data and the CSTUD data the `School_Number` column needs to be renamed to be the same as our CSTUD data: `CAMPUS`.
+- To make the match properly between our LOCS data and the CSTUD data the `School_Number` column needs to be renamed to be the same as our CSTUD data: `CAMPUS`.
 
 ### Select columns
 
@@ -88,35 +93,35 @@ First, let's select our columns.
 
 - Start a new step and choose the **Select Columns** function.
 - You can use the dropdown on **Select Columns** field or just start typing names for type-assist. Choose the following columns:
-  - District_Name
-  - School_Number
-  - School_Name
-  - Instruction_Type
-  - Charter_Type
-  - Grade_Level
+  - District Name
+  - School Number
+  - School Name
+  - Instruction Type
+  - Charter Type
+  - Grade Level
   
 <img src="img/sped-locs-select-cols.png" width="300">
 
 ### Clean School Number
 
-Next, we need to clean the `School_Number` column, which looks like this:
+Next, we need to clean the `School Number` column, which looks like this:
 
 <img src="img/sped-school_numb_col.png" width="200">
 
 There are a number of ways we could fix this, but we'll use a function called **Clean text**.
 
 - Start a new step and choose **Clean text**.
-- For the columns, choose `School_Number`.
+- For the columns, choose `School Number`.
 - You can leave the Spaces and Capitalization fields as is, but go ahead and look at the options there.
 - For **Characters**, check the _Punctuation_ box. This will remove all punctuation-type characters from the field, which would include our leading `'` character.
 
 <img src="img/spec-clean-school-numb.png" width="300">
 
-Now we have a clean `School_Number` field that will match up with our `CAMPUS` field in the CSTUD datasets.
+Now we have a clean `School_Number` field that will match up with our `CAMPUS` field in the CSTUD datasets, once we rename it.
 
 ### Rename School Number
 
-Lastly, we have to rename the `School_Number` column to `CAMPUS` so we can match them later. They have to exactly the same, capitalization and everything.
+Lastly, we have to rename the `School Number` column to `CAMPUS` so we can match them later. They have to exactly the same, capitalization and everything.
 
 - Since we are only changing one file, the easiest way to make this change is to double-click on the column name and change it.
 
@@ -130,13 +135,13 @@ You might [review the video about joins](https://vimeo.com/showcase/7320305/vide
 
 Our aim here is to create a single dataset with a single row for each school that includes information from each of the three datasets. We do this by **joining** on the `CAMPUS` ID. However, as we do so, we'll end up losing some rows that don't have matches in the other files.
 
-To do our comparison we need the schools that were open in both 2015 and 2020. However, some schools existed in only one year or the other, so we'll drop those. When we join our files, we'll use an **inner join** to keep only schools with  **matching** records from both 2015 and 2020. This will drop schools that opened after 2015 or closed before 2020.
+To do the comparison for our analysis we need the schools that were open in both 2015 and 2020. However, some schools existed in only one year or the other, so we'll drop those. When we join our files, we'll use an **inner join** to keep only schools with  **matching** records from both 2015 and 2020. This will drop schools that opened after 2015 or closed before 2020.
 
 ### Steps for joining the data
 
 We'll start with the LOCS campus data.
 
-- Create a new tab and call it "SPEC".
+- Create a new tab and call it "SPEC". (This will be our working data for the rest of our analysis.)
 - Use the **Start from tab** function and choose the _LOCS_ data and play the step.
 
 ### Join the 2015 data
@@ -165,9 +170,9 @@ The data should look like this:
 
 ## Filter for "regular" schools
 
-For this list of schools, we want to use some of the columns to filter out charter, alternative, disciplinary and justice department schools. There is an `Instruction _Type` field in the LOC data that identifies _REGULAR INSTRUCTIONAL_ schools. We'll filter to get these.
+For this list of schools, we want to use some of the columns to filter out charter, alternative, disciplinary and justice department schools. There is an `Instruction Type` field in the LOCS data that identifies _REGULAR INSTRUCTIONAL_ schools. We'll filter to get these.
 
-If I wanted to see how the data identifies schools in this column, I can **Group** by that column and count the rows. I don't want you to save this step as it is just exploratory so I won't write out the steps, but this is how the result would look:
+**You don't need to do this**, but if I wanted to see how the data identifies schools in this column, I can **Group** by that column and count the rows. I don't want you to save this step as it is just exploratory so I won't write out the steps, but this is how the result would look:
 
 <img src="img/sped-group-type.png">
 
@@ -176,27 +181,29 @@ I can see that most schools are "regular", but I can see the other types as well
 ### Apply the regular school filter
 
 - Add a step and choose the **Filter by condition** function.
-- In **Select column**, choose the `Instruction _Type` column.
+- In **Select column**, choose the `Instruction Type` column.
 - For **Select condition**, choose "Text is exactly".
 - For **Value**, type in the letter `REGULAR INSTRUCTIONAL`.
 - Make sure the button at the bottom is set to **Keep** the records.
 
-<img src="img/sped-filter-regulaR.png" width="300">
+<img src="img/sped-filter-regular.png" width="300">
 
 As you play the step and you'll see the number of records drop from _8,002_ to _7,372_. What this has done is filter OUT the records that are NOT _REGULAR INSTRUCTIONAL_. You should always eyeball your column to make sure the filter did was you intended.
 
 ### Remove charter schools
 
-Now we are going to add onto our **Filter by condition** step and exclude any Charter schools. If a school is a charter school, the type is listed in the `Charter_Type`. If it is NOT a charter school, it has the term "NULL". ("NULL" us a term for a blank field and usually they are, well, blank. This data set uses the actual word NULL.)
+If you look at the `Charter Type` column, you'll see that the field is only filled out if it is a charter school, and is left blank if not. We'll add onto our last **Filter by condition** to use this column to exclude all charter schools.
 
 - Go back to the same step and click on the little **AND** symbol at the bottom and INSIDE the IF box to get a new rule.
-- Choose the `Charter_Type` column and also set it to **Cell is empty**. This filters out the other schools, which were the charter schools.
+- Choose the `Charter Type` column and set it to **Cell is empty**. Since we keep only rows where this is empty, it filters out the charter that have something in that field.
 
 Again, you should see the number of records drop. The two filters combined in the same step now look like this:
 
 <img src="img/sped-filter-charter.png" width="300">
 
-As you play the step and you'll see the number of records drop from _8,002_ to _6,962_. (Providing you are comparing with 2020 data.) What we've done is filter out both Alternative Rating schools and Charter schools. You should always eyeball your column to make sure the filter did was you intended.
+As you play the step and you'll see the number of records drop from _8,002_ to _6,962_. (Providing you are comparing with 2020 data.) What we've done is filter out all Alternative, DEAP (disciplinary), JJAEP (juvenile justice) and Charter schools.
+
+You should always double-check your data to make sure the filter did what you intended.
 
 ### Remove unneeded columns
 
@@ -236,7 +243,7 @@ We also have the *percentage* of special education students in the school, which
 - We can find the **percentage point difference** from one year to the next using simple difference again, but we have the describe the change as the difference in percentage points:
   - `New Percentage - Old Percentage = Percentage Point Difference`.
   - Example: `15.5% - 11% = 4.5 percentage points` (NOT 4.5%).
-  - "The percentage of students in special education grew by 4.5 percentage points, from 11% in 2015 to 15.5% in 2020."
+  - "The share of students in special education grew by 4.5 percentage points, from 11% in 2015 to 15.5% in 2020."
 - We can find the **percent change of share** from one year to the next, but we have to again be very specific about what we are talking about ... the growth (or decrease) of the _share_ of students in special education.
   - `((New Percentage - Old Percentage) / Old Percentage * 100) = Change in share of students`.
   - Example: `((15.5 - 11) / 11) * 100 = 40.9`.
@@ -244,7 +251,7 @@ We also have the *percentage* of special education students in the school, which
 
 Describing a "percentage point difference" to readers can be difficult, but perhaps less confusing than describing the "percent change of a percent".
 
-Great, so which do we use? That depends on what you want to describe. Schools that have fewer special education students to begin with will show a more pronounced percent change with any fluctuation. Then again, a school that has a large percentage of students could be gaining a lot of students with a small percentage change. In the end, we might need to use all of these values to describe different kinds of schools. We are talking about human beings, so perhaps the counts are important.
+Great, so which do we use for this story? That depends on what you want to describe. Schools that have fewer special education students to begin with will show a more pronounced percent change with any fluctuation. Then again, a school that has a large percentage of students could be gaining a lot of students with a small percentage change. In the end, we might need to use all of these values to describe different kinds of schools. We are talking about human beings, so perhaps the counts are important.
 
 ## Create our calculations
 
@@ -288,28 +295,34 @@ Now we'll build the "Percent point difference" of the share of special education
 
 <img src="img/sped-prcpnt-diff.png" width="300">
 
-### Create audit threshold columns
+## Create audit threshold columns
 
 Our story is a follow-up to the Chronicle's reporting in the Denied series, which found that the TEA would audit schools that had a special education rate of 8.5% or higher. Let's figure out which schools fell into that category in each year.
 
-The formula we are using is [Excel's IF](https://support.office.com/en-us/article/if-function-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2) formula. It works like this: `=IF(test, "if true", "if false")`. In the "test" field, we'll compare the percentage to 8.5%. If it is true, we will insert the text "Y" and if it is false, we'll say "N".
+There isn't a Workbench Calculate option for this action, so we'll be using the **Formula** function which supports Excel and Python.
+
+The formula we are using is [Excel's IF](https://support.office.com/en-us/article/if-function-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2). It works like this: `=IF(test,"value_if_true","value_if_false")`.
+
+Our "test" will be checking if the percentage is equal-or-greater-than 8.5, and we will insert the text "Y" if it is true, and "N" if it is false.
 
 - On the SPEC data, start a new step using the **Formula** function and choose **Excel**.
-- Look closely to see which of your column letter is the "SPEC15 Percent" column, which is the one we want. Mine is the `F` column.
-- For the Formula, use `=IF(F1>=8.5,"Y","N")`. Use your column instead of `F` if it is different.
+- **Look closely to see which of your column letter is the "SPEC15 Percent" column**, which is the one we want. Mine is the `F` column.
+- For the Formula, use `=IF(F1>=8.5,"Y","N")`. Use your column letter if instead of `F` if it is different.
 - For the Output column, name it "SPEC15 Threshold".
 
 <img src="img/sped-15-threshold.png" width="300">
 
 ### 2020 threshold on your own
 
-**On your own**: Repeat these steps for your 2020 data (or newest year).
+**On your own**: Repeat these steps for your 2020 data (or newest year). It will be very similar to above, but you'll be using the column with your 2020 percentage instead.
 
 Now we have a column that tells us if the school is at or above the audit threshold. We'll use these new fields later.
 
 ## Create Austin ISD comparisons
 
-We've been doing all this work on all the schools in the state, but we really want to look at Austin ISD. We'll create a **new tab** to filter down to just the Austin schools and then sort to show the schools with the most new special education students at the top.
+We've been doing all this work on all the schools in the state, but this story's focus is really Austin ISD. (We did the cleaning on the whole state because it takes the same amount of time and we could do comparisons later if we wanted to.)
+
+We'll create a **new tab** to filter down to just the Austin schools and then sort to show the schools with the most new special education students at the top.
 
 - Create a **new tab** and call it "AISD Diff".
 - Use **Start from tab** and choose your "SPEC" tab.
@@ -337,7 +350,7 @@ Consider the sentence you might write based on this list? How might that be phra
 
 Create two new tabs, with each filtering to Austin but sorting for different values, one sorting by "SPEC Count PrcCng" and the other for "SPEC Prc Pnt Diff".
 
-> Pro tip: You should start new tabs from your "AISD Diff" tab and just change the sort value. I generally discourage duplicating a tab and instead use **Start from tab** unless you are sure you need different rows/values.
+> **Pro tip**: You should start new tabs from your "AISD Diff" tab and just change the sort value. I generally discourage duplicating a tab and instead use **Start from tab** unless you are sure you need different rows/values.
 
 You'll be asked to write sentences based on these values, too.
 
@@ -358,29 +371,25 @@ The last question we need to answer is how many schools were above or below the 
 
 What you've done here is the same as a pivot table in Google Sheets. The operation is counting the number of rows (or schools in our case) for each value combination.
 
-Remember: The "N" means they didn't meet the 8.5% threshold, and the "Y" means they did.
+Remember: The "N" means they didn't meet the 8.5% threshold, and the "Y" means they did. So the first row shown below are the count of schools below the threshold in both years.
 
 <img src="img/sped-thresh-result.png" width="500">
 
 So there are 7 schools that were below the threshold both in 2015 and 2020, but 36 schools climbed above that threshold in 2020. Two schools dropped below the threshold by 2020.
 
-## What you have now
+## Assignments from this data
 
-So now you have all the values needed to write a followup to the Denied series for AISD schools.
+There are two parts to this project: The data and the writing.
 
-If you want to know the school that gained the most special education students, you can look at the schools at the top of your "AISD diff" tab. If you want to know who lost the most, look at the bottom of that one (or re-sort by Ascending).
-
-If you want to know which school gained the highest share of special education students within their school, you should have the tab that sorts data by "AISD PrcPntDiff" (or whatever you named that column).
-
-You can describe how many schools climbed above the TEA's 8.5% threshold, and how many were over it in 2015 before the law changed.
-
-## Turn in Workbench assignment
+## Turn in Workbench
 
 Make your Workbench workflow public. (Click on the share button, then check the "public" box.) Copy and include the link in your story or submit the link with the assignment.
 
+If you want to explore the data more, be careful not to make changes (beyond sorting) to a tab that is the source of another tab ... those changes carry forward and can lead to confusion and unexpected results. If for some reason you want to explore a new fact, you should start a new tab and pull data into it before any filtering, selecting or grouping.
+
 ## Writing assignment
 
-For the writing part of the assignment below you should already have everything you need. If you want to explore the data more, be careful not to make changes (beyond sorting) to a tab that is the source of another tab ... those changes carry forward and can lead to confusion and unexpected results. If for some reason you want to explore a new fact, you should start a new tab and pull data into it before any filtering, selecting or grouping.
+For the writing part of the assignment below you should already have everything you need.
 
 You are writing "data nut graphs" -- a sentence (or paragraph) in a story that succinctly describes a data fact -- as if each were just a part of a complete news story. You don't need a lede. You aren't writing a whole story ... just describe the facts.
 

@@ -71,3 +71,17 @@ Look through your new columns to see if any are text, and if so do the following
 - Change the **Display as** to "Decimal: 1,500.0012".
 
 We now have a value to describe how the percentage has changed from year to year.
+
+---
+
+
+
+So now you have all the values needed to write a followup to the Denied series for AISD schools.
+
+If you want to know the school that gained the most special education students, you can look at the schools at the top of your "AISD diff" tab. If you want to know who lost the most, look at the bottom of that one (or re-sort by Ascending).
+
+If you want to know which school gained the highest share of special education students within their school, you should have the tab that sorts data by "AISD PrcPntDiff" (or whatever you named that column).
+
+You can describe how many schools climbed above the TEA's 8.5% threshold, and how many were over it in 2015 before the law changed.
+
+

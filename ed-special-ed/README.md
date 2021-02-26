@@ -53,7 +53,7 @@ If you inspect either file you'll see there are no school or district names in t
 To get the campus names, the TEA has a reference file that includes information about every campus in the state. It includes the same "CAMPUS" id that is in our program data, but also the school names (very important!), district name, charter type and the instructional type so we can focus on "regular instructional" schools.
 
 - Go to the [TEA site](http://tea4avholly.tea.state.tx.us/tea.askted.web/Forms/Home.aspx) that lists helpful files.
-- Look for the file **Download School and District File** and download it. The filename is called "Directory.csv".
+- Look for the file **Download School and District File** and download it. The file is called "Directory.csv".
 - Move that file to your project file so you can find it later.
 
 ## Assignment rubrics
