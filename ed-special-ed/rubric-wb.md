@@ -10,8 +10,8 @@ With this assignment, you'll use many of the [Basic Data Journalism Functions](h
 
 The goal is to find the answer to the following questions:
 
-- Which AISD campuses had the greatest percentage point change in special education students from 2015 to 2019?
-- How many AISD schools are at or above the special education "audit threshold" of 8.5% in 2015 and in 2019?
+- Which AISD campuses had the greatest percentage point change in special education students from 2015 to 2020?
+- How many AISD schools are at or above the special education "audit threshold" of 8.5% in 2015 and in 2020?
 
 We will filter our list to focus on "Regular Instructional" schools to exclude alternative, disciplinary or schools part of the justice system.
 
@@ -213,7 +213,7 @@ We no longer need the `Instruction Type` or `Charter Type` columns now that we h
 - Add the `Instruction Type` and `Charter Type` columns.
 - Choose the **Delete** option and play the step.
 
-We now have our data combined and filtered. We have one row for each school and it includes only schools that were open in both 2015 and 2019, have school names, and are "regular" schools and not charter schools.
+We now have our data combined and filtered. We have one row for each school and it includes only schools that were open in both 2015 and 2020, have school names, and are "regular" schools and not charter schools.
 
 Now we can get to some analysis.
 
@@ -381,13 +381,13 @@ So there are 7 schools that were below the threshold both in 2015 and 2020, but 
 
 There are two parts to this project: The data and the writing.
 
-## Turn in Workbench
+### Turn in Workbench
 
 Make your Workbench workflow public. (Click on the share button, then check the "public" box.) Copy and include the link in your story or submit the link with the assignment.
 
 If you want to explore the data more, be careful not to make changes (beyond sorting) to a tab that is the source of another tab ... those changes carry forward and can lead to confusion and unexpected results. If for some reason you want to explore a new fact, you should start a new tab and pull data into it before any filtering, selecting or grouping.
 
-## Writing assignment
+### Writing assignment
 
 For the writing part of the assignment below you should already have everything you need.
 
