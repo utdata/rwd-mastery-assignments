@@ -11,6 +11,7 @@ With this assignment, you'll use many of the [Basic Data Journalism Functions](h
 The goal is to find the answer to the following questions:
 
 - Which AISD campuses had the greatest percentage point change in special education students from 2015 to 2020?
+- Which AISD campuses gained the most special education students (count).
 - How many AISD schools are at or above the special education "audit threshold" of 8.5% in 2015 and in 2020?
 
 We will filter our list to focus on "Regular Instructional" schools to exclude alternative, disciplinary or schools part of the justice system.
