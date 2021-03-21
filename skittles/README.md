@@ -81,12 +81,10 @@ Since we collected this data using a Google Form that ends up as a Google Sheet,
 - Enter this URL. Make sure you copy the whole URL if it scrolls off the screen:
 
 ``` text
-https://docs.google.com/spreadsheets/d/1JHS1yIbbVg7lUZzTMzJIlQGaZsEzWtNuM9_xKGHOknk/gviz/tq?tqx=out:csv
+https://docs.google.com/spreadsheets/d/e/2PACX-1vTxm9NxK67thlGjYOQBo_0JRvx2d137xt0nZGffqR6P1vl8QrlTUduiOsDJ2FKF6yLgQAQphVZve76z/pub?output=csv
 ```
 
-> How did I get this URL? First I just guessed there must be a way to access a Google Sheet as a csv file, so I [Googled it](https://www.google.com/search?ei=S5uPXYGtBMjwtAWlprrADg&q=View+google+sheet+as+csv+url&oq=View+google+sheet+as+csv+url&gs_l=psy-ab.3..33i22i29i30l2.1863.3505..3934...0.2..0.134.416.2j2......0....1..gws-wiz.......0i71.OIkQk-bM6Dg&ved=0ahUKEwjB_tiaiPTkAhVIOK0KHSWTDugQ4dUDCAs&uact=5). One article I found was [this one](https://stackoverflow.com/questions/33713084/download-link-for-google-spreadsheets-csv-export-with-multiple-sheets), which allowed me to figure it out after a little trial and error.
-
-> Another option is to connect Workbench to your own Google account and just find and import the spreadsheet. I wanted everyone to use the same source, so we did it by URL instead.
+> We got this URL by viewing the form reponses as a Google Sheet and then using "Publish to web" to make available as a csv.
 
 ### Reshaping the data for grouping
 
@@ -99,25 +97,27 @@ For us to consider all of these observations together we need to reshape the dat
 - Delete the `Timestamp` column as we don't need it and it will get in the way.
 - Start a **Reshape** step.
   - Choose **Wide to long**.
-  - For _Row variable_ choose **Name**.
+  - For _Row columns_ choose **Name**.
+  - For _Variable-column name_ call it **Color**.
+  - Fpr _Value-column name_ call it **Candy count**.
+
+<img src="img/reshape-step.png" width="300">
+
+This reshaped our data so there is one row for each observation: The count of one color from one bag.
 
 ![reshaped](img/reshaped-wide-to-long.png)
 
-This reshaped our data so there is one row for each observation. We don't actually need the `Name` field for our visualization, but we needed a column to pivot upon. (This is a failing in Workbench IMHO, but I don't want to get into it here.)
+### Aggregations by color
 
-Our new columns have un-descriptive names, so let's rename them.
-
-- Start a **Rename** step.
-- Change `variable` to `Color`.
-- Change `value` to `Count of Candy`
-
-Now for the grouping to get our averages for each color. This _might_ be the first time we've grouped and aggregated by something other than **Count**. In this case we want to average the value.
+Now to get the average count for each color, we need to do some grouping. This _might_ be the first time we've grouped and aggregated by something other than **Count**. In this case we want to average the value.
 
 - Start a new **Group** step.
   - For _Column_ choose `Color`
   - For _Operations_ choose `Average (Mean)`.
-  - In the column dropdown, choose the `Count of Candy` column.
+  - In the column dropdown, choose the `Candy count` column.
   - Name the field `Average`.
+
+<img src="img/get-average.png" width="300">
 
 ### Export the data
 
@@ -148,9 +148,9 @@ A couple of things to consider along the way:
 This isn't required, but I find this data fascinating. (OK, we've established that I'm a data dork.) Some other things you might explore in Workbench and/or Datawrapper if you want:
 
 - What was the most or least of any color of candy in a bag? Who got them?
-- Who got got the least and most total number of candies?
+- Who got the least and most total number of candies?
 
 ## Turn in your work
 
 - Share your Workbench workbook and submit the link to the assignment.
-- Publish your Datawrapper chart and submit the link to the assignment.
+- Publish your Datawrapper chart and submit the PUBLISHED link to the assignment.

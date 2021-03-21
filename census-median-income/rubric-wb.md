@@ -87,16 +87,12 @@ Before we can do math to compare the median incomes for both years, we have to h
 
 ## Find the answers
 
-We can use Excel/Sheets formulas in Workbench to create new columns. This is how we'll figure out if income has gone up or down in different counties. Here is what we'll find out:
+We can use the Calculate and Formula functions (Excel/Sheets formulas) in Workbench to create new columns. This is how we'll figure out if income has gone up or down in different counties. Here is what we'll find out:
 
 - What is the difference between incomes from one year to the next?
 - What is the percent change in that income?
 - How many counties went up or down?
 - Which counties have a median income estimate with a large margin of error?
-
-As an overview, when you use [Formulas](http://help.workbenchdata.com/en/articles/1963882-formulas) in Workbench, the process will create a new column with the result of the formula. You write the formula as if you were doing it on the first row, but Workbench will apply it to all the rows when you use the **Apply to all rows** option.
-
-As we do these formulas, your column numbers may differ from mine, so pay close attention to the **values** that are referenced as opposed to the column numbers.
 
 ### Difference between two columns
 
@@ -122,7 +118,9 @@ Now you can write about the relative change of income in a given county: Travis 
 
 ## Excel formulas in Workbench
 
-For our next answer, there isn't a pre-configured calculation in Workbench, so we will use an Excel formula.
+For our next answer, there isn't a pre-configured calculation in Workbench, so we will use the [Formulas](http://help.workbenchdata.com/en/articles/1963882-formulas) function in Workbench, allowing us to use Excel/Sheets formulas to create our new calculations.
+
+You write the formula as if you were doing it on the first row, but Workbench will apply it to all the rows when you use the **Apply to all rows** option. As we do these formulas, your column numbers may differ from mine, so pay close attention to the **values** that are referenced as opposed to the column numbers.
 
 ### How many counties went up or down in income?
 
