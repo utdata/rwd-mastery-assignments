@@ -66,24 +66,32 @@ Note that Workbench groups these records by the first day of the year, not a par
 
 ### Pulling the year from a date
 
-There are several ways to pull a year from a date: We could create a new column **Formula** using `=YEAR(A1)` or we could split the column. Either way, we have to change it to Text first. We'll use **Split column**, but it is a multi-step process to get what we want.
+There are several ways to pull a year from a date: We could create a new column **Formula** using `=YEAR(A1)` or we could **Split by column**. No matter what method we use, it's a multi-step process where we we'll have to convert to Text and clean it up at some point.
 
-- Use the dropdown on the `Date` column and choose **Convert to text** to add that step. We can't split a date, so we have to convert it to text first.
-- Add another step and choose **Split columns**.
-  - Choose the `Date` column.
-  - For _Split on_ choose **X characters from the left**.
-  - For _Number of characters_ type in `4` and play the step.
+We'll use **Split by Timestamp**:
 
-![Split column](img/wb-byyear-split.png)
+- Start a new step and choose **Split by Timestamp**
+- For _Timestamp column_ choose `Date`.
+- Since we don't know the timezone, leave that at "GMT+00:00 Unknown region".
+- For _Desired column names and format_ make the name "Year" and then also choose **Year** from the dropdown.
 
-OK, now we have to remove our extra column and then rename our date column.
+<img src="img/split-timestamp.png" width="300">
 
-- Add a step with **Select columns**.
-- For column, choose `Date 2`
-- Select the **Delete** option and play
-- Rename the `Date ` column as `Year`.
+- Play the step, which will give you the Year as a number and update the name fo the column.
 
-![Select and rename](img/wb-byyear-selectrename.png)
+Now you have to clean up that by converting to text and cleaning.
+
+- Use the dropdown on the `Year` column and choose **Convert to text** to add that step. We can't split a date, so we have to convert it to text first.
+- No add a step **Clean text** and choose:
+  - Add the `Year` column.
+  - For _Spaces_ leave at "Trim around value".
+  - Leave _Condense spaces_ checked.
+  - for _Capitalization_ keep "Leave as is".
+  - For _Characters_ choose "Punctuation" and click the **Delete** button. This is what will remove our thousands-separator comma.
+
+![Clean split time](img/wb-splittime-clean.png)
+
+Do note there were _lots of ways_ to clean text in that function ... we really just deleted the punctuation.
 
 OK, now we have our data in the shape we need for Datawrapper.
 
