@@ -46,6 +46,7 @@ The site we'll use includes data violations of rules/laws handled by the Texas A
     - 561: Sell/Deliver AB to Intoxicated Person
     - 562: Intoxicated Licensee/Permittee
     - 563: Sale To An Obviously Intoxicated Person
+    - 585: Emergency order (This is for Spring 2021 -- see note in assignment details)
   - Once you have them all, then **Return to Prior page**
 - For **Licence Type**, click on the **Add/Edit** link.
   - Click on **Retailers** and you'll see a list appear to the right.
