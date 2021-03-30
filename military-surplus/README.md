@@ -29,7 +29,7 @@ There is no data dictionary or record layout with this data but I have correspon
 - ship_date: The date the item(s) were sent to the agency.
 - station_type: What kind of law enforcement agency made the request.
 
-Each row of data is a transfer of a particular type of item from the U.S. Department of Defense to a local law enforcement agency. The row includes the type of item, the number of them, and the cost of each unit. This means to get the total value of the items you have to multiply the `quantity` times the `acquisition_value`.
+Each row of data is a transfer of a particular type of item from the U.S. Department of Defense to a local law enforcement agency. The row includes the type of item, the number of them, and the cost of each unit. This means to get the total value of the items for the shipment you have to multiply the `quantity` times the `acquisition_value`.
 
 The agencies really only pay the shipping costs, so you can't say that paid for the items, and the amount you can calculate is the "value" of the items, not their cost to the agency.
 
