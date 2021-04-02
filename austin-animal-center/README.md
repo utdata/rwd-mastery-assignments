@@ -19,23 +19,23 @@ Here is some food for thought about what you might glean from the data ...
 - `Intake condition` is another valuable field. We could see how many animals are sick, or nursing, etc.
 - `Animal type` is probably the most interesting category that readers can relate to. We'll definitely look at this.
 - `Sex upon intake` tells us both the sex and if the animal has been sterilized or not. Of minor interest, perhaps.
-- `Age upon intake` could be interesting if it were normalized on a standard unit. It's also a guess by ACC staff.
-- `Breed` is also a guess by staff and not a very clean data field. We should probably stay away from any serious analysis here.
+- `Age upon intake` could be interesting if it were normalized on a standard unit. It's also likely a guess by ACC staff.
+- `Breed` is also likely a guess by staff and not a very clean data field. We should probably stay away from any serious analysis here.
 - `Color` much like breed is of limited use.
 
 ## Download the data from Socrata
 
 - From the [Primer page](https://data.austintexas.gov/Health-and-Community-Services/Austin-Animal-Center-Intakes/wter-evkm), click on the **View Data** link to view the entire data set.
-- Use the Filter to get the most recent five FULL years of data, plus the most recent full month of the current year. Socrata is not intuitive when it comes to filtering dates, so use this example:
+- Use the Filter to get the **most recent five FULL years of data, plus the most recent full months of the current year**. Socrata is not intuitive when it comes to filtering dates, so use this example:
   - Use the Filter for `Date Time` and choose **is between**.
-  - For the start date, use 01/01/2015 because it is inclusive.
-  - For the end date, use the first day of the current month (So 11/01/2020 if November) because it is NOT inclusive. i.e., we want all the data from the previous month, but not the current.
+  - For the start date, use the first day of the year you want, in MM/DD/YYYY format: 01/01/2016 because it is inclusive.
+  - For the end date, use the first day of the current month (So 04/01/2021 if it's April) because it is NOT inclusive. i.e., we want all the data from the previous month, but not the current.
 
-> Note this image is old. Use the updated dates above.
+> Note this image below is old and the dates are wrong. Figure out the dates for your current time.
 
 <img src="img/filter-acc-data.png" width="320">
 
-- Go to the `Date Time` column and choose to sort by Ascending and then by Descending to make sure the actual dates capture are Jan. 1 2015 to the last day of the previous month. Adjust your filter if not.
+- Go to the `Date Time` column and choose to sort by Ascending and then by Descending to make sure the actual dates capture are Jan. 1 2016 to the last day of the previous month. Adjust your filter if not.
 - **Export** as a CSV file.
 
 Use the resulting CSV file for the lesson below based on the tool you were assigned:

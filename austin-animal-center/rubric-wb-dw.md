@@ -2,6 +2,14 @@
 
 See the [README](README.md) for more on downloading the data properly.
 
+> **VERY IMPORTANT NOTE**: All the images in this lesson use older data, so don't use them to check actual values like counts or dates, just for visual reference of concepts. Some examples in the text may also be outdated, so pay attention to goal of the direction and adjust dates as necessary as you do the assignment.
+
+## Goals of this lesson
+
+- Learn to reshape data to fit charting needs
+- Reinforce the value or writing good headlines and descriptions for charts
+- Continued practice and mastery of Workbench and Datawrapper
+
 ## Your quest
 
 We'll use Workbench to explore multiple years of animal intake data to find insights and then visualize some of those using Datawrapper.
@@ -28,6 +36,7 @@ It is always best to create a folder on your computer to hold all your project a
 
 Our goal here is to see the number of animals brought in each year over a full five-year time period. Are they getting fewer animals or more animals each year? It will look something like this:
 
+> Remember: Data is old in the images. Yours will be different.
 
 ![Datawraper example](img/dw-byyear-example.png)
 
@@ -37,15 +46,17 @@ Since every row is an animal intake, we just need to count the number of rows fo
 
 ### Filter to the data we need
 
-The first thing we need to think about is the date range of our dataset. We downloaded five full years of data plus several months of the current year. If we include 2020, then our chart will look like a sharp decrease at the end because it only has a partial year of data.
+The first thing we need to think about is the date range of our dataset. We downloaded five full years of data plus several months of the current year. If we include the most recent partial year, then our chart will look like a sharp decrease at the end because it is fewer than 12 months.
 
 - Start a new tab since we are starting a new quest/answer. Name it **IntakesByYear**.
 - Use **Start from tab** and choose the **Import** tab.
 - Add a new step with **Filter by condition**.
   - Choose `Date` for the column.
   - For the operation, choose **Date is after**
-  - Fill in "2019-12-31", the last date we want to keep.
+  - Fill in "2020-12-31", or the last date of whatever "last year" is as you do this.
   - Choose the **Delete** option and play the step. (This step takes some time. Be patient.)
+
+> LAST WARNING: Images are old. Don't just copy or trust values from the images. Use them just as a guide for your circumstances.
 
 <img src="img/wb-byyear-filter.png" width="300">
 
@@ -97,7 +108,7 @@ OK, now we have our data in the shape we need for Datawrapper.
 
 ### Export the data
 
-- Click on the **Export** button at the top-right of the screen and then click on the download button.
+- Click on the **Export** button at the top-right of the screen and then click on the download button. (The button actually _says_ "Download" these days.)
 
 <img src="img/wb-byyear-download.png" width="320">
 
@@ -143,7 +154,7 @@ Chart titles and descriptions can be some of the most difficult writing you can 
 - Add a title and description. Don't skimp on this step ... work on this to make it good.
 - Add a link to the original data published on Socrata. (If we skip this our 5-row original data will be available, but we want to give readers the original data if we can. You could also link to a public Workbench workflow.)
 - Add your byline.
-- You might also use **Highlight elements** and choose 2019 since it is (or can be) the focus of this chart.
+- You might also use **Highlight elements** and choose a specific year if you are writing about it in your headline or description.
 
 ![Annotate](img/dw-byyear-annotate.png)
 
@@ -163,17 +174,25 @@ For this part of the assignment, I want you to choose the **PNG** option. You'll
 
 For our next visualization we want to see how how many animals are brought in each month to the shelter over our entire time period. We want to see if there are seasonal spikes.
 
-In this case we don't need to filter out 2020 because we want to see all the months.
+In this case we don't need to filter out 2021 because we want to see all the months.
 
 ### Prepare our data
 
 For this chart we want to build a line chart with the months across the X axis and the number of intakes (or count of rows) for the Y axis.
 
-Again, it makes sense to look at the [Datawrapper academy for line charts](https://academy.datawrapper.de/article/23-how-to-create-a-line-chart) to see how our data should be structured.
+Again, it makes sense to look at the [Datawrapper academy for line charts](https://academy.datawrapper.de/article/23-how-to-create-a-line-chart) to see how our data should be structured. This is what they suggest for their chart:
+
+![data](https://d33v4339jhl8k0.cloudfront.net/docs/assets/588089eddd8c8e484b24e90a/images/5a0c5ebc0428633199247d50/file-Yjp4qrd3EC.png)
 
 You'll see there that the first column is the category of time, in our case the month and year. Additional columns are counts of data we want to chart, but we only have one thing to count, our number of intakes for each month. We will only have two columns.
 
-This time we will use the **Group by Date** function to get this.
+| Month | Intakes |
+|-------|--------:|
+| MM/YY |     200 |
+| MM/YY |     300 |
+| MM/YY |     250 |
+
+We could do this similar to above, but this time we will use use a different function, **Group by Date**, so you can see how that works.
 
 ### Group by date
 
@@ -200,10 +219,10 @@ Again, our `Date` field comes up as the first date of the month. This will be OK
 In my case Datawrapper chose the line chart and that is what we want in this case, but we need to make some adjustments to it.
 
 - Move on to the **Refine** step.
-- Roll over the points in the chart and you'll see the hover tooltips show you the same year for every month. This is not good ... we want to be able to see which month of the year each point is.
-- On the **Horizontal axis** section, look for the _Tick format_ option.
-  - Change this to the option **Apr '15, Mar '15**. This will change the tooltip to show both the month and year.
-- On the **Customize lines** section, look for the _Fill area below line_ option.
+- Roll over the points in the chart and you'll see the hover tooltips show you the date and value, but the date format is not very reader friendly, so we'll adjust that.
+  - On the **Horizontal axis** section, look for the _Tick format_ option.
+  - Change this to the option **Apr '15, Mar '15**. This will change the tooltip to show both the month and year but not the day, which is irrelevant here.
+- Further down the Refine tab you'll see the **Fill area below line** option.
   - Click the checkbox.
   - You could change the fill color, but the default grey is a good choice.
 
@@ -213,7 +232,7 @@ This makes it easy for readers to discern the line and give an indication that t
 
 There is no option to show the tooltip for every point and that is good because it would be mess if we did. But do click on the **Customize symbols** option and play with them to see what they do, though I don't think you need any for this chart.
 
-- Move to the **Refine** step
+- Move to the **Annotate** step
 - Fill out all the information here.
 
 Again, take care in writing your headline and description to give readers everything they need to understand the chart (without the benefit of the story). What is the main point of this chart? Make sure you communicate that to the reader.
@@ -252,7 +271,7 @@ When we prepare our chart data, we will **Refine** our data to merge the "Bird" 
 
 ## Animal types by month on intake
 
-What we want to learn here is how many animals of each type does the shelter brings in each month, regardless of the year. In other words, how many dogs did they bring in January of all years 2015-2019? And then in February, etc. And we want that for all the animal types: dogs, cats and "other".
+What we want to learn here is how many animals of each type does the shelter brings in each month, regardless of the year. In other words, how many dogs did they bring in January of all years 2016-2020? And then in February, etc. And we want that for all the animal types: dogs, cats and "other".
 
 This way we can use several years of data to see if certain types of animals "typically" come in during certain months.
 
@@ -272,11 +291,11 @@ Our data need to be structured in the same way, but for `Quarter` we need the mo
 
 ### Preparing our data
 
-This is more complicated workflow than the ones we've done so far because we not only have to group our data by month regardless of year, we also have to refine some values and reshape the data. I'll give examples of the more complicated steps and explain them along the way.
+This is more complicated workflow than the ones we've done so far because we not only have to group and count our data by month regardless of year, we also have to refine some values and reshape the data. I'll give examples of the more complicated steps and explain them along the way.
 
 - Start a new tab and name it `AnimalTypeMonth`.
 - Start from the **Import & Clean** tab.
-- **Filter** your data to exclude the 2020 records. Just like in our first chart we don't want partial years of data or we'll have more records for some months than others.
+- **Filter** your data to exclude any partial years. Just like in our first chart we don't want partial years of data or we'll have more records for some months than others.
 
 ### Refine merging
 
@@ -292,17 +311,16 @@ What you've done here is change all the records that had Bird or Livestock and m
 
 ### Extract the month from a date
 
-If we did a **Group** or **Group by Date** on the `Date` field, it would count the records by each _individual_ month and we don't want that. We want to count all the "January" records regardless of year. To do this we need to create a new column that has just the _Month_ of the `Date` field so we can group on that. We'll use an Excel **Formula** to create this.
+If we did a **Group** or **Group by Date** on the `Date` field, it would count the records by each _individual_ month and we don't want that. We want to count all the "January" records regardless of year. To do this we need to create a new column that has just the _Month_ of the `Date` field so we can group on that. We'll again use **Split by timestamp** to do this.
 
-- Add a new step and choose **Formula**.
-- Leave the type **Excel**.
-- For the formula type in `=MONTH(A1)`.
-- Make sure **Apply to all rows** is checked.
-- Name the new column `Month` and play the step.
+- Add a new step and choose **Split by timestamp**.
+- For desired timezone, leave the default _GMT Unknown_. We don't need to do any conversions here.
+- Make the resulting column name _Month_
+- And choose **Month** as the date type to pull.
 
 <img src="img/wb-typemonth-makemonth.png" width="300">
 
-Take a look at the new column at the end of the data and you'll see a Number field with just the month number of the `Date`. "1" for "January"; "2" for "February", etc.
+This took our "Date" column and turned it into the "Month" column using the _number_ of the month: "1" for "January"; "2" for "February", etc.
 
 ### Group by multiple values
 
@@ -316,7 +334,7 @@ In this case we want to group by two values: `Month` and `Animal type`. We want 
 
 ![Group multi](img/wb-typemonth-groupmulti.png)
 
-So this counted all the rows where the `Month` and `Animal type` matched: There are 4,220 records with both "Dog" for `Animal type` and "1" for `Month` (at least when I pulled the data. Your number might not be the same but it should be similar). It counted each Month and Animal type combination.
+So this counted all the rows where the `Month` and `Animal type` matched: In this example (which is old ... your numbers will be different) there are 4,220 records with both "Dog" for `Animal Type` and "1" for `Month` (at least when I pulled the data. Your number might not be the same but it should be similar). It counted each Month and Animal type combination.
 
 There should be 36 rows of data: 3 Animal types x 12 Months.
 
@@ -356,7 +374,7 @@ Now our data looks something like this:
 
 Now this looks like our Datawrapper example data. It took a bit to get there, including some logic to pull out the month from a date field and some grouping and reshaping of the data. You'll likely need to apply those same concepts in other data projects that visualize data no matter what tool or language you use.
 
-You might notice that months are in alphabetically order instead of month order. Datawrapper will fix that.
+You might notice that months are in alphabetically order instead of month order. Datawrapper will fix that, but other tools might not. In that case you would keep a number version of the Month to sort your data.
 
 - Use your **Export** button to download your CSV file, rename it and move it to your project folder.
 
