@@ -38,7 +38,7 @@ Our goal here is to see the number of animals brought in each year over a full f
 
 > Remember: Data is old in the images. Yours will be different.
 
-<img src="img/dw-byyear-example.png" width="400px" alt="Datawrapper example">
+<img src="img/dw-byyear-example.png" width="600px" alt="Datawrapper example">
 
 This is a column chart with years along the bottom (the X axis) and with the bars counting the number of animals brought in (the Y axis). Before diving in, it might help to peek at [Datawrapper column charts](https://academy.datawrapper.de/article/20-how-to-create-a-column-chart) to see what our data should look like. In doing so, you'll see our first column needs to be the category (Years in our case) and the second column the values (Count of animal intakes).
 
@@ -120,7 +120,7 @@ We are making several of these files and you'll want to be able to find them and
 
 Now onto Datawrapper to make our chart. Remember our goal is something like this:
 
-<img src="img/dw-byyear-example.png" width="400px" alt="Datawrapper example">
+<img src="img/dw-byyear-example.png" width="600px" alt="Datawrapper example">
 
 - Log into into [Datawrapper dashboard](https://app.datawrapper.de/).
 - Choose the **New chart** button at the top.
