@@ -194,7 +194,7 @@ For this chart we want to build a line chart with the months across the X axis a
 
 Again, it makes sense to look at the [Datawrapper academy for line charts](https://academy.datawrapper.de/article/23-how-to-create-a-line-chart) to see how our data should be structured. This is what they suggest for their chart:
 
-<img src="https://d33v4339jhl8k0.cloudfront.net/docs/assets/588089eddd8c8e484b24e90a/images/5a0c5ebc0428633199247d50/file-Yjp4qrd3EC.png" width="400" alt="Data example">
+<img src="https://d33v4339jhl8k0.cloudfront.net/docs/assets/588089eddd8c8e484b24e90a/images/5a0c5ebc0428633199247d50/file-Yjp4qrd3EC.png" width="600" alt="Data example">
 
 You'll see there that the first column is the category of time, in our case the month and year. Additional columns are counts of data we want to chart, but we only have one thing to count, our number of intakes for each month. We will only have two columns.
 
@@ -240,7 +240,7 @@ In my case Datawrapper chose the line chart and that is what we want in this cas
 
 This makes it easy for readers to discern the line and give an indication that there is value underneath it (that we are counting the number of animals.)
 
-<img src="img/dw-monthly-example.png" width="400" alt="Monthly trends">
+<img src="img/dw-monthly-example.png" width="600" alt="Monthly trends">
 
 There is no option to show the tooltip for every point and that is good because it would be mess if we did. But do click on the **Customize symbols** option and play with them to see what they do, though I don't think you need any for this chart.
 
@@ -291,13 +291,13 @@ If we were to visualize this in our head as a line chart, our X axis would have 
 
 Take a look again at the [Datawrapper academy for making a line chart](https://academy.datawrapper.de/article/23-how-to-create-a-line-chart) and look at the example there.
 
-<img src="img/dw-apple.png" width="400" alt="Apple chart example">
+<img src="img/dw-apple.png" width="600" alt="Apple chart example">
 
 Our goal is much like the example, except we want 12 months across the bottom and a line for each animal type instead of Apple product.
 
 Their data looks like this:
 
-<img src="img/dw-apple-data.png" width="400" alt="Line chart data example">
+<img src="img/dw-apple-data.png" width="600" alt="Line chart data example">
 
 Our data needs to be structured in the same way, but for `Quarter` we need the month of the year, and we need a column for each "Animal type": Dog, Cat and Other.
 
@@ -405,7 +405,7 @@ Now we'll use Datawrapper to build a new line chart, but this one will have more
 - At your **Check & Describe** step it will give you a view of the data. Datawrapper _should_ recognize that your `Month` as a date datatype. If not, choose that column and change it.
 - In the **Visualize** step, Datawrapper choose the line chart for me, which is appropriate.
 
-<img src="img/dw-typemonth-default.png" width="400" alt="Initial cahrt">
+<img src="img/dw-typemonth-default.png" width="600" alt="Initial cahrt">
 
 This isn't a bad start, but we can make it so much better in the **Refine** step. The first thing you'll see is that Cats are much different than Dogs or Other, which are pretty steady month-to-month. That could be a story angle and we'll want to highlight that in chart.
 
@@ -416,7 +416,7 @@ For each improvement we do in **Refine** I'll try to explain the reasoning.
 - Cats are our story here. We can use the **Customize lines** section here to highlight the Cat line. Click on the **customize colors** button and use the options to make Cat stand out. Note you have colors, line widths and line dashes to work with. Don't go crazy ... just make sure Cat is different than Dogs and Other (which should be the same style so Cat stands out).
 - The labeling of Cat, Dog and Other at the top of the chart is hard for readers to figure out. They have to keep looking back and forth between the lines and the legend. We can fix that by setting the **Labeling** _Line labels_ to **Right** instead of **Top**.
 
-<img src="img/dw-typemonth-refined.png" width="400" alt="Typemonth refined">
+<img src="img/dw-typemonth-refined.png" width="600" alt="Typemonth refined">
 
 ### Annotation highlights
 
