@@ -38,7 +38,7 @@ Our goal here is to see the number of animals brought in each year over a full f
 
 > Remember: Data is old in the images. Yours will be different.
 
-![Datawraper example](img/dw-byyear-example.png)
+<img src="img/dw-byyear-example.png" width="400px" alt="Datawrapper example">
 
 This is a column chart with years along the bottom (the X axis) and with the bars counting the number of animals brought in (the Y axis). Before diving in, it might help to peek at [Datawrapper column charts](https://academy.datawrapper.de/article/20-how-to-create-a-column-chart) to see what our data should look like. In doing so, you'll see our first column needs to be the category (Years in our case) and the second column the values (Count of animal intakes).
 
@@ -120,7 +120,7 @@ We are making several of these files and you'll want to be able to find them and
 
 Now onto Datawrapper to make our chart. Remember our goal is something like this:
 
-![Datawraper example](img/dw-byyear-example.png)
+<img src="img/dw-byyear-example.png" width="400px" alt="Datawrapper example">
 
 - Log into into [Datawrapper dashboard](https://app.datawrapper.de/).
 - Choose the **New chart** button at the top.
@@ -149,9 +149,21 @@ Datawrapper will choose an appropriate chart based on your data, and in my case 
 
 Now let's move on to the **Annotate** step. This is where you add a title, description, source, etc. There are some other annotation options we'll use in later charts.
 
-Chart titles and descriptions can be some of the most difficult writing you can do, IMHO. You don't want to describe your steps or say the obvious, but you do need to give the reader all the relevant detail needed to understand the chart.
+### About titles, descriptions and annotations
 
-- Add a title and description. Don't skimp on this step ... work on this to make it good.
+Chart titles and descriptions can be some of the most difficult writing you can do, IMHO. You don't want to describe your steps or say the obvious, but you do need to give the reader all the relevant detail needed to understand the chart. **Write titles, descriptions an annotations as if the chart stands alone, and a reader knows nothing before viewing it.**
+
+Some tips paraphrased from Nathan Yau's _Data Points_ book ...
+
+- The title -- typically larger and bolder fonts — sets the stage or describes what people should see or look for in the data. A descriptive title also helps. For example, "Rising Gas Prices" says more about the chart than just "Gas Prices." By including "Rising", it presents the conclusion immediately, and readers will look to the chart to verify and see the details. Saying just "Gas Prices" leaves the data interpretation to the readers and places them in the exploration phase.
+- The description or lead-in text is used to prepare readers for what a chart shows, but in further detail. The text expands on what the title declares, where the data is from, how it was derived, **or what it means** (best charts do this, says @crit). Basically, it's information that might help others understand the data better but often doesn't directly point to the specific elements.
+- To explain specifics points or areas, you can use lines and arrows as an annotation layer on top of a chart. This places descriptions directly in the context of the data so tha a readers doesn't have to look outside a graph for additional information to fully understand what you show.
+
+### Fill in your annotations
+
+Datawrapper allows you to meet all the goals Yau explains above. Now it's time for you do do that in your chart in the Annotate step:
+
+- Add a title and description. Don't skimp on this step ... work on this to make it good, using the tips above.
 - Add a link to the original data published on Socrata. (If we skip this our 5-row original data will be available, but we want to give readers the original data if we can. You could also link to a public Workbench workflow.)
 - Add your byline.
 - You might also use **Highlight elements** and choose a specific year if you are writing about it in your headline or description.
@@ -182,15 +194,15 @@ For this chart we want to build a line chart with the months across the X axis a
 
 Again, it makes sense to look at the [Datawrapper academy for line charts](https://academy.datawrapper.de/article/23-how-to-create-a-line-chart) to see how our data should be structured. This is what they suggest for their chart:
 
-![data](https://d33v4339jhl8k0.cloudfront.net/docs/assets/588089eddd8c8e484b24e90a/images/5a0c5ebc0428633199247d50/file-Yjp4qrd3EC.png)
+<img src="https://d33v4339jhl8k0.cloudfront.net/docs/assets/588089eddd8c8e484b24e90a/images/5a0c5ebc0428633199247d50/file-Yjp4qrd3EC.png" width="400" alt="Data example">
 
 You'll see there that the first column is the category of time, in our case the month and year. Additional columns are counts of data we want to chart, but we only have one thing to count, our number of intakes for each month. We will only have two columns.
 
 | Month | Intakes |
 |-------|--------:|
-| MM/YY |     200 |
-| MM/YY |     300 |
-| MM/YY |     250 |
+| YY/MM |     200 |
+| YY/MM |     300 |
+| YY/MM |     250 |
 
 We could do this similar to above, but this time we will use use a different function, **Group by Date**, so you can see how that works.
 
@@ -228,7 +240,7 @@ In my case Datawrapper chose the line chart and that is what we want in this cas
 
 This makes it easy for readers to discern the line and give an indication that there is value underneath it (that we are counting the number of animals.)
 
-![Monthly trends](img/dw-monthly-example.png)
+<img src="img/dw-monthly-example.png" width="400" alt="Monthly trends">
 
 There is no option to show the tooltip for every point and that is good because it would be mess if we did. But do click on the **Customize symbols** option and play with them to see what they do, though I don't think you need any for this chart.
 
@@ -279,15 +291,21 @@ If we were to visualize this in our head as a line chart, our X axis would have 
 
 Take a look again at the [Datawrapper academy for making a line chart](https://academy.datawrapper.de/article/23-how-to-create-a-line-chart) and look at the example there.
 
-![Apple](img/dw-apple.png)
+<img src="img/dw-apple.png" width="400" alt="Apple chart example">
 
- Our goal is much like the example, except we want 12 months across the bottom and a line for each animal type instead of Apple product.
+Our goal is much like the example, except we want 12 months across the bottom and a line for each animal type instead of Apple product.
 
 Their data looks like this:
 
-![Apple data](img/dw-apple-data.png)
+<img src="img/dw-apple-data.png" width="400" alt="Line chart data example">
 
-Our data need to be structured in the same way, but for `Quarter` we need the month of the year, and we need a column for each "Animal type": Dog, Cat and Other.
+Our data needs to be structured in the same way, but for `Quarter` we need the month of the year, and we need a column for each "Animal type": Dog, Cat and Other.
+
+| Month    | Dog | Cat | Other |
+|----------|----:|----:|------:|
+| January  | 300 | 200 |    18 |
+| February | 250 | 250 |    20 |
+| March    | 250 | 350 |     5 |
 
 ### Preparing our data
 
@@ -387,7 +405,7 @@ Now we'll use Datawrapper to build a new line chart, but this one will have more
 - At your **Check & Describe** step it will give you a view of the data. Datawrapper _should_ recognize that your `Month` as a date datatype. If not, choose that column and change it.
 - In the **Visualize** step, Datawrapper choose the line chart for me, which is appropriate.
 
-![Initial chart](img/dw-typemonth-default.png)
+<img src="img/dw-typemonth-default.png" width="400" alt="Initial cahrt">
 
 This isn't a bad start, but we can make it so much better in the **Refine** step. The first thing you'll see is that Cats are much different than Dogs or Other, which are pretty steady month-to-month. That could be a story angle and we'll want to highlight that in chart.
 
@@ -398,7 +416,7 @@ For each improvement we do in **Refine** I'll try to explain the reasoning.
 - Cats are our story here. We can use the **Customize lines** section here to highlight the Cat line. Click on the **customize colors** button and use the options to make Cat stand out. Note you have colors, line widths and line dashes to work with. Don't go crazy ... just make sure Cat is different than Dogs and Other (which should be the same style so Cat stands out).
 - The labeling of Cat, Dog and Other at the top of the chart is hard for readers to figure out. They have to keep looking back and forth between the lines and the legend. We can fix that by setting the **Labeling** _Line labels_ to **Right** instead of **Top**.
 
-![dw-typemonth-refined](img/dw-typemonth-refined.png)
+<img src="img/dw-typemonth-refined.png" width="400" alt="Typemonth refined">
 
 ### Annotation highlights
 
