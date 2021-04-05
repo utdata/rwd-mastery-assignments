@@ -172,6 +172,8 @@ Datawrapper allows you to meet all the goals Yau explains above. Now it's time f
 
 Now you can check out the **Design** options and check how your chart will look on mobile and tablets with the icons at the bottom right.
 
+### Download the PNG
+
 Use **Proceed** to move onto the **Publish & Embed** step.
 
 Here you can create an embed to add your chart to a content management system, or download as a PNG image you can insert into a story.
