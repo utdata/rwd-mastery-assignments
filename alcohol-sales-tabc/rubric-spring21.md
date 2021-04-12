@@ -36,7 +36,7 @@ You'll produce at least **two publishable charts**  to go with your story using 
 
 ### Peer edits
 
-There are two points where you turn in updates on your peer editing.
+There are several points where you turn in updates on your peer editing.
 
 ## Process deadlines
 
