@@ -1,0 +1,9 @@
+# About titles, descriptions and annotations
+
+Chart titles and descriptions can be some of the most difficult writing you can do, IMHO. You don't want to describe your steps or say the obvious, but you do need to give the reader all the relevant detail needed to understand the chart. **Write titles, descriptions an annotations as if the chart stands alone, and a reader knows nothing before viewing it.**
+
+Some tips paraphrased from Nathan Yau's _Data Points_ book ...
+
+- The title -- typically larger and bolder fonts — sets the stage or describes what people should see or look for in the data. A descriptive title also helps. For example, "Rising Gas Prices" says more about the chart than just "Gas Prices." By including "Rising", it presents the conclusion immediately, and readers will look to the chart to verify and see the details. Saying just "Gas Prices" leaves the data interpretation to the readers and places them in the exploration phase.
+- The description or lead-in text is used to prepare readers for what a chart shows, but in further detail. The text expands on what the title declares, where the data is from, how it was derived, **or what it means** (best charts do this, says @crit). Basically, it's information that might help others understand the data better but often doesn't directly point to the specific elements.
+- To explain specifics points or areas, you can use lines and arrows as an annotation layer on top of a chart. This places descriptions directly in the context of the data so tha a readers doesn't have to look outside a graph for additional information to fully understand what you show.
