@@ -2,7 +2,7 @@
 
 This assignment is either required or extra credit depending on the type of semester (long vs summer).
 
-Include all the written parts in a single Google Doc and share that with me. Include a link to the data.
+Include all the written parts in a single Microsoft Word or Google Doc and share that with me. Include a link to the data.
 
 ## Deliverables
 
