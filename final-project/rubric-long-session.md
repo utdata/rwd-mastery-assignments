@@ -14,17 +14,21 @@ The finished project will include the following:
 
 A story pitch with the following components:
 
-- A description of your data and the story you hope to get from it.
+- A description of your data and the story you hope to get from it. See note below on appropriate data.
 - The actual raw data (links to the source site or saved to Google Drive or something I can get to.)
 - Three possible sources, along with their contact information.
 - A diversity statement: As journalists we want to always include a diverse range of people in our reporting. As such, I want you to consider the following as you report this story: How might I serve diverse communities and include diverse sources in my reporting and storytelling? You’ll also be asked how you met this goal when you turn in your final project.
 - List your editing partner along with one sentence about their proposed project.
 
+### A word about appropriate data for this assignment
+
+You should start with raw data to build your analysis and story, where each row is a single observation. A simple table of summary data is not an appropriate beginning point. There might be cases where a collection or combination of summary tables might work, but this should be discussed in advance with the instructor. A good student will reach out to the instructor for feedback on data choices well before turning in their pitch.
+
 ## Cleaned data (50 points)
 
 (Three weeks out)
 
-Cleaned data means one header row for each data file, correct data types and clean categorical values. I expect this to be imported and refined in Workbench. Share the workflow to my email as a collaborator.
+Cleaned data means one header row for each data file, correct data types and clean categorical values. I expect this to be imported and refined in Workbench. Share the workflow to my email as a collaborator and turn in the link.
 
 ## Analysis (50 points)
 
