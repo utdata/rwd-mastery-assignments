@@ -1,8 +1,10 @@
 # Military surplus transfers
 
-The Defense Logistics Agency transfers surplus military equipment to local law enforcement through its [Law Enforcement Support Office](https://www.dla.mil/DispositionServices/Offers/Reutilization/LawEnforcement/PublicInformation/). They agency updates the data quarterly and the data in this lesson contains transfers through **December 31, 2020**. As of this date, the file name is linked from the headline "ALASKA - WYOMING AND US TERRITORIES".
+The Defense Logistics Agency transfers surplus military equipment to local law enforcement through its [Law Enforcement Support Office](https://www.dla.mil/DispositionServices/Offers/Reutilization/LawEnforcement/PublicInformation/). They agency updates the data quarterly and the data in this lesson contains transfers through **June 30, 2021**. As of this date, the file name is linked from the headline "ALASKA - WYOMING AND US TERRITORIES".
 
-The data there comes in an Excel spreadsheet that has a new sheet for each state. That is a beast of a file to combine into a single table without scripting of some kind, so I used R to do that for you. Downloading instructions are below.
+The data there comes in an Excel spreadsheet that has a new sheet for each state. That is a beast of a file to combine into a single table without scripting of some kind, so I used R to do that for you and I'll cover the process I used in class. Downloading instructions are below.
+
+You can find more information [about the program here](https://www.dla.mil/DispositionServices/Offers/Reutilization/LawEnforcement/ProgramFAQs/).
 
 The original idea for this assignment came from this [June 4, 2020 Buzzfeed News story](https://www.buzzfeednews.com/article/johntemplon/police-departments-military-gear-1033-program) about the amount of equipment transferred since Michael Brown was killed in Ferguson, Missouri. There was a public outcry after "what appeared to be a massively disproportionate show of force during protests brought scrutiny to a federal program that transfers unused military equipment to local law enforcement." John Templon used the data to write an update on the program and published his [data analysis](https://github.com/BuzzFeedNews/2020-06-leso-1033-transfers-since-ferguson).
 
@@ -18,12 +20,12 @@ There is no data dictionary or record layout with this data but I have correspon
 
 - sheet: Which sheet the data came from. This is an artifact from the data merging script. You can ignore it. (I plan to remove it.)
 - state: A two-letter designation for the state of the agency.
-- station_name_lea: This is the agency that got the equipment.
+- agency_name: This is the agency that got the equipment.
 - nsn: A special number that identifies the item. It is not germane to this specific assignment.
 - item_name: The item "purchased". Googling it can sometimes yield more info on specific items.
 - quantity: The number of the "units" the agency received.
 - ui: Unit of measurement (item, kit, etc.)
-- acquisition_value: a cost _per unit_ for the item.
+- acquisition_value: a cost *per unit* for the item.
 - demil_code: Another special code not germane to this assignment.
 - demil_ic: Another special code not germane to this assignment.
 - ship_date: The date the item(s) were sent to the agency.
