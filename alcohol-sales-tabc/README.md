@@ -66,12 +66,6 @@ The site we'll use includes data violations of rules/laws handled by the Texas A
 
 Note at the bottom there is a link to the [Record layout](https://www.tabc.texas.gov/static/4d47ecaf160f3ba76b8b4f3bd8ecb255/administrative-violations-record-layout.pdf) of the data, which you'll need to understand all the fields.
 
-For this project, I suggest you stay away from directly joining the TABC data to the alcohol sales data ^^. But, you can look through it to find examples of the same establishment from both sets of records, if you like.
-
-^^ (You _could_ join them, but you would need to be super careful that you aren't duplicating rows in either set. i.e., both data sets would have to be reshaped to have only one row per establishment before joining. Talk to me if this is important to you.)
-
 ## Assignments
 
-- [Spring 2021 final project](rubric-spring21.md)
-- [Summer final project](rubric-summer.md)
 - [Long semester project](rubric-long-semester.md)

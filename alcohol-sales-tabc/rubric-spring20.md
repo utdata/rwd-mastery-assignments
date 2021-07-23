@@ -2,7 +2,6 @@
 
 The final project for Reporting with Data is adjusting this semester in light of COVID-19, social distancing and our compressed schedule.
 
-
 ## Deliverables
 
 ### The story

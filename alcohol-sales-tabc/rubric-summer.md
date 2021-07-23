@@ -2,8 +2,6 @@
 
 The summer final project for Reporting with Data is a little different than during a long semester because of the compressed schedule. You basically have a week to build and write your story.
 
-> [Here is a short video introduction](https://drive.google.com/file/d/156lZ4zXpq8N-uZKJpl9Kh7WUcY16gKFv/view?usp=sharing) about the project. I recorded this during the _brief_ time in June when bars were open.
-
 ## Deliverables
 
 For Summer 2020, this is all due Friday, Aug. 14th at 11:59 p.m. except for the editing report due the day before.
