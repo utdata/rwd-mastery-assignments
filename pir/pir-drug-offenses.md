@@ -1,5 +1,7 @@
 # PIR for marijuana offenses
 
+> This is not a current assignment unless otherwise instructed.
+
 For this assignment you'll be submitting a public information request for marijuana-related arrests to various Texas law enforcement agencies. You will be assigned an agency and have to find out where to send the request. You will keep a log of your efforts to fulfill the request and hopefully in the end you'll get the data for use in a future project.
 
 ## Example of what we seek

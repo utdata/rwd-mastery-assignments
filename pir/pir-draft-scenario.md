@@ -1,6 +1,6 @@
 # PIR draft simulation
 
-> This is an alternative assignment to [writing an original request](pir-draft-original.md). Do one or the other, but not both. **The maximum grade for this assignment is an 89** and that is if it is absolutely perfect. If you would like the chance at a higher grade, do the other assignment.
+> This is not a current assignment unless otherwise instructed.
 
 For this assignment you will write a public information request to practice getting all the necessary elements for the agency to respond thoroughly. DON'T send the request to the agency, just write the draft for me.
 

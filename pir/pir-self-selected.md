@@ -1,5 +1,7 @@
 # Public information requests for data
 
+> This is not a current assignment unless otherwise instructed.
+
 For this assignment you come up with your own Public Information Request for new data from an agency subject to Texas Public Information laws. **Please read the requirements below carefully.**
 
 I recommend you think first about what you want to learn about, and then consider the agency that might collect a record on that subject. Another way to go about it is to target a state agency and then look through their [records retention schedule](https://www.tsl.texas.gov/slrm/state/schedules) that lists data collected by each agency, but I find that mind-numbing.

@@ -1,6 +1,6 @@
 # PIR for property records
 
-> This was from a previous semester and doesn't apply unless otherwise noted by the instructor.
+> This is not a current assignment unless otherwise instructed.
 
 As part of an experiment with [The Accountability Project](https://www.publicaccountability.org/), an option you have for the Fall 2019 Reporting with Data Public Information Request assignment is to negotiate for property tax records from a county in Texas.
 
