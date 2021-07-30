@@ -41,7 +41,7 @@ Workbench fits into the category of data journalism tools that I consider "trans
 - Use the **Start from URL** function and use this link:
 
 ``` text
-https://github.com/utdata/rwd-mastery-assignments/blob/master/billboard-hits/data/bb-hot100-tight.csv?raw=true
+https://github.com/utdata/rwd-mastery-assignments/blob/main/billboard-hits/data/bb-hot100-tight.csv?raw=true
 ```
 
 It will take several seconds to load as it is 325,000 rows of data.
@@ -70,11 +70,17 @@ After you import the data, look through all the columns, paying special attentio
 
 In our case the `date` field is not listed as a date and we'll need to fix that. In addition, `previous`, `peak` and `weeks` should all be numbers. We should note the **NA** value in `previous`, but they are OK in this case. It makes sense there is not a "previous" week when the these top records are the first Hot 100 chart.
 
-- Convert the `date` to a "timestamp" field. (I know it is really a date, but the field time can handle both the date and time, so they call it _timestamp_.) There are at least two ways do to this:
-  - You can always add a new step with the **+ ADD STEP** button below the last step. In this case you would then choose the **Convert to timestamp** function and the select the column `date` to convert. Play with the **Input format** to get the date style that works for you. "AUTO" is probably fine in this instance. We do want to _Convert non-dates to null_ so we know when there are problems.
-  - Another way to do the same this is to roll your cursor over the `date` column header until you see the dropdown menu for that column, then choose **Convert to timestamp** from the list. That will add the same kind of step as the first method.
+The function we use to create our date depends on our original format. If we just have a year-month-day, then we **Convert to date**. If we also have time values, we have to use **Convert to timestamp** and consider the time zone, which we'll do later in the course.
+
+There are two ways to do this, either through the column dropdown or using **+ ADD STEP**. We'll use the column dropdown.
+
+- Roll your cursor over the **date** column name and a dropdown will appear. Choose **Convert to date**. This adds a step to our workflow.
+- For the **Input text format** we tell Workbench what order to expect the date values, and Workbench will try to guess. Ours should be _YYYY-MM-DD_. We do want to check the _Convert non-dates to null_ so we know when there are problems.
+- The **Output date unit** is a conversion of sorts. We could pull out just the _year_ of our date if we wanted, or other values listed there. We want to keep **day** as our output unit.
 
 ![convert date](img/convert-date.gif)
+
+You could do the same thing using **+ ADD STEP** and filling out the options the same way.
 
 ### Fix other numbers
 
@@ -88,6 +94,8 @@ For the number columns that came in as text, we can fix them all at once.
 - Display as _Integer, no commas_.
 
 <img src="img/convert-to-numb.png" width="300">
+
+When you do this step, you might notice that the **previous** column shows _null_ for the first 100 values. That is because started as _NA_, which is not a number. That is because this was the first week of the chart and there was no _previous_ value for those songs. In short, this is OK and as expected, but generally you need to watch out for such things.
 
 ## Top 10 Artists
 
@@ -108,7 +116,7 @@ Since each row of data is an appearance on the chart, we just need to group the 
 Most data science languages separate [Group and Aggregate](https://vimeo.com/showcase/7320305/video/435910349) into separate terms because you define values in each part separately. Workbench does the same, but they are in the same "Step" in the graphical interface. The function is called **Group** and the aggregation is called the **Operation** within the step.
 
 - Start a new step and choose the **Group** function.
-- For **Select column** type in `artist`. See [Select](https://vimeo.com/showcase/7320305/video/435910324) for a refresher on the concept. (Also note the type-assist as you enter the column name. Once you've typed enough of a column name to select it, you can hit **Return** on your keyboard to select that field.)
+- For **Select column** type in `artist`. (Also note the type-assist as you enter the column name. Once you've typed enough of a column name to select it, you can hit **Return** on your keyboard to select that field.)
   - (A little explanation: When we Group by `artist`, we are organizing the data to put all the rows with the same Artist together before we perform some kind of math on them: Counting, Summing or whatever. So we are organizing the data to have all the ABBA rows together, then all the B.B. King rows, etc.)
 - For **Operations** keep the _Count_ selection, but go ahead and click on that menu to see the other possibilities. (This is the **Aggregation** step. Workbench combines aggregations with Group because you typically aggregate after grouping.)
 - Name the new column **Appearances** because that is what we are doing: Counting the number of weeks this artist has appeared on the Hot 100 for each song.
@@ -148,13 +156,13 @@ We are going to use the **Column Chart** function in Workbench.
 
 ![Column chart](img/column-chart.png)
 
-Congrats! You have made a chart of the most popular Artists in the history of the Hot 100. A little bit of history here ... Taylor Swift overcame Elton John for the top spot in the second half of 2019. Elton's been around for a long time, but Taylor popularity at a young age has rocketed her above him.
+Congrats! You have made a chart of the most popular Artists in the history of the Hot 100. A little bit of history here ... Taylor Swift overcame Elton John for the top spot in 2019. Elton's been around for a long time, but Taylor popularity at a young age has rocketed her above him.
 
 ## Most songs at No. 1
 
 So, Taylor Swift is the top queen of pop. (Don't worry, Madonna makes an appearance later). But who has had the most No. 1 songs on the charts? Any guesses?
 
-Before we dive in, I'll explain the concept of how we will get there. Our goal is to count the number of titles each perform has had to reach No. 1. To do that, we'll filter out data to just No. 1 songs, then deduplicate it so we don't overcount songs that were on the chart more than one week, then we can group and count the artist. Simple, right?
+Before we dive in, I'll explain the concept of how we will get there. Our goal is to count the number of titles each artist has had to reach No. 1. To do that, we'll filter out data to just No. 1 songs, then deduplicate it so we don't overcount songs that were on the chart more than one week, then we can group and count the artist. Simple, right?
 
 OK, into the pool we go:
 
@@ -187,7 +195,7 @@ And, by having the choice to Keep or Delete rows, you can either find things you
 
 ### Deduplicating data
 
-Right now we have all information about songs that are No. 1 for each week since Aug. 1958. Before we can count the number of times an Artist has had a No. 1 song, we need to adjust our data to show each No. 1 Artist/Title combination only once. (Right now it is listed for each week the song is at No. 1.)
+Right now we have all information about songs that are No. 1 for each week since Aug. 1958. (Like Ricky Nelson's _Poor Little Fool_ is listed twice.) Before we can count the number of times an Artist has had a No. 1 song, we need to adjust our data to show each No. 1 Artist/Title combination only once. (Right now it is listed for each week the song is at No. 1.)
 
 There are a couple of ways to achieve this and both take multiple steps. The method we will use is a little easier to follow, IMHO.
 
@@ -242,14 +250,14 @@ Our next quest is quite similar to our last one: We want to find who has had the
 ### Add a filter in mid-workflow
 
 - Click on the dropdown in the "No. 1" tab name and choose **Duplicate**.
-- Rename this tab **No. 1 5yrs**.
+- Rename this tab **No. 1 recent**.
 
 Now look at all the steps of this workflow and think where you can add a filter for on `date` to only consider the past five years. It definitely needs to be before we use **Select columns** because we lose the `date` field at that point.
 
 - Put your cursor just under the first Import step and click the orange **+** sign to add a new step.
 - Choose the **Filter by condition** function.
   - Add the `date` to the column selector.
-  - For Select condition, choose **Timestamp is after**.
+  - For Select condition, choose **Date is after**.
   - Type in 2015-12-31 in the **Value** field.
 
 The condition "Date is after" does _not_ include the date we are using, so we actually have to pick the day BEFORE the date we want to start keeping data. If we wanted to also add bounds of an end date to consider, we could add an "AND" to our IF statement and use "Date is before". Our data only goes through 2020 so we only need to set the lower bounds.
@@ -293,20 +301,78 @@ History was made in the summer of 2019, and it's time to put it into perspective
 
 This is pretty similar to our last quest, but we need to consider songs only at No. 1 instead of all songs. Figure this one out on your own, but consider what we've done for other questions like this.
 
-## Turning in your assignment
+## Make your Workflow public
 
-This is a two-part assignment, and you've just done the first part.
-
-### Turn in your Workbench workflow
-
-- Click on the **Share** button at the top-right of Workbench and click the first checkbox that shares your workflow with the world.
-- Copy the URL and submit it to Canvas assignment with your Google Doc link for part II of the assignment.
+- Click on the **Share** button at the top-right of Workbench.
+- Click the first checkbox that shares your workflow with the world.
+- When you start the writing part of this assignment, add that **Public link** URL to your story.
 
 <img src="../military-surplus/img/sharing-workbench.png" width="300">
 
-### Write a data drop
+## Make a Report
 
-A [Data Drop]((https://docs.google.com/document/d/1gd5RR5YK43N3uE0o1vBoJfnkSo5S0JJFUCJmFsa75FM/edit#heading=h.k2b1zvdn1534)) is a short story that outlines your findings in readable sentences. In this case (and this is the only case for this class) you can add some personal flavor in the story. Do use AP Style, limiting numbers in the story and all the things we've learn about in writing about data, including describing the source of the data.
+Reports in Workbench are online notebooks where you can collect all your "answers" from your data and explain what they are. These are super useful to share with editors and collaborators, but can also be used as a methodology to explain to readers how we arrived at our answers.
+
+You write reports to an audience, so they need to have complete sentences and such. You don't have to explain **How** you got your answers (You could link to the workflow), but you do need to explain your findings along with any caveats that should be noted. Workbench allows you to also embed the tables and charts you make right into the document.
+
+This Report feature uses a popular documentation syntax called [Markdown](https://www.markdownguide.org/getting-started/). Markdown is a way you can write with plain text but the result can be easily converted into a nice-looking HTML page, which Workbench does. Markdown is not hard to learn, but you might open the [cheat sheet](https://www.markdownguide.org/cheat-sheet/) as a guide or maybe oven do a [tutorial](https://commonmark.org/help/tutorial/) when you get a chance.
+
+> FWIW, this tutorial was written in Markdown, and Github converted into this pretty page automagically!
+
+It's probably easier to show you how the report works than write about it, but let me say this:
+
+- Click on the tab called **Report Editor**. You'll see the following:
+
+![Start report](img/md-start.png)
+
+At the top you'll noticed the privacy setting and the report URL. You'll want to make your Workflow public before sharing this link with me.
+
+You'll next notice the three buttons for text, tables and charts.
+
+- Click on the **T** button to create a text block.
+- Add a headline like this: `# Billboard Hot 100 Analysis`.
+- Add a blank line, and then on another line add your name like a byline: `By Your Name`.
+- Add another blank line then the next paragraph of text: `Here we take a look at the Billboard Hot 100 since it debuted in August, 1958 through the year 2020. The data comes from Billboard Media, gathered through their API by Sean Miller and cleaned by Christian McDonald.`
+
+It should look like this:
+
+![Markdown text](img/md-text.png)
+
+- Click the **Save** button.
+
+Once you click save your text will be rendered as nice, pretty text.
+
+A bit about the Markdown you used:
+
+1. The single `#` at the beginning of the first line makes that an `<h1>` in HTML, which is the biggest headline. The more `##` you add the smaller the headline.
+2. You should have a blank line between each element, like headlines and text.
+
+- Add another text chunk and add the following text:
+
+```txt
+## Artist with most appearances
+
+This look at the data counts the number of songs an artist has had on the Hot 100 at any position. One caveat is it counts artist by unique name so it won't catch collaborations. In other words, all Taylor Swift songs are counted together, but not songs like _Bad Blood_ by "Taylor Swift and Taylor Swift Featuring Kendrick Lamar".
+```
+
+- Now click on the **table** button and choose your **Top Artists** tab. This will add the last table from that tab.
+- Now choose the **chart** button and choose the same **Top Artists** tab and it will insert the chart.
+
+Pretty easy, right? A few more things to note:
+
+1. If you have a text box open for editing and then click over to another tab in the workflow, you'll lose your changes. Save the text block first.
+2. You can rearrange blocks with the up and down arrows.
+3. You can use the **Go** button at the top to see what your finished report will look like. And you can share that link with your editors, collaborators or the public.
+
+### Finish the report
+
+- Go ahead and add new text blocks that explain each "finding" in this workflow and include any necessary caveats to make your findings clear. Embed tables as necessary.
+
+## Write a data drop
+
+Now for part II of this assignment.
+
+Write a "Data Drop" (a short story based on the data) that includes your findings. In this case (and this is the only case for this class) you can add some personal flavor in the story. Do use AP Style, limiting numbers in the story and all the things we've learn about in writing about data, including describing the source of the data.
 
 Some specifics:
 
@@ -315,7 +381,14 @@ Some specifics:
 - Please, for the love of the data gods: Craft your lede around a data point!!
 - Again, you can have a personal flavor to this, but don't forget the data. That's what I'm grading.
 
-Write this in Google Docs and **share it to my email as AN EDITOR**. Submit the link to the Canvas assignment along with your Workbench URL.
+## Turning in your assignment
+
+A couple of notes before you submit to Canvas:
+
+- Turn in your story as a Microsoft Word Doc
+- Include a headline that fits your story
+- Include links to your Workflow and report at the top of the Word doc.
+- Upload the doc to the Canvas assignment.
 
 ## Soundtrack for this assignment
 
