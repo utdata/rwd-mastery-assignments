@@ -29,4 +29,3 @@ I was able to create parts of dates and put them back together again to get a co
 ![ASH end](img/ash-or-end.png)
 
 If the full date was important, more work could've been done to normalize those.
-s

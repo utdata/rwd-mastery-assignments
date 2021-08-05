@@ -1,8 +1,12 @@
 # Workbench tutorials assignment
 
-Before starting on Workbench assignments you'll need to go through a number of tutorials. You will need to [create an account](https://workbenchdata.com/) first.
+Before starting on Workbench assignments you should go through a series of tutorials so you can best follow along in class. You will need to [create an account](https://workbenchdata.com/) first.
 
-There are two types of lessons in Workbench, the [Tutorials](https://app.workbenchdata.com/lessons) and the [Introduction to Data Journalism](https://app.workbenchdata.com/courses/intro-to-data-journalism). We'll work from both. There are 14 lessons that you need to do, but each one only takes five to 10 minutes.
+When you log into Workbench, there is a **Tutorials** link on the left navigation bar. When you click on that, it gives you two different page choices. The one we want is the [Intro to data journalism](https://app.workbenchdata.com/courses/en/intro-to-data-journalism).
+
+There are 12 lessons that you need to do, but each one only takes five to 10 minutes.
+
+> If you have time, the [Workbench basics](https://app.workbenchdata.com/lessons/en) modules are also worth going through but not required for this assignment.
 
 Create a single Google Doc to collect all your results from each tutorial. Label them as you go along so I know which is which. Read the directions carefully as I ask for different things for various assignments. Be sure to share the Google Doc with me before submitting the URL to Canvas.
 
@@ -10,15 +14,6 @@ I'm asking you to take screenshots and upload files for this assignment. Here is
 - Take a screenshot: [Mac](https://support.apple.com/en-us/HT201361) | [Window](https://support.microsoft.com/en-us/help/4027213/windows-10-open-snipping-tool-and-take-a-screenshot).
 - Here is how to [upload an image to Google Docs](https://support.google.com/docs/answer/97447?co=GENIE.Platform%3DDesktop&hl=en).
 - Upload a file to [Google Drive](https://support.google.com/drive/answer/2424368?hl=en&co=GENIE.Platform=Desktop).
-
-## Tutorials
-
-From the [Tutorials](https://app.workbenchdata.com/lessons) section, do the first two lessons:
-
-- **Tutorial I. Load public data and make a chart**:  In addition to the steps listed, add one more function before the chart to SORT by affordable_units in descending order, then refresh the chart. When you are done click on the ... button at top right and choose to Save as PNG. Upload the image to your Google Doc.
-- **Tutorial II. Clean dirty data**: At the end of this tutorial, take a screenshot of your last screen and upload that to the Google Doc.
-
-You are welcome to go through the other Tutorials if you wish, but they are not required.
 
 ## Introduction to Data Journalism
 
