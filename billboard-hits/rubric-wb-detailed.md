@@ -301,6 +301,10 @@ History was made in the summer of 2019, and it's time to put it into perspective
 
 This is pretty similar to our last quest, but we need to consider songs only at No. 1 instead of all songs. Figure this one out on your own, but consider what we've done for other questions like this.
 
+## Feel free to explore on your own
+
+Curious how a specific artist has performed in the Hot 100? Feel free to explore the data and look for new stuff. Just make sure our assignment tab are well labeled so I can find those.
+
 ## Make your Workflow public
 
 - Click on the **Share** button at the top-right of Workbench.
