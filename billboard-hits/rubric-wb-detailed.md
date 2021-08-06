@@ -29,7 +29,7 @@ Workbench fits into the category of data journalism tools that I consider "trans
 - You can insert and correct steps anywhere in the process without starting over.
 - You can document what you are thinking for each step for your future self or others interested in your work.
 - You can collaborate with colleagues. You can share your work with readers.
-- While Workbench can't do everything, it is built upon Python's [pandas](https://pandas.pydata.org/pandas-docs/stable/) data science library so you can use Python code for advanced functions not available in the interface.
+- While Workbench can't do everything, it is built upon Python's [pandas](https://pandas.pydata.org/pandas-docs/stable/) data science library so you can use Python code for advanced functions not available in the interface. (Though this [will change in the future](https://github.com/CJWorkbench/cjworkbench/wiki/Features-that-will-change#frequent-breaking-changes-to-the-python-step).)
 - It is (currently) free, web-based and easy to learn. It is a _young_ tool under active development and the owners are trying to turn it into a business, but they have committed to keeping the current toolset free for journalists. It was born out of a project at the Columbia School of Journalism though a Knight Foundation grant.
 
 ## Importing and cleaning data
